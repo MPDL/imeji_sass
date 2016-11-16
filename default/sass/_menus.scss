@@ -167,9 +167,10 @@
 	}
 	
 	.imj_menuSimpleSearch{
-		 width: $simplesearch-width + 1em; 
+		 width: $simplesearch-width + 1em ; 
+		 font-size: 1.2em;
 		 li{
-			 border-top: 1px dashed $color-11;
+			 border-top: 1px dashed $color-13;
 			 padding: 0.5em 1em;
 		 }
 	}

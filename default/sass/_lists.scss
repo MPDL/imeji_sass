@@ -91,7 +91,7 @@
 // /* * bibliographicList used in bibliographicListTwoColumn.xhtml, bibliographicListThreeColumn.xhtml
 // ================================================== */
 .imj_bibliographicList {
-    width: 100%;
+    width: 96%;
 
     .imj_listHeader,
     .imj_listFooter {
@@ -148,8 +148,7 @@
     }
 
     .imj_listBody {
-        width: 100%;
-
+        width: 96%;
         .imj_bibliographicListItem {
             width: 91.95%;
             padding: 0 4% 1em 4%;

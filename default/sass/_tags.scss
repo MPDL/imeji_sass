@@ -29,7 +29,6 @@ a {
 	&.disabled:hover {
 		@include disabled('a');
 	}
-
 }
 strong, b {	
 	font-weight: bold;	// bugfix for default user agent styling, e.g. in webkit

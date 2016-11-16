@@ -1,0 +1,1692 @@
+// VARIOUS VARIABLES, which not match with other components
+// IMPORTS, don't change the order of imports, because they are depends another
+@import url("http://fonts.googleapis.com/css?family=Titillium+Web:300italic,400,200,200italic,300,600,400italic,600italic,700italic,700,900");
+@import "../../default/sass/_combinedStyles.scss";
+
+html body {
+
+  background: url("../images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+ 
+  @mixin font-style-links-grey {
+    font-weight: 400;
+    color: $color-03;
+    &:hover {
+      color: $color-04;
+    }
+  }
+
+  @mixin font-style-links-green {
+    color: $color-03;
+    &:hover {
+      color: $color-04;
+    }
+  }
+
+  @mixin input-style {
+    font-family: 'Titillium Web', Arial, Helvetica, Verdana, sans-serif !important;
+    border: 1px solid $color-03;
+    background: transparent;
+	color: $color-01;
+    border-radius: 2px;
+    padding: 5px 10px 5px 10px;
+	&:hover {
+	  color: $color-01;
+	 }
+    &:focus {
+	  color: $color-01;
+      border: 1px solid $color-01;
+      outline: none;
+    }
+    &::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      text-transform: uppercase;
+      font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif;
+    }
+    &::-moz-placeholder {
+      /* Firefox 19+ */
+      text-transform: uppercase;
+      font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif;
+    }
+    &:-ms-input-placeholder {
+      /* IE 10+ */
+      text-transform: uppercase;
+      font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif;
+    }
+    &:-moz-placeholder {
+      /* Firefox 18- */
+      text-transform: uppercase;
+      font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif;
+    }
+  }
+
+  @mixin action-button {
+    border: none;
+    background-color: $color-03;
+    font-size: 14px;
+    color: white;
+    height: 35px;
+    padding: 5px 20px 5px 20px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    &:hover {
+      background-color: $button-bgcolor-hover;
+    }
+  }
+
+  @mixin action-button-grey {
+    @include action-button;
+    background-color: $color-13;
+    &:hover {
+      background-color: lighten($color-13, 10);
+    }
+  }
+
+  input {
+    @include input-style;
+  }
+  textarea { 
+   @include input-style;
+  }
+
+  input[type="submit"] {
+    @include action-button;
+  }
+
+  input[type="file"] {
+    @include action-button;
+  }
+
+  input[type="radio"], input[type="checkbox"] {
+    height: inherit;
+  }
+
+  button {
+    @include action-button
+  }
+
+
+  .imj_submitButton, .plupload_button {
+    @include action-button;
+    margin-right: 10px;
+  }
+
+  .imj_cancelButton, .imj_resetButton {
+    @include action-button;
+    background-color: $button-cancel-bgcolor !important;
+    &:hover {
+      background-color: $button-cancel-bgcolor-hover !important;
+    }
+    display: inherit;
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px !important;
+  }
+
+  .imj_submitPanel {
+    display: inline-block !important;
+  }
+
+  .imj_modalDialogBackground {
+    background: rgba($color-10, 0.6);
+  }
+
+  .imj_modalDialogBox {
+    .imj_confirmationText {
+      font-size: 1.2em;
+    }
+  }
+
+  .imj_siteWrapper {
+
+    border: none;
+    margin-bottom: 0;
+
+    .imj_logo {
+      background-color: $color-10;
+      background-position: center;
+      width: 260px;
+      padding: 15px 10px 15px 10px;
+    }
+
+    .imj_siteHeader {
+      padding: 0;
+      margin-bottom: 10px;
+
+      .imj_metaMenuStandardSingleLine {
+        margin: 0;
+        height: 40px;
+        max-width: 70%;
+        width: inherit;
+        float: right;
+        padding: 10px 20px 10px 10px;
+        background: $color-10;
+
+        .imj_metaMenuItemsAlign {
+          //background-color: $color-10;
+          float: left;
+          margin-top: 10px;
+
+          a {
+            @include font-style-links-grey;
+            text-transform: uppercase;
+            position: relative;
+            margin-left: 20px;
+          }
+
+          .imj_metaMenuSeparator {
+            width: 0;
+            margin: 0;
+            padding: 0;
+          }
+
+          input {
+            @include input-style;
+            width: 110px;
+            margin-right: 10px;
+          }
+
+          input[type="submit"] {
+            @include action-button;
+            width: 118px;
+            position: relative;
+            top: 0;
+          }
+
+          .imj_customSelectbox {
+            border: none;
+            padding: 0;
+			margin-left: 20px;
+			margin-top: -2px;
+			
+            .imj_showSelection {
+              text-transform: uppercase;
+              //top: 0.8em;
+              //margin-top: 10px;
+              //margin-left: 20px;
+              .imj_selectionText {
+				width: auto !important;
+				padding:0;
+				margin: 0;
+                color: $color-03;
+                &:hover {
+                  color: $color-03;
+                }
+              }
+              a {
+                margin: 0;
+              }
+            }
+            select {
+              text-transform: uppercase;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+      .imj_siteHeaderMenuSearchSection {
+        height: 40px;
+        padding: 10px 20px 10px 20px;
+        background-color: $color-10;
+        width: inherit;
+        margin-top: 40px;
+
+        .imj_mainMenuStandardItem {
+          background: none;
+          margin-right: 1.1em;
+          margin-top: 10px;
+          a {
+            @include font-style-links-grey;
+            font-weight: 600;
+          }
+        }
+
+        .imj_active {
+          a {
+            color: $color-03;
+          }
+        }
+
+        .imj_mainMenuStandard {
+          padding: 0;
+        }
+
+        .imj_simpleSearch {
+          padding: 0;
+		  margin: 0 0 0 -30px;
+		  
+          .imj_simpleSearchInput {
+            @include input-style;
+            border-radius: 2px 0 0 2px;
+            height: 35px;
+            padding-left: 35px;
+          }
+          &::before {
+            content: "\f002";
+            font-size: 1.4em;
+            font-family: 'fontAwesome';
+            color: darken($color-01, 20);
+            left: 35px;
+            top: 4px;
+            position: relative;
+          }
+          .imj_simpleSearchButtonSubmit {
+            @include action-button;
+          }
+        }
+
+
+      }
+
+    }
+
+	.imj_statusHeaderArea{
+		padding:0;
+		margin:0;
+		height:0;
+		z-index: 100;
+		position:relative;
+		right: 3%;
+	}
+	
+    .imj_siteContentHeadline {
+      background-color: $color-10;;
+      padding-left: 25px;
+	  margin: 0;
+	  min-width: 100%;
+    }
+
+    #actionsMenuArea {
+	  float:left;
+	  width:100%;
+      background-color: $color-10;
+      //min-height: 80px;
+      margin-top: 0;
+      padding: 0px 20px 0 20px;
+
+      p, a, span {
+        font-size: 1.2em;
+      }
+
+      .imj_contentMenu {
+        margin: 0;
+
+        .imj_contentMenuItem {
+          font-weight: 600;
+          &:hover {
+            background: transparent;
+          }
+        }
+      }
+
+      .imj_contentSubMenu {
+        width: 96%;
+        padding: 0;
+        height: 15px;
+        border-bottom: 1px solid $color-03	;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        margin-top: 20px;
+      }
+    }
+
+    .imj_mainContentWrapper {
+      //min-height: calc(100vh - 540px);
+      width: 100%;
+      padding: 20px;
+      //max-height: 45vh;
+      margin-top: 0;
+      padding-bottom: 2em;
+      margin-bottom: 30px;
+      //overflow-y: auto;
+	  background-color: $color-10;
+
+      p, a, span, ul, label {
+        //font-size: 1.2em;
+        //line-height: 1.3em;
+      }
+
+      hr {
+        border-style: none;
+        width: 100%;
+        height: 1px !important;
+        background: $color-01;
+        border-width: 1px;
+      }
+
+      h3 {
+        padding-left: 0 !important;
+        font-size: 1.3em;
+        line-height: 1.4em;
+        font-weight: 600;
+      }
+	  
+	  .imj_paginator {
+		background-color: rgba(#fff,0);
+		font-size: 110% !important;
+		width:96%;
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 0;
+        //padding-top: 20px;
+        border-top: 1px solid $color-03;
+		
+
+        &:first-of-type {
+          border: none;
+          margin-top: 0;
+          padding-top: 10px;
+        }
+
+        input {
+          padding: 0;
+          height: 15px;
+          width: 30px;
+        }
+        .imj_singlePageBrowser {
+          input {
+            width: inherit;
+            height: inherit;
+            padding: 0 1em;
+          }
+          .imj_currentPageNumber {
+            color: $color-01;
+          }
+          .imj_separator {
+          }
+          .fa {
+            color: $color-03;
+            &.imj_deactivated {
+              color: $color-01;
+              &:hover {
+                color: $color-01;
+              }
+              cursor: default;
+            }
+            &:hover {
+              color: $color-10;
+            }
+            cursor: pointer;
+          }
+          input[type="submit"] {
+            &:hover {
+              background: transparent;
+            }
+          }
+        }
+        .imj_rangeSelector {
+          .fa {
+            color: $color-03;
+            &:hover {
+              color: $color-01;
+            }
+            cursor: pointer;
+          }
+		  .disabled{
+			  color: $color-01;
+		  }
+        }
+      }
+
+      /// ADMIN - PAGES
+
+      .imj_adminPanel{
+        .imj_metadataLabel{
+          line-height: 18px;
+        }
+        .imj_admindataLabel{
+          line-height: 18px;
+          span{
+            line-height: 18px;
+          }
+          label{
+            line-height: 18px;
+          }
+        }
+      }
+
+      .imj_metadataProfileList.imj_edit {
+        .imj_listHeader {
+          .imj_headline {
+          }
+        }
+        .imj_listBody {
+          .imj_itemHeader {
+		  
+            label {
+              font-style: normal;
+              color: $color-01;
+            }
+            .imj_inlineButtonGroup{
+              font-size: 14px;
+            }
+            .imj_optionList{
+              float: none;
+              margin-left: 30%;
+              font-size: 14px;
+            }
+          }
+          input[type="text"] {
+            height: 23px !important;
+          }
+          .imj_metadataSet{
+            .imj_metadataSet{
+              .imj_metadataLabel{
+                width: 147px !important;
+              }
+            }
+          }
+          .imj_itemBody{
+            .imj_submitPanel{
+              .imj_submitButton{
+                margin-right: 10px;
+              }
+            }
+          }
+          .imj_submitPanel{
+            .imj_cancelButton{
+              @include action-button-grey
+            }
+            .imj_submitButton{
+              margin-right: 20px;
+            }
+          }
+        }
+        input[type="text"], select {
+          font-size: 14px;
+        }
+      }
+
+      .imj_setupConfig {
+        .imj_config_headline {
+          width: inherit;
+        }
+        .imj_administrationTiledList {
+          width: 100%;
+        }
+
+        .imj_cancelButton {
+          @include action-button-grey;
+          margin-right: 20px;
+          padding-top: 7px;
+          padding-bottom: 8px;
+        }
+
+        .imj_editButton {
+          margin-right: 10px;
+        }
+
+        .imj_adminPanel {
+          width: 97%;
+
+
+          .imj_content {
+            .imj_admindataSet {
+              margin-top: 10px;
+            }
+          }
+          .imj_admindataLabel {
+            //font-size: 16px;
+            padding-right: 20px;
+            width: 30%;
+          }
+          .imj_admindataValue {
+            width: 94%;
+            padding-left: 0;
+            margin-left: 0;
+            max-width: 67%;
+
+            table {
+              tr {
+                td {
+                  padding-right: 20px;
+                }
+              }
+            }
+
+          }
+          input[type="text"], input[type="select"], input[type="password"] {
+            @include input-style;
+            height: 35px;
+          }
+          .imj_fileTypeConfig {
+            .imj_submitButton {
+              @include action-button;
+              height: 25px;
+              padding: 12px 20px 4px 20px !important;
+            }
+          }
+          .imj_fileTypeConfigList {
+            input[type="text"] {
+              height: 25px;
+              margin-right: 10px;
+              margin-top: 10px;
+            }
+            tr {
+              td {
+                padding-right: 20px;
+              }
+            }
+          }
+        }
+      }
+
+      .imj_spaceConfigPage {
+        .imj_headline {
+          margin-bottom: 20px;
+        }
+        label {
+          font-size: 1.1em;
+        }
+        input[type="text"] {
+          @include input-style;
+          height: 35px;
+        }
+        #spaceSlug {
+          height: 25px !important;
+        }
+        textarea {
+          height: 100px;
+        }
+        select{
+          width: 72% !important;
+        }
+        .imj_fileUploadContainer {
+          width: 94%;
+          margin-right: 3px;
+          float: right;
+          padding: 20px;
+          a {
+            font-size: 1em;
+          }
+        }
+        .imj_metadataValue {
+         width: 72%;
+          max-width: 72%;
+          margin-left: 0;
+          input[type="text"] {
+            height: 25px;
+            float: left;
+            margin-left: -5px;
+          }
+        }
+        .imj_submitButton {
+          margin-right: 20px;
+        }
+      }
+
+      .imj_administrationTiledList {
+        width: 100%;
+        padding: 0;
+        .imj_listHeader {
+          width: 100%;
+          display: inline-block;
+        }
+        .imj_headline {
+          font-size: 18px;
+          color: $color-01;
+          h2 {
+            font-size: 18px;
+            color: $color-01;
+          }
+        }
+        .imj_submitButton {
+          @include action-button;
+        }
+      }
+
+      .imj_userConfig {
+        .imj_submitPanel {
+          .imj_submitButton{
+            height: 100%;
+            padding: 7px 20px 8px 20px;
+          }
+        }
+        .imj_admindataLabel {
+          //font-size: 16px !important;
+          //line-height: 18px;
+          label {
+            //font-size: 16px !important;
+            //line-height: 18px;
+          }
+          span {
+            //font-size: 16px !important;
+            //line-height: 18px;
+          }
+        }
+        .imj_userGlobalInformation {
+          .imj_admindataValueEntry {
+            width: inherit;
+            textarea {
+              margin-bottom: 10px;
+            }
+          }
+          .imj_submitPanel {
+            width: 97% !important;
+            .imj_cancelButton {
+              @include action-button-grey;
+              margin: 0;
+              height: 25px;
+              padding: 10px 20px 0 20px;
+            }
+            .imj_submitButton {
+              @include action-button;
+              height: 25px;
+              padding: 10px 20px 0px 20px;
+            }
+            .imj_editButton {
+              //margin-right: 20px;
+            }
+          }
+        }
+        .imj_organisation {
+          .imj_admindataValue {
+            width: inherit;
+            max-width: 73% !important;
+          }
+          .imj_inlineButtonGroup {
+            .fa {
+              padding: 0;
+              padding-right: 10px;
+              margin: 0;
+              color: $color-10;
+              font-size: 18px;
+              background-color: transparent;
+              &:hover {
+                background-color: transparent;
+              }
+            }
+          }
+        }
+        .imj_admindataSetEdit {
+          .imj_headline {
+            margin-bottom: 10px;
+          }
+          .imj_admindataValue {
+            margin-left: 0;
+            min-width: 75%;
+            .imj_admindataValueEntry {
+              width: 60% !important;
+            }
+            .imj_admindataSet {
+              .imj_admindataLabel {
+                .imj_submitPanel {
+                  margin: 0;
+                  padding: 0;
+                  margin-top: 10px;
+                  .imj_cancelButton {
+                    @include action-button-grey;
+                    margin: 0;
+                    float: left;
+                    height: 25px;
+                    padding: 10px 20px 0px 20px;
+                  }
+                  .imj_submitButton {
+                    @include action-button;
+                    height: 25px;
+                    padding: 10px 20px 0px 20px;
+                  }
+                  .imj_editButton {
+                    margin-right: 20px;
+                  }
+                }
+              }
+            }
+          }
+          .imj_submitPanel {
+            margin: 0;
+            padding: 0;
+            margin-top: 10px;
+            .imj_cancelButton {
+              @include action-button-grey;
+              margin: 0;
+              float: left;
+              height: 25px;
+              padding: 10px 20px 0px 20px;
+            }
+            .imj_submitButton {
+              @include action-button;
+              height: 25px;
+              padding: 10px 20px 0px 20px;
+            }
+            .imj_editButton {
+              margin-right: 20px;
+            }
+          }
+        }
+
+        .imj_modalDialogBox {
+          .imj_submitPanel {
+            width: 97% !important;
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+            .imj_submitButton {
+              height: 31px;
+            }
+          }
+        }
+        .imj_admindataSet {
+          .imj_headline {
+            margin-bottom: 20px;
+          }
+        }
+        .imj_simpleSearch {
+          padding: 0;
+          .imj_searchInfoText {
+            margin-top: 10px;
+            margin-right: 10px;
+          }
+          .imj_simpleSearchInput {
+            @include input-style;
+            border-radius: 2px 0 0 2px;
+            height: 23px;
+            padding-left: 10px;
+          }
+          .imj_simpleSearchButtonSubmit {
+            @include action-button;
+          }
+          .imj_cancelButton {
+            @include action-button-grey;
+            height: 25px;
+            padding: 10px 20px 0 20px;
+            margin-top: -5px;
+          }
+        }
+        .imj_cancelButton {
+          display: inline-block;
+          //padding-top: 9px;
+          //padding-bottom: 8px;
+        }
+        .imj_editButton {
+          @include action-button;
+          padding: 7px 20px 8px 20px;
+        }
+      }
+
+      .imj_adminPanel {
+        display: inline-block;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 14px;
+        line-height: 16px;
+        .imj_headline {
+          font-size: 18px;
+          color: $color-01;
+          h2 {
+            font-size: 18px;
+            color: $color-01;
+          }
+        }
+        &.imj_userConfig {
+          width: 94%;
+
+          .imj_simpleSearch {
+            input[type="text"] {
+              @include action-button;
+            }
+          }
+
+          .imj_headline {
+            width: 100%;
+            h2 {
+              color: $color-01;
+              font-size: 18px;
+            }
+          }
+          .imj_submitPanel {
+            width: 101%;
+            padding-left: 20px;
+            padding-right: 20px;
+          }
+          .imj_admindataValue {
+            width: inherit;
+            max-width: 74%;
+            .imj_admindataValueEntry {
+              width: inherit;
+              .imj_admindataEdit {
+                width: inherit;
+              }
+            }
+          }
+          .imj_content {
+            padding-bottom: 20px;
+            height: inherit;
+            min-height: inherit;
+            display: block;
+            form {
+              p {
+                width: 100%;
+                textarea {
+                  width: 40%;
+                }
+                select {
+                  margin-left: 20px;
+                }
+              }
+              a {
+                @include action-button;
+                padding: 7px 20px 8px 20px;
+              }
+            }
+            .imj_adminEditPanel {
+              margin-top: 25px;
+              .imj_cancelButton {
+                @include action-button-grey;
+                height: 100%;
+                padding: 7px 20px 8px 20px;
+              }
+              a.imj_cancelButton {
+                @include action-button-grey;
+                height: 25px;
+                padding: 12px 20px 3px 20px;
+              }
+            }
+          }
+        }
+      }
+      .imj_storageInformation {
+        .imj_admindataLabel {
+          width: initial;
+        }
+        .imj_headline{
+          h2{
+           
+          }
+        }
+      }
+
+      .imj_maxWidth {
+        padding: 0;
+      }
+
+
+      #createProfileArea {
+		 h2{
+			width:100%;
+			.imj_messageError{
+			background-color: transparent !important;
+			}
+		 }
+        #selectorArea {
+		 
+          select {
+            @include input-style;
+            height: 35px;
+          }
+          input {
+            margin-right: 10px;
+          }
+          .imj_listBody {
+            font-size: 0.6em;
+            .imj_listItem {
+              .imj_listBody {
+                font-size: 1.2em;
+              }
+            }
+          }
+        }
+      }
+
+      .imj_mainContentWrapper {
+        padding-left: 0;
+        height: 100%;
+        background: transparent; // hack for register site
+        overflow-y: hidden;
+      }
+
+      .imj_metadataProfileList {
+        .imj_listHeader {
+          .imj_headline {
+            float: inherit;
+          }
+        }
+      }
+
+      .imj_pageMessageArea {
+        .imj_metadataSet {
+          margin-top: 15px;
+          label {
+            min-width: 80px;
+            width: initial;
+          }
+          input {
+            min-width: initial;
+            width: 300px;
+          }
+        }
+      }
+
+      #imj_ajaxWrapper {
+        .imj_descriptionArea {
+          .imj_metadataLabel {
+            font-size: 1.2em;
+          }
+          table {
+            td {
+              padding-right: 20px;
+            }
+          }
+        }
+        .imj_sectionHeadline {
+          .imj_inlineButtonGroup {
+            a {
+              font-size: 1.1em;
+            }
+          }
+        }
+        .imj_authorMetadataSet {
+          .imj_sectionHeadline {
+            .imj_inlineButtonGroup {
+              a {
+                font-size: 0.9em;
+              }
+            }
+          }
+          .imj_organisation {
+            .imj_sectionHeadline {
+              .imj_inlineButtonGroup {
+                a {
+                  font-size: 1.1em;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .imj_userConfig {
+        .imj_admindataSet {
+          .imj_admindataLabel {
+            font-size: 1.2em;
+          }
+          &:first-child {
+            .imj_admindataLabel {
+              font-size: 1.07em;
+            }
+          }
+        }
+        .imj_adminEditPanel{
+          margin-top: 20px;
+        }
+      }
+
+      .imj_helpPage {
+        padding-left: 10px;
+        a {
+          font-size: 16px;
+        }
+        span {
+          font-size: 1em;
+        }
+        h2, h3 {
+          font-weight: 600;
+          font-size: 140%;
+        }
+        ul {
+          font-size: 14px;
+        }
+      }
+
+      .imj_descriptionArea {
+
+        h4 {
+          padding-left: 0;
+          font-size: 1.2em;
+          font-weight: 600;
+        }
+
+        select {
+          @include input-style;
+          margin-top: 10px;
+          height: 35px;
+        }
+
+        .imj_collectionNotifications, .imj_collectionLogoUpload {
+          h4 {
+            font-size: 1.4em;
+          }
+          label {
+            font-size: 1.2em !important;
+          }
+        }
+
+        input[type="text"] {
+          width: 400px;
+          height: 25px;
+          min-width: inherit;
+          &.imj_metadataValue {
+            height: 35px;
+            width: 422px;
+            min-width: inherit;
+          }
+        }
+        textarea {
+          height: 70px;
+          width: 422px;
+          min-width: inherit;
+        }
+
+        .imj_metadataSet {
+          .imj_metadataLabel {
+            width: 190px;
+            min-width: inherit;
+          }
+        }
+
+        .imj_admindataSet {
+          .imj_admindataLabel, .imj_metadataLabel {
+            width: 200px;
+          }
+
+          .imj_admindataValue {
+            margin-left: 0;
+            padding-left: 0;
+            textarea {
+              width: 416px;
+            }
+          }
+        }
+
+        .imj_organisation {
+          padding-left: 0;
+          .imj_admindataLabel, .imj_inlineButtonGroup {
+            padding-left: 15px;
+          }
+        }
+
+        .imj_sectionHeadline {
+          margin-top: 5px;
+        }
+
+        .imj_collectionLogoUpload {
+          .imj_metadataValue {
+            margin-left: 0;
+          }
+          .imj_fileUploadContainer {
+            border: none;
+          }
+        }
+      }
+
+      .imj_upload {
+		width: 96%; 
+        .id_tabs {
+          li:first-child {
+            padding-left: 0;
+          }
+        }
+        .plupload_content {
+          .plupload_filelist_header, .plupload_filelist_footer {
+            .plupload_file_name {
+              padding-left: 0;
+            }
+          }
+          .plupload_filelist {
+            width: calc(100% - 40px);
+            border: 1px dashed $color-03;
+            padding: 15px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+          }
+        }
+        .plupload_filelist_footer {
+          background: transparent;
+          .plupload_button {
+            padding-left: 15px;
+            padding-right: 15px;
+          }
+        }
+        .imj_uploadUrlReference {
+          width: 90%;
+          height: 100px;
+        }
+        label {
+          margin-left: 0;
+        }
+      }
+
+      .imj_mediaEntryDetailPage {
+        .imj_paginator {
+          font-size: 0.8em;
+        }
+        .imj_simplePageBrowser {
+          margin-right: 60px;
+        }
+        .imj_mediaDisplayContainer {
+          width: inherit
+        }
+        .imj_listHeader {
+          width: initial;
+          margin: 0 auto;
+          display: table;
+        }
+        .imj_metadataList {
+          width: 100%;
+          margin-left: 0;
+          .imj_infodataWrapper {
+            span.imj_infodataSet {
+              .imj_infodataLabel {
+                font-size: 1em;
+              }
+              .imj_infodataValue {
+                font-size: 1em;
+                margin-left: 0;
+                padding-left: 0;
+                a {
+                  font-size: 1em;
+                }
+              }
+            }
+            div.imj_infodataSet {
+              .imj_infodataLabel {
+                font-size: 1.2em;
+              }
+              .imj_infodataValue {
+                margin-left: 0;
+                padding-left: 0;
+                .imj_optionList {
+                  li {
+                    a {
+                      font-size: 1em;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .imj_metadataWrapper {
+          .imj_globalMetadataSet {
+            font-size: 1.1em;
+            .imj_metadataValue {
+              span, a {
+                font-size: 1.1em;
+              }
+            }
+          }
+          .imj_headline {
+            font-size: 1.2em;
+            a {
+              font-size: 1em;
+            }
+          }
+          .imj_submitPanel {
+            display: inline-block;
+            a {
+              font-size: 1.2em !important;
+              height: 20px !important;
+              display: inline;
+              padding: 5px 20px 5px 20px;
+            }
+          }
+        }
+      }
+
+      .imj_fileUploadContainer {
+        border: 1px dashed $color-03;
+      }
+
+      .imj_modalDialogBox {
+        font-size: 1.2em;
+        background: white;
+        border-radius: 2px;
+        border: 1px solid $color-01;
+        min-width: 400px;
+        left: 720px;
+        .imj_submitPanel {
+          display: inline-block !important;
+        }
+      }
+
+      .imj_administrationTiledList {
+        a {
+          font-size: 0.9em;
+        }
+      }
+
+      .imj_collectionEntryPage {
+        .imj_headline {
+          width: 100%;
+          a {
+            font-size: 1em;
+            line-height: 1em;
+          }
+        }
+        #description {
+          padding-top: 20px;
+          .imj_entryPageTitle, .imj_itemAuthorPanel, .imj_entryPageDescription, pre {
+            font-size: 1.4em;
+          }
+        }
+
+        .imj_metadataSubPanelItem {
+          font-size: 1.4em;
+        }
+        span.imj_infodataSet {
+          font-size: 1em;
+        }
+
+        .imj_entryPagePreviewTiledList {
+          a {
+            line-height: 1em;
+          }
+          .imj_headline {
+            margin-top: 15px;
+          }
+          .imj_thumbnailsPreview {
+            .imj_tileItem {
+              width: 148px;
+            }
+          }
+        }
+
+        .imj_infodataValue {
+          a {
+            font-size: 1em;
+          }
+        }
+        .imj_entryPagePreviewTiledListLink {
+          font-size: 1em;
+          width: 100%;
+          .fa {
+            display: none;
+          }
+        }
+      }
+
+      .imj_bibliographicList {
+        h3 {
+          font-size: 95%;
+        }
+      }
+
+
+      .imj_pageMessageArea {
+        background-color: transparent;
+        padding: 0;
+      }
+
+      .imj_searchUnit {
+
+        input, select {
+          @include input-style;
+          height: 35px;
+        }
+
+        input[type="checkbox"],input[type="radio"] {
+          margin: 5px;
+          height: inherit;
+        }
+
+        .imj_searchDetails {
+          width: 100%;
+          margin-left: 83px;
+
+          table {
+            margin-top: 10px;
+          }
+
+        }
+
+        .imj_submitPanel {
+          display: inline-block;
+          .imj_inlineButtonGroup {
+            margin-left: 0;
+          }
+        }
+
+        .imj_logicalDetailConnector {
+          margin-left: 83px;
+          margin-bottom: 10px;
+        }
+
+        .imj_searchDetails {
+          .imj_logicalSearchGroup {
+            width: 9%;
+            &:first-of-type {
+              margin-right: 1%;
+            }
+            select {
+              width: 100%;
+            }
+          }
+        }
+
+        .imj_searchInput {
+          span, input {
+            height: 23px;
+            margin-right: 20px;
+          }
+        }
+
+        .imj_searchSelectbox {
+          width: 20%;
+          margin-right: 20px;
+          select {
+            width: 100%;
+          }
+          .imj_searchDetails {
+            margin-left: 0;
+          }
+        }
+
+        .imj_searchStatement {
+          width: 20%;
+          margin-right: 20px;
+          select {
+            width: 100%;
+          }
+        }
+
+      }
+
+      #registerArea {
+        input[type="submit"] {
+          @include action-button;
+        }
+        font-size: 1.2em;
+        h2 {
+          width: 100%;
+        }
+
+        .imj_headline {
+          display: none;
+        }
+
+        .imj_registerSteps {
+          width: 180px;
+          .imj_active {
+            color: $color-03;
+          }
+        }
+      }
+
+      .imj_mediaEntryDetailPage {
+        .imj_paginator {
+          border: none;
+          margin-top: 0;
+          padding-top: 10px;
+        }
+      }
+
+      .imj_welcomeInfo, .imj_tabContent {
+        min-height: inherit !important;
+		padding:0;
+		font-size: 110%;
+        li.ui-state-active {
+          background: transparent;
+          a {
+            color: $color-01;
+          }
+        }
+      }
+
+      .imj_listBody {  
+		//font-size: 100%;
+        padding-bottom: 20px;
+        //border-bottom: 1px solid $color-01;
+
+        .imj_techdataEntry {
+          overflow-x: inherit;
+        }
+
+        .imj_infodataValueEntryEmbed {
+          width: 100%;
+        }
+
+        span.imj_optionSet {
+          line-height: 1em;
+          input {
+            margin-left: 8%;
+          }
+          label {
+            width: 100%;
+            //font-size: 130%;// 14px;
+            overflow: hidden;
+            max-width: 70%;
+            text-align: left;
+            padding-left: 10px;
+          }
+
+          .imj_optionLabel {
+            max-width: 70%;
+          }
+        }
+
+        .imj_listItem {
+          dl {
+            padding-left: 0;
+          }
+        }
+
+        .imj_tileItem {
+
+          width: 158px;
+          margin: 0;
+
+          .imj_tooltip {
+            box-shadow: none;
+            background: $color-13;
+            border-radius: 2px;
+            border: 1px solid $color-14;
+            padding: 10px;
+
+            a {
+              @include font-style-links-green;
+            }
+          }
+        }
+
+        .imj_headline {
+          margin-right: 20px;
+        }
+
+      }
+
+      .imj_headline {
+        padding: 0;
+        float: left;
+        text-align: left;
+        background: transparent;
+        h2 {
+          text-align: left;
+          padding-left: 0;
+          color: $color-03;
+        }
+      }
+
+      .imj_content {
+        padding: 0;
+      }
+
+      .imj_config_headline {
+        border: none;
+      }
+
+      .imj_itemActionArea {
+        margin-top: 15px;
+        ul {
+          li {
+            padding-left: 0 !important;
+            padding-right: 20px !important;
+            a {
+              @include font-style-links-green;
+              text-align: left;
+            }
+          }
+        }
+      }
+
+      .imj_metadataSubPanel {
+        padding-left: 0;
+      }
+
+      .imj_tileThumbnailArea {
+        border-radius: 5px;
+        background: transparent !important;
+        &:hover {
+          background: transparent;
+          border: 4px solid $color-03;
+        }
+      }
+
+      .imj_userConfig {
+        .imj_listBody {
+          border: none;
+          padding-bottom: 0;
+        }
+        select {
+          @include input-style;
+          height: 35px;
+        }
+      }
+
+      .imj_collectionEntryPage {
+        .imj_headline {
+          .imj_entryPagePreviewTiledListLinkArrow {
+            margin: 0;
+          }
+        }
+      }
+
+      .highlight_area:hover {
+        background: $color-13;
+      }
+    }
+
+    .imj_listHeader {
+      .imj_active {
+        background: transparent;
+        color: $color-03;
+      }
+      a {
+        @include font-style-links-green;
+        &:hover {
+          background: transparent;
+        }
+      }
+    }
+
+    .imj_pageMessageArea {
+      background-color: $color-10;
+      margin: 0;
+      padding: 10px 10px 10px 25px;
+      width: 100%;
+      .imj_messageInfo, .imj_messageError {
+        padding-left: 0;
+      }
+    }
+
+    .imj_searchQueryDisplay {
+      margin: 0!important;
+      padding: 3px 25px 5px 25px !important;
+	  float: left;
+	  background-color: $color-10;
+      width: 100%;
+      .imj_submitButton {
+        display: inline;
+      }
+    }
+
+    .imj_menuBody {
+      border: 1px solid $color-14;
+	  background-color: $color-13;
+	 
+      li {
+        &:hover {
+          background-color: $color-13;
+        }
+      }
+      span {
+        margin: 0.272727em 1em;
+        font-size: 1em;
+      }
+    }
+
+    .imj_invisible {
+      display: none;
+    }
+
+    .imj_siteFooter {
+      //position: fixed;
+      width: initial;
+      height: 60px !important;
+      padding: 20px;
+      left: 0;
+      bottom: 0;
+      //height: auto;
+      min-height: 3em;
+      background-color: $color-10;
+
+      .imj_startpageFooterLogos {
+
+        margin: auto;
+        padding-top: 10px;
+
+        .imj_poweredby_software {
+          float: right;
+          margin-left: 0;
+          margin-right: 2%;
+          padding-right: 50px;
+          background: url("../images/imeji_logo_black.png");
+          background-size: contain;
+          background-repeat: no-repeat;
+
+          .imj_poweredby_software_text {
+            display: none;
+          }
+
+          .imj_poweredby_software_image {
+            a {
+              img {
+                visibility: hidden;
+              }
+            }
+          }
+        }
+
+        .imj_poweredby_institution {
+          float: left;
+          margin-left: 2%;
+          margin-right: 0;
+          margin-top: -2.5em;
+        }
+      }
+    }
+  }
+}
+
+// ICONS
+
+.fa-chevron-right:before {
+  content: "\f105" !important;
+}
+
+.fa-chevron-left:before {
+  content: "\f104" !important;
+}
+
+.fa-step-forward:before {
+  content: "\f101" !important;
+}
+
+.fa-step-backward:before {
+  content: "\f100" !important;
+}
+
+.fa-list-alt:before {
+  content: "\f00b" !important;
+}
+
+.fa {
+  color: $color-03;
+  &:hover {
+    color: $color-03;
+  }
+  cursor: pointer;
+}

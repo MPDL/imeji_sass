@@ -439,8 +439,8 @@ input.imj_resetButton,
 button.imj_resetButton,
 .imj_resetButton {
 	color: $button-reset-color;
-	background-color: $button-reset-bgcolor;
-	border: $button-reset-border;
+	background-color: $button-reset-bgcolor !important;
+	border: $button-reset-border !important;
 	cursor: pointer;
 	@include border-radius($border-radius-default);
 
@@ -921,6 +921,9 @@ select.imj_metadataEditText {
 		margin-left: 1.090909em;
 		white-space: nowrap;
 		display: inline-block;
+		position: relative;
+        top: 10px;
+        font-size: 1.2em;
 	}
 } // end of imj_simpleSearch
 
@@ -944,7 +947,7 @@ select.imj_metadataEditText {
 // ================================================== */
 .imj_submitPanel {
 	display: inline-block;
-	width: 100%;
+	width: 96%;
 	text-align: right;
 	margin-top: 1em;
 
@@ -1142,7 +1145,7 @@ select.imj_metadataEditText {
 // /* * Selection Info Panel (Image.xhtml)
 // ================================================== */
 .imj_selectionInfoPanel {
-	width: 100%;
+	width: 96%;
 	padding: 0 0%;
 	margin-bottom: 0.5em;
 
@@ -1176,7 +1179,7 @@ select.imj_metadataEditText {
 // ================================================== */
 .imj_paginator {	// used as container for different paginator types
 	width: 99%;
-	background-color: $color-11;
+	background-color: $color-10;
 	margin: 0;
 	padding: 0.636363em 1%;
 	text-align: center;
@@ -1758,7 +1761,7 @@ iframe#twitter-widget-0 div.root div.stream {
 		display: inline-block;
 		
 		&.imj_singleUpload {
-			border:3px dashed $color-11; 
+			border:3px dashed $color-13; 
 			line-height:10em; 
 			font-size:150%; 
 			text-align:center; 
