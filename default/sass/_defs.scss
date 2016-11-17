@@ -5,6 +5,7 @@
 	overflow: hidden;
 	width: $page-width;
 	max-width: $page-width-max;
+	min-width: $page-width-min;
 	height: auto !important;
 	min-height: 100%;
 	margin: 0 auto;

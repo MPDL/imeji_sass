@@ -58,7 +58,7 @@ label { min-width: 24%; }
 
 p { display: block; margin: 1em 0; }
 
-.imj_siteWrapper { overflow: hidden; width: 100%; max-width: 80%; height: auto !important; min-height: 100%; margin: 0 auto; margin-bottom: -2.001em; border-left: 0 dotted #04725d; border-right: 0 dotted #04725d; }
+.imj_siteWrapper { overflow: hidden; width: 100%; max-width: 80%; min-width: 82.0909em; height: auto !important; min-height: 100%; margin: 0 auto; margin-bottom: -2.001em; border-left: 0 dotted #04725d; border-right: 0 dotted #04725d; }
 .imj_siteWrapper .imj_siteHeader { padding: 0 3% 0 0; }
 .imj_siteWrapper .imj_siteHeader:after { clear: both; content: ""; content: 0 none; }
 .imj_siteWrapper .imj_siteHeader .imj_simpleSearchButtonSubmit { color: white; background-color: #04725d; border: solid #04725d 0; cursor: pointer; float: right; }
@@ -140,27 +140,27 @@ p { display: block; margin: 1em 0; }
 .imj_collapse, button.imj_collapse, input[type=button].imj_collapse, .imj_expand, button.imj_expand, input[type=button].imj_expand { color: #04725d; border: 0 none; background-color: transparent; cursor: pointer; }
 .imj_collapse:hover, button.imj_collapse:hover, input[type=button].imj_collapse:hover, .imj_expand:hover, button.imj_expand:hover, input[type=button].imj_expand:hover { color: #06a385; border: 0 none; background-color: transparent; }
 
-a.imj_cancelButton, input.imj_cancelButton, button.imj_cancelButton, .imj_cancelButton { margin: 0 1em; color: white; background-color: #FF7700; border: solid #FF7700 0; cursor: pointer; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; }
-a.imj_cancelButton:hover, input.imj_cancelButton:hover, button.imj_cancelButton:hover, .imj_cancelButton:hover { color: white; background-color: #ff9233; border: solid #ff9233 0; }
-a.imj_cancelButton:active, input.imj_cancelButton:active, button.imj_cancelButton:active, .imj_cancelButton:active { color: white; background-color: #ff9233; border: solid #ff9233 0; }
-a.imj_cancelButton:focus, input.imj_cancelButton:focus, button.imj_cancelButton:focus, .imj_cancelButton:focus { color: white; background-color: #ff9233; border: solid #ff9233 0; }
+a.imj_cancelButton, input.imj_cancelButton, button.imj_cancelButton, .imj_cancelButton { margin: 0 1em; color: white; background-color: #525252; border: solid #525252 0; cursor: pointer; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; }
+a.imj_cancelButton:hover, input.imj_cancelButton:hover, button.imj_cancelButton:hover, .imj_cancelButton:hover { color: white; background-color: #6c6c6c; border: solid #6c6c6c 0; }
+a.imj_cancelButton:active, input.imj_cancelButton:active, button.imj_cancelButton:active, .imj_cancelButton:active { color: white; background-color: #6c6c6c; border: solid #6c6c6c 0; }
+a.imj_cancelButton:focus, input.imj_cancelButton:focus, button.imj_cancelButton:focus, .imj_cancelButton:focus { color: white; background-color: #6c6c6c; border: solid #6c6c6c 0; }
 
-.imj_cancelLink { color: #FF7700; }
+.imj_cancelLink { color: #525252; }
 
 a.imj_submitButton, input.imj_submitButton, button.imj_submitButton, .imj_submitButton { margin-left: 1em; color: white; background-color: #04725d; border: solid transparent 0; cursor: pointer; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; }
 a.imj_submitButton:hover, input.imj_submitButton:hover, button.imj_submitButton:hover, .imj_submitButton:hover { color: white; background-color: #06a385; border: solid #06a385 0; }
 a.imj_submitButton:active, input.imj_submitButton:active, button.imj_submitButton:active, .imj_submitButton:active { color: white; background-color: #06a385; border: solid #06a385 0; }
 a.imj_submitButton:focus, input.imj_submitButton:focus, button.imj_submitButton:focus, .imj_submitButton:focus { color: white; background-color: #06a385; border: solid #06a385 0; }
 
-a.imj_disabledButton, input.imj_disabledButton, button.imj_disabledButton, .imj_disabledButton { margin-left: 1em; cursor: default; color: #FF7700; background-color: #222222; cursor: default; border: solid transparent 0; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; }
-a.imj_disabledButton:hover, input.imj_disabledButton:hover, button.imj_disabledButton:hover, .imj_disabledButton:hover { color: #FF7700; background-color: #222222; cursor: default; border: solid transparent 0; }
-a.imj_disabledButton:active, input.imj_disabledButton:active, button.imj_disabledButton:active, .imj_disabledButton:active { color: #FF7700; background-color: #222222; cursor: default; border: solid transparent 0; }
-a.imj_disabledButton:focus, input.imj_disabledButton:focus, button.imj_disabledButton:focus, .imj_disabledButton:focus { color: #FF7700; background-color: #222222; cursor: default; border: solid transparent 0; }
+a.imj_disabledButton, input.imj_disabledButton, button.imj_disabledButton, .imj_disabledButton { margin-left: 1em; cursor: default; color: #525252; background-color: #222222; cursor: default; border: solid transparent 0; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; }
+a.imj_disabledButton:hover, input.imj_disabledButton:hover, button.imj_disabledButton:hover, .imj_disabledButton:hover { color: #525252; background-color: #222222; cursor: default; border: solid transparent 0; }
+a.imj_disabledButton:active, input.imj_disabledButton:active, button.imj_disabledButton:active, .imj_disabledButton:active { color: #525252; background-color: #222222; cursor: default; border: solid transparent 0; }
+a.imj_disabledButton:focus, input.imj_disabledButton:focus, button.imj_disabledButton:focus, .imj_disabledButton:focus { color: #525252; background-color: #222222; cursor: default; border: solid transparent 0; }
 
-a.imj_resetButton, input.imj_resetButton, button.imj_resetButton, .imj_resetButton { color: white; background-color: #FF7700 !important; border: solid #FF7700 0 !important; cursor: pointer; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; }
-a.imj_resetButton:hover, input.imj_resetButton:hover, button.imj_resetButton:hover, .imj_resetButton:hover { color: white; background-color: #ff9233; border: solid #ff9233 0; }
-a.imj_resetButton:active, input.imj_resetButton:active, button.imj_resetButton:active, .imj_resetButton:active { color: white; background-color: #ff9233; border: solid #ff9233 0; }
-a.imj_resetButton:focus, input.imj_resetButton:focus, button.imj_resetButton:focus, .imj_resetButton:focus { color: white; background-color: #ff9233; border: solid #ff9233 0; }
+a.imj_resetButton, input.imj_resetButton, button.imj_resetButton, .imj_resetButton { color: white; background-color: #525252 !important; border: solid #525252 0 !important; cursor: pointer; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; }
+a.imj_resetButton:hover, input.imj_resetButton:hover, button.imj_resetButton:hover, .imj_resetButton:hover { color: white; background-color: #6c6c6c; border: solid #6c6c6c 0; }
+a.imj_resetButton:active, input.imj_resetButton:active, button.imj_resetButton:active, .imj_resetButton:active { color: white; background-color: #6c6c6c; border: solid #6c6c6c 0; }
+a.imj_resetButton:focus, input.imj_resetButton:focus, button.imj_resetButton:focus, .imj_resetButton:focus { color: white; background-color: #6c6c6c; border: solid #6c6c6c 0; }
 
 .imj_backButton { padding: 0 0.3333333em; margin-left: 1em; color: white; background-color: inherit; border-bottom: solid #04725d 0; cursor: pointer; -moz-border-radius: 0 0 2px 2px; -webkit-border-radius: 0; border-radius: 0 0 2px 2px; }
 .imj_backButton:hover { -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; color: white; background-color: #06a385; border: solid #06a385 0; }
@@ -890,7 +890,7 @@ label { min-width: 24%; }
 
 p { display: block; margin: 1em 0; }
 
-.imj_siteWrapper { overflow: hidden; width: 100%; max-width: 80%; height: auto !important; min-height: 100%; margin: 0 auto; margin-bottom: -2.001em; border-left: 0 dotted #04725d; border-right: 0 dotted #04725d; }
+.imj_siteWrapper { overflow: hidden; width: 100%; max-width: 80%; min-width: 82.0909em; height: auto !important; min-height: 100%; margin: 0 auto; margin-bottom: -2.001em; border-left: 0 dotted #04725d; border-right: 0 dotted #04725d; }
 .imj_siteWrapper .imj_siteHeader { padding: 0 3% 0 0; }
 .imj_siteWrapper .imj_siteHeader:after { clear: both; content: ""; content: 0 none; }
 .imj_siteWrapper .imj_siteHeader .imj_simpleSearchButtonSubmit { color: white; background-color: #04725d; border: solid #04725d 0; cursor: pointer; float: right; }
@@ -972,27 +972,27 @@ p { display: block; margin: 1em 0; }
 .imj_collapse, button.imj_collapse, input[type=button].imj_collapse, .imj_expand, button.imj_expand, input[type=button].imj_expand { color: #04725d; border: 0 none; background-color: transparent; cursor: pointer; }
 .imj_collapse:hover, button.imj_collapse:hover, input[type=button].imj_collapse:hover, .imj_expand:hover, button.imj_expand:hover, input[type=button].imj_expand:hover { color: #06a385; border: 0 none; background-color: transparent; }
 
-a.imj_cancelButton, input.imj_cancelButton, button.imj_cancelButton, .imj_cancelButton { margin: 0 1em; color: white; background-color: #FF7700; border: solid #FF7700 0; cursor: pointer; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; }
-a.imj_cancelButton:hover, input.imj_cancelButton:hover, button.imj_cancelButton:hover, .imj_cancelButton:hover { color: white; background-color: #ff9233; border: solid #ff9233 0; }
-a.imj_cancelButton:active, input.imj_cancelButton:active, button.imj_cancelButton:active, .imj_cancelButton:active { color: white; background-color: #ff9233; border: solid #ff9233 0; }
-a.imj_cancelButton:focus, input.imj_cancelButton:focus, button.imj_cancelButton:focus, .imj_cancelButton:focus { color: white; background-color: #ff9233; border: solid #ff9233 0; }
+a.imj_cancelButton, input.imj_cancelButton, button.imj_cancelButton, .imj_cancelButton { margin: 0 1em; color: white; background-color: #525252; border: solid #525252 0; cursor: pointer; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; }
+a.imj_cancelButton:hover, input.imj_cancelButton:hover, button.imj_cancelButton:hover, .imj_cancelButton:hover { color: white; background-color: #6c6c6c; border: solid #6c6c6c 0; }
+a.imj_cancelButton:active, input.imj_cancelButton:active, button.imj_cancelButton:active, .imj_cancelButton:active { color: white; background-color: #6c6c6c; border: solid #6c6c6c 0; }
+a.imj_cancelButton:focus, input.imj_cancelButton:focus, button.imj_cancelButton:focus, .imj_cancelButton:focus { color: white; background-color: #6c6c6c; border: solid #6c6c6c 0; }
 
-.imj_cancelLink { color: #FF7700; }
+.imj_cancelLink { color: #525252; }
 
 a.imj_submitButton, input.imj_submitButton, button.imj_submitButton, .imj_submitButton { margin-left: 1em; color: white; background-color: #04725d; border: solid transparent 0; cursor: pointer; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; }
 a.imj_submitButton:hover, input.imj_submitButton:hover, button.imj_submitButton:hover, .imj_submitButton:hover { color: white; background-color: #06a385; border: solid #06a385 0; }
 a.imj_submitButton:active, input.imj_submitButton:active, button.imj_submitButton:active, .imj_submitButton:active { color: white; background-color: #06a385; border: solid #06a385 0; }
 a.imj_submitButton:focus, input.imj_submitButton:focus, button.imj_submitButton:focus, .imj_submitButton:focus { color: white; background-color: #06a385; border: solid #06a385 0; }
 
-a.imj_disabledButton, input.imj_disabledButton, button.imj_disabledButton, .imj_disabledButton { margin-left: 1em; cursor: default; color: #FF7700; background-color: #222222; cursor: default; border: solid transparent 0; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; }
-a.imj_disabledButton:hover, input.imj_disabledButton:hover, button.imj_disabledButton:hover, .imj_disabledButton:hover { color: #FF7700; background-color: #222222; cursor: default; border: solid transparent 0; }
-a.imj_disabledButton:active, input.imj_disabledButton:active, button.imj_disabledButton:active, .imj_disabledButton:active { color: #FF7700; background-color: #222222; cursor: default; border: solid transparent 0; }
-a.imj_disabledButton:focus, input.imj_disabledButton:focus, button.imj_disabledButton:focus, .imj_disabledButton:focus { color: #FF7700; background-color: #222222; cursor: default; border: solid transparent 0; }
+a.imj_disabledButton, input.imj_disabledButton, button.imj_disabledButton, .imj_disabledButton { margin-left: 1em; cursor: default; color: #525252; background-color: #222222; cursor: default; border: solid transparent 0; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; }
+a.imj_disabledButton:hover, input.imj_disabledButton:hover, button.imj_disabledButton:hover, .imj_disabledButton:hover { color: #525252; background-color: #222222; cursor: default; border: solid transparent 0; }
+a.imj_disabledButton:active, input.imj_disabledButton:active, button.imj_disabledButton:active, .imj_disabledButton:active { color: #525252; background-color: #222222; cursor: default; border: solid transparent 0; }
+a.imj_disabledButton:focus, input.imj_disabledButton:focus, button.imj_disabledButton:focus, .imj_disabledButton:focus { color: #525252; background-color: #222222; cursor: default; border: solid transparent 0; }
 
-a.imj_resetButton, input.imj_resetButton, button.imj_resetButton, .imj_resetButton { color: white; background-color: #FF7700 !important; border: solid #FF7700 0 !important; cursor: pointer; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; }
-a.imj_resetButton:hover, input.imj_resetButton:hover, button.imj_resetButton:hover, .imj_resetButton:hover { color: white; background-color: #ff9233; border: solid #ff9233 0; }
-a.imj_resetButton:active, input.imj_resetButton:active, button.imj_resetButton:active, .imj_resetButton:active { color: white; background-color: #ff9233; border: solid #ff9233 0; }
-a.imj_resetButton:focus, input.imj_resetButton:focus, button.imj_resetButton:focus, .imj_resetButton:focus { color: white; background-color: #ff9233; border: solid #ff9233 0; }
+a.imj_resetButton, input.imj_resetButton, button.imj_resetButton, .imj_resetButton { color: white; background-color: #525252 !important; border: solid #525252 0 !important; cursor: pointer; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; }
+a.imj_resetButton:hover, input.imj_resetButton:hover, button.imj_resetButton:hover, .imj_resetButton:hover { color: white; background-color: #6c6c6c; border: solid #6c6c6c 0; }
+a.imj_resetButton:active, input.imj_resetButton:active, button.imj_resetButton:active, .imj_resetButton:active { color: white; background-color: #6c6c6c; border: solid #6c6c6c 0; }
+a.imj_resetButton:focus, input.imj_resetButton:focus, button.imj_resetButton:focus, .imj_resetButton:focus { color: white; background-color: #6c6c6c; border: solid #6c6c6c 0; }
 
 .imj_backButton { padding: 0 0.3333333em; margin-left: 1em; color: white; background-color: inherit; border-bottom: solid #04725d 0; cursor: pointer; -moz-border-radius: 0 0 2px 2px; -webkit-border-radius: 0; border-radius: 0 0 2px 2px; }
 .imj_backButton:hover { -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; color: white; background-color: #06a385; border: solid #06a385 0; }
@@ -1690,9 +1690,9 @@ html body button { border: none; background-color: #04725d; font-size: 14px; col
 html body button:hover { background-color: #06a385; }
 html body .imj_submitButton, html body .plupload_button { border: none; background-color: #04725d; font-size: 14px; color: white; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; margin-right: 10px; }
 html body .imj_submitButton:hover, html body .plupload_button:hover { background-color: #06a385; }
-html body .imj_cancelButton, html body .imj_resetButton { border: none; background-color: #04725d; font-size: 14px; color: white; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; background-color: #FF7700 !important; display: inherit; height: 100%; padding-top: 10px; padding-bottom: 10px; font-size: 14px !important; }
+html body .imj_cancelButton, html body .imj_resetButton { border: none; background-color: #04725d; font-size: 14px; color: white; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; background-color: #525252 !important; display: inherit; height: 100%; padding-top: 10px; padding-bottom: 10px; font-size: 14px !important; }
 html body .imj_cancelButton:hover, html body .imj_resetButton:hover { background-color: #06a385; }
-html body .imj_cancelButton:hover, html body .imj_resetButton:hover { background-color: #ff9233 !important; }
+html body .imj_cancelButton:hover, html body .imj_resetButton:hover { background-color: #6c6c6c !important; }
 html body .imj_submitPanel { display: inline-block !important; }
 html body .imj_modalDialogBackground { background: rgba(255, 255, 255, 0.6); }
 html body .imj_modalDialogBox .imj_confirmationText { font-size: 1.2em; }
@@ -1700,7 +1700,7 @@ html body .imj_siteWrapper { border: none; margin-bottom: 0; }
 html body .imj_siteWrapper .imj_logo { background-color: rgba(255, 255, 255, 0.85); background-position: center; width: 260px; padding: 15px 10px 15px 10px; }
 html body .imj_siteWrapper .imj_siteHeader { padding: 0; margin-bottom: 10px; }
 html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine { margin: 0; height: 40px; max-width: 70%; width: inherit; float: right; padding: 10px 20px 10px 10px; background: rgba(255, 255, 255, 0.85); }
-html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine .imj_metaMenuItemsAlign { float: left; margin-top: 10px; }
+html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine .imj_metaMenuItemsAlign { float: left; margin-top: 10px; vertical-align: text-top; }
 html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine .imj_metaMenuItemsAlign a { font-weight: 400; color: #04725d; text-transform: uppercase; position: relative; margin-left: 20px; }
 html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine .imj_metaMenuItemsAlign a:hover { color: #06a385; }
 html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine .imj_metaMenuItemsAlign .imj_metaMenuSeparator { width: 0; margin: 0; padding: 0; }
@@ -1713,12 +1713,12 @@ html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine .imj_
 html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine .imj_metaMenuItemsAlign input:-moz-placeholder { /* Firefox 18- */ text-transform: uppercase; font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif; }
 html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine .imj_metaMenuItemsAlign input[type="submit"] { border: none; background-color: #04725d; font-size: 14px; color: white; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; width: 118px; position: relative; top: 0; }
 html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine .imj_metaMenuItemsAlign input[type="submit"]:hover { background-color: #06a385; }
-html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine .imj_metaMenuItemsAlign .imj_customSelectbox { border: none; padding: 0; margin-left: 20px; margin-top: -2px; }
+html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine .imj_metaMenuItemsAlign .imj_customSelectbox { border: none; padding: 0; vertical-align: text-top; margin-left: 20px; }
 html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine .imj_metaMenuItemsAlign .imj_customSelectbox .imj_showSelection { text-transform: uppercase; }
 html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine .imj_metaMenuItemsAlign .imj_customSelectbox .imj_showSelection .imj_selectionText { width: auto !important; padding: 0; margin: 0; color: #04725d; }
 html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine .imj_metaMenuItemsAlign .imj_customSelectbox .imj_showSelection .imj_selectionText:hover { color: #04725d; }
 html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine .imj_metaMenuItemsAlign .imj_customSelectbox .imj_showSelection a { margin: 0; }
-html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine .imj_metaMenuItemsAlign .imj_customSelectbox select { text-transform: uppercase; cursor: pointer; }
+html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine .imj_metaMenuItemsAlign .imj_customSelectbox select { text-transform: uppercase; cursor: pointer; margin: 0; }
 html body .imj_siteWrapper .imj_siteHeader .imj_siteHeaderMenuSearchSection { height: 40px; padding: 10px 20px 10px 20px; background-color: rgba(255, 255, 255, 0.85); width: inherit; margin-top: 40px; }
 html body .imj_siteWrapper .imj_siteHeader .imj_siteHeaderMenuSearchSection .imj_mainMenuStandardItem { background: none; margin-right: 1.1em; margin-top: 10px; }
 html body .imj_siteWrapper .imj_siteHeader .imj_siteHeaderMenuSearchSection .imj_mainMenuStandardItem a { font-weight: 400; color: #04725d; font-weight: 600; }
@@ -1736,7 +1736,8 @@ html body .imj_siteWrapper .imj_siteHeader .imj_siteHeaderMenuSearchSection .imj
 html body .imj_siteWrapper .imj_siteHeader .imj_siteHeaderMenuSearchSection .imj_simpleSearch::before { content: "\f002"; font-size: 1.4em; font-family: 'fontAwesome'; color: black; left: 35px; top: 4px; position: relative; }
 html body .imj_siteWrapper .imj_siteHeader .imj_siteHeaderMenuSearchSection .imj_simpleSearch .imj_simpleSearchButtonSubmit { border: none; background-color: #04725d; font-size: 14px; color: white; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; }
 html body .imj_siteWrapper .imj_siteHeader .imj_siteHeaderMenuSearchSection .imj_simpleSearch .imj_simpleSearchButtonSubmit:hover { background-color: #06a385; }
-html body .imj_siteWrapper .imj_statusHeaderArea { padding: 0; margin: 0; height: 0; z-index: 100; position: relative; right: 3%; }
+html body .imj_siteWrapper .imj_statusHeaderArea { padding: 0; margin: 0; height: 0; position: relative; right: 3%; }
+html body .imj_siteWrapper .imj_statusHeaderArea .imj_menuBody { white-space: nowrap; }
 html body .imj_siteWrapper .imj_siteContentHeadline { background-color: rgba(255, 255, 255, 0.85); padding-left: 25px; margin: 0; min-width: 100%; }
 html body .imj_siteWrapper #actionsMenuArea { float: left; width: 100%; background-color: rgba(255, 255, 255, 0.85); margin-top: 0; padding: 0px 20px 0 20px; }
 html body .imj_siteWrapper #actionsMenuArea p, html body .imj_siteWrapper #actionsMenuArea a, html body .imj_siteWrapper #actionsMenuArea span { font-size: 1.2em; }
@@ -1744,7 +1745,7 @@ html body .imj_siteWrapper #actionsMenuArea .imj_contentMenu { margin: 0; }
 html body .imj_siteWrapper #actionsMenuArea .imj_contentMenu .imj_contentMenuItem { font-weight: 600; }
 html body .imj_siteWrapper #actionsMenuArea .imj_contentMenu .imj_contentMenuItem:hover { background: transparent; }
 html body .imj_siteWrapper #actionsMenuArea .imj_contentSubMenu { width: 96%; padding: 0; height: 15px; border-bottom: 1px solid #04725d; padding-bottom: 10px; padding-top: 10px; margin-top: 20px; }
-html body .imj_siteWrapper .imj_mainContentWrapper { width: 100%; padding: 20px; margin-top: 0; padding-bottom: 2em; margin-bottom: 30px; background-color: rgba(255, 255, 255, 0.85); }
+html body .imj_siteWrapper .imj_mainContentWrapper { height: 100%; min-height: 100%; width: 100%; padding: 20px; margin-top: 0; padding-bottom: 2em; margin-bottom: 30px; background-color: rgba(255, 255, 255, 0.85); }
 html body .imj_siteWrapper .imj_mainContentWrapper hr { border-style: none; width: 100%; height: 1px !important; background: #222222; border-width: 1px; }
 html body .imj_siteWrapper .imj_mainContentWrapper h3 { padding-left: 0 !important; font-size: 1.3em; line-height: 1.4em; font-weight: 600; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_paginator { background-color: rgba(255, 255, 255, 0); font-size: 110% !important; width: 96%; padding-left: 0; padding-right: 0; margin-top: 0; border-top: 1px solid #04725d; }
