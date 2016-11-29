@@ -6,6 +6,16 @@
 
 html body {
 
-  background: url("../images/hg_pic_v2.jpg");
+	background: url("../images/hg_pic_v2.jpg");
+	.imj_poweredby_software_image {
+		background: url("../images/imeji_logo_black.png");
+		background-size: contain;
+		background-repeat: no-repeat;
+		img{
+			visibility:hidden
+		}
+	}
 
-  }
+}
+
+ 

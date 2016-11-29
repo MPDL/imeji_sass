@@ -29,18 +29,21 @@
 	//BACKGROUND MAIN CONTENT
 	$color-10: #313131;	// grey
 	
+	//HIGHLIGHTED CONTENT
+	$color-11: lighten(#444444, 10%);	// grey
+	
 	//POP-UP MENUS & ACTION MENU
 	$color-13: #444444; //lightgrey
 	$color-14: #313131; //border
-
+	
 // IMPORTS: e.g. font families or other foreign css defintions
 // ATTENTION css resets and a lot of other things are given bei compass, take notice of _combinedStyles.scss
 @import url("http://fonts.googleapis.com/css?family=Open+Sans");
 
 
 // ICONS
-$icon-path: "../icons/";	// relative path to css source
-// $icon-path: "/imeji/resources/imj_iconset/";	// path for imeji software resources - linked hard
+//$icon-path: "../icons/";	// relative path to css source
+$icon-path: "/imeji/resources/imj_iconset/";	// path for imeji software resources - linked hard
 $icon-colorfolder-default: "D45A00/";
 $icon-colorfolder-hover: "101010/";
 $icon-colorfolder-disabled: "BBBBBB/";
@@ -49,7 +52,7 @@ $icon-colorfolder-error: "D80000/";
 
 
 // LOGO
-$logo-path: "../logo/";
+$logo-path: $icon-path;
 $logo-file: "logo_imeji.gif";
 $logo-position-horizontal: 0em;
 $logo-position-vertical: 0;
@@ -265,9 +268,9 @@ $highlightarea-bgcolor-hover: $color-13;
 // /* highlights for metadata profile editing
 $highlightarea-border-style-mdprofile: 2px dashed $color-14;
 $highlightarea-bgcolor-mdprofile: $color-13;
-$highlightarea-bgcolor-hover-mdprofile: lighten($color-13, 14%);
+$highlightarea-bgcolor-hover-mdprofile: $color-11;
 
-$highlightarea-tooltip-bgcolor-hover: lighten($color-13, 14%);
+$highlightarea-tooltip-bgcolor-hover: $color-11;
 
 
 
@@ -342,7 +345,7 @@ $mdprofilelist-separatortop-border-style: $border-style-default;
 $mdprofilelist-separatortop-border-style-inplace: $border-style-dashed;
 // METADATA EDITING
 $mdprofilelist-dropmd-border-color-active: $link-color !important;
-$mdprofilelist-drop-bgcolor-hover: $link-color-disabled !important;
+$mdprofilelist-drop-bgcolor-hover: $color-11 !important;
 
 
 

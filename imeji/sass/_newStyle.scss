@@ -4,8 +4,6 @@
 @import "../../default/sass/_combinedStyles.scss";
 
 html body {
-
-  background: url("../images/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -266,7 +264,8 @@ html body {
             @include input-style;
             border-radius: 2px 0 0 2px;
             height: 35px;
-            padding-left: 35px;
+            //padding-left: 35px;
+			padding: 0 0 0 35px;
           }
           &::before {
             content: "\f002";
@@ -1241,18 +1240,6 @@ html body {
         border: 1px dashed $color-03;
       }
 
-      .imj_modalDialogBox {
-        font-size: 1.2em;
-        background: white;
-        border-radius: 2px;
-        border: 1px solid $color-01;
-        min-width: 400px;
-        left: 720px;
-        .imj_submitPanel {
-          display: inline-block !important;
-        }
-      }
-
       .imj_administrationTiledList {
         a {
           font-size: 0.9em;
@@ -1475,10 +1462,6 @@ html body {
         }
 
         .imj_tileItem {
-
-          width: 158px;
-          margin: 0;
-
           .imj_tooltip {
             box-shadow: none;
             background: $color-13;
@@ -1568,7 +1551,7 @@ html body {
         background: $color-13;
       }
     }
-
+	
     .imj_listHeader {
       .imj_active {
         background: transparent;
@@ -1593,14 +1576,17 @@ html body {
     }
 
     .imj_searchQueryDisplay {
-      margin: 0!important;
-      padding: 3px 25px 5px 25px !important;
+      margin: 0 0 10px 0;
+      padding: 5px 25px 5px 25px !important;
 	  float: left;
 	  background-color: $color-10;
-      width: 100%;
+      width: 96%;
       .imj_submitButton {
         display: inline;
       }
+	  .imj_searchQueryText{
+		color: $color-03;
+	  }
     }
 
     .imj_menuBody {
@@ -1631,41 +1617,6 @@ html body {
       //height: auto;
       min-height: 3em;
       background-color: $color-10;
-
-      .imj_startpageFooterLogos {
-
-        margin: auto;
-        padding-top: 10px;
-
-        .imj_poweredby_software {
-          float: right;
-          margin-left: 0;
-          margin-right: 2%;
-          padding-right: 50px;
-          background: url("../images/imeji_logo_black.png");
-          background-size: contain;
-          background-repeat: no-repeat;
-
-          .imj_poweredby_software_text {
-            display: none;
-          }
-
-          .imj_poweredby_software_image {
-            a {
-              img {
-                visibility: hidden;
-              }
-            }
-          }
-        }
-
-        .imj_poweredby_institution {
-          float: left;
-          margin-left: 2%;
-          margin-right: 0;
-          margin-top: -2.5em;
-        }
-      }
     }
   }
 }
@@ -1704,10 +1655,15 @@ html body {
 	.imj_menuSimpleSearch{
 		width: auto;
 		min-width: 0;
-		font-size: 1.2em;
+		font-size: 1em;
 		li{
 			border-top: 1px dashed $color-14;
 			padding: 0.5em 1em;
+			text-transform: uppercase;
+			cursor: pointer !important;
+			&:hover > a{
+				color: $color-01;
+			}
 		 }
 		.imj_simpleSearchInput {
 			width: 200em !important;
@@ -1746,15 +1702,29 @@ html body {
 
 	li {
 		line-height: 175%;
-		padding: 0.272727em 1em;
-		&:hover {
-			 background-color: $color-14;
-		}	
+		padding: 0.272727em 1em;	
 	}
 	.hovered{
-		 background-color: $color-14;
+		 background-color: $color-11;
+		 &:hover {
+			background-color: $color-11 !important;
+		}
    }	
 }
+
+.imj_modalDialogBox {
+	background-color: color-13;
+	font-size: 1.2em;
+	border: 1px solid $color-14;
+	min-width: 400px;
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	box-shadow: none !important;
+	.imj_submitPanel {
+	  display: inline-block !important;
+	}
+  }
+
 // ICONS
 
 .fa-chevron-right:before {

@@ -22,6 +22,9 @@
 	//BACKGROUND MAIN CONTENT
 	$color-10: rgba(#fff,0.95);	// grey
 	
+	//HIGHLIGHTED CONTENT
+	$color-11: darken(#ffffff, 30%);	// grey
+	
 	//POP-UP MENUS & ACTION MENU
 	$color-13: #ffffff; //lightgrey
 	$color-14: #C8C8C9; //border
@@ -257,9 +260,9 @@ $highlightarea-bgcolor-hover: $color-13;
 // /* highlights for metadata profile editing
 $highlightarea-border-style-mdprofile: 2px dashed $color-14;
 $highlightarea-bgcolor-mdprofile: $color-13;
-$highlightarea-bgcolor-hover-mdprofile: lighten($color-13, 14%);
+$highlightarea-bgcolor-hover-mdprofile: $color-11;
 
-$highlightarea-tooltip-bgcolor-hover: lighten($color-13, 14%);
+$highlightarea-tooltip-bgcolor-hover: $color-11;
 
 
 
@@ -334,7 +337,7 @@ $mdprofilelist-separatortop-border-style: $border-style-default;
 $mdprofilelist-separatortop-border-style-inplace: $border-style-dashed;
 // METADATA EDITING
 $mdprofilelist-dropmd-border-color-active: $link-color !important;
-$mdprofilelist-drop-bgcolor-hover: $link-color-disabled !important;
+$mdprofilelist-drop-bgcolor-hover: $color-11!important;
 
 
 
