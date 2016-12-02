@@ -1590,7 +1590,7 @@ html body {
       padding: 5px 25px 5px 25px !important;
 	  float: left;
 	  background-color: $color-10;
-      width: 96%;
+      width: 99%;
       .imj_submitButton {
         display: inline;
       }
@@ -1625,6 +1625,9 @@ html body {
       bottom: 0;
       height: $footer-height;
       background-color: $color-10 !important;
+	  .imj_poweredby_institution {
+		margin-top: 0 !important;
+	  }
     }
   }
 }
