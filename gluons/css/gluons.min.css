@@ -1,7 +1,22 @@
+body:before{white-space:pre;font-family:monospace;content:"Error: File to import not found or unreadable: compass/reset.\A        Load path: C:/Users/saquet/Documents/tomcat/8.5.4/webapps/styles/gluons/sass\A         on line 2 of C:/Users/saquet/Documents/tomcat/8.5.4/webapps/styles/default/sass/_combinedStyles.scss\A         from line 4 of C:/Users/saquet/Documents/tomcat/8.5.4/webapps/styles/imeji/sass/_combinedNewStyle.scss\A         from line 5 of C:\Users\saquet\Documents\tomcat\8.5.4\webapps\styles\gluons\sass\gluons.scss\A \A 1: // VARIOUS VARIABLES, which not match with other components\A 2: // IMPORTS, don't change the order of imports, because they are depends another\A 3: \A 4: \A 5: // VARIOUS VARIABLES, which not match with other components
+// IMPORTS, don't change the order of imports, because they are depends another
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:300italic,400,200,200italic,300,600,400italic,600italic,700italic,700,900);
+// IMPORTS, don't change the order of imports, because they are depends another
+
+
+
+
+
+
+
+
+
+ // includes the extension for font awesome
+
 // VARIOUS VARIABLES, which not match with other components
 // IMPORTS, don't change the order of imports, because they are depends another
-@import url("http://fonts.googleapis.com/css?family=Titillium+Web:300italic,400,200,200italic,300,600,400italic,600italic,700italic,700,900");
-@import "../../default/sass/_combinedStyles.scss";
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:300italic,400,200,200italic,300,600,400italic,600italic,700italic,700,900);
+
 
 html body {
   background-size: cover;
@@ -40,22 +55,22 @@ html body {
       outline: none;
     }
     &::-webkit-input-placeholder {
-      /* Chrome/Opera/Safari */
+      
       text-transform: uppercase;
       font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif;
     }
     &::-moz-placeholder {
-      /* Firefox 19+ */
+      
       text-transform: uppercase;
       font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif;
     }
     &:-ms-input-placeholder {
-      /* IE 10+ */
+      
       text-transform: uppercase;
       font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif;
     }
     &:-moz-placeholder {
-      /* Firefox 18- */
+      
       text-transform: uppercase;
       font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif;
     }
@@ -90,15 +105,15 @@ html body {
    @include input-style;
   }
 
-  input[type="submit"] {
+  input[type=submit] {
     @include action-button;
   }
 
-  input[type="file"] {
+  input[type=file] {
     @include action-button;
   }
 
-  input[type="radio"], input[type="checkbox"] {
+  input[type=radio], input[type=checkbox] {
     height: inherit;
   }
 
@@ -141,7 +156,7 @@ html body {
 
   .imj_allContentWrapper{
 		min-height: 100vh !important;
-		margin-bottom: - ($footer-padding * 2 + $footer-height) !important;
+		margin-bottom: - ($footer-padding*2 + $footer-height) !important;
 		&:after{
 			content: "";
 			display: block;
@@ -198,7 +213,7 @@ html body {
             margin-right: 10px;
           }
 
-          input[type="submit"] {
+          input[type=submit] {
             @include action-button;
             width: 118px;
             position: relative;
@@ -280,7 +295,7 @@ html body {
           &::before {
             content: "\f002";
             font-size: 1.4em;
-            font-family: 'fontAwesome';
+            font-family: fontAwesome;
             color: darken($color-01, 20);
             left: 35px;
             top: 4px;
@@ -357,6 +372,10 @@ html body {
       //max-height: 45vh;
       margin-top: 0;
       padding-bottom: 2em;
+      margin-bottom: 30px;
+	  //margin-bottom : calc(100% - 60px - $logo-height - 30px - 40px - 40px - 10px - 100vh);
+	  //margin-bottom : calc(100% - 60px);
+      //overflow-y: auto;
 	  background-color: $color-10;
 	  
 
@@ -427,7 +446,7 @@ html body {
             }
             cursor: pointer;
           }
-          input[type="submit"] {
+          input[type=submit] {
             &:hover {
               background: transparent;
             }
@@ -485,7 +504,7 @@ html body {
               font-size: 14px;
             }
           }
-          input[type="text"] {
+          input[type=text] {
             height: 23px !important;
           }
           .imj_metadataSet{
@@ -511,7 +530,7 @@ html body {
             }
           }
         }
-        input[type="text"], select {
+        input[type=text], select {
           font-size: 14px;
         }
       }
@@ -564,7 +583,7 @@ html body {
             }
 
           }
-          input[type="text"], input[type="select"], input[type="password"] {
+          input[type=text], input[type=select], input[type=password] {
             @include input-style;
             height: 35px;
           }
@@ -576,7 +595,7 @@ html body {
             }
           }
           .imj_fileTypeConfigList {
-            input[type="text"] {
+            input[type=text] {
               height: 25px;
               margin-right: 10px;
               margin-top: 10px;
@@ -597,7 +616,7 @@ html body {
         label {
           font-size: 1.1em;
         }
-        input[type="text"] {
+        input[type=text] {
           @include input-style;
           height: 35px;
         }
@@ -623,7 +642,7 @@ html body {
          width: 72%;
           max-width: 72%;
           margin-left: 0;
-          input[type="text"] {
+          input[type=text] {
             height: 25px;
             float: left;
             margin-left: -5px;
@@ -840,7 +859,7 @@ html body {
           width: 94%;
 
           .imj_simpleSearch {
-            input[type="text"] {
+            input[type=text] {
               @include action-button;
             }
           }
@@ -1069,7 +1088,7 @@ html body {
           }
         }
 
-        input[type="text"] {
+        input[type=text] {
           width: 400px;
           height: 25px;
           min-width: inherit;
@@ -1321,7 +1340,7 @@ html body {
           height: 35px;
         }
 
-        input[type="checkbox"],input[type="radio"] {
+        input[type=checkbox],input[type=radio] {
           margin: 5px;
           height: inherit;
         }
@@ -1389,7 +1408,7 @@ html body {
       }
 
       #registerArea {
-        input[type="submit"] {
+        input[type=submit] {
           @include action-button;
         }
         font-size: 1.2em;
@@ -1761,3 +1780,5 @@ html body {
   }
   cursor: pointer;
 }
+
+\A 6: \A 7: html body {"}

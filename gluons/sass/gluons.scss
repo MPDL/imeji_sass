@@ -5,6 +5,10 @@
 @import "../../imeji/sass/_combinedNewStyle.scss";
 
 html body {
+	.imj_allContentWrapper{
+		background-color: $color-10;
+	}
+	
 	.imj_siteHeader{
 		background-image: url('../backgrounds/rect_blue_long.png');
 		background-size: cover;
@@ -12,6 +16,20 @@ html body {
 		.imj_logo {
 			background-color: transparent;
 			background-size: auto 10em;
+		}
+		
+		a, .imj_selectionText{
+			color: $color-19 !important;
+		}
+		
+		input{
+			color: #fff !important;
+		}
+		
+		.imj_menuSimpleSearch{
+			a{
+				color: $color-03 !important;
+			}
 		}
 		
 		.imj_metaMenuStandardSingleLine{
@@ -23,6 +41,15 @@ html body {
 				}
 			}
 			
+		}	
+		.imj_siteHeaderMenuSearchSection{
+			background-color: transparentize($color-04, 0.3) !important;
+			.imj_active {
+				background-color: $color-19 !important;
+				a {
+					color: $color-04 !important;
+				}
+			}
 		}
 	}
 	
@@ -41,12 +68,46 @@ html body {
 			font-weight: bold;
 		}
 	}
-	.imj_siteFooter{
-		background-image: url('../backgrounds/rect_blue_footer.png');
-		background-repeat: repeat-x;
-		background-position: left top;
-		color: #fff;
+	
+
+	.imj_active {
+		background-color: $color-03 !important;
+		a {
+		color: $color-10;
+		}
 	}
 	
 	
+	.imj_siteFooter{
+		background-image: url('../backgrounds/rect_blue_footer.png');
+		background-size: cover;
+		background-position: right top;
+		color: #fff;
+		margin-top: -30px;
+		.imj_poweredby_software{
+			float:right;
+		}
+		.imj_poweredby_institution {	
+			float:left;
+			margin-top: ($footer-padding + $footer-height) - 85px !important;
+			background-color: #e4e4e4;
+			border-top-right-radius: 30px;
+			margin-left: 2%;
+			height: 85px;
+			width: 215px;
+			a{
+				img{
+					display:none;
+				}
+				background-image: url("https://www.mpdl.mpg.de/templates/mpdl/images/mpdl-logo@2x.png");
+				margin-left: 3px;
+				margin-top: 30px;
+				background-repeat: no-repeat;
+				background-size: 175px 48px;
+				display: inline-block;
+				height: 48px;
+				width: 175px;
+			}
+		}
+	}
 }
