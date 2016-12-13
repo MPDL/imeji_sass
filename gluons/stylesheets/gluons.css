@@ -5851,7 +5851,8 @@ html body {
       padding: 20px;
       margin-top: 0;
       padding-bottom: 2em;
-      background-color: #E9E9E9; }
+      background-color: #E9E9E9;
+      margin-bottom: 15px; }
       html body .imj_siteWrapper .imj_mainContentWrapper hr {
         border-style: none;
         width: 100%;
@@ -6926,7 +6927,7 @@ html body {
       left: 0;
       bottom: 0;
       height: 50px;
-      background-color: #E9E9E9 !important; }
+      background-color: #E9E9E9; }
       html body .imj_siteWrapper .imj_siteFooter .imj_poweredby_institution {
         margin-top: 0; }
 

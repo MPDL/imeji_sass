@@ -358,6 +358,7 @@ html body {
       margin-top: 0;
       padding-bottom: 2em;
 	  background-color: $color-10;
+	  margin-bottom: 15px;
 	  
 
       p, a, span, ul, label {
@@ -1620,7 +1621,7 @@ html body {
       left: 0;
       bottom: 0;
       height: $footer-height;
-      background-color: $color-10 !important;
+      background-color: $color-10;
 	  .imj_poweredby_institution {
 		margin-top: 0;
 	  }
