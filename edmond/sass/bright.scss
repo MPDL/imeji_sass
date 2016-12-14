@@ -6,11 +6,14 @@
 
 html body {
 
-	background: url("../images/hg_pic_v2.jpg") no-repeat center center fixed;;
+	background: url("../images/hg_pic_v2.jpg") no-repeat center top fixed;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+	.imj_logo{
+		background-position-x: center !important;
+	}
 	.imj_poweredby_software_image {
 		background: url("../images/imeji_logo_black.png");
 		background-size: contain;
