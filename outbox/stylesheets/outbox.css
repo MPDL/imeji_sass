@@ -140,27 +140,27 @@ p { display: block; margin: 1em 0; }
 .imj_collapse, button.imj_collapse, input[type=button].imj_collapse, .imj_expand, button.imj_expand, input[type=button].imj_expand { color: #990000; border: 0 none; background-color: transparent; cursor: pointer; }
 .imj_collapse:hover, button.imj_collapse:hover, input[type=button].imj_collapse:hover, .imj_expand:hover, button.imj_expand:hover, input[type=button].imj_expand:hover { color: #D45A00; border: 0 none; background-color: transparent; }
 
-a.imj_cancelButton, input.imj_cancelButton, button.imj_cancelButton, .imj_cancelButton { margin: 0 1em; color: white; background-color: #FF9000; border: solid #FF9000 0; cursor: pointer; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; }
-a.imj_cancelButton:hover, input.imj_cancelButton:hover, button.imj_cancelButton:hover, .imj_cancelButton:hover { color: white; background-color: #ffa633; border: solid #ffa633 0; }
-a.imj_cancelButton:active, input.imj_cancelButton:active, button.imj_cancelButton:active, .imj_cancelButton:active { color: white; background-color: #ffa633; border: solid #ffa633 0; }
-a.imj_cancelButton:focus, input.imj_cancelButton:focus, button.imj_cancelButton:focus, .imj_cancelButton:focus { color: white; background-color: #ffa633; border: solid #ffa633 0; }
+a.imj_cancelButton, input.imj_cancelButton, button.imj_cancelButton, .imj_cancelButton { margin: 0 1em; color: white; background-color: #D96600; border: solid #D96600 0; cursor: pointer; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; }
+a.imj_cancelButton:hover, input.imj_cancelButton:hover, button.imj_cancelButton:hover, .imj_cancelButton:hover { color: white; background-color: #ff7f0d; border: solid #ff7f0d 0; }
+a.imj_cancelButton:active, input.imj_cancelButton:active, button.imj_cancelButton:active, .imj_cancelButton:active { color: white; background-color: #ff7f0d; border: solid #ff7f0d 0; }
+a.imj_cancelButton:focus, input.imj_cancelButton:focus, button.imj_cancelButton:focus, .imj_cancelButton:focus { color: white; background-color: #ff7f0d; border: solid #ff7f0d 0; }
 
-.imj_cancelLink { color: #FF9000; }
+.imj_cancelLink { color: #D96600; }
 
 a.imj_submitButton, input.imj_submitButton, button.imj_submitButton, .imj_submitButton { margin-left: 1em; color: white; background-color: #990000; border: solid transparent 0; cursor: pointer; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; }
 a.imj_submitButton:hover, input.imj_submitButton:hover, button.imj_submitButton:hover, .imj_submitButton:hover { color: white; background-color: #cc0000; border: solid #cc0000 0; }
 a.imj_submitButton:active, input.imj_submitButton:active, button.imj_submitButton:active, .imj_submitButton:active { color: white; background-color: #cc0000; border: solid #cc0000 0; }
 a.imj_submitButton:focus, input.imj_submitButton:focus, button.imj_submitButton:focus, .imj_submitButton:focus { color: white; background-color: #cc0000; border: solid #cc0000 0; }
 
-a.imj_disabledButton, input.imj_disabledButton, button.imj_disabledButton, .imj_disabledButton { margin-left: 1em; cursor: default; color: #FF9000; background-color: #000000; cursor: default; border: solid transparent 0; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; }
-a.imj_disabledButton:hover, input.imj_disabledButton:hover, button.imj_disabledButton:hover, .imj_disabledButton:hover { color: #FF9000; background-color: #000000; cursor: default; border: solid transparent 0; }
-a.imj_disabledButton:active, input.imj_disabledButton:active, button.imj_disabledButton:active, .imj_disabledButton:active { color: #FF9000; background-color: #000000; cursor: default; border: solid transparent 0; }
-a.imj_disabledButton:focus, input.imj_disabledButton:focus, button.imj_disabledButton:focus, .imj_disabledButton:focus { color: #FF9000; background-color: #000000; cursor: default; border: solid transparent 0; }
+a.imj_disabledButton, input.imj_disabledButton, button.imj_disabledButton, .imj_disabledButton { margin-left: 1em; cursor: default; color: #D96600; background-color: #000000; cursor: default; border: solid transparent 0; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; }
+a.imj_disabledButton:hover, input.imj_disabledButton:hover, button.imj_disabledButton:hover, .imj_disabledButton:hover { color: #D96600; background-color: #000000; cursor: default; border: solid transparent 0; }
+a.imj_disabledButton:active, input.imj_disabledButton:active, button.imj_disabledButton:active, .imj_disabledButton:active { color: #D96600; background-color: #000000; cursor: default; border: solid transparent 0; }
+a.imj_disabledButton:focus, input.imj_disabledButton:focus, button.imj_disabledButton:focus, .imj_disabledButton:focus { color: #D96600; background-color: #000000; cursor: default; border: solid transparent 0; }
 
-a.imj_resetButton, input.imj_resetButton, button.imj_resetButton, .imj_resetButton { color: white; background-color: #FF9000 !important; border: solid #FF9000 0 !important; cursor: pointer; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; }
-a.imj_resetButton:hover, input.imj_resetButton:hover, button.imj_resetButton:hover, .imj_resetButton:hover { color: white; background-color: #ffa633; border: solid #ffa633 0; }
-a.imj_resetButton:active, input.imj_resetButton:active, button.imj_resetButton:active, .imj_resetButton:active { color: white; background-color: #ffa633; border: solid #ffa633 0; }
-a.imj_resetButton:focus, input.imj_resetButton:focus, button.imj_resetButton:focus, .imj_resetButton:focus { color: white; background-color: #ffa633; border: solid #ffa633 0; }
+a.imj_resetButton, input.imj_resetButton, button.imj_resetButton, .imj_resetButton { color: white; background-color: #D96600 !important; border: solid #D96600 0 !important; cursor: pointer; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; }
+a.imj_resetButton:hover, input.imj_resetButton:hover, button.imj_resetButton:hover, .imj_resetButton:hover { color: white; background-color: #ff7f0d; border: solid #ff7f0d 0; }
+a.imj_resetButton:active, input.imj_resetButton:active, button.imj_resetButton:active, .imj_resetButton:active { color: white; background-color: #ff7f0d; border: solid #ff7f0d 0; }
+a.imj_resetButton:focus, input.imj_resetButton:focus, button.imj_resetButton:focus, .imj_resetButton:focus { color: white; background-color: #ff7f0d; border: solid #ff7f0d 0; }
 
 .imj_backButton { padding: 0 0.3333333em; margin-left: 1em; color: white; background-color: inherit; border-bottom: solid #990000 0; cursor: pointer; -moz-border-radius: 0 0 2px 2px; -webkit-border-radius: 0; border-radius: 0 0 2px 2px; }
 .imj_backButton:hover { -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; color: white; background-color: #cc0000; border: solid #cc0000 0; }
@@ -972,27 +972,27 @@ p { display: block; margin: 1em 0; }
 .imj_collapse, button.imj_collapse, input[type=button].imj_collapse, .imj_expand, button.imj_expand, input[type=button].imj_expand { color: #990000; border: 0 none; background-color: transparent; cursor: pointer; }
 .imj_collapse:hover, button.imj_collapse:hover, input[type=button].imj_collapse:hover, .imj_expand:hover, button.imj_expand:hover, input[type=button].imj_expand:hover { color: #D45A00; border: 0 none; background-color: transparent; }
 
-a.imj_cancelButton, input.imj_cancelButton, button.imj_cancelButton, .imj_cancelButton { margin: 0 1em; color: white; background-color: #FF9000; border: solid #FF9000 0; cursor: pointer; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; }
-a.imj_cancelButton:hover, input.imj_cancelButton:hover, button.imj_cancelButton:hover, .imj_cancelButton:hover { color: white; background-color: #ffa633; border: solid #ffa633 0; }
-a.imj_cancelButton:active, input.imj_cancelButton:active, button.imj_cancelButton:active, .imj_cancelButton:active { color: white; background-color: #ffa633; border: solid #ffa633 0; }
-a.imj_cancelButton:focus, input.imj_cancelButton:focus, button.imj_cancelButton:focus, .imj_cancelButton:focus { color: white; background-color: #ffa633; border: solid #ffa633 0; }
+a.imj_cancelButton, input.imj_cancelButton, button.imj_cancelButton, .imj_cancelButton { margin: 0 1em; color: white; background-color: #D96600; border: solid #D96600 0; cursor: pointer; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; }
+a.imj_cancelButton:hover, input.imj_cancelButton:hover, button.imj_cancelButton:hover, .imj_cancelButton:hover { color: white; background-color: #ff7f0d; border: solid #ff7f0d 0; }
+a.imj_cancelButton:active, input.imj_cancelButton:active, button.imj_cancelButton:active, .imj_cancelButton:active { color: white; background-color: #ff7f0d; border: solid #ff7f0d 0; }
+a.imj_cancelButton:focus, input.imj_cancelButton:focus, button.imj_cancelButton:focus, .imj_cancelButton:focus { color: white; background-color: #ff7f0d; border: solid #ff7f0d 0; }
 
-.imj_cancelLink { color: #FF9000; }
+.imj_cancelLink { color: #D96600; }
 
 a.imj_submitButton, input.imj_submitButton, button.imj_submitButton, .imj_submitButton { margin-left: 1em; color: white; background-color: #990000; border: solid transparent 0; cursor: pointer; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; }
 a.imj_submitButton:hover, input.imj_submitButton:hover, button.imj_submitButton:hover, .imj_submitButton:hover { color: white; background-color: #cc0000; border: solid #cc0000 0; }
 a.imj_submitButton:active, input.imj_submitButton:active, button.imj_submitButton:active, .imj_submitButton:active { color: white; background-color: #cc0000; border: solid #cc0000 0; }
 a.imj_submitButton:focus, input.imj_submitButton:focus, button.imj_submitButton:focus, .imj_submitButton:focus { color: white; background-color: #cc0000; border: solid #cc0000 0; }
 
-a.imj_disabledButton, input.imj_disabledButton, button.imj_disabledButton, .imj_disabledButton { margin-left: 1em; cursor: default; color: #FF9000; background-color: #000000; cursor: default; border: solid transparent 0; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; }
-a.imj_disabledButton:hover, input.imj_disabledButton:hover, button.imj_disabledButton:hover, .imj_disabledButton:hover { color: #FF9000; background-color: #000000; cursor: default; border: solid transparent 0; }
-a.imj_disabledButton:active, input.imj_disabledButton:active, button.imj_disabledButton:active, .imj_disabledButton:active { color: #FF9000; background-color: #000000; cursor: default; border: solid transparent 0; }
-a.imj_disabledButton:focus, input.imj_disabledButton:focus, button.imj_disabledButton:focus, .imj_disabledButton:focus { color: #FF9000; background-color: #000000; cursor: default; border: solid transparent 0; }
+a.imj_disabledButton, input.imj_disabledButton, button.imj_disabledButton, .imj_disabledButton { margin-left: 1em; cursor: default; color: #D96600; background-color: #000000; cursor: default; border: solid transparent 0; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; }
+a.imj_disabledButton:hover, input.imj_disabledButton:hover, button.imj_disabledButton:hover, .imj_disabledButton:hover { color: #D96600; background-color: #000000; cursor: default; border: solid transparent 0; }
+a.imj_disabledButton:active, input.imj_disabledButton:active, button.imj_disabledButton:active, .imj_disabledButton:active { color: #D96600; background-color: #000000; cursor: default; border: solid transparent 0; }
+a.imj_disabledButton:focus, input.imj_disabledButton:focus, button.imj_disabledButton:focus, .imj_disabledButton:focus { color: #D96600; background-color: #000000; cursor: default; border: solid transparent 0; }
 
-a.imj_resetButton, input.imj_resetButton, button.imj_resetButton, .imj_resetButton { color: white; background-color: #FF9000 !important; border: solid #FF9000 0 !important; cursor: pointer; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; }
-a.imj_resetButton:hover, input.imj_resetButton:hover, button.imj_resetButton:hover, .imj_resetButton:hover { color: white; background-color: #ffa633; border: solid #ffa633 0; }
-a.imj_resetButton:active, input.imj_resetButton:active, button.imj_resetButton:active, .imj_resetButton:active { color: white; background-color: #ffa633; border: solid #ffa633 0; }
-a.imj_resetButton:focus, input.imj_resetButton:focus, button.imj_resetButton:focus, .imj_resetButton:focus { color: white; background-color: #ffa633; border: solid #ffa633 0; }
+a.imj_resetButton, input.imj_resetButton, button.imj_resetButton, .imj_resetButton { color: white; background-color: #D96600 !important; border: solid #D96600 0 !important; cursor: pointer; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; }
+a.imj_resetButton:hover, input.imj_resetButton:hover, button.imj_resetButton:hover, .imj_resetButton:hover { color: white; background-color: #ff7f0d; border: solid #ff7f0d 0; }
+a.imj_resetButton:active, input.imj_resetButton:active, button.imj_resetButton:active, .imj_resetButton:active { color: white; background-color: #ff7f0d; border: solid #ff7f0d 0; }
+a.imj_resetButton:focus, input.imj_resetButton:focus, button.imj_resetButton:focus, .imj_resetButton:focus { color: white; background-color: #ff7f0d; border: solid #ff7f0d 0; }
 
 .imj_backButton { padding: 0 0.3333333em; margin-left: 1em; color: white; background-color: inherit; border-bottom: solid #990000 0; cursor: pointer; -moz-border-radius: 0 0 2px 2px; -webkit-border-radius: 0; border-radius: 0 0 2px 2px; }
 .imj_backButton:hover { -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; color: white; background-color: #cc0000; border: solid #cc0000 0; }
@@ -1690,9 +1690,9 @@ html body button { border: none; background-color: #990000; font-size: 14px; col
 html body button:hover { background-color: #cc0000; }
 html body .imj_submitButton, html body .plupload_button { border: none; background-color: #990000; font-size: 14px; color: white; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; margin-right: 10px; }
 html body .imj_submitButton:hover, html body .plupload_button:hover { background-color: #cc0000; }
-html body .imj_cancelButton, html body .imj_resetButton { border: none; background-color: #990000; font-size: 14px; color: white; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; background-color: #FF9000 !important; display: inherit; height: 100%; padding-top: 10px; padding-bottom: 10px; font-size: 14px !important; }
+html body .imj_cancelButton, html body .imj_resetButton { border: none; background-color: #990000; font-size: 14px; color: white; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; background-color: #D96600 !important; display: inherit; height: 100%; padding-top: 10px; padding-bottom: 10px; font-size: 14px !important; }
 html body .imj_cancelButton:hover, html body .imj_resetButton:hover { background-color: #cc0000; }
-html body .imj_cancelButton:hover, html body .imj_resetButton:hover { background-color: #ffa633 !important; }
+html body .imj_cancelButton:hover, html body .imj_resetButton:hover { background-color: #ff7f0d !important; }
 html body .imj_submitPanel { display: inline-block !important; }
 html body .imj_modalDialogBackground { background: rgba(230, 230, 230, 0.6); }
 html body .imj_modalDialogBox .imj_confirmationText { font-size: 1.2em; }
@@ -2064,6 +2064,7 @@ html body .imj_siteWrapper .imj_listHeader a:hover { color: #D45A00; }
 html body .imj_siteWrapper .imj_listHeader a:hover { background: transparent; }
 html body .imj_siteWrapper .imj_pageMessageArea { background-color: #E6E6E6; margin: 0; padding: 10px 10px 10px 25px; width: 100%; }
 html body .imj_siteWrapper .imj_pageMessageArea .imj_messageInfo, html body .imj_siteWrapper .imj_pageMessageArea .imj_messageError { padding-left: 0; }
+html body .imj_siteWrapper .imj_pageMessageArea li { width: 96%; }
 html body .imj_siteWrapper .imj_searchQueryDisplay { margin: 0 0 10px 0; padding: 5px 25px 5px 25px !important; float: left; background-color: #E6E6E6; width: 99%; }
 html body .imj_siteWrapper .imj_searchQueryDisplay .imj_submitButton { display: inline; }
 html body .imj_siteWrapper .imj_searchQueryDisplay .imj_searchQueryText { color: #990000; }
@@ -2118,3 +2119,4 @@ html body .imj_siteFooter .imj_poweredby_software { float: right; }
 html body .imj_siteFooter .imj_poweredby_institution { float: left; margin-top: -15px !important; background-color: #e4e4e4 !important; border-top-right-radius: 30px; box-shadow: 0 0 10px #808080; margin-left: 2%; height: 85px; width: 215px; }
 html body .imj_siteFooter .imj_poweredby_institution a { background-image: url("https://www.mpdl.mpg.de/templates/mpdl/images/mpdl-logo@2x.png"); margin-left: 3px; margin-top: 30px; background-repeat: no-repeat; background-size: 175px 48px; display: inline-block; height: 48px; width: 175px; }
 html body .imj_siteFooter .imj_poweredby_institution a img { display: none; }
+html body textarea, html body input[type]:not([type=submit]), html body select { background: white !important; }

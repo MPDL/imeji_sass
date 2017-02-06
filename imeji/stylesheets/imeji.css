@@ -2064,6 +2064,7 @@ html body .imj_siteWrapper .imj_listHeader a:hover { color: #85cc44; }
 html body .imj_siteWrapper .imj_listHeader a:hover { background: transparent; }
 html body .imj_siteWrapper .imj_pageMessageArea { background-color: #313131; margin: 0; padding: 10px 10px 10px 25px; width: 100%; }
 html body .imj_siteWrapper .imj_pageMessageArea .imj_messageInfo, html body .imj_siteWrapper .imj_pageMessageArea .imj_messageError { padding-left: 0; }
+html body .imj_siteWrapper .imj_pageMessageArea li { width: 96%; }
 html body .imj_siteWrapper .imj_searchQueryDisplay { margin: 0 0 10px 0; padding: 5px 25px 5px 25px !important; float: left; background-color: #313131; width: 99%; }
 html body .imj_siteWrapper .imj_searchQueryDisplay .imj_submitButton { display: inline; }
 html body .imj_siteWrapper .imj_searchQueryDisplay .imj_searchQueryText { color: #6CAE2F; }
