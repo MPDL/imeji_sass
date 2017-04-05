@@ -31,6 +31,7 @@ html body {
 	color: $color-01;
     border-radius: 2px;
     padding: 5px 10px 5px 10px;
+
 	&:hover {
 	  color: $color-01;
 	 }
@@ -62,10 +63,11 @@ html body {
   }
 
   @mixin action-button {
-    border: none;
+	font-family: "Titillium Web",Arial,Helvetica,Verdana,sans-serif;
+    border: none !important;
     background-color: $color-03;
-    font-size: 14px;
-    color: white;
+    font-size: 13px !important;
+    color: $color-01;
     height: 35px;
     padding: 5px 20px 5px 20px;
     border-radius: 2px;
@@ -73,11 +75,15 @@ html body {
     &:hover {
       background-color: $button-bgcolor-hover;
     }
+	&::-moz-focus-inner { 
+		border: 0; 
+		padding: 0;
+	}
   }
-
+  
   @mixin action-button-grey {
     @include action-button;
-    background-color: $color-13;
+    background-color: $color-13 !important;
     &:hover {
       background-color: lighten($color-13, 10);
     }
@@ -86,6 +92,7 @@ html body {
   input {
     @include input-style;
   }
+  
   textarea { 
    @include input-style;
   }
@@ -97,36 +104,70 @@ html body {
   input[type="file"] {
     @include action-button;
   }
-
+ 
   input[type="radio"], input[type="checkbox"] {
     height: inherit;
   }
 
+  select {
+	  @include input-style;
+	  background-color: transparent;
+	  option { 
+		background-color: white;
+		color : black;
+	}
+   }
+  .imj_paginator{
+	  select{
+		  padding: 0 !important;
+	  }
+	  
+  }
   button {
     @include action-button
   }
 
-
-  .imj_submitButton, .plupload_button {
+  .imj_cancelButton, .imj_resetButton, .imj_submitButton , .plupload_button, .imj_disabledButton{ 
     @include action-button;
-    margin-right: 10px;
-  }
+	margin: 0 1em 0 0;
+	display: inline !important;
+	height: auto !important;
+	color: $color-01;
+    &:hover {
+	  color: $color-01;
+    }
+   }
 
   .imj_cancelButton, .imj_resetButton {
-    @include action-button;
     background-color: $button-cancel-bgcolor !important;
     &:hover {
       background-color: $button-cancel-bgcolor-hover !important;
     }
-    display: inherit;
-    height: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 14px !important;
+  }
+  
+  .imj_disabledButton{
+   background-color: lighten($color-13, 20) !important;
+    &:hover {
+      background-color: lighten($color-13, 30);
+    }
   }
 
   .imj_submitPanel {
     display: inline-block !important;
+	.imj_cancelButton, .imj_resetButton, .imj_submitButton , .plupload_button, .imj_disabledButton { 
+		margin: 0 1em 0 1em !important;
+	}
+  }
+  
+  .imj_mdInput, .imj_mdInputLabel{
+	float:left;
+	clear: both;
+	width:100%;
+  }
+	
+  textarea.imj_mdInput {
+	height:2.5em;;
+	resize: vertical;
   }
 
   .imj_modalDialogBackground {
@@ -135,7 +176,7 @@ html body {
 
   .imj_modalDialogBox {
     .imj_confirmationText {
-      font-size: 1.2em;
+      font-size: 1em;
     }
   }
 
@@ -290,26 +331,29 @@ html body {
             @include action-button;
           }
         }
-
-
       }
 
     }
 
 	.imj_statusHeaderArea{
-		padding:0;
+		padding : 0.9em 3%;
 		margin:0;
 		height:0;
 		position:relative;
+		float:right;
 		right: 3%;
 		.imj_menuBody{
 			white-space: nowrap;
 		}
+		.imj_listDottedSeparator{
+			border-top: 1px dashed #292929; 
+			padding: 0.5em 1em
+		}	
 	}
 	
     .imj_siteContentHeadline {
       background-color: $color-10;;
-      padding-left: 25px;
+      padding-left: 20px;
 	  margin: 0;
 	  min-width: 100%;
     }
@@ -318,10 +362,8 @@ html body {
 	  float:left;
 	  width:100%;
       background-color: $color-10;
-      //min-height: 80px;
       margin-top: 0;
-      padding: 0px 20px 0 20px;
-
+      padding: 10px 20px 0 20px;
       p, a, span {
         font-size: 1.2em;
       }
@@ -351,14 +393,13 @@ html body {
     .imj_mainContentWrapper {
 	  height: 100%;
 	  min-height: 100%;
-      //min-height: calc(100vh - 90px);
       width: 100%;
       padding: 20px;
-      //max-height: 45vh;
       margin-top: 0;
       padding-bottom: 2em;
 	  background-color: $color-10;
 	  margin-bottom: 15px;
+	  overflow: inherit;
 	  
 
       p, a, span, ul, label {
@@ -465,57 +506,6 @@ html body {
         }
       }
 
-      .imj_metadataProfileList.imj_edit {
-        .imj_listHeader {
-          .imj_headline {
-          }
-        }
-        .imj_listBody {
-          .imj_itemHeader {
-		  
-            label {
-              font-style: normal;
-              color: $color-01;
-            }
-            .imj_inlineButtonGroup{
-              font-size: 14px;
-            }
-            .imj_optionList{
-              float: none;
-              margin-left: 30%;
-              font-size: 14px;
-            }
-          }
-          input[type="text"] {
-            height: 23px !important;
-          }
-          .imj_metadataSet{
-            .imj_metadataSet{
-              .imj_metadataLabel{
-                width: 147px !important;
-              }
-            }
-          }
-          .imj_itemBody{
-            .imj_submitPanel{
-              .imj_submitButton{
-                margin-right: 10px;
-              }
-            }
-          }
-          .imj_submitPanel{
-            .imj_cancelButton{
-              @include action-button-grey
-            }
-            .imj_submitButton{
-              margin-right: 20px;
-            }
-          }
-        }
-        input[type="text"], select {
-          font-size: 14px;
-        }
-      }
 
       .imj_setupConfig {
         .imj_config_headline {
@@ -591,50 +581,6 @@ html body {
         }
       }
 
-      .imj_spaceConfigPage {
-        .imj_headline {
-          margin-bottom: 20px;
-        }
-        label {
-          font-size: 1.1em;
-        }
-        input[type="text"] {
-          @include input-style;
-          height: 35px;
-        }
-        #spaceSlug {
-          height: 25px !important;
-        }
-        textarea {
-          height: 100px;
-        }
-        select{
-          width: 72% !important;
-        }
-        .imj_fileUploadContainer {
-          width: 94%;
-          margin-right: 3px;
-          float: right;
-          padding: 20px;
-          a {
-            font-size: 1em;
-          }
-        }
-        .imj_metadataValue {
-         width: 72%;
-          max-width: 72%;
-          margin-left: 0;
-          input[type="text"] {
-            height: 25px;
-            float: left;
-            margin-left: -5px;
-          }
-        }
-        .imj_submitButton {
-          margin-right: 20px;
-        }
-      }
-
       .imj_administrationTiledList {
         width: 100%;
         padding: 0;
@@ -653,52 +599,23 @@ html body {
         .imj_submitButton {
           @include action-button;
         }
+		 .imj_listBody{
+			  text-align: left;
+		  }
       }
 
       .imj_userConfig {
-        .imj_submitPanel {
-          .imj_submitButton{
-            height: 100%;
-            padding: 7px 20px 8px 20px;
-          }
-        }
-        .imj_admindataLabel {
-          //font-size: 16px !important;
-          //line-height: 18px;
-          label {
-            //font-size: 16px !important;
-            //line-height: 18px;
-          }
-          span {
-            //font-size: 16px !important;
-            //line-height: 18px;
-          }
-        }
+		width: initial;
+		padding-left: 0 !important;
+		
         .imj_userGlobalInformation {
           .imj_admindataValueEntry {
-            width: inherit;
             textarea {
               margin-bottom: 10px;
             }
           }
-          .imj_submitPanel {
-            width: 97% !important;
-            .imj_cancelButton {
-              @include action-button-grey;
-              margin: 0;
-              height: 25px;
-              padding: 10px 20px 0 20px;
-            }
-            .imj_submitButton {
-              @include action-button;
-              height: 25px;
-              padding: 10px 20px 0px 20px;
-            }
-            .imj_editButton {
-              //margin-right: 20px;
-            }
-          }
-        }
+          
+		}
         .imj_organisation {
           .imj_admindataValue {
             width: inherit;
@@ -775,16 +692,7 @@ html body {
           }
         }
 
-        .imj_modalDialogBox {
-          .imj_submitPanel {
-            width: 97% !important;
-            padding-left: 20px !important;
-            padding-right: 20px !important;
-            .imj_submitButton {
-              height: 31px;
-            }
-          }
-        }
+
         .imj_admindataSet {
           .imj_headline {
             margin-bottom: 20px;
@@ -838,7 +746,6 @@ html body {
           }
         }
         &.imj_userConfig {
-          width: 94%;
 
           .imj_simpleSearch {
             input[type="text"] {
@@ -920,33 +827,7 @@ html body {
       }
 
 
-      #createProfileArea {
-		 h2{
-			width:100%;
-			.imj_messageError{
-			background-color: transparent !important;
-			}
-		 }
-        #selectorArea {
-		 
-          select {
-            @include input-style;
-            height: 35px;
-          }
-          input {
-            margin-right: 10px;
-          }
-          .imj_listBody {
-            font-size: 0.6em;
-            .imj_listItem {
-              .imj_listBody {
-                font-size: 1.2em;
-              }
-            }
-          }
-        }
-      }
-
+     
       .imj_mainContentWrapper {
         padding-left: 0;
         height: 100%;
@@ -954,27 +835,8 @@ html body {
         overflow-y: hidden;
       }
 
-      .imj_metadataProfileList {
-        .imj_listHeader {
-          .imj_headline {
-            float: inherit;
-          }
-        }
-      }
-
-      .imj_pageMessageArea {
-        .imj_metadataSet {
-          margin-top: 15px;
-          label {
-            min-width: 80px;
-            width: initial;
-          }
-          input {
-            min-width: initial;
-            width: 300px;
-          }
-        }
-      }
+     
+     
 
       #imj_ajaxWrapper {
         .imj_descriptionArea {
@@ -1410,6 +1272,14 @@ html body {
         }
       }
 
+	  .itemsArea{
+	 	max-width : 96%;
+	  }
+	 
+	  .imj_actionMenuArea{
+		max-height: 40px;
+	  }
+	  
       .imj_mediaEntryDetailPage {
         .imj_paginator {
           border: none;
@@ -1571,19 +1441,31 @@ html body {
         }
       }
     }
+	
 
-    .imj_pageMessageArea {
-      background-color: $color-10;
-      margin: 0;
-      padding: 10px 10px 10px 25px;
-      width: 100%;
-      .imj_messageInfo, .imj_messageError {
-        padding-left: 0;
-      }
-	  li {
-		width:96%;
-	  }
-    }
+     .imj_message{
+		padding: 10px 20px 10px 20px;
+		background-color: #6CAE2F; /* Red */
+		color: white;
+		margin-bottom: 5px;
+		opacity: 1;
+		transition: opacity 0.6s;
+	}
+	
+	.imj_messageError{
+		background-color: #D80000; /* Red */
+	}
+	
+	.imj_messageAreaCloseBtn {	
+		margin-left: 15px;
+		color: white;
+		font-weight: bold;
+		float: right;
+		font-size: 22px;
+		line-height: 20px;
+		cursor: pointer;
+		transition: 0.3s;
+	}
 
     .imj_searchQueryDisplay {
       margin: 0 0 10px 0;
@@ -1609,10 +1491,14 @@ html body {
         }
       }
       span {
-        margin: 0.272727em 1em;
-        font-size: 1em;
+        margin: 0.7em 0 !important;
+		font-size: 0.9em !important;
       }
     }
+	
+	.imj_tiledMediaList > .imj_listBody{
+		margin: 0;
+	}
 
     .imj_invisible {
       display: none;
@@ -1630,6 +1516,139 @@ html body {
 	  }
     }
   }
+}
+
+.imj_metadataSet{
+	.imj_metadataValue{
+		margin-left: 0;
+	}
+} 
+
+.imj_shareForm{
+	padding:0;
+}
+
+.imj_rightsTable{
+	max-width: 80em;
+}
+
+.imj_moveItemsDialogBox{
+	position: fixed;
+	top: 5em;
+	font-size: 1em;
+	width: 40em;
+}
+.imj_shareDialogBox{
+	position: fixed;
+	font-size: 1em;
+	max-width: 60%;
+	min-width: 60%;
+}
+
+.uploadDialog{
+	width: 60vh;
+	.imj_metadataSet{
+		font-size: 0.8em !important;
+	}
+}
+.uploadDialogHeadArea{
+	height: 8%;
+	margin-bottom: 1em;
+	position: initial !important;
+}
+.uploadDialogDropArea{
+	cursor: pointer;
+}
+.uploadFileListEntry{
+	line-height:normal;
+	font-size: small;
+}
+.imj_dragOver{
+	border: 2px dashed #6CAE2F;
+}
+
+.imj_selectionInfoPanel{
+	margin: 0;
+}
+
+.imj_menuButton{
+	font-size: 14px !important;
+	margin: 0 20px 0 0;
+	cursor: pointer;
+	padding: 5px 10px 5px 10px !important;
+	color: $overlaymenu-header-color;
+	&:hover {
+		color: $overlaymenu-header-color-hover;
+		background-color: $color-03;
+		border: none;
+	}
+}
+
+// collection about
+.collectionAbout{
+	width: 80%;
+	font-size: 1.2em;
+	padding-bottom: 10px;
+}
+.collectionAboutTitle{
+	font-size: 150%;
+	font-weight: bold;
+	letter-spacing: 0.045em;
+	line-height: normal;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.collectionAboutAuthor{
+	text-overflow: ellipsis;
+	max-width: 80%;
+	line-height: 1.4em;
+	 font-size: 0.9em;
+	white-space: nowrap;
+	overflow: hidden;
+	float:left;
+}
+.collectionAbout span{
+	margin-right: 5px;
+}
+.collectionAboutHidden{
+	width: 90%;
+	display:none;
+}
+
+// Select metadata/statement
+.metadataSelector{
+	text-align: left;
+}
+.selectMd {
+	position: relative;
+	display: inline-block;
+	input{
+		box-sizing: border-box;
+		margin:  6px 8px !important;
+		width: 90% !important;
+	}
+	button{
+		margin: 0;
+		width:100%;
+	}
+}
+
+.selectMetadata-content {
+	display: none;
+	position: absolute;
+	background-color: #444444;
+	overflow: hidden;;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1000000;
+	width:100%;
+}
+.selectMetadata-content a, .selectMetadata-content span {
+	padding: 5px 8px;
+	text-decoration: none;
+	display: block;
+}
+.selectMd a:hover {
+	background-color: #ddd
 }
 
 // Overlay
@@ -1666,11 +1685,13 @@ html body {
 	.imj_menuSimpleSearch{
 		width: auto;
 		min-width: 0;
-		font-size: 1em;
 		li{
 			border-top: 1px dashed $color-14;
 			padding: 0.5em 1em;
 			text-transform: uppercase;
+			text-overflow: ellipsis !important;
+			white-space: nowrap !important;
+  			overflow: hidden !important;
 			cursor: pointer !important;
 			&:hover > a{
 				color: $color-01;
@@ -1679,6 +1700,9 @@ html body {
 		.imj_simpleSearchInput {
 			width: 200em !important;
 		}
+	}
+	.imj_simpleSearchInput {
+		text-overflow: ellipsis;
 	}
 	
 
@@ -1731,13 +1755,152 @@ html body {
 	-webkit-box-shadow: none !important;
 	-moz-box-shadow: none !important;
 	box-shadow: none !important;
-	.imj_submitPanel {
-	  display: inline-block !important;
-	}
-  }
+}
+  
+.show{
+	display: block;
+}
 
-// ICONS
+small {
+	font-size: smaller;
+}
 
+.imj_mediaWithdrawn {
+	text-align: left;
+}
+
+// Upload modal
+.uploadPanel{
+	
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	font-size: 2em;
+	z-index: 1001;
+	display: none;
+	width: 30em;
+	height: 5em;
+	margin-top: -9em;
+	margin-left: -15em;
+	background-color: $color-13;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 3em;
+}
+
+.uploadDragAndDropTitle{
+	width:100%;
+	text-align: center;
+	padding: 2em;
+}
+  
+// Edit selected
+.edit_selected_table_wrapper{
+	width: 100%;
+	overflow: auto;
+	min-height: 50em;
+}
+.edit_selected_table{
+	border-collapse: collapse;
+	border: 5px solid #444444;
+	table-layout: fixed; 
+}
+.edit_selected_table {
+	border-collapse: collapse;
+	border: 3px solid #444444;
+	table-layout: fixed;
+	margin: 2px;
+}
+.edit_selected_table textarea, .edit_selected_table input[type]:not(.combobox) {
+	borders: 1px;
+	margin-bottom: 0.5em;
+	max-width: 70% !important;
+}
+.edit_selected_table td{
+	vertical-align: middle;
+	border: 1px solid #444444; 
+	max-width: 12em;
+	min-width: 12em;
+	padding:0 1em;
+	height: 4em;
+}
+.edit_selected_table_button{
+	width: 100%;
+	text-align: center;
+	float: left;
+}
+.edit_selected_table_button label{
+	text-align: left;
+}
+.edit_selected_table th{
+	vertical-align: middle;
+	margin:0;
+	text-align: center;
+	background-color: #444444;
+	max-width: 15.6em;
+	min-width: 15.6em;
+	overflow-wrap: break-word;
+}
+.edit_selected_table_icon{
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+}
+.editSelectedWrapper {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: #292929;
+	z-index: 100;
+	padding-top: 1em;
+	overflow-x: hidden;
+}
+.editSelectedHeader{
+	margin: 1em;
+}
+	
+// Loader
+.loaderWrapper{
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	background: $color-09;
+	z-index: 1000;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	overflow: hidden;
+	opacity: 0.5;
+	display: none;  
+}
+
+.loader {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 10001;
+	width: 100px;
+	height: 100px;
+	margin: -50px 0 0 -50px;
+	border: 16px solid lighten($color-13,10);
+	border-radius: 50%;
+	border-top: 16px solid $color-03;
+	-webkit-animation: spin 2s linear infinite;
+	animation: spin 2s linear infinite;
+	display: none;
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+// ICONS´
 .fa-chevron-right:before {
   content: "\f105" !important;
 }
@@ -1756,12 +1919,4 @@ html body {
 
 .fa-list-alt:before {
   content: "\f00b" !important;
-}
-
-.fa {
-  color: $color-03;
-  &:hover {
-    color: $color-03;
-  }
-  cursor: pointer;
 }
