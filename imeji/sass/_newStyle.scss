@@ -193,8 +193,10 @@ html body {
 	min-height: 100% !important;
     border: none;
     margin-bottom: 0;
-	min-width: 30em;
-	max-width: 100em;
+	min-width: 10em;
+	 @media screen and (max-width: 50em) {
+		 max-width : 100% !important;	
+	}
 	
     .imj_logo {
       background-color: $color-10;
@@ -219,13 +221,11 @@ html body {
 	  @media screen and (max-width: 40em) {
 		    margin-bottom: 2px;;
 	  }
-    
-
       .imj_metaMenuStandardSingleLine {
 		@media screen and (max-width: 40em) {
 		  padding: 0;
 		  margin: 0;
-		  font-size: 0.8em;
+		  font-size: 0.6em;
 		  .imj_metaMenuItemSelect{
 			    padding: 0;
 				margin: 0;
@@ -319,7 +319,8 @@ html body {
         margin-top: 10px;
 		@media screen and (max-width: 40em) {
 		  margin-top: 0px;
-		   padding: 0px 20px 0px 20px;
+		  padding: 0px 20px 0px 20px;
+		  font-size: 0.8em;
 	  }
 
         .imj_mainMenuStandardItem {
@@ -1276,10 +1277,24 @@ html body {
 		.imj_bibliographicListItem{
 			  .imj_itemContent{
 				  width: 60% !important;
+				  margin-left: 2%;
+			  }
+			  .imj_imageStack{
+				  margin: 1em 0;
+				  height: 8em;
+				  width: 8em;
+				  &::before{
+					height: 8em;
+					width: 8em;
+				  }
+				  &::after{
+					height: 8em;
+					width: 8em;
+				  }
 			  }
 			  .imj_previewArea{
-				  min-width: 10em;
-				  max-width: 14em;
+				  min-width: 9em;
+				  max-width: 9em;
 			  }
 		  }
       }
@@ -1452,10 +1467,18 @@ html body {
         }
 
         .imj_tileItem {
-		   
+			width: auto;
+			max-width: 45%;
+		   &:hover{
+			   border-color: blue;
+		   }
 		   img{
 				/*width: 100% !important;
 				height: auto;*/
+				 border:none;
+		   }
+		   .imj_tileThumbnailArea{
+			   
 		   }
           .imj_tooltip {
             box-shadow: none;
@@ -1517,6 +1540,7 @@ html body {
       .imj_tileThumbnailArea {
         border-radius: 5px;
         background: transparent !important;
+		 border: 4px solid transparent;
 		img{
 			//width: 97%;
 		}
@@ -1565,7 +1589,7 @@ html body {
 	
 
      .imj_message{
-		padding: 10px 20px 10px 20px;
+		padding: 5px 20px 5px 20px;
 		background-color: #6CAE2F; /* Red */
 		color: white;
 		margin-bottom: 5px;
@@ -1582,7 +1606,7 @@ html body {
 		color: white;
 		font-weight: bold;
 		float: right;
-		font-size: 22px;
+		font-size: 1em;
 		line-height: 20px;
 		cursor: pointer;
 		transition: 0.3s;
@@ -1714,6 +1738,10 @@ html body {
 .collectionAboutTitle{
 	font-size: 140%;
 	font-weight: bold;
+	@media only screen and (max-width: 40em){
+		  font-size: 1em;
+	}
+	
 	letter-spacing: 0.045em;
 	line-height: normal;
 	text-overflow: ellipsis;
