@@ -95,6 +95,7 @@ html body {
   
   textarea { 
    @include input-style;
+   font-size:1em;
   }
 
   input[type="submit"] {
@@ -163,11 +164,13 @@ html body {
 	float:left;
 	clear: both;
 	width:100%;
+	font-size: 1em;
   }
 	
   textarea.imj_mdInput {
 	height:2.5em;;
 	resize: vertical;
+	width:100%;
   }
 
   .imj_modalDialogBackground {
@@ -450,7 +453,7 @@ html body {
 	  width:100%;
       background-color: $color-10;
       margin-top: 0;
-      padding: 10px 20px 0 20px;
+      padding: 10px 20px 10px 20px;
       p, a, span {
         font-size: 1.2em;
       }
@@ -700,6 +703,7 @@ html body {
       .imj_userConfig {
 		width: initial;
 		padding-left: 0 !important;
+		clear: both;
 		
         .imj_userGlobalInformation {
           .imj_admindataValueEntry {
@@ -1340,9 +1344,11 @@ html body {
         }
 
         .imj_searchInput {
+		  width: 20em;
           span, input {
             height: 23px;
             margin-right: 20px;
+			
           }
         }
 
@@ -1682,6 +1688,7 @@ html body {
 }
 
 .uploadDialog{
+	overflow: hidden !important;
 	.imj_metadataSet{
 		font-size: 1em !important;
 	}
