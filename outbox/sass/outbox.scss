@@ -15,6 +15,7 @@ html body {
 	}
 	.imj_logo{
 		background-color: $color-09 !important;
+		width: 17em !important;
 	}
 	
 	.imj_siteHeaderMenuSearchSection{
@@ -64,5 +65,17 @@ html body {
 	}
 	textarea, input[type]:not([type=submit]):not([type=button]), select {
 		background: white !important;
+	}
+	
+	input[type=submit], button, .imj_submitButton, .imj_menuButton:hover, .imj_menuHeader:hover, .imj_cancelButton, .imj_resetButton{
+		color: white !important;
+	}
+	
+	.imj_metaMenuItemSelect{
+		background-color:  $color-09 !important;
+	}
+	.loader {
+		border: 16px solid white;
+		border-top: 16px solid $color-03;
 	}
 }
