@@ -1,8 +1,8 @@
 /*
 Error: Undefined variable: "$page-width-min".
-        on line 8 of C:/Users/saquet/Documents/tomcat/8.5.4/webapps/styles/default/sass/_defs.scss
-        from line 10 of C:/Users/saquet/Documents/tomcat/8.5.4/webapps/styles/default/sass/_combinedStyles.scss
-        from line 5 of C:/Users/saquet/Documents/tomcat/8.5.4/webapps/styles/edmond/sass/dark.scss
+        on line 8 of C:/Users/saquet/Documents/GitHub/imeji_sass/default/sass/_defs.scss
+        from line 10 of C:/Users/saquet/Documents/GitHub/imeji_sass/default/sass/_combinedStyles.scss
+        from line 5 of C:/Users/saquet/Documents/GitHub/imeji_sass/edmond/sass/dark.scss
 
 3: // IMPORTS, don't change the order of imports, because they are depends another
 4: @import "darkVariables";
@@ -17,9 +17,9 @@ Error: Undefined variable: "$page-width-min".
 13:         height: auto;
 
 Backtrace:
-C:/Users/saquet/Documents/tomcat/8.5.4/webapps/styles/default/sass/_defs.scss:8
-C:/Users/saquet/Documents/tomcat/8.5.4/webapps/styles/default/sass/_combinedStyles.scss:10
-C:/Users/saquet/Documents/tomcat/8.5.4/webapps/styles/edmond/sass/dark.scss:5
+C:/Users/saquet/Documents/GitHub/imeji_sass/default/sass/_defs.scss:8
+C:/Users/saquet/Documents/GitHub/imeji_sass/default/sass/_combinedStyles.scss:10
+C:/Users/saquet/Documents/GitHub/imeji_sass/edmond/sass/dark.scss:5
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
@@ -99,4 +99,4 @@ C:/Program Files (x86)/Koala/bin/compass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$page-width-min\".\A         on line 8 of C:/Users/saquet/Documents/tomcat/8.5.4/webapps/styles/default/sass/_defs.scss\A         from line 10 of C:/Users/saquet/Documents/tomcat/8.5.4/webapps/styles/default/sass/_combinedStyles.scss\A         from line 5 of C:/Users/saquet/Documents/tomcat/8.5.4/webapps/styles/edmond/sass/dark.scss\A \A 3: // IMPORTS, don't change the order of imports, because they are depends another\A 4: @import \"darkVariables\";\A 5: @import \"../../default/sass/_combinedStyles.scss\";\A 6: \A 7: .imj_siteWrapper {\A 8:     \A 9:     & > .imj_mainContentWrapper {\A 10:         padding-bottom: 2em;\A 11:     }\A 12:     .imj_siteFooter {\A 13:         height: auto;"; }
+  content: "Error: Undefined variable: \"$page-width-min\".\A         on line 8 of C:/Users/saquet/Documents/GitHub/imeji_sass/default/sass/_defs.scss\A         from line 10 of C:/Users/saquet/Documents/GitHub/imeji_sass/default/sass/_combinedStyles.scss\A         from line 5 of C:/Users/saquet/Documents/GitHub/imeji_sass/edmond/sass/dark.scss\A \A 3: // IMPORTS, don't change the order of imports, because they are depends another\A 4: @import \"darkVariables\";\A 5: @import \"../../default/sass/_combinedStyles.scss\";\A 6: \A 7: .imj_siteWrapper {\A 8:     \A 9:     & > .imj_mainContentWrapper {\A 10:         padding-bottom: 2em;\A 11:     }\A 12:     .imj_siteFooter {\A 13:         height: auto;"; }

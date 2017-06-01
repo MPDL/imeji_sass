@@ -223,7 +223,7 @@ html body {
       .imj_metaMenuStandardSingleLine {
 		.imj_metaMenuItemSelect{
 				font-weight: 400;
-				color: #6CAE2F;
+				color: $color-03;
 				text-transform: uppercase;
 				font-size: 1em;
 				border: none;
@@ -1706,7 +1706,7 @@ html body {
 	font-size: small;
 }
 .imj_dragOver{
-	border: 2px dashed #6CAE2F;
+	border: 2px dashed $color-03;
 }
 
 .imj_selectionInfoPanel{
@@ -1779,23 +1779,6 @@ html body {
 	}
 }
 
-.selectMetadata-content {
-	display: none;
-	position: absolute;
-	background-color: #444444;
-	overflow: hidden;;
-	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-	z-index: 1000000;
-	width:100%;
-}
-.selectMetadata-content a, .selectMetadata-content span {
-	padding: 5px 8px;
-	text-decoration: none;
-	display: block;
-}
-.selectMd a:hover {
-	background-color: #ddd
-}
 
 // Overlay
 .imj_overlayMenu {
@@ -1962,12 +1945,12 @@ small {
 }
 .edit_selected_table{
 	border-collapse: collapse;
-	border: 5px solid #444444;
+	border: 5px solid $color-11;
 	table-layout: fixed; 
 }
 .edit_selected_table {
 	border-collapse: collapse;
-	border: 3px solid #444444;
+	border: 3px solid $color-11;
 	table-layout: fixed;
 	margin: 2px;
 }
@@ -1978,7 +1961,7 @@ small {
 }
 .edit_selected_table td{
 	vertical-align: middle;
-	border: 1px solid #444444; 
+	border: 1px solid $color-11; 
 	max-width: 12em;
 	min-width: 12em;
 	padding:0 1em;
@@ -1996,7 +1979,7 @@ small {
 	vertical-align: middle;
 	margin:0;
 	text-align: center;
-	background-color: #444444;
+	background-color: $color-11;
 	max-width: 15.6em;
 	min-width: 15.6em;
 	overflow-wrap: break-word;
@@ -2012,7 +1995,7 @@ small {
 	left: 0;
 	bottom: 0;
 	right: 0;
-	background: #292929;
+	background-color: darken($color-13, 1%);
 	z-index: 100;
 	padding-top: 1em;
 	overflow-x: hidden;
@@ -2047,7 +2030,7 @@ small {
 	width: 100px;
 	height: 100px;
 	margin: -50px 0 0 -50px;
-	border: 16px solid lighten($color-13,10);
+	border: 16px solid $color-11;
 	border-radius: 50%;
 	border-top: 16px solid $color-03;
 	-webkit-animation: spin 2s linear infinite;
@@ -2060,7 +2043,28 @@ small {
 	100% { transform: rotate(360deg); }
 }
 
-// ICONS´
+// AUTOCOMPLETE
+.ui-menu-item{
+	background-color: $color-13 !important;
+	cursor: pointer;
+}
+
+.ui-autocomplete{
+	border: 1px solid $color-14 !important;
+	background-color: $color-13 !important;
+}
+
+// DATEPICKER
+.ui-datepicker{
+	border: 1px solid $color-14 !important;
+	background-color: $color-13 !important;
+}
+
+.ui-datepicker-calendar{
+	background-color: $color-13 !important;
+}
+
+// ICONS
 .fa-chevron-right:before {
   content: "\f105" !important;
 }

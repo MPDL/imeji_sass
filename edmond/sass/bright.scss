@@ -13,6 +13,7 @@ html body {
     background-size: cover;
 	.imj_logo{
 		background-position-x: center !important;
+		width: 17em !important;
 	}
 	.imj_poweredby_software_image {
 		background: url("../images/imeji_logo_black.png");
@@ -22,7 +23,11 @@ html body {
 			visibility:hidden
 		}
 	}
-
+	
+	input[type=submit], button, .imj_submitButton, .imj_menuButton:hover, .imj_menuHeader:hover, .imj_cancelButton, .imj_resetButton{
+		color: white !important;
+	}
+	
 }
 
  

@@ -1674,80 +1674,117 @@ html body input::-webkit-input-placeholder { /* Chrome/Opera/Safari */ text-tran
 html body input::-moz-placeholder { /* Firefox 19+ */ text-transform: uppercase; font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif; }
 html body input:-ms-input-placeholder { /* IE 10+ */ text-transform: uppercase; font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif; }
 html body input:-moz-placeholder { /* Firefox 18- */ text-transform: uppercase; font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif; }
-html body textarea { font-family: 'Titillium Web', Arial, Helvetica, Verdana, sans-serif !important; border: 1px solid #04725d; background: transparent; color: #222222; border-radius: 2px; padding: 5px 10px 5px 10px; }
+html body textarea { font-family: 'Titillium Web', Arial, Helvetica, Verdana, sans-serif !important; border: 1px solid #04725d; background: transparent; color: #222222; border-radius: 2px; padding: 5px 10px 5px 10px; font-size: 1em; }
 html body textarea:hover { color: #222222; }
 html body textarea:focus { color: #222222; border: 1px solid #222222; outline: none; }
 html body textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */ text-transform: uppercase; font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif; }
 html body textarea::-moz-placeholder { /* Firefox 19+ */ text-transform: uppercase; font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif; }
 html body textarea:-ms-input-placeholder { /* IE 10+ */ text-transform: uppercase; font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif; }
 html body textarea:-moz-placeholder { /* Firefox 18- */ text-transform: uppercase; font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif; }
-html body input[type="submit"] { border: none; background-color: #04725d; font-size: 14px; color: white; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; }
+html body input[type="submit"] { font-family: "Titillium Web",Arial,Helvetica,Verdana,sans-serif; border: none !important; background-color: #04725d; font-size: 13px !important; color: #222222; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; }
 html body input[type="submit"]:hover { background-color: #06a385; }
-html body input[type="file"] { border: none; background-color: #04725d; font-size: 14px; color: white; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; }
+html body input[type="submit"]::-moz-focus-inner { border: 0; padding: 0; }
+html body input[type="file"] { font-family: "Titillium Web",Arial,Helvetica,Verdana,sans-serif; border: none !important; background-color: #04725d; font-size: 13px !important; color: #222222; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; }
 html body input[type="file"]:hover { background-color: #06a385; }
+html body input[type="file"]::-moz-focus-inner { border: 0; padding: 0; }
 html body input[type="radio"], html body input[type="checkbox"] { height: inherit; }
-html body button { border: none; background-color: #04725d; font-size: 14px; color: white; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; }
+html body select { font-family: 'Titillium Web', Arial, Helvetica, Verdana, sans-serif !important; border: 1px solid #04725d; background: transparent; color: #222222; border-radius: 2px; padding: 5px 10px 5px 10px; background-color: transparent; }
+html body select:hover { color: #222222; }
+html body select:focus { color: #222222; border: 1px solid #222222; outline: none; }
+html body select::-webkit-input-placeholder { /* Chrome/Opera/Safari */ text-transform: uppercase; font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif; }
+html body select::-moz-placeholder { /* Firefox 19+ */ text-transform: uppercase; font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif; }
+html body select:-ms-input-placeholder { /* IE 10+ */ text-transform: uppercase; font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif; }
+html body select:-moz-placeholder { /* Firefox 18- */ text-transform: uppercase; font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif; }
+html body select option { background-color: white; color: black; }
+html body .imj_paginator select { padding: 0 !important; }
+html body button { font-family: "Titillium Web",Arial,Helvetica,Verdana,sans-serif; border: none !important; background-color: #04725d; font-size: 13px !important; color: #222222; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; }
 html body button:hover { background-color: #06a385; }
-html body .imj_submitButton, html body .plupload_button { border: none; background-color: #04725d; font-size: 14px; color: white; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; margin-right: 10px; }
-html body .imj_submitButton:hover, html body .plupload_button:hover { background-color: #06a385; }
-html body .imj_cancelButton, html body .imj_resetButton { border: none; background-color: #04725d; font-size: 14px; color: white; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; background-color: #525252 !important; display: inherit; height: 100%; padding-top: 10px; padding-bottom: 10px; font-size: 14px !important; }
-html body .imj_cancelButton:hover, html body .imj_resetButton:hover { background-color: #06a385; }
+html body button::-moz-focus-inner { border: 0; padding: 0; }
+html body .imj_cancelButton, html body .imj_resetButton, html body .imj_submitButton, html body .plupload_button, html body .imj_disabledButton { font-family: "Titillium Web",Arial,Helvetica,Verdana,sans-serif; border: none !important; background-color: #04725d; font-size: 13px !important; color: #222222; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; margin: 0 1em 0 0; display: inline !important; height: auto !important; color: #222222; }
+html body .imj_cancelButton:hover, html body .imj_resetButton:hover, html body .imj_submitButton:hover, html body .plupload_button:hover, html body .imj_disabledButton:hover { background-color: #06a385; }
+html body .imj_cancelButton::-moz-focus-inner, html body .imj_resetButton::-moz-focus-inner, html body .imj_submitButton::-moz-focus-inner, html body .plupload_button::-moz-focus-inner, html body .imj_disabledButton::-moz-focus-inner { border: 0; padding: 0; }
+html body .imj_cancelButton:hover, html body .imj_resetButton:hover, html body .imj_submitButton:hover, html body .plupload_button:hover, html body .imj_disabledButton:hover { color: #222222; }
+html body .imj_cancelButton, html body .imj_resetButton { background-color: #525252 !important; }
 html body .imj_cancelButton:hover, html body .imj_resetButton:hover { background-color: #6c6c6c !important; }
+html body .imj_disabledButton { background-color: white !important; }
+html body .imj_disabledButton:hover { background-color: white; }
 html body .imj_submitPanel { display: inline-block !important; }
+html body .imj_submitPanel .imj_cancelButton, html body .imj_submitPanel .imj_resetButton, html body .imj_submitPanel .imj_submitButton, html body .imj_submitPanel .plupload_button, html body .imj_submitPanel .imj_disabledButton { margin: 0 1em 0 1em !important; }
+html body .imj_mdInput, html body .imj_mdInputLabel { float: left; clear: both; width: 100%; font-size: 1em; }
+html body textarea.imj_mdInput { height: 2.5em; resize: vertical; width: 100%; }
 html body .imj_modalDialogBackground { background: rgba(255, 255, 255, 0.6); }
-html body .imj_modalDialogBox .imj_confirmationText { font-size: 1.2em; }
 html body .imj_allContentWrapper { min-height: 100vh !important; margin-bottom: -5em !important; }
 html body .imj_allContentWrapper:after { content: ""; display: block; }
-html body .imj_siteWrapper { min-height: 100% !important; border: none; margin-bottom: 0; }
-html body .imj_siteWrapper .imj_logo { background-color: rgba(255, 255, 255, 0.85); background-position-y: center; background-position-x: left; padding: 15px 10px 15px 10px; }
+html body .imj_siteWrapper { min-height: 100% !important; border: none; margin-bottom: 0; min-width: 10em; }
+@media screen and (max-width: 70em) { html body .imj_siteWrapper { max-width: 100% !important; } }
+html body .imj_siteWrapper .imj_logo { background-color: rgba(255, 255, 255, 0.85); background-position-y: center; background-position-x: 20px; padding: 5px 10px 0px 10px; width: 10em; height: 40px; padding: 10px 20px 10px 10px; }
+@media screen and (max-width: 40em) { html body .imj_siteWrapper .imj_logo { padding: 0; margin: 0; width: 8em; background-size: contain; } }
 html body .imj_siteWrapper .imj_siteHeader { padding: 0; margin-bottom: 10px; }
+@media screen and (max-width: 40em) { html body .imj_siteWrapper .imj_siteHeader { margin-bottom: 2px; } }
 html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine { margin: 0; height: 40px; max-width: 70%; width: inherit; float: right; padding: 10px 20px 10px 10px; background: rgba(255, 255, 255, 0.85); }
+html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine .imj_metaMenuItemSelect { font-weight: 400; color: #04725d; text-transform: uppercase; font-size: 1em; border: none; padding: 5px 0px 5px 10px; }
+@media screen and (max-width: 40em) { html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine { padding: 0; margin: 0; font-size: 0.6em; }
+  html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine .imj_metaMenuItem { padding: 0; margin: 0; } }
 html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine .imj_metaMenuItemsAlign { float: left; margin-top: 10px; vertical-align: text-top; }
-html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine .imj_metaMenuItemsAlign a { font-weight: 400; color: #04725d; text-transform: uppercase; position: relative; margin-left: 20px; }
+html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine .imj_metaMenuItemsAlign a { font-weight: 400; color: #04725d; text-transform: uppercase; position: relative; margin-left: 1em; }
 html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine .imj_metaMenuItemsAlign a:hover { color: #06a385; }
 html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine .imj_metaMenuItemsAlign .imj_metaMenuSeparator { width: 0; margin: 0; padding: 0; }
-html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine .imj_metaMenuItemsAlign input { font-family: 'Titillium Web', Arial, Helvetica, Verdana, sans-serif !important; border: 1px solid #04725d; background: transparent; color: #222222; border-radius: 2px; padding: 5px 10px 5px 10px; width: 110px; margin-right: 10px; }
+html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine .imj_metaMenuItemsAlign input { font-family: 'Titillium Web', Arial, Helvetica, Verdana, sans-serif !important; border: 1px solid #04725d; background: transparent; color: #222222; border-radius: 2px; padding: 5px 10px 5px 10px; vertical-align: baseline; }
 html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine .imj_metaMenuItemsAlign input:hover { color: #222222; }
 html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine .imj_metaMenuItemsAlign input:focus { color: #222222; border: 1px solid #222222; outline: none; }
 html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine .imj_metaMenuItemsAlign input::-webkit-input-placeholder { /* Chrome/Opera/Safari */ text-transform: uppercase; font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif; }
 html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine .imj_metaMenuItemsAlign input::-moz-placeholder { /* Firefox 19+ */ text-transform: uppercase; font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif; }
 html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine .imj_metaMenuItemsAlign input:-ms-input-placeholder { /* IE 10+ */ text-transform: uppercase; font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif; }
 html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine .imj_metaMenuItemsAlign input:-moz-placeholder { /* Firefox 18- */ text-transform: uppercase; font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif; }
-html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine .imj_metaMenuItemsAlign input[type="submit"] { border: none; background-color: #04725d; font-size: 14px; color: white; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; width: 118px; position: relative; top: 0; }
+@media screen and (max-width: 60em) { html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine .imj_metaMenuItemsAlign input { font-size: 0.9em; width: 5em; } }
+html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine .imj_metaMenuItemsAlign input[type="submit"] { font-family: "Titillium Web",Arial,Helvetica,Verdana,sans-serif; border: none !important; background-color: #04725d; font-size: 13px !important; color: #222222; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; width: auto; position: relative; top: 0; vertical-align: baseline; height: 100%; }
 html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine .imj_metaMenuItemsAlign input[type="submit"]:hover { background-color: #06a385; }
-html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine .imj_metaMenuItemsAlign .imj_customSelectbox { border: none; padding: 0; vertical-align: text-top; margin-left: 20px; }
-html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine .imj_metaMenuItemsAlign .imj_customSelectbox .imj_showSelection { text-transform: uppercase; }
-html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine .imj_metaMenuItemsAlign .imj_customSelectbox .imj_showSelection .imj_selectionText { width: auto !important; padding: 0; margin: 0; color: #04725d; }
-html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine .imj_metaMenuItemsAlign .imj_customSelectbox .imj_showSelection .imj_selectionText:hover { color: #04725d; }
-html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine .imj_metaMenuItemsAlign .imj_customSelectbox .imj_showSelection a { margin: 0; }
-html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine .imj_metaMenuItemsAlign .imj_customSelectbox select { text-transform: uppercase; cursor: pointer; margin: 0; }
-html body .imj_siteWrapper .imj_siteHeader .imj_siteHeaderMenuSearchSection { height: 40px; padding: 10px 20px 10px 20px; background-color: rgba(255, 255, 255, 0.85); width: inherit; margin-top: 40px; }
+html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine .imj_metaMenuItemsAlign input[type="submit"]::-moz-focus-inner { border: 0; padding: 0; }
+@media screen and (max-width: 60em) { html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine .imj_metaMenuItemsAlign input[type="submit"] { font-size: 0.8em !important; } }
+html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine .imj_metaMenuItemsAlign select { text-transform: uppercase; cursor: pointer; margin: 0; -webkit-appearance: none; -moz-appearance: none; }
+html body .imj_siteWrapper .imj_siteHeader .imj_metaMenuStandardSingleLine .imj_metaMenuItemsAlign select::-ms-expand { display: none; }
+html body .imj_siteWrapper .imj_siteHeader .imj_siteHeaderMenuSearchSection { height: 40px; padding: 10px 20px 10px 20px; background-color: rgba(255, 255, 255, 0.85); width: inherit; margin-top: 10px; }
+@media screen and (max-width: 40em) { html body .imj_siteWrapper .imj_siteHeader .imj_siteHeaderMenuSearchSection { margin-top: 0px; padding: 0px 20px 0px 20px; font-size: 0.8em; } }
 html body .imj_siteWrapper .imj_siteHeader .imj_siteHeaderMenuSearchSection .imj_mainMenuStandardItem { background: none; margin-right: 1.1em; margin-top: 10px; }
 html body .imj_siteWrapper .imj_siteHeader .imj_siteHeaderMenuSearchSection .imj_mainMenuStandardItem a { font-weight: 400; color: #04725d; font-weight: 600; }
 html body .imj_siteWrapper .imj_siteHeader .imj_siteHeaderMenuSearchSection .imj_mainMenuStandardItem a:hover { color: #06a385; }
 html body .imj_siteWrapper .imj_siteHeader .imj_siteHeaderMenuSearchSection .imj_active a { color: #04725d; }
 html body .imj_siteWrapper .imj_siteHeader .imj_siteHeaderMenuSearchSection .imj_mainMenuStandard { padding: 0; }
-html body .imj_siteWrapper .imj_siteHeader .imj_siteHeaderMenuSearchSection .imj_simpleSearch { padding: 0; margin: 0 0 0 -30px; }
-html body .imj_siteWrapper .imj_siteHeader .imj_siteHeaderMenuSearchSection .imj_simpleSearch .imj_simpleSearchInput { font-family: 'Titillium Web', Arial, Helvetica, Verdana, sans-serif !important; border: 1px solid #04725d; background: transparent; color: #222222; border-radius: 2px; padding: 5px 10px 5px 10px; border-radius: 2px 0 0 2px; height: 35px; padding: 0 0 0 35px; }
+html body .imj_siteWrapper .imj_siteHeader .imj_siteHeaderMenuSearchSection .imj_mainMenuStandard .imj_mainMenuStandardItem { padding: 0; }
+@media screen and (max-width: 40em) { html body .imj_siteWrapper .imj_siteHeader .imj_siteHeaderMenuSearchSection .imj_simpleSearchLinks { display: none; } }
+html body .imj_siteWrapper .imj_siteHeader .imj_siteHeaderMenuSearchSection .imj_simpleSearchLinks { float: right; }
+@media screen and (max-width: 50em) { html body .imj_siteWrapper .imj_siteHeader .imj_siteHeaderMenuSearchSection .imj_simpleSearchLinks { display: none !important; } }
+@media screen and (min-width: 40em) { html body .imj_siteWrapper .imj_siteHeader .imj_siteHeaderMenuSearchSection .imj_simpleSearchLinks .imj_simpleSearchLinkAdvancedsearch { margin-left: 0.8em; white-space: nowrap; display: inline-block; position: relative; top: 10px; font-size: 1.2em; } }
+html body .imj_siteWrapper .imj_siteHeader .imj_siteHeaderMenuSearchSection .imj_mainMenuStandard { float: left; }
+html body .imj_siteWrapper .imj_siteHeader .imj_siteHeaderMenuSearchSection .imj_simpleSearch { padding: 0; margin: 0 0 0 -30px; float: right; position: relative; width: 35%; min-width: 15em; /* &::before { content: "\f002"; font-size: 1.4em; font-family: 'fontAwesome'; color: darken($color-01, 20); left: 35px; top: -15px; position: relative; }*/ }
+html body .imj_siteWrapper .imj_siteHeader .imj_siteHeaderMenuSearchSection .imj_simpleSearch .imj_overlayMenu { padding: 0; }
+html body .imj_siteWrapper .imj_siteHeader .imj_siteHeaderMenuSearchSection .imj_simpleSearch .imj_menuSimpleSearch { width: calc(100% - 55px) !important; left: 0; margin-top: 2.54em; font-size: 1em; -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */ -moz-box-sizing: border-box; /* Firefox, other Gecko */ box-sizing: border-box; /* Opera/IE 8+ */ }
+html body .imj_siteWrapper .imj_siteHeader .imj_siteHeaderMenuSearchSection .imj_simpleSearch .imj_simpleSearchInput { font-family: 'Titillium Web', Arial, Helvetica, Verdana, sans-serif !important; border: 1px solid #04725d; background: transparent; color: #222222; border-radius: 2px; padding: 5px 10px 5px 10px; border-radius: 2px 0 0 2px; height: 35px; float: left; width: calc(100% - 55px); -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */ -moz-box-sizing: border-box; /* Firefox, other Gecko */ box-sizing: border-box; }
 html body .imj_siteWrapper .imj_siteHeader .imj_siteHeaderMenuSearchSection .imj_simpleSearch .imj_simpleSearchInput:hover { color: #222222; }
 html body .imj_siteWrapper .imj_siteHeader .imj_siteHeaderMenuSearchSection .imj_simpleSearch .imj_simpleSearchInput:focus { color: #222222; border: 1px solid #222222; outline: none; }
 html body .imj_siteWrapper .imj_siteHeader .imj_siteHeaderMenuSearchSection .imj_simpleSearch .imj_simpleSearchInput::-webkit-input-placeholder { /* Chrome/Opera/Safari */ text-transform: uppercase; font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif; }
 html body .imj_siteWrapper .imj_siteHeader .imj_siteHeaderMenuSearchSection .imj_simpleSearch .imj_simpleSearchInput::-moz-placeholder { /* Firefox 19+ */ text-transform: uppercase; font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif; }
 html body .imj_siteWrapper .imj_siteHeader .imj_siteHeaderMenuSearchSection .imj_simpleSearch .imj_simpleSearchInput:-ms-input-placeholder { /* IE 10+ */ text-transform: uppercase; font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif; }
 html body .imj_siteWrapper .imj_siteHeader .imj_siteHeaderMenuSearchSection .imj_simpleSearch .imj_simpleSearchInput:-moz-placeholder { /* Firefox 18- */ text-transform: uppercase; font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif; }
-html body .imj_siteWrapper .imj_siteHeader .imj_siteHeaderMenuSearchSection .imj_simpleSearch::before { content: "\f002"; font-size: 1.4em; font-family: 'fontAwesome'; color: black; left: 35px; top: 4px; position: relative; }
-html body .imj_siteWrapper .imj_siteHeader .imj_siteHeaderMenuSearchSection .imj_simpleSearch .imj_simpleSearchButtonSubmit { border: none; background-color: #04725d; font-size: 14px; color: white; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; }
+html body .imj_siteWrapper .imj_siteHeader .imj_siteHeaderMenuSearchSection .imj_simpleSearch .imj_simpleSearchButtonSubmit { font-family: "Titillium Web",Arial,Helvetica,Verdana,sans-serif; border: none !important; background-color: #04725d; font-size: 13px !important; color: #222222; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; float: right; }
 html body .imj_siteWrapper .imj_siteHeader .imj_siteHeaderMenuSearchSection .imj_simpleSearch .imj_simpleSearchButtonSubmit:hover { background-color: #06a385; }
-html body .imj_siteWrapper .imj_statusHeaderArea { padding: 0; margin: 0; height: 0; position: relative; right: 3%; }
+html body .imj_siteWrapper .imj_siteHeader .imj_siteHeaderMenuSearchSection .imj_simpleSearch .imj_simpleSearchButtonSubmit::-moz-focus-inner { border: 0; padding: 0; }
+html body .imj_siteWrapper .imj_statusHeaderArea { padding: 0.9em 3%; margin: 0; height: 0; position: relative; float: right; right: 3%; }
 html body .imj_siteWrapper .imj_statusHeaderArea .imj_menuBody { white-space: nowrap; }
-html body .imj_siteWrapper .imj_siteContentHeadline { background-color: rgba(255, 255, 255, 0.85); padding-left: 25px; margin: 0; min-width: 100%; }
-html body .imj_siteWrapper #actionsMenuArea { float: left; width: 100%; background-color: rgba(255, 255, 255, 0.85); margin-top: 0; padding: 0px 20px 0 20px; }
+html body .imj_siteWrapper .imj_statusHeaderArea .imj_listDottedSeparator { border-top: 1px dashed #292929; padding: 0.5em 1em; }
+html body .imj_siteWrapper .imj_siteContentHeadline { background-color: rgba(255, 255, 255, 0.85); padding-left: 20px; margin: 0; min-width: 100%; }
+html body .imj_siteWrapper .imj_siteContentHeadline h1 { font-size: 140%; }
+html body .imj_siteWrapper .imj_siteContentHeadline:empty { display: none; }
+html body .imj_siteWrapper #actionsMenuArea { float: left; width: 100%; background-color: rgba(255, 255, 255, 0.85); margin-top: 0; padding: 10px 20px 10px 20px; }
 html body .imj_siteWrapper #actionsMenuArea p, html body .imj_siteWrapper #actionsMenuArea a, html body .imj_siteWrapper #actionsMenuArea span { font-size: 1.2em; }
+html body .imj_siteWrapper #actionsMenuArea:empty { display: none; }
+@media only screen and (max-width: 40em) { html body .imj_siteWrapper #actionsMenuArea .imj_menuButton { padding: 0; margin-right: 2px; }
+  html body .imj_siteWrapper #actionsMenuArea .imj_menuButton span { font-size: 0.9em; } }
 html body .imj_siteWrapper #actionsMenuArea .imj_contentMenu { margin: 0; }
 html body .imj_siteWrapper #actionsMenuArea .imj_contentMenu .imj_contentMenuItem { font-weight: 600; }
 html body .imj_siteWrapper #actionsMenuArea .imj_contentMenu .imj_contentMenuItem:hover { background: transparent; }
 html body .imj_siteWrapper #actionsMenuArea .imj_contentSubMenu { width: 96%; padding: 0; height: 15px; border-bottom: 1px solid #04725d; padding-bottom: 10px; padding-top: 10px; margin-top: 20px; }
-html body .imj_siteWrapper .imj_mainContentWrapper { height: 100%; min-height: 100%; width: 100%; padding: 20px; margin-top: 0; padding-bottom: 2em; background-color: rgba(255, 255, 255, 0.85); margin-bottom: 15px; }
+html body .imj_siteWrapper .imj_mainContentWrapper { height: 100%; min-height: 100%; width: 100%; padding: 20px; margin-top: 0; padding-bottom: 2em; background-color: rgba(255, 255, 255, 0.85); margin-bottom: 0px; overflow: inherit; }
 html body .imj_siteWrapper .imj_mainContentWrapper hr { border-style: none; width: 100%; height: 1px !important; background: #222222; border-width: 1px; }
 html body .imj_siteWrapper .imj_mainContentWrapper h3 { padding-left: 0 !important; font-size: 1.3em; line-height: 1.4em; font-weight: 600; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_paginator { background-color: rgba(255, 255, 255, 0); font-size: 110% !important; width: 96%; padding-left: 0; padding-right: 0; margin-top: 0; border-top: 1px solid #04725d; }
@@ -1767,22 +1804,8 @@ html body .imj_siteWrapper .imj_mainContentWrapper .imj_adminPanel .imj_metadata
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_adminPanel .imj_admindataLabel { line-height: 18px; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_adminPanel .imj_admindataLabel span { line-height: 18px; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_adminPanel .imj_admindataLabel label { line-height: 18px; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_metadataProfileList.imj_edit .imj_listBody .imj_itemHeader label { font-style: normal; color: #222222; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_metadataProfileList.imj_edit .imj_listBody .imj_itemHeader .imj_inlineButtonGroup { font-size: 14px; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_metadataProfileList.imj_edit .imj_listBody .imj_itemHeader .imj_optionList { float: none; margin-left: 30%; font-size: 14px; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_metadataProfileList.imj_edit .imj_listBody input[type="text"] { height: 23px !important; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_metadataProfileList.imj_edit .imj_listBody .imj_metadataSet .imj_metadataSet .imj_metadataLabel { width: 147px !important; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_metadataProfileList.imj_edit .imj_listBody .imj_itemBody .imj_submitPanel .imj_submitButton { margin-right: 10px; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_metadataProfileList.imj_edit .imj_listBody .imj_submitPanel .imj_cancelButton { border: none; background-color: #04725d; font-size: 14px; color: white; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; background-color: #ffffff; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_metadataProfileList.imj_edit .imj_listBody .imj_submitPanel .imj_cancelButton:hover { background-color: #06a385; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_metadataProfileList.imj_edit .imj_listBody .imj_submitPanel .imj_cancelButton:hover { background-color: white; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_metadataProfileList.imj_edit .imj_listBody .imj_submitPanel .imj_submitButton { margin-right: 20px; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_metadataProfileList.imj_edit input[type="text"], html body .imj_siteWrapper .imj_mainContentWrapper .imj_metadataProfileList.imj_edit select { font-size: 14px; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_setupConfig .imj_config_headline { width: inherit; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_setupConfig .imj_administrationTiledList { width: 100%; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_setupConfig .imj_cancelButton { border: none; background-color: #04725d; font-size: 14px; color: white; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; background-color: #ffffff; margin-right: 20px; padding-top: 7px; padding-bottom: 8px; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_setupConfig .imj_cancelButton:hover { background-color: #06a385; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_setupConfig .imj_cancelButton:hover { background-color: white; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_setupConfig .imj_editButton { margin-right: 10px; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_setupConfig .imj_adminPanel { width: 97%; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_setupConfig .imj_adminPanel .imj_content .imj_admindataSet { margin-top: 10px; }
@@ -1796,42 +1819,21 @@ html body .imj_siteWrapper .imj_mainContentWrapper .imj_setupConfig .imj_adminPa
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_setupConfig .imj_adminPanel input[type="text"]::-moz-placeholder, html body .imj_siteWrapper .imj_mainContentWrapper .imj_setupConfig .imj_adminPanel input[type="select"]::-moz-placeholder, html body .imj_siteWrapper .imj_mainContentWrapper .imj_setupConfig .imj_adminPanel input[type="password"]::-moz-placeholder { /* Firefox 19+ */ text-transform: uppercase; font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_setupConfig .imj_adminPanel input[type="text"]:-ms-input-placeholder, html body .imj_siteWrapper .imj_mainContentWrapper .imj_setupConfig .imj_adminPanel input[type="select"]:-ms-input-placeholder, html body .imj_siteWrapper .imj_mainContentWrapper .imj_setupConfig .imj_adminPanel input[type="password"]:-ms-input-placeholder { /* IE 10+ */ text-transform: uppercase; font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_setupConfig .imj_adminPanel input[type="text"]:-moz-placeholder, html body .imj_siteWrapper .imj_mainContentWrapper .imj_setupConfig .imj_adminPanel input[type="select"]:-moz-placeholder, html body .imj_siteWrapper .imj_mainContentWrapper .imj_setupConfig .imj_adminPanel input[type="password"]:-moz-placeholder { /* Firefox 18- */ text-transform: uppercase; font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_setupConfig .imj_adminPanel .imj_fileTypeConfig .imj_submitButton { border: none; background-color: #04725d; font-size: 14px; color: white; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; height: 25px; padding: 12px 20px 4px 20px !important; }
+html body .imj_siteWrapper .imj_mainContentWrapper .imj_setupConfig .imj_adminPanel .imj_fileTypeConfig .imj_submitButton { font-family: "Titillium Web",Arial,Helvetica,Verdana,sans-serif; border: none !important; background-color: #04725d; font-size: 13px !important; color: #222222; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; height: 25px; padding: 12px 20px 4px 20px !important; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_setupConfig .imj_adminPanel .imj_fileTypeConfig .imj_submitButton:hover { background-color: #06a385; }
+html body .imj_siteWrapper .imj_mainContentWrapper .imj_setupConfig .imj_adminPanel .imj_fileTypeConfig .imj_submitButton::-moz-focus-inner { border: 0; padding: 0; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_setupConfig .imj_adminPanel .imj_fileTypeConfigList input[type="text"] { height: 25px; margin-right: 10px; margin-top: 10px; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_setupConfig .imj_adminPanel .imj_fileTypeConfigList tr td { padding-right: 20px; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_spaceConfigPage .imj_headline, html body .imj_siteWrapper .imj_mainContentWrapper .imj_spaceConfigPage .imj_administrationTiledList .imj_adminPanel .imj_config_headline, .imj_administrationTiledList .imj_adminPanel html body .imj_siteWrapper .imj_mainContentWrapper .imj_spaceConfigPage .imj_config_headline { margin-bottom: 20px; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_spaceConfigPage label { font-size: 1.1em; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_spaceConfigPage input[type="text"] { font-family: 'Titillium Web', Arial, Helvetica, Verdana, sans-serif !important; border: 1px solid #04725d; background: transparent; color: #222222; border-radius: 2px; padding: 5px 10px 5px 10px; height: 35px; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_spaceConfigPage input[type="text"]:hover { color: #222222; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_spaceConfigPage input[type="text"]:focus { color: #222222; border: 1px solid #222222; outline: none; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_spaceConfigPage input[type="text"]::-webkit-input-placeholder { /* Chrome/Opera/Safari */ text-transform: uppercase; font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_spaceConfigPage input[type="text"]::-moz-placeholder { /* Firefox 19+ */ text-transform: uppercase; font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_spaceConfigPage input[type="text"]:-ms-input-placeholder { /* IE 10+ */ text-transform: uppercase; font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_spaceConfigPage input[type="text"]:-moz-placeholder { /* Firefox 18- */ text-transform: uppercase; font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_spaceConfigPage #spaceSlug { height: 25px !important; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_spaceConfigPage textarea { height: 100px; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_spaceConfigPage select { width: 72% !important; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_spaceConfigPage .imj_fileUploadContainer { width: 94%; margin-right: 3px; float: right; padding: 20px; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_spaceConfigPage .imj_fileUploadContainer a { font-size: 1em; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_spaceConfigPage .imj_metadataValue { width: 72%; max-width: 72%; margin-left: 0; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_spaceConfigPage .imj_metadataValue input[type="text"] { height: 25px; float: left; margin-left: -5px; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_spaceConfigPage .imj_submitButton { margin-right: 20px; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_administrationTiledList { width: 100%; padding: 0; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_administrationTiledList .imj_listHeader { width: 100%; display: inline-block; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_administrationTiledList .imj_headline, html body .imj_siteWrapper .imj_mainContentWrapper .imj_administrationTiledList .imj_adminPanel .imj_config_headline { font-size: 18px; color: #222222; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_administrationTiledList .imj_headline h2, html body .imj_siteWrapper .imj_mainContentWrapper .imj_administrationTiledList .imj_adminPanel .imj_config_headline h2 { font-size: 18px; color: #222222; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_administrationTiledList .imj_submitButton { border: none; background-color: #04725d; font-size: 14px; color: white; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; }
+html body .imj_siteWrapper .imj_mainContentWrapper .imj_administrationTiledList .imj_submitButton { font-family: "Titillium Web",Arial,Helvetica,Verdana,sans-serif; border: none !important; background-color: #04725d; font-size: 13px !important; color: #222222; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_administrationTiledList .imj_submitButton:hover { background-color: #06a385; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_submitPanel .imj_submitButton { height: 100%; padding: 7px 20px 8px 20px; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_userGlobalInformation .imj_admindataValueEntry { width: inherit; }
+html body .imj_siteWrapper .imj_mainContentWrapper .imj_administrationTiledList .imj_submitButton::-moz-focus-inner { border: 0; padding: 0; }
+html body .imj_siteWrapper .imj_mainContentWrapper .imj_administrationTiledList .imj_listBody { text-align: left; }
+html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig { width: initial; padding-left: 0 !important; clear: both; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_userGlobalInformation .imj_admindataValueEntry textarea { margin-bottom: 10px; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_userGlobalInformation .imj_submitPanel { width: 97% !important; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_userGlobalInformation .imj_submitPanel .imj_cancelButton { border: none; background-color: #04725d; font-size: 14px; color: white; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; background-color: #ffffff; margin: 0; height: 25px; padding: 10px 20px 0 20px; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_userGlobalInformation .imj_submitPanel .imj_cancelButton:hover { background-color: #06a385; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_userGlobalInformation .imj_submitPanel .imj_cancelButton:hover { background-color: white; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_userGlobalInformation .imj_submitPanel .imj_submitButton { border: none; background-color: #04725d; font-size: 14px; color: white; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; height: 25px; padding: 10px 20px 0px 20px; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_userGlobalInformation .imj_submitPanel .imj_submitButton:hover { background-color: #06a385; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_organisation .imj_admindataValue { width: inherit; max-width: 73% !important; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_organisation .imj_inlineButtonGroup .fa { padding: 0; padding-right: 10px; margin: 0; color: rgba(255, 255, 255, 0.85); font-size: 18px; background-color: transparent; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_organisation .imj_inlineButtonGroup .fa:hover { background-color: transparent; }
@@ -1839,21 +1841,23 @@ html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_admindat
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_admindataSetEdit .imj_admindataValue { margin-left: 0; min-width: 75%; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_admindataSetEdit .imj_admindataValue .imj_admindataValueEntry { width: 60% !important; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_admindataSetEdit .imj_admindataValue .imj_admindataSet .imj_admindataLabel .imj_submitPanel { margin: 0; padding: 0; margin-top: 10px; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_admindataSetEdit .imj_admindataValue .imj_admindataSet .imj_admindataLabel .imj_submitPanel .imj_cancelButton { border: none; background-color: #04725d; font-size: 14px; color: white; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; background-color: #ffffff; margin: 0; float: left; height: 25px; padding: 10px 20px 0px 20px; }
+html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_admindataSetEdit .imj_admindataValue .imj_admindataSet .imj_admindataLabel .imj_submitPanel .imj_cancelButton { font-family: "Titillium Web",Arial,Helvetica,Verdana,sans-serif; border: none !important; background-color: #04725d; font-size: 13px !important; color: #222222; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; background-color: #ffffff !important; margin: 0; float: left; height: 25px; padding: 10px 20px 0px 20px; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_admindataSetEdit .imj_admindataValue .imj_admindataSet .imj_admindataLabel .imj_submitPanel .imj_cancelButton:hover { background-color: #06a385; }
+html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_admindataSetEdit .imj_admindataValue .imj_admindataSet .imj_admindataLabel .imj_submitPanel .imj_cancelButton::-moz-focus-inner { border: 0; padding: 0; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_admindataSetEdit .imj_admindataValue .imj_admindataSet .imj_admindataLabel .imj_submitPanel .imj_cancelButton:hover { background-color: white; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_admindataSetEdit .imj_admindataValue .imj_admindataSet .imj_admindataLabel .imj_submitPanel .imj_submitButton { border: none; background-color: #04725d; font-size: 14px; color: white; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; height: 25px; padding: 10px 20px 0px 20px; }
+html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_admindataSetEdit .imj_admindataValue .imj_admindataSet .imj_admindataLabel .imj_submitPanel .imj_submitButton { font-family: "Titillium Web",Arial,Helvetica,Verdana,sans-serif; border: none !important; background-color: #04725d; font-size: 13px !important; color: #222222; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; height: 25px; padding: 10px 20px 0px 20px; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_admindataSetEdit .imj_admindataValue .imj_admindataSet .imj_admindataLabel .imj_submitPanel .imj_submitButton:hover { background-color: #06a385; }
+html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_admindataSetEdit .imj_admindataValue .imj_admindataSet .imj_admindataLabel .imj_submitPanel .imj_submitButton::-moz-focus-inner { border: 0; padding: 0; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_admindataSetEdit .imj_admindataValue .imj_admindataSet .imj_admindataLabel .imj_submitPanel .imj_editButton { margin-right: 20px; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_admindataSetEdit .imj_submitPanel { margin: 0; padding: 0; margin-top: 10px; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_admindataSetEdit .imj_submitPanel .imj_cancelButton { border: none; background-color: #04725d; font-size: 14px; color: white; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; background-color: #ffffff; margin: 0; float: left; height: 25px; padding: 10px 20px 0px 20px; }
+html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_admindataSetEdit .imj_submitPanel .imj_cancelButton { font-family: "Titillium Web",Arial,Helvetica,Verdana,sans-serif; border: none !important; background-color: #04725d; font-size: 13px !important; color: #222222; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; background-color: #ffffff !important; margin: 0; float: left; height: 25px; padding: 10px 20px 0px 20px; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_admindataSetEdit .imj_submitPanel .imj_cancelButton:hover { background-color: #06a385; }
+html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_admindataSetEdit .imj_submitPanel .imj_cancelButton::-moz-focus-inner { border: 0; padding: 0; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_admindataSetEdit .imj_submitPanel .imj_cancelButton:hover { background-color: white; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_admindataSetEdit .imj_submitPanel .imj_submitButton { border: none; background-color: #04725d; font-size: 14px; color: white; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; height: 25px; padding: 10px 20px 0px 20px; }
+html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_admindataSetEdit .imj_submitPanel .imj_submitButton { font-family: "Titillium Web",Arial,Helvetica,Verdana,sans-serif; border: none !important; background-color: #04725d; font-size: 13px !important; color: #222222; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; height: 25px; padding: 10px 20px 0px 20px; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_admindataSetEdit .imj_submitPanel .imj_submitButton:hover { background-color: #06a385; }
+html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_admindataSetEdit .imj_submitPanel .imj_submitButton::-moz-focus-inner { border: 0; padding: 0; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_admindataSetEdit .imj_submitPanel .imj_editButton { margin-right: 20px; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_modalDialogBox .imj_submitPanel { width: 97% !important; padding-left: 20px !important; padding-right: 20px !important; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_modalDialogBox .imj_submitPanel .imj_submitButton { height: 31px; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_admindataSet .imj_headline, html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_admindataSet .imj_administrationTiledList .imj_adminPanel .imj_config_headline, .imj_administrationTiledList .imj_adminPanel html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_admindataSet .imj_config_headline { margin-bottom: 20px; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_simpleSearch { padding: 0; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_simpleSearch .imj_searchInfoText { margin-top: 10px; margin-right: 10px; }
@@ -1864,20 +1868,23 @@ html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_simpleSe
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_simpleSearch .imj_simpleSearchInput::-moz-placeholder { /* Firefox 19+ */ text-transform: uppercase; font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_simpleSearch .imj_simpleSearchInput:-ms-input-placeholder { /* IE 10+ */ text-transform: uppercase; font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_simpleSearch .imj_simpleSearchInput:-moz-placeholder { /* Firefox 18- */ text-transform: uppercase; font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_simpleSearch .imj_simpleSearchButtonSubmit { border: none; background-color: #04725d; font-size: 14px; color: white; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; }
+html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_simpleSearch .imj_simpleSearchButtonSubmit { font-family: "Titillium Web",Arial,Helvetica,Verdana,sans-serif; border: none !important; background-color: #04725d; font-size: 13px !important; color: #222222; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_simpleSearch .imj_simpleSearchButtonSubmit:hover { background-color: #06a385; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_simpleSearch .imj_cancelButton { border: none; background-color: #04725d; font-size: 14px; color: white; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; background-color: #ffffff; height: 25px; padding: 10px 20px 0 20px; margin-top: -5px; }
+html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_simpleSearch .imj_simpleSearchButtonSubmit::-moz-focus-inner { border: 0; padding: 0; }
+html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_simpleSearch .imj_cancelButton { font-family: "Titillium Web",Arial,Helvetica,Verdana,sans-serif; border: none !important; background-color: #04725d; font-size: 13px !important; color: #222222; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; background-color: #ffffff !important; height: 25px; padding: 10px 20px 0 20px; margin-top: -5px; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_simpleSearch .imj_cancelButton:hover { background-color: #06a385; }
+html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_simpleSearch .imj_cancelButton::-moz-focus-inner { border: 0; padding: 0; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_simpleSearch .imj_cancelButton:hover { background-color: white; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_cancelButton { display: inline-block; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_editButton { border: none; background-color: #04725d; font-size: 14px; color: white; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; padding: 7px 20px 8px 20px; }
+html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_editButton { font-family: "Titillium Web",Arial,Helvetica,Verdana,sans-serif; border: none !important; background-color: #04725d; font-size: 13px !important; color: #222222; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; padding: 7px 20px 8px 20px; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_editButton:hover { background-color: #06a385; }
+html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_editButton::-moz-focus-inner { border: 0; padding: 0; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_adminPanel { display: inline-block; padding-left: 20px; padding-right: 20px; font-size: 14px; line-height: 16px; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_adminPanel .imj_headline, html body .imj_siteWrapper .imj_mainContentWrapper .imj_administrationTiledList .imj_adminPanel .imj_config_headline, .imj_administrationTiledList html body .imj_siteWrapper .imj_mainContentWrapper .imj_adminPanel .imj_config_headline { font-size: 18px; color: #222222; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_adminPanel .imj_headline h2, html body .imj_siteWrapper .imj_mainContentWrapper .imj_administrationTiledList .imj_adminPanel .imj_config_headline h2, .imj_administrationTiledList html body .imj_siteWrapper .imj_mainContentWrapper .imj_adminPanel .imj_config_headline h2 { font-size: 18px; color: #222222; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_adminPanel.imj_userConfig { width: 94%; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_adminPanel.imj_userConfig .imj_simpleSearch input[type="text"] { border: none; background-color: #04725d; font-size: 14px; color: white; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; }
+html body .imj_siteWrapper .imj_mainContentWrapper .imj_adminPanel.imj_userConfig .imj_simpleSearch input[type="text"] { font-family: "Titillium Web",Arial,Helvetica,Verdana,sans-serif; border: none !important; background-color: #04725d; font-size: 13px !important; color: #222222; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_adminPanel.imj_userConfig .imj_simpleSearch input[type="text"]:hover { background-color: #06a385; }
+html body .imj_siteWrapper .imj_mainContentWrapper .imj_adminPanel.imj_userConfig .imj_simpleSearch input[type="text"]::-moz-focus-inner { border: 0; padding: 0; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_adminPanel.imj_userConfig .imj_headline, html body .imj_siteWrapper .imj_mainContentWrapper .imj_administrationTiledList .imj_adminPanel.imj_userConfig .imj_config_headline, .imj_administrationTiledList html body .imj_siteWrapper .imj_mainContentWrapper .imj_adminPanel.imj_userConfig .imj_config_headline { width: 100%; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_adminPanel.imj_userConfig .imj_headline h2, html body .imj_siteWrapper .imj_mainContentWrapper .imj_administrationTiledList .imj_adminPanel.imj_userConfig .imj_config_headline h2, .imj_administrationTiledList html body .imj_siteWrapper .imj_mainContentWrapper .imj_adminPanel.imj_userConfig .imj_config_headline h2 { color: #222222; font-size: 18px; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_adminPanel.imj_userConfig .imj_submitPanel { width: 101%; padding-left: 20px; padding-right: 20px; }
@@ -1888,34 +1895,21 @@ html body .imj_siteWrapper .imj_mainContentWrapper .imj_adminPanel.imj_userConfi
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_adminPanel.imj_userConfig .imj_content form p { width: 100%; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_adminPanel.imj_userConfig .imj_content form p textarea { width: 40%; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_adminPanel.imj_userConfig .imj_content form p select { margin-left: 20px; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_adminPanel.imj_userConfig .imj_content form a { border: none; background-color: #04725d; font-size: 14px; color: white; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; padding: 7px 20px 8px 20px; }
+html body .imj_siteWrapper .imj_mainContentWrapper .imj_adminPanel.imj_userConfig .imj_content form a { font-family: "Titillium Web",Arial,Helvetica,Verdana,sans-serif; border: none !important; background-color: #04725d; font-size: 13px !important; color: #222222; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; padding: 7px 20px 8px 20px; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_adminPanel.imj_userConfig .imj_content form a:hover { background-color: #06a385; }
+html body .imj_siteWrapper .imj_mainContentWrapper .imj_adminPanel.imj_userConfig .imj_content form a::-moz-focus-inner { border: 0; padding: 0; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_adminPanel.imj_userConfig .imj_content .imj_adminEditPanel { margin-top: 25px; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_adminPanel.imj_userConfig .imj_content .imj_adminEditPanel .imj_cancelButton { border: none; background-color: #04725d; font-size: 14px; color: white; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; background-color: #ffffff; height: 100%; padding: 7px 20px 8px 20px; }
+html body .imj_siteWrapper .imj_mainContentWrapper .imj_adminPanel.imj_userConfig .imj_content .imj_adminEditPanel .imj_cancelButton { font-family: "Titillium Web",Arial,Helvetica,Verdana,sans-serif; border: none !important; background-color: #04725d; font-size: 13px !important; color: #222222; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; background-color: #ffffff !important; height: 100%; padding: 7px 20px 8px 20px; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_adminPanel.imj_userConfig .imj_content .imj_adminEditPanel .imj_cancelButton:hover { background-color: #06a385; }
+html body .imj_siteWrapper .imj_mainContentWrapper .imj_adminPanel.imj_userConfig .imj_content .imj_adminEditPanel .imj_cancelButton::-moz-focus-inner { border: 0; padding: 0; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_adminPanel.imj_userConfig .imj_content .imj_adminEditPanel .imj_cancelButton:hover { background-color: white; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_adminPanel.imj_userConfig .imj_content .imj_adminEditPanel a.imj_cancelButton { border: none; background-color: #04725d; font-size: 14px; color: white; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; background-color: #ffffff; height: 25px; padding: 12px 20px 3px 20px; }
+html body .imj_siteWrapper .imj_mainContentWrapper .imj_adminPanel.imj_userConfig .imj_content .imj_adminEditPanel a.imj_cancelButton { font-family: "Titillium Web",Arial,Helvetica,Verdana,sans-serif; border: none !important; background-color: #04725d; font-size: 13px !important; color: #222222; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; background-color: #ffffff !important; height: 25px; padding: 12px 20px 3px 20px; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_adminPanel.imj_userConfig .imj_content .imj_adminEditPanel a.imj_cancelButton:hover { background-color: #06a385; }
+html body .imj_siteWrapper .imj_mainContentWrapper .imj_adminPanel.imj_userConfig .imj_content .imj_adminEditPanel a.imj_cancelButton::-moz-focus-inner { border: 0; padding: 0; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_adminPanel.imj_userConfig .imj_content .imj_adminEditPanel a.imj_cancelButton:hover { background-color: white; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_storageInformation .imj_admindataLabel { width: initial; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_maxWidth { padding: 0; }
-html body .imj_siteWrapper .imj_mainContentWrapper #createProfileArea h2 { width: 100%; }
-html body .imj_siteWrapper .imj_mainContentWrapper #createProfileArea h2 .imj_messageError { background-color: transparent !important; }
-html body .imj_siteWrapper .imj_mainContentWrapper #createProfileArea #selectorArea select { font-family: 'Titillium Web', Arial, Helvetica, Verdana, sans-serif !important; border: 1px solid #04725d; background: transparent; color: #222222; border-radius: 2px; padding: 5px 10px 5px 10px; height: 35px; }
-html body .imj_siteWrapper .imj_mainContentWrapper #createProfileArea #selectorArea select:hover { color: #222222; }
-html body .imj_siteWrapper .imj_mainContentWrapper #createProfileArea #selectorArea select:focus { color: #222222; border: 1px solid #222222; outline: none; }
-html body .imj_siteWrapper .imj_mainContentWrapper #createProfileArea #selectorArea select::-webkit-input-placeholder { /* Chrome/Opera/Safari */ text-transform: uppercase; font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif; }
-html body .imj_siteWrapper .imj_mainContentWrapper #createProfileArea #selectorArea select::-moz-placeholder { /* Firefox 19+ */ text-transform: uppercase; font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif; }
-html body .imj_siteWrapper .imj_mainContentWrapper #createProfileArea #selectorArea select:-ms-input-placeholder { /* IE 10+ */ text-transform: uppercase; font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif; }
-html body .imj_siteWrapper .imj_mainContentWrapper #createProfileArea #selectorArea select:-moz-placeholder { /* Firefox 18- */ text-transform: uppercase; font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif; }
-html body .imj_siteWrapper .imj_mainContentWrapper #createProfileArea #selectorArea input { margin-right: 10px; }
-html body .imj_siteWrapper .imj_mainContentWrapper #createProfileArea #selectorArea .imj_listBody { font-size: 0.6em; }
-html body .imj_siteWrapper .imj_mainContentWrapper #createProfileArea #selectorArea .imj_listBody .imj_listItem .imj_listBody { font-size: 1.2em; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_mainContentWrapper { padding-left: 0; height: 100%; background: transparent; overflow-y: hidden; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_metadataProfileList .imj_listHeader .imj_headline, html body .imj_siteWrapper .imj_mainContentWrapper .imj_metadataProfileList .imj_listHeader .imj_administrationTiledList .imj_adminPanel .imj_config_headline, .imj_administrationTiledList .imj_adminPanel html body .imj_siteWrapper .imj_mainContentWrapper .imj_metadataProfileList .imj_listHeader .imj_config_headline { float: inherit; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_pageMessageArea .imj_metadataSet { margin-top: 15px; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_pageMessageArea .imj_metadataSet label { min-width: 80px; width: initial; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_pageMessageArea .imj_metadataSet input { min-width: initial; width: 300px; }
 html body .imj_siteWrapper .imj_mainContentWrapper #imj_ajaxWrapper .imj_descriptionArea .imj_metadataLabel { font-size: 1.2em; }
 html body .imj_siteWrapper .imj_mainContentWrapper #imj_ajaxWrapper .imj_descriptionArea table td { padding-right: 20px; }
 html body .imj_siteWrapper .imj_mainContentWrapper #imj_ajaxWrapper .imj_sectionHeadline .imj_inlineButtonGroup a { font-size: 1.1em; }
@@ -1991,6 +1985,11 @@ html body .imj_siteWrapper .imj_mainContentWrapper .imj_collectionEntryPage .imj
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_collectionEntryPage .imj_entryPagePreviewTiledListLink { font-size: 1em; width: 100%; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_collectionEntryPage .imj_entryPagePreviewTiledListLink .fa { display: none; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_bibliographicList h3 { font-size: 95%; }
+html body .imj_siteWrapper .imj_mainContentWrapper .imj_bibliographicList .imj_bibliographicListItem .imj_itemContent { width: 60% !important; margin-left: 2%; }
+html body .imj_siteWrapper .imj_mainContentWrapper .imj_bibliographicList .imj_bibliographicListItem .imj_imageStack { margin: 1em 0; height: 8em; width: 8em; }
+html body .imj_siteWrapper .imj_mainContentWrapper .imj_bibliographicList .imj_bibliographicListItem .imj_imageStack::before { height: 8em; width: 8em; }
+html body .imj_siteWrapper .imj_mainContentWrapper .imj_bibliographicList .imj_bibliographicListItem .imj_imageStack::after { height: 8em; width: 8em; }
+html body .imj_siteWrapper .imj_mainContentWrapper .imj_bibliographicList .imj_bibliographicListItem .imj_previewArea { min-width: 9em; max-width: 9em; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_pageMessageArea { background-color: transparent; padding: 0; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_searchUnit input, html body .imj_siteWrapper .imj_mainContentWrapper .imj_searchUnit select { font-family: 'Titillium Web', Arial, Helvetica, Verdana, sans-serif !important; border: 1px solid #04725d; background: transparent; color: #222222; border-radius: 2px; padding: 5px 10px 5px 10px; height: 35px; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_searchUnit input:hover, html body .imj_siteWrapper .imj_mainContentWrapper .imj_searchUnit select:hover { color: #222222; }
@@ -2008,6 +2007,7 @@ html body .imj_siteWrapper .imj_mainContentWrapper .imj_searchUnit .imj_logicalD
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_searchUnit .imj_searchDetails .imj_logicalSearchGroup { width: 9%; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_searchUnit .imj_searchDetails .imj_logicalSearchGroup:first-of-type { margin-right: 1%; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_searchUnit .imj_searchDetails .imj_logicalSearchGroup select { width: 100%; }
+html body .imj_siteWrapper .imj_mainContentWrapper .imj_searchUnit .imj_searchInput { width: 20em; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_searchUnit .imj_searchInput span, html body .imj_siteWrapper .imj_mainContentWrapper .imj_searchUnit .imj_searchInput input { height: 23px; margin-right: 20px; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_searchUnit .imj_searchSelectbox { width: 20%; margin-right: 20px; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_searchUnit .imj_searchSelectbox select { width: 100%; }
@@ -2015,12 +2015,15 @@ html body .imj_siteWrapper .imj_mainContentWrapper .imj_searchUnit .imj_searchSe
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_searchUnit .imj_searchStatement { width: 20%; margin-right: 20px; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_searchUnit .imj_searchStatement select { width: 100%; }
 html body .imj_siteWrapper .imj_mainContentWrapper #registerArea { font-size: 1.2em; }
-html body .imj_siteWrapper .imj_mainContentWrapper #registerArea input[type="submit"] { border: none; background-color: #04725d; font-size: 14px; color: white; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; }
+html body .imj_siteWrapper .imj_mainContentWrapper #registerArea input[type="submit"] { font-family: "Titillium Web",Arial,Helvetica,Verdana,sans-serif; border: none !important; background-color: #04725d; font-size: 13px !important; color: #222222; height: 35px; padding: 5px 20px 5px 20px; border-radius: 2px; text-transform: uppercase; }
 html body .imj_siteWrapper .imj_mainContentWrapper #registerArea input[type="submit"]:hover { background-color: #06a385; }
+html body .imj_siteWrapper .imj_mainContentWrapper #registerArea input[type="submit"]::-moz-focus-inner { border: 0; padding: 0; }
 html body .imj_siteWrapper .imj_mainContentWrapper #registerArea h2 { width: 100%; }
 html body .imj_siteWrapper .imj_mainContentWrapper #registerArea .imj_headline, html body .imj_siteWrapper .imj_mainContentWrapper #registerArea .imj_administrationTiledList .imj_adminPanel .imj_config_headline, .imj_administrationTiledList .imj_adminPanel html body .imj_siteWrapper .imj_mainContentWrapper #registerArea .imj_config_headline { display: none; }
 html body .imj_siteWrapper .imj_mainContentWrapper #registerArea .imj_registerSteps { width: 180px; }
 html body .imj_siteWrapper .imj_mainContentWrapper #registerArea .imj_registerSteps .imj_active { color: #04725d; }
+html body .imj_siteWrapper .imj_mainContentWrapper .itemsArea { max-width: 96%; }
+html body .imj_siteWrapper .imj_mainContentWrapper .imj_actionMenuArea { max-height: 40px; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_mediaEntryDetailPage .imj_paginator { border: none; margin-top: 0; padding-top: 10px; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_welcomeInfo, html body .imj_siteWrapper .imj_mainContentWrapper .imj_tabContent { min-height: inherit !important; padding: 0; font-size: 110%; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_welcomeInfo li.ui-state-active, html body .imj_siteWrapper .imj_mainContentWrapper .imj_tabContent li.ui-state-active { background: transparent; }
@@ -2033,6 +2036,10 @@ html body .imj_siteWrapper .imj_mainContentWrapper .imj_listBody span.imj_option
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_listBody span.imj_optionSet label { width: 100%; overflow: hidden; max-width: 70%; text-align: left; padding-left: 10px; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_listBody span.imj_optionSet .imj_optionLabel { max-width: 70%; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_listBody .imj_listItem dl { padding-left: 0; }
+html body .imj_siteWrapper .imj_mainContentWrapper .imj_listBody .imj_tileItem { width: auto; max-width: 45%; }
+html body .imj_siteWrapper .imj_mainContentWrapper .imj_listBody .imj_tileItem:hover { border-color: blue; }
+html body .imj_siteWrapper .imj_mainContentWrapper .imj_listBody .imj_tileItem img { /*width: 100% !important;
+height: auto;*/ border: none; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_listBody .imj_tileItem .imj_tooltip { box-shadow: none; background: #ffffff; border-radius: 2px; border: 1px solid #C8C8C9; padding: 10px; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_listBody .imj_tileItem .imj_tooltip a { color: #04725d; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_listBody .imj_tileItem .imj_tooltip a:hover { color: #06a385; }
@@ -2046,9 +2053,10 @@ html body .imj_siteWrapper .imj_mainContentWrapper .imj_itemActionArea ul li { p
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_itemActionArea ul li a { color: #04725d; text-align: left; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_itemActionArea ul li a:hover { color: #06a385; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_metadataSubPanel { padding-left: 0; }
-html body .imj_siteWrapper .imj_mainContentWrapper .imj_tileThumbnailArea { border-radius: 5px; background: transparent !important; }
+html body .imj_siteWrapper .imj_mainContentWrapper .imj_tileThumbnailArea { border-radius: 5px; background: transparent !important; border: 4px solid transparent; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_tileThumbnailArea:hover { background: transparent; border: 4px solid #04725d; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_listBody { border: none; padding-bottom: 0; }
+html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig .imj_submitPanel { width: 100% !important; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig select { font-family: 'Titillium Web', Arial, Helvetica, Verdana, sans-serif !important; border: 1px solid #04725d; background: transparent; color: #222222; border-radius: 2px; padding: 5px 10px 5px 10px; height: 35px; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig select:hover { color: #222222; }
 html body .imj_siteWrapper .imj_mainContentWrapper .imj_userConfig select:focus { color: #222222; border: 1px solid #222222; outline: none; }
@@ -2062,27 +2070,73 @@ html body .imj_siteWrapper .imj_listHeader .imj_active { background: transparent
 html body .imj_siteWrapper .imj_listHeader a { color: #04725d; }
 html body .imj_siteWrapper .imj_listHeader a:hover { color: #06a385; }
 html body .imj_siteWrapper .imj_listHeader a:hover { background: transparent; }
-html body .imj_siteWrapper .imj_pageMessageArea { background-color: rgba(255, 255, 255, 0.85); margin: 0; padding: 10px 10px 10px 25px; width: 100%; }
-html body .imj_siteWrapper .imj_pageMessageArea .imj_messageInfo, html body .imj_siteWrapper .imj_pageMessageArea .imj_messageError { padding-left: 0; }
+html body .imj_siteWrapper .imj_message { padding: 5px 20px 5px 20px; background-color: #6CAE2F; /* Red */ color: white; margin-bottom: 5px; opacity: 1; transition: opacity 0.6s; }
+html body .imj_siteWrapper .imj_messageError { background-color: #D80000; /* Red */ }
+html body .imj_siteWrapper .imj_messageAreaCloseBtn { margin-left: 15px; color: white; font-weight: bold; float: right; font-size: 1em; line-height: 20px; cursor: pointer; transition: 0.3s; }
 html body .imj_siteWrapper .imj_searchQueryDisplay { margin: 0 0 10px 0; padding: 5px 25px 5px 25px !important; float: left; background-color: rgba(255, 255, 255, 0.85); width: 99%; }
 html body .imj_siteWrapper .imj_searchQueryDisplay .imj_submitButton { display: inline; }
 html body .imj_siteWrapper .imj_searchQueryDisplay .imj_searchQueryText { color: #04725d; }
 html body .imj_siteWrapper .imj_menuBody { border: 1px solid #C8C8C9; background-color: #ffffff; }
 html body .imj_siteWrapper .imj_menuBody li:hover { background-color: #ffffff; }
-html body .imj_siteWrapper .imj_menuBody span { margin: 0.272727em 1em; font-size: 1em; }
+html body .imj_siteWrapper .imj_menuBody span { margin: 0.7em 0 !important; font-size: 0.9em !important; }
+html body .imj_siteWrapper .imj_tiledMediaList > .imj_listBody { margin: 0; }
 html body .imj_siteWrapper .imj_invisible { display: none; }
 html body .imj_siteWrapper .imj_siteFooter { width: initial; padding: 1em !important; left: 0; bottom: 0; height: 3em; background-color: rgba(255, 255, 255, 0.85); }
 html body .imj_siteWrapper .imj_siteFooter .imj_poweredby_institution { margin-top: 0; }
+
+.imj_metadataSet .imj_metadataValue { margin-left: 0; }
+
+.imj_shareForm { padding: 0; }
+
+.imj_rightsTable { max-width: 80em; }
+
+.imj_moveItemsDialogBox { position: fixed; top: 5em; font-size: 1em; width: 40em; }
+
+.imj_shareDialogBox { position: fixed; font-size: 1em; max-width: 60%; min-width: 60%; }
+
+.uploadDialog { overflow: hidden !important; }
+.uploadDialog .imj_metadataSet { font-size: 1em !important; }
+
+.uploadDialogHeadArea { height: 8%; margin-bottom: 1em; position: initial !important; }
+
+.uploadDialogDropArea { cursor: pointer; }
+
+.uploadFileListEntry { line-height: normal; font-size: small; }
+
+.imj_dragOver { border: 2px dashed #04725d; }
+
+.imj_selectionInfoPanel { margin: 0; }
+
+.imj_menuButton { font-size: 14px !important; margin: 0 20px 0 -5px; cursor: pointer; padding: 5px 5px 5px 5px !important; color: #04725d; }
+.imj_menuButton:hover { color: #06a385; background-color: #04725d; border: none; }
+
+.collectionAbout { width: 80%; font-size: 1em; padding-bottom: 10px; }
+
+.collectionAboutTitle { font-size: 140%; font-weight: bold; letter-spacing: 0.045em; line-height: normal; text-overflow: ellipsis; overflow: hidden; }
+@media only screen and (max-width: 40em) { .collectionAboutTitle { font-size: 1em; } }
+
+.collectionAboutAuthor { text-overflow: ellipsis; max-width: 80%; line-height: 1.4em; font-size: 1em; white-space: nowrap; overflow: hidden; float: left; }
+
+.collectionAbout span { margin-right: 5px; }
+
+.collectionAboutHidden { width: 90%; display: none; }
+
+.metadataSelector { text-align: left; }
+
+.selectMd { position: relative; display: inline-block; }
+.selectMd input { box-sizing: border-box; margin: 6px 8px !important; width: 90% !important; }
+.selectMd button { margin: 0; width: 100%; }
 
 .imj_overlayMenu { display: inline-block; padding: 0.125em 0.25em; }
 .imj_overlayMenu .imj_menuHeader { text-align: left; color: #04725d; cursor: pointer; }
 .imj_overlayMenu .imj_menuHeader .selectAll:before { font-family: FontAwesome; content: "\f00c"; padding-right: 0.1em; }
 .imj_overlayMenu .imj_menuHeader .selectNone:before { font-family: FontAwesome; content: "\f00d "; padding-right: 0.1em; }
 .imj_overlayMenu .imj_menuText { text-align: left; line-height: 175%; padding: 0.5em 1em; display: block; }
-.imj_overlayMenu .imj_menuSimpleSearch { width: auto; min-width: 0; font-size: 1em; }
-.imj_overlayMenu .imj_menuSimpleSearch li { border-top: 1px dashed #C8C8C9; padding: 0.5em 1em; text-transform: uppercase; cursor: pointer !important; }
+.imj_overlayMenu .imj_menuSimpleSearch { width: auto; min-width: 0; }
+.imj_overlayMenu .imj_menuSimpleSearch li { border-top: 1px dashed #C8C8C9; padding: 0.5em 1em; text-transform: uppercase; text-overflow: ellipsis !important; white-space: nowrap !important; overflow: hidden !important; cursor: pointer !important; }
 .imj_overlayMenu .imj_menuSimpleSearch li:hover > a { color: #222222; }
 .imj_overlayMenu .imj_menuSimpleSearch .imj_simpleSearchInput { width: 200em !important; }
+.imj_overlayMenu .imj_simpleSearchInput { text-overflow: ellipsis; }
 .imj_overlayMenu .imj_menuBody, .imj_overlayMenu .imj_menuSimpleSearch { display: none; position: absolute; background-color: #ffffff; border: 1px solid #C8C8C9; }
 .imj_overlayMenu:hover .imj_menuHeader { color: #06a385; }
 .imj_overlayMenu:hover > .imj_menuBody { display: block; z-index: 100; }
@@ -2092,8 +2146,57 @@ html body .imj_siteWrapper .imj_siteFooter .imj_poweredby_institution { margin-t
 .imj_overlayMenu .hovered { background-color: #b3b3b3; }
 .imj_overlayMenu .hovered:hover { background-color: #b3b3b3 !important; }
 
-.imj_modalDialogBox { background-color: color-13; font-size: 1.2em; border: 1px solid #C8C8C9; min-width: 400px; -webkit-box-shadow: none !important; -moz-box-shadow: none !important; box-shadow: none !important; }
-.imj_modalDialogBox .imj_submitPanel { display: inline-block !important; }
+.imj_modalDialogBox { background-color: color-13; font-size: 1em; border: 1px solid #C8C8C9; -webkit-box-shadow: none !important; -moz-box-shadow: none !important; box-shadow: none !important; top: 25%; width: 70em; max-width: 90%; max-height: 50%; overflow-y: auto; overflow-x: hidden; }
+.imj_modalDialogBox .imj_confirmationText { font-size: 1em; }
+.imj_modalDialogBox .imj_dialogReasonText { max-width: 90%; }
+
+.show { display: block; }
+
+.loginArea { width: 80%; }
+
+small { font-size: smaller; }
+
+.imj_mediaWithdrawn { text-align: left; }
+
+.uploadPanel { position: fixed; top: 50%; left: 50%; font-size: 2em; z-index: 1001; display: none; width: 30em; height: 5em; margin-top: -9em; margin-left: -15em; background-color: #ffffff; text-align: center; vertical-align: middle; padding-top: 3em; }
+
+.uploadDragAndDropTitle { width: 100%; text-align: center; padding: 2em; }
+
+.edit_selected_table_wrapper { width: 100%; overflow: auto; min-height: 50em; }
+
+.edit_selected_table { border-collapse: collapse; border: 5px solid #b3b3b3; table-layout: fixed; }
+
+.edit_selected_table { border-collapse: collapse; border: 3px solid #b3b3b3; table-layout: fixed; margin: 2px; }
+
+.edit_selected_table textarea, .edit_selected_table input[type]:not(.combobox) { borders: 1px; margin-bottom: 0.5em; max-width: 70% !important; }
+
+.edit_selected_table td { vertical-align: middle; border: 1px solid #b3b3b3; max-width: 12em; min-width: 12em; padding: 0 1em; height: 4em; }
+
+.edit_selected_table_button { width: 100%; text-align: center; float: left; }
+
+.edit_selected_table_button label { text-align: left; }
+
+.edit_selected_table th { vertical-align: middle; margin: 0; text-align: center; background-color: #b3b3b3; max-width: 15.6em; min-width: 15.6em; overflow-wrap: break-word; }
+
+.edit_selected_table_icon { margin-left: 0.5em; margin-right: 0.5em; }
+
+.editSelectedWrapper { position: fixed; width: 100%; top: 0; left: 0; bottom: 0; right: 0; background-color: #fcfcfc; z-index: 100; padding-top: 1em; overflow-x: hidden; }
+
+.editSelectedHeader { margin: 1em; }
+
+.loaderWrapper { position: fixed; top: 0; left: 0; bottom: 0; right: 0; width: 100%; background: rgba(255, 255, 255, 0); z-index: 1000; height: 100%; width: 100%; position: fixed; overflow: hidden; opacity: 0.5; display: none; }
+
+.loader { position: fixed; top: 50%; left: 50%; z-index: 10001; width: 100px; height: 100px; margin: -50px 0 0 -50px; border: 16px solid #b3b3b3; border-radius: 50%; border-top: 16px solid #04725d; -webkit-animation: spin 2s linear infinite; animation: spin 2s linear infinite; display: none; }
+
+@keyframes spin { 0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); } }
+.ui-menu-item { background-color: #ffffff !important; cursor: pointer; }
+
+.ui-autocomplete { border: 1px solid #C8C8C9 !important; background-color: #ffffff !important; }
+
+.ui-datepicker { border: 1px solid #C8C8C9 !important; background-color: #ffffff !important; }
+
+.ui-datepicker-calendar { background-color: #ffffff !important; }
 
 .fa-chevron-right:before { content: "\f105" !important; }
 
@@ -2105,10 +2208,8 @@ html body .imj_siteWrapper .imj_siteFooter .imj_poweredby_institution { margin-t
 
 .fa-list-alt:before { content: "\f00b" !important; }
 
-.fa { color: #04725d; cursor: pointer; }
-.fa:hover { color: #04725d; }
-
 html body { background: url("../images/hg_pic_v2.jpg") no-repeat center top fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
-html body .imj_logo { background-position-x: center !important; }
+html body .imj_logo { background-position-x: center !important; width: 17em !important; }
 html body .imj_poweredby_software_image { background: url("../images/imeji_logo_black.png"); background-size: contain; background-repeat: no-repeat; }
 html body .imj_poweredby_software_image img { visibility: hidden; }
+html body input[type=submit], html body button, html body .imj_submitButton, html body .imj_menuButton:hover, html body .imj_menuHeader:hover, html body .imj_cancelButton, html body .imj_resetButton { color: white !important; }
