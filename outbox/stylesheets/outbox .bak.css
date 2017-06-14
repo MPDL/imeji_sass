@@ -61,9 +61,9 @@ p { display: block; margin: 1em 0; }
 .imj_siteWrapper .imj_siteHeader .imj_simpleSearchButtonSubmit { color: white; background-color: #990000; border: solid #990000 0; cursor: pointer; float: right; }
 .imj_siteWrapper .imj_siteHeader .imj_simpleSearchButtonSubmit:hover { color: white; background-color: #cc0000; border: solid #cc0000 0; }
 .imj_siteWrapper .imj_siteHeader .imj_simpleSearchButtonSubmit:focus { color: white; background-color: #cc0000; border: solid #cc0000 0; }
-.imj_siteWrapper .imj_logo { width: 16em; height: 5em; padding: 0; display: inline-block; background: transparent url("../logo/outbox-logo.png") 0em 0 no-repeat; }
+.imj_siteWrapper .imj_logo { width: 16em; height: 8em; padding: 0; display: inline-block; background: transparent url("../logo/outbox-logo.png") 0em 0 no-repeat; }
 .imj_siteWrapper .imj_logo_alt { max-height: 154px; margin-top: -25px; margin-bottom: -25px; }
-.imj_siteWrapper .imj_spaceLogo { max-height: 5em; margin-left: 3%; }
+.imj_siteWrapper .imj_spaceLogo { max-height: 8em; margin-left: 3%; }
 .imj_siteWrapper .imj_siteContentHeadline { clear: both; float: left; max-width: 40%; margin: 0.4em 3%; padding: 0.5% 0.4em; color: #000000; background-color: #E6E6E6; text-align: left; }
 .imj_siteWrapper .imj_siteContentHeadline:after { content: ""; content: none; clear: right; }
 .imj_siteWrapper .imj_siteContentHeadline h1 { font-size: 160%; font-weight: bold; letter-spacing: 0.045em; line-height: normal; text-overflow: ellipsis; overflow: hidden; }

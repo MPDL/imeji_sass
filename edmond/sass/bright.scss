@@ -24,8 +24,14 @@ html body {
 		}
 	}
 	
-	input[type=submit], button, .imj_submitButton, .imj_menuButton:hover, .imj_menuHeader:hover, .imj_cancelButton, .imj_resetButton{
+	 .imj_loginFormDisplay input[type=submit], button, .imj_submitButton, .imj_menuButton:hover, .imj_menuHeader:hover, .imj_cancelButton, .imj_resetButton{
 		color: white !important;
+	}
+	
+	.imj_selectionInfoPanel .imj_menuHeader, .imj_statusHeaderArea .fa{
+		&:hover{
+			color: $color-04 !important;
+		}
 	}
 	
 }

@@ -15,7 +15,8 @@ html body {
 		
 		.imj_logo {
 			background-color: transparent;
-			background-size: auto 10em;
+			background-size: auto 6em;
+			width: 17em !important;
 		}
 		
 		a, .imj_selectionText{
@@ -28,8 +29,12 @@ html body {
 		
 		.imj_menuSimpleSearch{
 			a{
-				color: $color-03 !important;
+				 color: $color-19 !important;
 			}
+		}
+		
+		.imj_simpleSearchInput{
+			border-color: $color-19 !important
 		}
 		
 		.imj_metaMenuStandardSingleLine{
@@ -110,4 +115,35 @@ html body {
 			}
 		}
 	}
+	
+	textarea, input[type]:not([type=submit]):not([type=button]), select{
+		background: white !important;
+		color: $color-01 !important;
+	}
+	
+	 .imj_loginFormDisplay input[type=submit], button, .imj_submitButton, .imj_menuButton:hover, .imj_menuHeader:hover, .imj_cancelButton, .imj_resetButton{
+		color: white !important;
+	}
+	
+	.imj_simpleSearchButtonSubmit{
+		background-color: $color-19 !important;
+	}
+	
+	.imj_metaMenuItemSelect{
+		background-color:  rgba(#fff,0)!important;
+		color: $color-19 !important;
+	}
+	.imj_selectionInfoPanel .imj_menuHeader, .imj_statusHeaderArea .fa{
+		&:hover{
+			color: $color-04 !important;
+		}
+	}
+	.loader {
+		border: 16px solid white;
+		border-top: 16px solid $color-03;
+	}
+	.imj_detailList th a{
+		background-color: #E6E6E6 !important;
+	}
+
 }

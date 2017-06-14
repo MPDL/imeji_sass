@@ -19,7 +19,7 @@ html body {
 	}
 	
 	.imj_siteHeaderMenuSearchSection{
-		margin-top: 0 !important;
+		margin-top: 30px !important;
 	}
 	.imj_poweredby_software_image {
 		background: url("../logo/imeji_logo_black.png");
@@ -67,12 +67,17 @@ html body {
 		background: white !important;
 	}
 	
-	input[type=submit], button, .imj_submitButton, .imj_menuButton:hover, .imj_menuHeader:hover, .imj_cancelButton, .imj_resetButton{
+	 .imj_loginFormDisplay input[type=submit], button, .imj_submitButton, .imj_menuButton:hover, .imj_menuHeader:hover, .imj_cancelButton, .imj_resetButton{
 		color: white !important;
 	}
 	
 	.imj_metaMenuItemSelect{
 		background-color:  $color-09 !important;
+	}
+	.imj_selectionInfoPanel .imj_menuHeader, .imj_statusHeaderArea .fa{
+		&:hover{
+			color: $color-04 !important;
+		}
 	}
 	.loader {
 		border: 16px solid white;
