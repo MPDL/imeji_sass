@@ -419,6 +419,54 @@ html body {
 
     }
 
+	.imj_siteContent{
+		float: left;
+		width: 100%;
+		
+		.imj_siteContentLeft{
+			float: left;
+			width: 15%;
+			height: 100%;
+			padding: 1em;
+			background-color: $color-10;
+			
+			.imj_menuEntry{
+				width: 100%;
+				margin-bottom: 1em;
+				
+				.imj_menuTitle{
+					font-size: 1.1em;
+					margin-bottom: 1em;
+					text-transform: uppercase;
+				}
+				
+				.imj_facet{
+					.imj_facetName{
+						font-size: 1em;
+					}
+					.imj_facetValue{
+						font-size: 0.9em;
+					}
+					.imj_facetInput{
+						width: 4em;
+						font-size: 0.9em;
+						padding-left: 2px;
+						padding-right: 2px;
+						margin-right: 5px;
+						
+					}
+				}
+			}
+		}
+	
+		.imj_siteContentRight{
+			float: right;
+			width: 80%;
+		}
+	}
+	
+	
+	
 	.imj_statusHeaderArea{
 		padding : 0.9em 3%;
 		margin:0;
