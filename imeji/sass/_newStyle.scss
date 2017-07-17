@@ -328,11 +328,13 @@ html body {
         .imj_active {
           a {
             color: $color-03;
+			border-bottom: 1px solid $color-03;
           }
         }
 
         .imj_mainMenuStandard {
           padding: 0;
+		 
 		  .imj_mainMenuStandardItem{
 			  padding: 0;
 		  }
@@ -363,9 +365,7 @@ html body {
 		.imj_mainMenuStandard{
 			float:left;
 		}
-		.imj_mainMenuStandardItem{
-				
-		}
+
       
 	  
 	    .imj_simpleSearch {
@@ -418,54 +418,48 @@ html body {
       }
 
     }
-
-	.imj_siteContent{
-		float: left;
-		width: 100%;
+	
+	.itemsArea{
+		.imj_itemsAreaContent{
+			width: 80%;
+			float:right;
+		}
 		
-		.imj_siteContentLeft{
-			float: left;
+		.imj_itemsAreaFacets{
 			width: 15%;
-			height: 100%;
-			padding: 1em;
-			background-color: $color-10;
-			
-			.imj_menuEntry{
-				width: 100%;
+			float:left;
+				
+			.imj_menuTitle{
+				font-size: 1em;
 				margin-bottom: 1em;
 				
-				.imj_menuTitle{
-					font-size: 1.1em;
-					margin-bottom: 1em;
-					text-transform: uppercase;
+			}
+			
+			.imj_facet{
+				.imj_facetName{
+					font-size: 1em;
+					margin-top: 1em;
+					padding-top: 5px;
+					border-top: 1px solid $color-13;
 				}
-				
-				.imj_facet{
-					.imj_facetName{
-						font-size: 1em;
-					}
-					.imj_facetValue{
-						font-size: 0.9em;
-					}
-					.imj_facetInput{
-						width: 4em;
-						font-size: 0.9em;
-						padding-left: 2px;
-						padding-right: 2px;
-						margin-right: 5px;
-						
-					}
+				.imj_facetValue{
+					font-size: 0.9em;
+				}
+				.imj_facetInput{
+					width: 4em;
+					font-size: 0.9em;
+					padding-left: 2px;
+					padding-right: 2px;
+					margin-right: 5px;
+					
 				}
 			}
 		}
-	
-		.imj_siteContentRight{
-			float: right;
-			width: 80%;
-		}
 	}
 	
-	
+	.imj_paginator{
+		float:left;
+	}
 	
 	.imj_statusHeaderArea{
 		padding : 0.9em 3%;
@@ -1660,7 +1654,7 @@ html body {
 
     .imj_searchQueryDisplay {
       margin: 0 0 10px 0;
-      padding: 5px 25px 5px 25px !important;
+      padding: 10px 25px 10px 25px !important;
 	  float: left;
 	  background-color: $color-10;
       width: 99%;
@@ -1669,6 +1663,9 @@ html body {
       }
 	  .imj_searchQueryText{
 		color: $color-03;
+		background-color: $color-13;
+		padding: 0 10px;
+		margin: 5px 0.5em 5px 0;
 	  }
     }
 
