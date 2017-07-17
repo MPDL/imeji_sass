@@ -16,10 +16,17 @@ html body {
 	.imj_logo{
 		background-color: $color-09 !important;
 		width: 17em !important;
+		margin-top: 10px;
+	}
+
+	.actionStartPage{
+		#upload{
+			display: none !important;
+		}
 	}
 	
 	.imj_siteHeaderMenuSearchSection{
-		margin-top: 30px !important;
+		margin-top: 20px !important;
 	}
 	.imj_poweredby_software_image {
 		background: url("../logo/imeji_logo_black.png");
