@@ -1213,55 +1213,6 @@ html body {
         }
       }
 
-      .imj_collectionEntryPage {
-        .imj_headline {
-          width: 100%;
-          a {
-            font-size: 1em;
-            line-height: 1em;
-          }
-        }
-        #description {
-          padding-top: 20px;
-          .imj_entryPageTitle, .imj_itemAuthorPanel, .imj_entryPageDescription, pre {
-            font-size: 1.4em;
-          }
-        }
-
-        .imj_metadataSubPanelItem {
-          font-size: 1.4em;
-        }
-        span.imj_infodataSet {
-          font-size: 1em;
-        }
-
-        .imj_entryPagePreviewTiledList {
-          a {
-            line-height: 1em;
-          }
-          .imj_headline {
-            margin-top: 15px;
-          }
-          .imj_thumbnailsPreview {
-            .imj_tileItem {
-              width: 148px;
-            }
-          }
-        }
-
-        .imj_infodataValue {
-          a {
-            font-size: 1em;
-          }
-        }
-        .imj_entryPagePreviewTiledListLink {
-          font-size: 1em;
-          width: 100%;
-          .fa {
-            display: none;
-          }
-        }
-      }
 
       .imj_bibliographicList {
         h3 {
@@ -1563,14 +1514,6 @@ html body {
         }
       }
 
-      .imj_collectionEntryPage {
-        .imj_headline {
-          .imj_entryPagePreviewTiledListLinkArrow {
-            margin: 0;
-          }
-        }
-      }
-
       .highlight_area:hover {
         background: $color-13;
       }
@@ -1736,34 +1679,41 @@ html body {
 	width: 80%;
 	font-size: 1em;
 	padding-bottom: 10px;
-}
-.collectionAboutTitle{
-	font-size: 140%;
-	font-weight: bold;
-	@media only screen and (max-width: 40em){
-		  font-size: 1em;
+	
+	.collectionAboutTitle{
+		font-size: 140%;
+		font-weight: bold;
+		@media only screen and (max-width: 40em){
+			  font-size: 1em;
+		}
+		
+		letter-spacing: 0.045em;
+		line-height: normal;
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}
+	.collectionAboutAuthor{
+		text-overflow: ellipsis;
+		max-width: 80%;
+		line-height: 1.4em;
+		 font-size: 1em;
+		white-space: nowrap;
+		overflow: hidden;
+		float:left;
 	}
 	
-	letter-spacing: 0.045em;
-	line-height: normal;
-	text-overflow: ellipsis;
-	overflow: hidden;
+	span{
+		margin-right: 5px;
+	}
+	
 }
-.collectionAboutAuthor{
-	text-overflow: ellipsis;
-	max-width: 80%;
-	line-height: 1.4em;
-	 font-size: 1em;
-	white-space: nowrap;
-	overflow: hidden;
-	float:left;
-}
-.collectionAbout span{
-	margin-right: 5px;
-}
+
 .collectionAboutHidden{
 	width: 90%;
 	display:none;
+	pre{
+		white-space: normal;
+	}
 }
 
 // Select metadata/statement
