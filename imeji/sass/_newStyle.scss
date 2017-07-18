@@ -501,7 +501,7 @@ html body {
       margin-top: 0;
       padding-bottom: 2em;
 	  background-color: $color-10;
-	  margin-bottom: 0px;
+	  margin-bottom: 15px;
 	  overflow: inherit;
 	  
 
@@ -1392,6 +1392,10 @@ html body {
           .imj_active {
             color: $color-03;
           }
+        }
+		
+		.imj_registerText {
+          margin: 0 0 2em 0;
         }
       }
 
