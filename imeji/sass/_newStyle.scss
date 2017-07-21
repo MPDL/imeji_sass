@@ -1914,7 +1914,7 @@ small {
 }
 .edit_selected_table {
 	border-collapse: collapse;
-	border: 3px solid $color-11;
+	border: 0px solid $color-11;
 	table-layout: fixed;
 	margin: 2px;
 }
@@ -1943,7 +1943,7 @@ small {
 	vertical-align: middle;
 	margin:0;
 	text-align: center;
-	background-color: $color-11;
+	background-color: $color-13;
 	max-width: 15.6em;
 	min-width: 15.6em;
 	overflow-wrap: break-word;
@@ -1959,7 +1959,7 @@ small {
 	left: 0;
 	bottom: 0;
 	right: 0;
-	background-color: darken($color-13, 1%);
+	background-color: $color-10;
 	z-index: 100;
 	padding-top: 1em;
 	overflow-x: hidden;
