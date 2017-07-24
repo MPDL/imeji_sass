@@ -533,23 +533,43 @@ html body {
 			}
 			
 			.imj_facet{
+				float: left;
+				clear: both;
+				
 				.imj_facetName{
 					font-size: 1em;
 					margin-top: 1em;
 					padding-top: 5px;
 					border-top: 1px solid $color-13;
 				}
+				
+				.imj_facetInputContainer{
+				    float: left;
+					width: 5.2em;
+					.imj_facetInput{
+					    width: 5.6em;
+						font-size: 0.7em;
+						padding-left: 3px;
+						padding-right: 3px;
+						margin-right: 0px;
+						margin-bottom: 0px;
+					}
+					
+					label{
+						width: 5em; 
+						font-size: 0.8em; 
+						clear:both; 
+						float:left
+					}
+				}
+				.imj_facetGoLinkContainer{
+				    float: left;
+					width:100%;
+				}
 				.imj_facetValue{
 					font-size: 0.9em;
 				}
-				.imj_facetInput{
-					width: 4em;
-					font-size: 0.9em;
-					padding-left: 2px;
-					padding-right: 2px;
-					margin-right: 5px;
-					
-				}
+				
 			}
 		}
 	}
