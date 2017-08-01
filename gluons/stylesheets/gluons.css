@@ -1,11 +1,11 @@
 /*
 Error: Undefined variable: "$header-height".
-        on line 199 of C:/Users/saquet/Documents/GitHub/imeji_sass/imeji/sass/_newStyle.scss
+        on line 200 of C:/Users/saquet/Documents/GitHub/imeji_sass/imeji/sass/_newStyle.scss
         from line 5 of C:/Users/saquet/Documents/GitHub/imeji_sass/imeji/sass/_combinedNewStyle.scss
         from line 5 of C:/Users/saquet/Documents/GitHub/imeji_sass/gluons/sass/gluons.scss
 
 Backtrace:
-C:/Users/saquet/Documents/GitHub/imeji_sass/imeji/sass/_newStyle.scss:199
+C:/Users/saquet/Documents/GitHub/imeji_sass/imeji/sass/_newStyle.scss:200
 C:/Users/saquet/Documents/GitHub/imeji_sass/imeji/sass/_combinedNewStyle.scss:5
 C:/Users/saquet/Documents/GitHub/imeji_sass/gluons/sass/gluons.scss:5
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
@@ -109,4 +109,4 @@ C:/Program Files (x86)/Koala/bin/compass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$header-height\".\A         on line 199 of C:/Users/saquet/Documents/GitHub/imeji_sass/imeji/sass/_newStyle.scss\A         from line 5 of C:/Users/saquet/Documents/GitHub/imeji_sass/imeji/sass/_combinedNewStyle.scss\A         from line 5 of C:/Users/saquet/Documents/GitHub/imeji_sass/gluons/sass/gluons.scss"; }
+  content: "Error: Undefined variable: \"$header-height\".\A         on line 200 of C:/Users/saquet/Documents/GitHub/imeji_sass/imeji/sass/_newStyle.scss\A         from line 5 of C:/Users/saquet/Documents/GitHub/imeji_sass/imeji/sass/_combinedNewStyle.scss\A         from line 5 of C:/Users/saquet/Documents/GitHub/imeji_sass/gluons/sass/gluons.scss"; }

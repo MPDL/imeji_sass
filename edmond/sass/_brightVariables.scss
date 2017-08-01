@@ -47,12 +47,13 @@ $icon-colorfolder-error: "D80000/";
 // LOGO
 $logo-path: "../logo/";
 $logo-file: "logo_for_bright.png";
-$logo-position-horizontal: 10px;
+$logo-position-horizontal: 0;
 $logo-position-vertical: 15px;
-$logo-width: 20em;
+$logo-width: 17em;
 $logo-height: 5em;
 $header-height: 90px;
 $header-bgcolor: $color-10;
+$header-padding-top-bottom: 2em;
 
 // DEFAULTS
 // multiple fonts must be declared in ()
