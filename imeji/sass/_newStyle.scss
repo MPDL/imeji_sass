@@ -443,7 +443,7 @@ html body {
 			
 			.imj_mainMenuStandard {
 				padding: 0;
-				width: 90%;
+				width: 100%;
 				text-align: center;
 				.imj_active {
 					a {
@@ -511,6 +511,7 @@ html body {
 			width: 20%;
 			float:left;
 			padding-right: 1%;
+			padding-top: 20px;
 			box-sizing: border-box;
 			
 			@media screen and (max-width: 50em) {
@@ -571,7 +572,11 @@ html body {
 				}
 				.imj_facetGoLinkContainer{
 				    float: left;
-					width:100%;
+					width: initial;
+					padding-top: 1.7em;
+					.imj_facetValue{
+						width: inherit
+					}
 				}
 				.imj_facetValue{
 					font-size: 0.9em;
@@ -629,16 +634,58 @@ html body {
 	}
 	
     .imj_siteContentHeadline {
-      background-color: $color-10;;
-      padding-left: 20px;
-	  margin: 0;
-	  min-width: 100%;
-	  h1{
-		  font-size: 140%;
-	  }
-	  &:empty{
-		  display:none;
-	  }
+		background-color: $color-10;
+		padding: 0 1%;
+		margin: 0;
+		min-width: 100%;
+		box-sizing: border-box;
+		h1{
+			font-size: 140%;
+		}
+		&:empty{
+			display:none;
+		}
+	  
+		.collectionAbout{
+			width: 100%;
+			font-size: 1em;
+			padding-bottom: 10px;
+			
+			.collectionAboutTitle{
+				font-size: 140%;
+				font-weight: bold;
+				@media only screen and (max-width: 40em){
+					  font-size: 1em;
+				}
+				
+				letter-spacing: 0.045em;
+				line-height: normal;
+				text-overflow: ellipsis;
+				overflow: hidden;
+			}
+			.collectionAboutAuthor{
+				text-overflow: ellipsis;
+				max-width: 80%;
+				line-height: 1.4em;
+				 font-size: 1em;
+				white-space: nowrap;
+				overflow: hidden;
+				float:left;
+			}
+			
+			span{
+				margin-right: 5px;
+			}
+			
+		}
+
+		.collectionAboutHidden{
+			width: 100%;
+			display:none;
+			pre{
+				white-space: normal;
+			}
+		}
     }
 
     #actionsMenuArea {
@@ -1326,7 +1373,11 @@ html body {
           margin-right: 60px;
         }
         .imj_mediaDisplayContainer {
-          width: inherit
+            width: 100%;
+			box-sizing: border-box;
+			float: left;
+			margin: 0;
+			padding: 0 1%;
         }
         .imj_listHeader {
           width: initial;
@@ -1676,6 +1727,9 @@ html body {
             a {
               @include font-style-links-green;
             }
+			@media screen and (max-width: 60em) {
+				display: none;
+			}
           }
         }
 
@@ -1835,6 +1889,35 @@ html body {
   }
 }
 
+.imj_previewContainer{
+	max-height: 60%;
+	max-width: 90%;
+	box-sizing: content-box;
+	border: 1px solid $color-14;
+	padding: 0.5em;
+	display: block;
+    margin: auto;
+	@media screen and (max-width: 60em){
+			background-color: $color-13;
+	}
+
+	
+}
+
+.fullpage{
+	max-height: 100% !important;
+	max-width: 100% !important;
+}
+
+#seadragon-viewer-full{
+
+}
+#seaDragonsButtons{
+	a{
+		padding: 0 0.5em;
+	}
+}
+
 .imj_statusArea{
 	margin: 0 !important;
 	padding: 0 !important;
@@ -1904,48 +1987,6 @@ html body {
 		color: $overlaymenu-header-color-hover;
 		background-color: $color-03;
 		border: none;
-	}
-}
-
-// collection about
-.collectionAbout{
-	width: 80%;
-	font-size: 1em;
-	padding-bottom: 10px;
-	
-	.collectionAboutTitle{
-		font-size: 140%;
-		font-weight: bold;
-		@media only screen and (max-width: 40em){
-			  font-size: 1em;
-		}
-		
-		letter-spacing: 0.045em;
-		line-height: normal;
-		text-overflow: ellipsis;
-		overflow: hidden;
-	}
-	.collectionAboutAuthor{
-		text-overflow: ellipsis;
-		max-width: 80%;
-		line-height: 1.4em;
-		 font-size: 1em;
-		white-space: nowrap;
-		overflow: hidden;
-		float:left;
-	}
-	
-	span{
-		margin-right: 5px;
-	}
-	
-}
-
-.collectionAboutHidden{
-	width: 90%;
-	display:none;
-	pre{
-		white-space: normal;
 	}
 }
 
