@@ -53,13 +53,13 @@ $icon-colorfolder-error: "D80000/";
 // LOGO
 $logo-path: $icon-path;
 $logo-file: "logo_imeji.gif";
-$logo-position-horizontal: 1em;
+$logo-position-horizontal: 0em;
 $logo-position-vertical: 1em;
 $logo-width: 8em;
 $logo-height: 8em;
-$header-height: 80px;
+$header-height: 70px;
 $header-bgcolor: $color-10;
-$header-padding-top-bottom: 0.5em;
+$header-padding: 1em;
 
 
 // DEFAULTS
@@ -79,7 +79,6 @@ $border-style-dotted-disabled: $border-width-default dotted $color-01;
 $border-style-solid-disabled: $border-width-default solid $color-01;
 
 
-	
 
 // PAGE WRAPPER
 $page-border: ($border-width-default dotted $color-03);
@@ -87,11 +86,11 @@ $page-width: 100%;
 //$page-width-max: 84.0909em;
 $page-width-max: 80%;
 $page-width-min: 82.0909em;
-
+$page-padding: 2%;
 
 // PAGE ELEMENTS
 $page-login-form-border-style: $border-style-default;
-$margin-bottom-main-elements: 0.8em;
+$margin-bottom-main-elements: 0em;
 
 // body
 $body-bgcolor: $color-09;

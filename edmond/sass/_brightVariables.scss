@@ -53,7 +53,7 @@ $logo-width: 17em;
 $logo-height: 5em;
 $header-height: 90px;
 $header-bgcolor: $color-10;
-$header-padding-top-bottom: 2em;
+$header-padding: 1em;
 
 // DEFAULTS
 // multiple fonts must be declared in ()
@@ -78,11 +78,11 @@ $page-width: 100%;
 //$page-width-max: 84.0909em;
 $page-width-max: 80%;
 $page-width-min: 82.0909em;
-
+$page-padding: 2%;
 
 // PAGE ELEMENTS
 $page-login-form-border-style: $border-style-default;
-$margin-bottom-main-elements: 0.8em;
+$margin-bottom-main-elements: 1em;
 	
 
 // body
