@@ -1777,6 +1777,8 @@ html body {
             border-radius: 2px;
             border: 1px solid $color-14;
             padding: 10px;
+			text-align: left;
+			text-align-last: left;
 		
             a {
               @include font-style-links-green;
@@ -1864,30 +1866,42 @@ html body {
       }
     }
 	
-
-     .imj_message{
-		padding: 5px 20px 5px 20px;
-		background-color: #6CAE2F; /* Red */
-		color: white;
-		margin-bottom: 5px;
-		opacity: 1;
-		transition: opacity 0.6s;
-	}
+	.imj_pageMessageArea{
+		padding: 0 $page-padding;
+		background-color: $color-10;
+		width: 100%;
+		box-sizing: border-box;
+		float: left;
+		margin: 0 0 -1px 0;
+		.imj_message{
+			padding: 5px 20px 5px 20px;
+			margin-bottom: 3px;
+			//background-color: #6CAE2F; /* Red */
+			background-color: $color-13;
+			border: 1px solid $color-08;
+			border-radius: 2px;
+			color:  $color-08;
+			opacity: 1;
+			transition: opacity 0.6s;
+		}
 	
-	.imj_messageError{
-		background-color: #D80000; /* Red */
-	}
+		.imj_messageError{
+			//background-color: #D80000; /* Red */
+			border: 1px solid $color-07;
+			color:  $color-07;
+		}
 	
-	.imj_messageAreaCloseBtn {	
-		margin-left: 15px;
-		color: white;
-		font-weight: bold;
-		float: right;
-		font-size: 1em;
-		line-height: 20px;
-		cursor: pointer;
-		transition: 0.3s;
+		.imj_messageAreaCloseBtn {	
+			margin-left: 15px;
+			font-weight: bold;
+			float: right;
+			font-size: 1em;
+			line-height: 20px;
+			cursor: pointer;
+			transition: 0.3s;
+		}
 	}
+    
 
     .imj_searchQueryDisplay {
 		margin: 0;
@@ -2174,6 +2188,8 @@ html body {
 	max-height: 50%;
 	overflow-y: auto;
 	overflow-x: hidden;
+	
+	
 }
   
 .show{
@@ -2214,6 +2230,7 @@ small {
 	width:100%;
 	text-align: center;
 	padding: 2em;
+	box-sizing: border-box;
 }
   
 // Edit selected
