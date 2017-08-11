@@ -205,7 +205,7 @@ html body {
 			@media screen and (max-width: 60em) {
 				background-color: transparent;
 				margin-bottom: 0;
-				padding:0;
+				padding: 0;
 			}
 			
 			@media screen and (max-width: 40em) {
@@ -224,12 +224,14 @@ html body {
 				@media screen and (max-width: 60em) {
 					background-color: $header-bgcolor;
 					width: 40%;
+					padding: 0 $page-padding;
 				}
 				
 				@media screen and (max-width: 40em) {
 					background-color: $header-bgcolor;
 					height: 4em;
 					width: 30%;
+					
 				}
 				
 				.imj_logo {
@@ -243,10 +245,7 @@ html body {
 					
 					@media screen and (max-width: 40em) {
 						width:100% !important;
-						background-position-y: 0;
-						padding: 0 !important;
-						margin-top: 1.2em;
-						height: 1.5em;
+						height: 3em;
 						background-size: contain;
 					}
 				}
@@ -670,14 +669,30 @@ html body {
 		}	
 	}
 	
+	
+	
     .imj_siteContentHeadline {
 		background-color: $color-10;
-		padding: 1% $page-padding 0 $page-padding;
+		padding: 1% $page-padding  2% $page-padding;
 		margin: 0;
 		min-width: 100%;
 		box-sizing: border-box;
 		h1{
-			font-size: 140%;
+			font-size: 1.4em;
+			@media screen and (max-width: 40em) {
+				font-size: 1.1em;
+			}
+			span, a{
+				float:left;
+				margin-right: 0.5em;
+			}
+			a{
+				max-width: 30%;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				overflow: hidden;
+				display: block;
+			}
 		}
 		&:empty{
 			display:none;
@@ -696,7 +711,6 @@ html body {
 		.collectionAbout{
 			width: 80%;
 			font-size: 1em;
-			padding-bottom: 10px;
 			float: left;
 			
 			.collectionAboutTitle{
@@ -711,6 +725,17 @@ html body {
 				line-height: normal;
 				text-overflow: ellipsis;
 				overflow: hidden;
+				span, a{
+					float:left;
+					margin-right: 0.5em;
+				}
+				a{
+					max-width: 50%;
+					white-space: nowrap;
+					text-overflow: ellipsis;
+					overflow: hidden;
+					display: block;
+				}
 			}
 			.collectionAboutAuthor{
 				text-overflow: ellipsis;
@@ -743,7 +768,6 @@ html body {
       margin-top: 0;
       padding: 1% $page-padding 0 $page-padding;
 	  box-sizing: border-box;
-	  max-height: 40px;
       p, a, span {
         font-size: 1.2em;
       }
@@ -907,6 +931,7 @@ html body {
 
 
       .imj_setupConfig {
+		padding-top: 2%;
         .imj_config_headline {
           width: inherit;
         }
@@ -919,7 +944,8 @@ html body {
         }
 
         .imj_adminPanel {
-          width: 97%;
+          width: 100%;
+		  box-sizing: border-box;
 
 
           .imj_content {
@@ -1415,12 +1441,7 @@ html body {
       }
 
       .imj_mediaEntryDetailPage {
-        .imj_paginator {
-          font-size: 0.8em;
-        }
-        .imj_simplePageBrowser {
-          margin-right: 60px;
-        }
+
         .imj_mediaDisplayContainer {
             width: 100%;
 			box-sizing: border-box;
@@ -1686,7 +1707,7 @@ html body {
         .imj_paginator {
           border: none;
           margin-top: 0;
-          padding-top: 4%;
+          padding-top: 1%;
 		  @media screen and (max-width: 60em) {
 			.previousItem a{
 				display:none;
