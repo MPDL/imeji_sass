@@ -179,103 +179,6 @@
 	padding: 1% 0%;
 }
 
-// =====================================================================
-// ENTRY PAGES FOR COLLECTIONS AND ALBUMS
-// =====================================================================
-.imj_collectionEntryPage,
-.imj_albumEntryPage {
-	width: 100%;
-	padding: 1% 0%;
-	display: block;
-	
-	.imj_headline {
-		
-		.imj_entryPagePreviewTiledListLinkArrow {
-			float: none;
-			margin-right: 0.5em;
-			vertical-align: bottom;
-		}
-		
-		&.imj_messageInfo {
-			margin-bottom: 1em;
-		}
-	}
-}
-// =====================================================================
-// EDIT METADATA + METADATA PROFILE PAGES
-// =====================================================================
-// ORGANISATION OF PERSON
-.imj_organisation { // look at component person.xhtml
-  width: 100%;
-  padding: 0 4%;
-  @include box-sizing("border-box");
-}
-// METADATA PROFILE
-.imj_editMetadataProfilePage {
-  width: 100%;
-  padding: 1% 0%;
-  
-  h2 {
-    &.imj_headline {
-      margin-bottom: 1em;
-    }
-  }
-}
-
-
-// =====================================================================
-// MESSAGES
-// =====================================================================
-.imj_pageMessageArea,
-.imj_contentMessageArea {
-	width: 87.95%;
-	display: inline-block;
-	color: $messagearea-color;
-	margin: 1em 0;
-	padding: 0 6%;
-}
-
-.imj_messageList {
-	width: 100%;
-	padding: 0;
-	font-size: 110%;
-	
-	li {
-		width: 97.95%;
-		padding: 0.125em 1% 0.25em 1%;
-	}
-}
-.imj_messageStatus {
-	margin-top: 1em;
-	width: 97.95%;
-	padding: 0 1%;
-}
-.imj_messageInfo {
-	color: $message-info-color;
-	background-color: $message-info-bgcolor;
-}
-.imj_messageTitleInfo {
-	width: 97.95%;
-	padding: 0 1% 0.125em 1%;
-	font-size: 125%;
-	color: $message-info-color;
-	background-color: $message-info-bgcolor;
-}
-.imj_messageTitleWarn {
-	width: 97.95%;
-	padding: 0.25em 1%;
-	font-size: 145%;
-	line-height: 110%;
-	color: $message-warn-color;
-	background-color: $message-warn-bgcolor;
-}
-.imj_messageError,
-.imj_messageFatal,
-.imj_messageWarn {
-	color: $message-warn-color;
-	background-color: $message-warn-bgcolor;
-}
-
 
 // =====================================================================
 // DIALOGS
@@ -365,32 +268,6 @@
 	}
 }
 
-a.imj_cancelButton,
-input.imj_cancelButton,
-button.imj_cancelButton,
-.imj_cancelButton {
-	margin: 0 1em;
-	color: $button-cancel-color;
-	background-color: $button-cancel-bgcolor;
-	border: $button-cancel-border;
-	cursor: pointer;
-	@include border-radius($border-radius-default);
-
-	&:hover {
-		@include hover(cancelButton);
-	}
-	&:active {
-		@include hover(cancelButton);
-	}
-	&:focus {
-		@include hover(cancelButton);
-	}
-}
-
-.imj_cancelLink{
-	color: $button-cancel-bgcolor;
-}
-
 a.imj_submitButton,
 input.imj_submitButton,
 button.imj_submitButton,
@@ -433,99 +310,6 @@ button.imj_disabledButton,
 	}
 }
 
-// * resetButton used in: e.g. batch edit */
-// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-a.imj_resetButton,
-input.imj_resetButton,
-button.imj_resetButton,
-.imj_resetButton {
-	color: $button-reset-color;
-	background-color: $button-reset-bgcolor !important;
-	border: $button-reset-border !important;
-	cursor: pointer;
-	@include border-radius($border-radius-default);
-
-	&:hover {
-		@include hover(resetButton);
-	}
-	&:active {
-		@include hover(resetButton);
-	}
-	&:focus {
-		@include hover(resetButton);
-	}
-}
-
-.imj_backButton {
-	padding: 0 0.3333333em;
-	margin-left: 1em;
-	color: $button-back-color;
-	background-color: $button-back-bgcolor;
-	border-bottom: $button-back-border;
-	cursor: pointer;
-	@include border-radius(0 0 $border-radius-default $border-radius-default);
-
-	&:hover {
-		@include border-radius($border-radius-default);
-		@include hover(backButton);
-	}
-	&:active {
-		@include border-radius($border-radius-default);
-		@include hover(backButton);
-	}
-	&:focus {
-		@include border-radius($border-radius-default);
-		@include hover(backButton);
-	}
-}
-
-.imj_editButton,
-a.imj_editButton {
-	margin-left: 1em;
-	color: $button-edit-color;
-	background-color: $button-edit-bgcolor;
-	border: $button-edit-border;
-	cursor: pointer;
-	@include border-radius($border-radius-default);
-
-	&:hover {
-		@include hover(editButton);
-	}
-	&:active {
-		@include hover(editButton);
-	}
-	&:focus {
-		@include hover(editButton);
-	}
-}
-.imj_editButton {
-	
-	&[type="submit"] {
-		margin-left: 0;
-	}
-}
-
-
-// * removeButton used in: e.g. image_details.xhtml */
-// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-button.imj_removeButton { 
-	color: $link-color;
-	background-color: inherit;
-}
-.imj_removeButton { 
-	
-	&:hover {
-		@include hover(removeButton);
-	}
-	&:active {
-		@include hover(removeButton);
-	}
-	&:focus {
-		@include hover(removeButton);
-	}
-}
-
-
 // =====================================================================
 // HEADLINES
 // =====================================================================
@@ -567,67 +351,6 @@ h4.imj_sectionHeadline {
 	font-size: 110%;
 	font-style: italic;
 	line-height: normal;
-}
-
-// =====================================================================
-// /* ===[ COMMON ELEMENTS ]===
-// =====================================================================
-.highlight_area {
-	border: $highlightarea-border-style;
-	background-color: $highlightarea-bgcolor;
-
-	&.imj_highlightDependencies, 
-	.imj_highlightDependencies {
-		background-color: $highlightarea-bgcolor-hover;
-	}
-	&:hover {
-		background-color: $highlightarea-bgcolor-hover;
-	}
-}
-
-.imj_backPanel {
-	display: inline-block;
-	text-align: left;
-	margin: 0 0 1em 0;
-	padding:0;
-	float: left;
-	width:5%;
-	white-space: nowrap;
-}
-
-.imj_customSelectbox {
-	display: inline-block;
-	margin-top: 0.090909em;
-	padding: 0.181818em 0.545454em 0 0.545454em;
-	border: $selectbox-border-style;
-	@include border-radius($border-radius-default);
-
-	select {
-		opacity: 0;
-		filter: Alpa(opacity=0);
-	}
-	.imj_showSelection {
-		position: absolute;
-		display: inline-block;
-		
-		.imj_selectionText {
-			display: inline-block;
-			color: $selectbox-text-color;
-			text-align: left;
-			vertical-align: top;
-		}
-		.imj_buttonSortDescending_16 {
-			display: inline-block;
-			margin-right: 0;
-			margin-left: 0.272727em;
-			
-			&:after {
-				clear: both;
-				content: "";
-				content: 0 none;
-			}
-		}
-	}
 }
 
 // * image / picture / media - stack - 
@@ -680,34 +403,6 @@ h4.imj_sectionHeadline {
 
 
 
-// * imj_optionSet used in: 
-// --- tiledMediaList.xhtml, template_metada_profileEdit.xhtml, BatchEdit.xhtml, Upload.xhtml
-// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-.imj_optionSet {
-	max-width: 100%;
-	margin-bottom: 1em;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-	overflow: hidden;
-
-	.imj_optionCheckbox {
-		margin-right: 0.272727em;
-		margin-left: 0;
-	}
-	.imj_optionLabel {
-		white-space: normal;
-	}
-}
-table.imj_optionSet {
-	td {
-		label {
-			white-space: normal;
-		}
-	}
-}
-
-
-
 // SETS OF METADATA
 // = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 .imj_globalMetadataSet,
@@ -729,10 +424,7 @@ table.imj_optionSet {
 	}
 	.imj_metadataValue {
 		@include datasetParam(value);
-		
-		.imj_customSelectbox {
-		  word-wrap: normal;
-		}
+
 	}
 }
 textarea.imj_metadataValue {
@@ -857,76 +549,6 @@ select.imj_metadataEditText {
 
 // /* ===[ SiteHeader - SimpleSearch ]===
 // = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-.imj_simpleSearch {
-	float: right;
-	display: inline-block;
-	overflow: visible;
-	
-	.imj_simpleSearchInputWrapper {
-		display: inline-block;
-		vertical-align: middle;
-	}
-	
-	.imj_simpleSearchInput {
-		border: $pageheader-search-input-border;
-		@include border-radius(0.454545em 0 0 0.454545em);
-		vertical-align: top;
-		width: $simplesearch-width;
-		font-size:100%;
-	}
-    
-	
-	.imj_simpleSearchButtonSubmit {
-		margin-left: 0;
-		padding-left: 0.5em;
-		padding-right: 0.5em;
-		font-size:100%;
-
-		@include border-radius(0 0.454545em 0.454545em 0);
-		vertical-align: top;
-		
-		&:hover {
-			@include hover(submitButtonHeader);
-		}
-		&:active {
-			@include hover(submitButtonHeader);
-		}
-		&:focus {
-			@include hover(submitButtonHeader);
-		}
-	}
-
-	.imj_cancelButton {
-		margin: 0;
-		padding: 0.181818em 1em 0.272727em 1em;
-		vertical-align: middle;
-		@include border-radius(0 0.454545em 0.454545em 0);
-	}
-
-	.imj_searchInfoText {
-		display: inline-block;
-		margin: 0 0.272727em;
-	}
-	
-	input[type=radio] {
-		margin: 0.090909em 0 0 0.090909em;
-	}
-	
-	input[type=radio] + label {
-		margin-left: 0.181818em;
-		margin-right: 1em;
-	}
-
-	.imj_simpleSearchLinkAdvancedsearch {
-		margin-top: 0.181818em;
-		margin-left: 1.090909em;
-		white-space: nowrap;
-		display: inline-block;
-		position: relative;
-        top: 10px;
-        font-size: 1.2em;
-	}
-} // end of imj_simpleSearch
 
 
 
@@ -948,7 +570,7 @@ select.imj_metadataEditText {
 // ================================================== */
 .imj_submitPanel {
 	display: inline-block;
-	width: 96%;
+	width: 100%;
 	text-align: right;
 	margin-top: 1em;
 
@@ -979,58 +601,6 @@ select.imj_metadataEditText {
 	margin: 0.2em 0.090909em 0 0;
 	background-color: $maincontent-bgcolor;
 }
-
-
-// /* ===[ Content - Breadcrump History Navigation ]===
-// /* * breadcrump component (History.xhtml)
-// ================================================== */
-.imj_breadcrumpHistory {
- 	width: 100%;
-	padding: 0 0%;
-	margin-bottom: 0.5em;
-
-	.imj_breadcrumpTitle {
-		margin-right: 0.363636em;
-		font-size: 1.090909em;
-		line-height: 2em;
-		vertical-align: top;
-	}
-	.imj_breadcrumpItem {
-		display: inline-block;
-		max-width: 11em;
-		line-height: 2em;
-		font-size: 1.090909em;
-		white-space: nowrap;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		vertical-align: top;
-		
-		.imj_breadcrumpLongDescription {
-			display:none;
-			max-width: 20.272727em;
-			padding: 0 0.363636em;
-			white-space: normal;
-			background-color: $breadcrump-overlay-bgcolor;
-			overflow: hidden;
-			text-overflow: ellipsis;
-		}
-		&:hover {
-			.imj_breadcrumpLongDescription {
-				position:absolute;
-				display:block;
-				z-index: 10;
-			}
-		}
-	}
-	.imj_breadcrumpSeparator {
-		margin-left: 0.363636em;
-		margin-right: 0.363636em;
-		line-height: 2em;
-		font-size: 1.090909em;
-		vertical-align: top;
-	}
-}
-
 
 
 // ===[ Advanced Search ]===
@@ -1112,55 +682,6 @@ select.imj_metadataEditText {
 	}
 }
 
-// /* search query display, in head of content
-// * (searchQueryDisplayArea.xhtml)
-// ===============================================
-.imj_searchQueryDisplay {
-	width: 100%;
-	padding: 1.5% 0;
-	margin: 0 3%;
-	font-size: 120%;
-
-	> fieldset {
-		padding: 1% 1%;
-		border-top-style: inset;
-		border-bottom-style: outset;
-		border-color: rgba(255,255,255, 0.15);
-
-		legend {
-			margin: 0 1%;
-			padding: 0 1%;
-			font-size: 110%;
-		}
-	}
-	.imj_submitButton {
-		display: inline-block;
-		white-space: nowrap;
-		margin-top: 0.272727em;
-	}
-}
-
-
-
-
-// /* * Selection Info Panel (Image.xhtml)
-// ================================================== */
-.imj_selectionInfoPanel {
-	width: 96%;
-	padding: 0 0%;
-	margin-bottom: 0.5em;
-
-	.imj_removeFacetButton {
-		margin-left: 0.181818em;
-        margin-right: 0.181818em;
-	}
-	.imj_facetSeparator {
-		margin-right: 0.181818em;
-	}
-}
-.imj_selectionInfoPanelItemSelect {
-	float: right;
-}
 
 // /* * filter info panel (overview pages - Collections, Albums)
 // * filterInfoPanel.xhtml
@@ -1323,11 +844,6 @@ select.imj_metadataEditText {
 		margin-left: 0.727272em;
 	}
 
-	.highlight_area {
-		&.imj_highlightDependencies {
-			background-color: $highlightarea-tooltip-bgcolor-hover;
-		}
-	}
 	.imj_infoNavigation {
 		width: 90%;
 		padding: 0 2%;
@@ -1342,58 +858,6 @@ select.imj_metadataEditText {
 			margin-left: 1em;
 		}
 	}
-}
-
-
-
-// /* * metadataSubPanel (image_details.xhtml, entryPageTabList.xhtml)
-//  * should be a part of imj_metadataList
-// ================================================== */
-.imj_metadataSubPanel {
-	text-align: left;
-	width: 91.95%;
-	padding: 1% 4%;
-
-	.imj_metadataSubPanelItem {
-		font-weight: bold;
-		border-bottom: $mdsubpanel-border-bottom-style;
-
-		a {
-			padding: 0 0.181818em;
-
-			&:hover {
-				background-color: $mdsubpanel-item-bgcolor-hover;
-			}
-		}
-	}
-}
-// ================================================== */
-// ================================================== */
-// ================================================== */
-
-
-// ================================================== */
-// ================================================== */
-// ================================================== */
-
-// /* ===[ FACETS ]===
-// * - facets.xhtml, selectionInfoPanel.xhtml
-// * ================================ */
-#imj_ajaxFacets {
-	padding: 1% 0%;
-}
-
-
-// ================================================== */
-// ================================================== */
-// ================================================== */
-// /* * login form
-// loginFormSite is includes on page content, not in menu!
-// ================================================= */
-.imj_loginFormSite {
-	width: 91.25%;
-	padding: 1% 4%;
-	border-top: $page-login-form-border-style;
 }
 
 // ================================================== */
@@ -1514,56 +978,6 @@ select.imj_metadataEditText {
 	}
 }
 
-// CAROUSEL
-.imj_startpage_carouselWrapper {
-	float: right;
-	margin-top: 2em;
-	width: 48%;
-	display: inline-block;
-	vertical-align: top;
-	
-	.imj_startpage_carousel {
-		width: 100%;
-		min-height: 33.333333em;
-		overflow: hidden;
-		
-		.imj_startpage_carouselContainer {
-			max-height: 400px;
-			overflow: visible;
-			min-width: 350px;
-			width: 40%;
-			margin: 0 auto;
-			
-			#carousel {
-				height: 26.66666666em;
-				width: 90%;
-				margin: 0 auto;
-				background: $welcome-carousel-bgcolor;
-				overflow: visible !important;
-			}
-			#cloudinfoText {
-				display: none;
-				
-				.imj_cloudInfoTitle {
-					font-weight: bold;
-				}
-				#title-text, #alt-text {
-					margin: 0;
-				}
-			}
-			.dynamicCloudinfo {
-				position: absolute;
-				z-index: 5600;
-				background-color: $welcome-carousel-infolayer-bgcolor;
-				padding: 0.75em;
-			}
-		}
-	}
-}
-.imj_startpage_carouselWrapper:after {
-	clear: right;
-}
-
 // OVERRIDES
 iframe#twitter-widget-0 {
 	width: 99.5%;
@@ -1608,30 +1022,6 @@ iframe#twitter-widget-0 div.root div.stream {
 	}
 }
 
-// /* * [ Content - EDIT] + Items (image_details.xhtml)
-// ================================================== */
-.imj_mediaEditPanel {
-	width: 100%;
-	margin-top: 0.545454em;
-
-	.imj_mediaEditPanelItem {
-		letter-spacing: 0.045em;
-		margin: 1em 0.273em 0 2.000em;
-		@include border-radius($border-radius-default);
-	}
-	.imj_metadataEditButtonArea {
-		display: inline-block;
-	}
-}
-
-.imj_metadataValue {
-	.imj_metadataEditButtonArea {
-		display: block;
-		margin-left: 1em;
-		margin-top: -1em;
-		margin-bottom: 1em;
-	}
-}
 
 
 // ================================================== */
@@ -1664,178 +1054,6 @@ iframe#twitter-widget-0 div.root div.stream {
 	.imj_sectionHeadline {
 		margin-bottom: 0.545454em;
 	}
-}
-
-
-.imj_editGlobalAssignment {	// on batch edit
-	width: 91.25%;
-	padding: 1% 4%;
-	> .imj_metadataSet {
-		> .imj_metadataLabel {
-			label {
-				display: inline-block;
-				width: 100%;
-			}
-		}
-		> .imj_metadataValue {
-			width: 69.25%;
-			max-width: 69.25%;
-
-			> .imj_singleStatementEdit {
-				> textarea {
-					&.imj_metadataValue {
-						width: 100%;
-					}
-				}
-			}
-		}
-	}
-	.imj_dataAssignmentPanel {
-		display: inline-block;
-		margin-top: 1em;
-	}
-
-	+ .imj_batchEditItemList {
-		border-top: $batchedit-itemlist-separatortop-border-style;
-	}
-}
-
-.imj_singleStatementEdit {
-	width: 100%;
-	margin-bottom: 1em;
-
-	.imj_inlineButtonGroup {
-		margin-left: 1%;
-	}
-	textarea {
-		resize: vertical;
-	}
-}
-
-
-// /* ===[ Ingest Page ]===
-// * (Ingest.xhtml)
-// * ============================================ */
-.imj_ingestWrapper {
-	width: 91.25%;
-	padding: 0 4% 2em 4%;
-	border-top: $ingestpage-separatortop-border-style;
-}
-.imj_ingestMessageArea {
-	width: 100%;
-	border-bottom: $ingestpage-messagearea-border-style;
-	margin-bottom: 3em;
-}
-
-.imj_uploadDropArea {
-
-	+ .imj_headline {	// used in Ingest.xhtml
-		border-top: $upload-separation-border-style;
-		border-bottom: $upload-separation-border-style;
-		margin: 2em 0 1em 0;
-	}
-	+ .imj_uploadUrlReference {	// used in Upload.xhtml
-		margin-top: 4em;
-	}
-}
-
-
-// /* === Upload Page ===
-// * Upload.xhtml, SingleUpload.xhtml
-// * ============================================ */
-.imj_upload {
-	width: 100%;
-	padding: 1em 0;
-
-	.imj_uploadInputWrapper {
-		width: 70%;
-		min-width: 30em;
-		display: inline-block;
-	}
-	.imj_uploadDropArea {
-		width: 100%;
-	}
-	
-	.imj_fileUploadContainer {
-		margin-bottom: 2em;
-		margin-right: 2em;
-		display: inline-block;
-		
-		&.imj_singleUpload {
-			border:3px dashed $color-13; 
-			line-height:10em; 
-			font-size:150%; 
-			text-align:center; 
-			cursor: pointer;
-			
-			.imj_submitPanel {
-				text-align: left;
-			}
-		}
-	}
-}
-
-
-.imj_uploadUrlReference {
-	width: 98%;
-	min-width: 30em;
-	padding: 0.5% 1%;
-	
-	label {
-		margin-left: 1em;
-	}
-	input {
-		width: 98%
-	}
-	.submitPanel {
-		padding: 0.545454em 0;
-	}
-}
-
-
-.imj_uploadOptionsArea {
-	width: 27%;
-	margin: 0 0 0 1.5%;
-	padding: 0.5% 0.5%;
-	display: inline-block;
-	vertical-align: top;
-	background-color: $upload-optionarea-bgcolor;
-
-	.imj_headline,
-	.imj_sectionHeadline {
-		margin-bottom: 1em;
-	}
-}
-
-.imj_uploadMessageArea {
-	width: 100%;
-	margin-top: 4em;
-
-	.imj_fileErrorMessageArea,
-	.imj_fileSuccessMessageArea {
-		width: 48%;
-		padding: 1% 0.8%;
-		display: inline-block;
-		vertical-align: top;
-	
-		.imj_messageList {
-			width: 84%;
-			max-height: 21em;
-			padding: 0 0 0 15.25%;
-			list-style: decimal-leading-zero;
-			overflow: auto;
-		}
-	}
-	.imj_fileErrorMessageArea {
-		background-color: $upload-messagearea-bgcolor-error;
-	}
-	.imj_fileSuccessMessageArea {
-		background-color: $upload-messagearea-bgcolor-success;
-	}
-}
-
-.imj_borderBackGround{
-	border-color: $color-09 !important;;
 }
 
 // /* === Share Page & Share Form ===

@@ -1673,10 +1673,11 @@ html body {
       }
 
       #registerArea {
+		width: 100%;
         input[type="submit"] {
           @include action-button;
         }
-        font-size: 1.2em;
+        font-size: 1em;
         h2 {
           width: 100%;
         }
@@ -2218,7 +2219,7 @@ html body {
 }
 
 .loginArea{
-	width: 80%;
+	width: 100%;
 }
 
 small {
