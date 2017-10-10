@@ -1593,12 +1593,6 @@ html body {
 		  }
       }
 
-
-      .imj_pageMessageArea {
-        background-color: transparent;
-        padding: 0;
-      }
-
       .imj_searchUnit {
 
         input, select {
@@ -1894,8 +1888,8 @@ html body {
     }
 	
 	.imj_pageMessageArea{
+		background-color: $header-bgcolor;
 		padding: 0 $page-padding;
-		background-color: $color-10;
 		width: 100%;
 		box-sizing: border-box;
 		float: left;

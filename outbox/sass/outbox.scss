@@ -36,6 +36,12 @@ html body {
 			visibility:hidden
 		}
 	}
+	
+	.imj_navigation2{
+		background-color: $header-bgcolor !important;
+		padding: 0 2% 0 2% !important;
+		margin: 0 !important;
+	}
 
 	.imj_siteFooter{
 		background-color: $color-09 !important;

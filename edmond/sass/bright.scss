@@ -5,7 +5,7 @@
 @import "../../imeji/sass/_combinedNewStyle.scss";
 
 html body {
-
+	height: auto !important;
 	background: url("../images/hg_pic_v2.jpg") no-repeat center top fixed;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
