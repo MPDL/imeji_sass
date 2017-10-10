@@ -1081,7 +1081,8 @@ iframe#twitter-widget-0 div.root div.stream {
 			&.imj_rightsTableUser{
 				min-width: 18em;
 				max-width: 18em; 
-				word-break: break-all;
+				word-break: keep-all;
+				word-wrap: break-word;
 			}
 			
 			&.imj_rightsAction {
