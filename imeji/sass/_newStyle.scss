@@ -662,6 +662,8 @@ html body {
 		right: 3%;
 		.imj_menuBody{
 			white-space: nowrap;
+			right: 0;
+			
 		}
 		.imj_listDottedSeparator{
 			border-top: 1px dashed #292929; 
@@ -754,9 +756,17 @@ html body {
 
 		.collectionAboutHidden{
 			width: 100%;
-			display:none;
-			pre{
-				white-space: normal;
+			display: none;
+			#description{
+				margin-top: 1em;
+			}
+			.imj_infodataSet{
+				box-sizing: border-box;
+				word-wrap: break-word;
+				pre{
+					white-space: normal;
+					
+				}
 			}
 		}
     }
@@ -1443,10 +1453,9 @@ html body {
       .imj_mediaEntryDetailPage {
 
         .imj_mediaDisplayContainer {
-            width: 100%;
+            max-width: 80%;
 			box-sizing: border-box;
-			float: left;
-			margin: 0;
+			margin: auto;
 			padding: 0 $page-padding;
         }
         .imj_listHeader {
@@ -1745,21 +1754,23 @@ html body {
         }
 
         span.imj_optionSet {
-          line-height: 1em;
+          //line-height: 1em;
+		  height: 1.35em;
           input {
-            margin-left: 8%;
+            margin-left: 4%;
           }
           label {
             width: 100%;
             //font-size: 130%;// 14px;
             overflow: hidden;
-            max-width: 70%;
+            max-width: 80%;
             text-align: left;
-            padding-left: 10px;
+            padding-left: 0px;
           }
 
           .imj_optionLabel {
-            max-width: 70%;
+            max-width: 80%;
+			text-align-last: left;
           }
         }
 
@@ -2192,8 +2203,8 @@ html body {
    }
 
 .imj_modalDialogBox {
-    .imj_confirmationText {
-      font-size: 1em;
+    .imj_confirmationText, a {
+      font-size: 1em !important;
     }
 	.imj_dialogReasonText {
 		max-width: 90%;
@@ -2258,8 +2269,9 @@ small {
 // Edit selected
 .edit_selected_table_wrapper{
 	width: 100%;
-	overflow: auto;
-	min-height: 50em;
+	overflow-x: auto;
+	overflow-y: hidden;
+	max-height: calc(100% - 2.5em);
 }
 .edit_selected_table{
 	border-collapse: collapse;
@@ -2270,42 +2282,52 @@ small {
 	border-collapse: collapse;
 	border: 0px solid $color-11;
 	table-layout: fixed;
-	margin: 2px;
+	
+	tbody{
+		overflow-y: auto;
+		overflow-x: hidden;
+		height: calc(100vh - 8em);
+		width: 100%;
+		th{
+		}
+	}
 }
 .edit_selected_table textarea, .edit_selected_table input[type]:not(.combobox) {
 	borders: 1px;
 	margin-bottom: 0.5em;
 	max-width: 70% !important;
 }
-.edit_selected_table td{
-	vertical-align: middle;
-	border: 1px solid $color-11; 
-	max-width: 12em;
-	min-width: 12em;
-	padding:0 1em;
-	height: 4em;
-}
-.edit_selected_table_button{
+
+.tableBtn{
 	width: 100%;
 	text-align: center;
 	float: left;
 }
-.edit_selected_table_button label{
+.tableBtn label{
 	text-align: left;
 }
-.edit_selected_table th{
-	vertical-align: middle;
-	margin:0;
-	text-align: center;
-	background-color: $color-13;
-	max-width: 15.6em;
-	min-width: 15.6em;
-	overflow-wrap: break-word;
+.edit_selected_table{ 
+	th, td{
+		vertical-align: middle;
+		margin:0;
+		text-align: center;
+		max-width: 15.6em;
+		min-width: 15.6em;
+		padding:0 1em;
+		border: 1px solid $color-11; 
+		overflow-wrap: break-word;
+		height: 4em;
+	}
 }
+.edit_selected_table th, {
+	background-color: $color-13;
+}
+
 .edit_selected_table_icon{
 	margin-left: 0.5em;
 	margin-right: 0.5em;
 }
+
 .editSelectedWrapper {
 	position: fixed;
 	width: 100%;
@@ -2319,7 +2341,12 @@ small {
 	overflow-x: hidden;
 }
 .editSelectedHeader{
-	margin: 1em;
+	height: 2.5em;
+}
+.columnHidden{
+	max-width: 20px !important;
+	min-width: 20px !important;
+	padding: 0 !important;
 }
 	
 // Loader
