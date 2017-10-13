@@ -2,2404 +2,2189 @@
 // IMPORTS, don't change the order of imports, because they are depends another
 @import url("http://fonts.googleapis.com/css?family=Titillium+Web:300italic,400,200,200italic,300,600,400italic,600italic,700italic,700,900");
 @import "../../default/sass/_combinedStyles.scss";
-
 html body {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-
- 
-  @mixin font-style-links-grey {
-    font-weight: 400;
-    color: $color-03;
-    &:hover {
-      color: $color-04;
-    }
-  }
-
-  @mixin font-style-links-green {
-    color: $color-03;
-    &:hover {
-      color: $color-04;
-    }
-  }
-
-  @mixin input-style {
-    font-family: 'Titillium Web', Arial, Helvetica, Verdana, sans-serif !important;
-    border: 1px solid $color-03;
-    background: transparent;
-	color: $color-01;
-    border-radius: 2px;
-    padding: 5px 10px 5px 10px;
-
-	&:hover {
-	  color: $color-01;
-	 }
-    &:focus {
-	  color: $color-01;
-      border: 1px solid $color-01;
-      outline: none;
-    }
-    &::-webkit-input-placeholder {
-      /* Chrome/Opera/Safari */
-      text-transform: uppercase;
-      font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif;
-    }
-    &::-moz-placeholder {
-      /* Firefox 19+ */
-      text-transform: uppercase;
-      font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif;
-    }
-    &:-ms-input-placeholder {
-      /* IE 10+ */
-      text-transform: uppercase;
-      font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif;
-    }
-    &:-moz-placeholder {
-      /* Firefox 18- */
-      text-transform: uppercase;
-      font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif;
-    }
-  }
-
-  @mixin action-button {
-	font-family: "Titillium Web",Arial,Helvetica,Verdana,sans-serif;
-    border: none !important;
-    background-color: $color-03;
-    font-size: 13px !important;
-    color: $color-01;
-    height: 35px;
-    padding: 5px 20px 5px 20px;
-    border-radius: 2px;
-    text-transform: uppercase;
-    &:hover {
-      background-color: $button-bgcolor-hover;
-    }
-	&::-moz-focus-inner { 
-		border: 0; 
-		padding: 0;
-	}
-  }
-  
-  @mixin action-button-grey {
-    @include action-button;
-    background-color: $color-13 !important;
-    &:hover {
-      background-color: lighten($color-13, 10);
-    }
-  }
-
-  input {
-    @include input-style;
-  }
-  
-  textarea { 
-   @include input-style;
-   font-size:1em;
-  }
-
-  input[type="submit"] {
-    @include action-button;
-  }
-
-  input[type="file"] {
-    @include action-button;
-  }
- 
-  input[type="radio"], input[type="checkbox"] {
-    height: inherit;
-  }
-
-  select {
-	  @include input-style;
-	  background-color: transparent;
-	  option { 
-		background-color: white;
-		color : black;
-	}
-   }
-  .imj_paginator{
-	  select{
-		  padding: 0 !important;
-	  }
-	  
-  }
-  button {
-    @include action-button
-  }
-
-  .imj_cancelButton, .imj_resetButton, .imj_submitButton , .plupload_button, .imj_disabledButton{ 
-    @include action-button;
-	margin: 0 1em 0 0;
-	display: inline !important;
-	height: auto !important;
-	color: $color-01;
-    &:hover {
-	  color: $color-01;
-    }
-   }
-
-  .imj_cancelButton, .imj_resetButton {
-    background-color: $button-cancel-bgcolor !important;
-    &:hover {
-      background-color: $button-cancel-bgcolor-hover !important;
-    }
-  }
-  
-  .imj_disabledButton{
-   background-color: lighten($color-13, 20) !important;
-    &:hover {
-      background-color: lighten($color-13, 30);
-    }
-  }
-
-  .imj_submitPanel {
-    display: inline-block !important;
-	.imj_cancelButton, .imj_resetButton, .imj_submitButton , .plupload_button, .imj_disabledButton { 
-		margin: 0 1em 0 1em !important;
-	}
-  }
-  
-  .imj_mdInput, .imj_mdInputLabel{
-	float:left;
-	clear: both;
-	width:100%;
-	font-size: 1em;
-  }
-	
-  textarea.imj_mdInput {
-	height:2.5em;;
-	resize: vertical;
-	width:100%;
-  }
-
-  .imj_modalDialogBackground {
-    background: rgba($color-10, 0.6);
-  }
-
-  .imj_allContentWrapper{
-		min-height: 100vh !important;
-		margin-bottom: - ($footer-padding * 2 + $footer-height) !important;
-		&:after{
-			content: "";
-			display: block;
-		}
-	}
-  
-  .imj_siteWrapper {
-		min-height: 100% !important;
-		border: none;
-		margin-bottom: 0;
-		min-width: 10em;
-
-		@media screen and (max-width: 90em) {
-			 max-width : 100% !important;	
-		}
-	
-		.imj_topHeader {
-			min-height: $header-height;
-			padding: $header-padding $page-padding;
-			margin-bottom: 0;
-			background-color: $header-bgcolor;
-			
-			@media screen and (max-width: 60em) {
-				background-color: transparent;
-				margin-bottom: 0;
-				padding: 0;
-			}
-			
-			@media screen and (max-width: 40em) {
-					min-height: 4em;
-			}
-			
-			.imj_logoContainer{
-				float:left;
-				height: $header-height;
-				width: 20%;
-				background-size: contain;
-				padding: 0;
-				box-sizing: border-box;
-				font-size: 0.9em;
-	
-				@media screen and (max-width: 60em) {
-					background-color: $header-bgcolor;
-					width: 40%;
-					padding: 0 $page-padding;
-				}
-				
-				@media screen and (max-width: 40em) {
-					background-color: $header-bgcolor;
-					height: 4em;
-					width: 30%;
-					
-				}
-				
-				.imj_logo {
-					background-position-x: 0;
-					background-position-y: 0;
-					margin-top: $logo-position-vertical;
-					margin-left: $logo-position-horizontal;
-					width: 100%;
-					background-size: contain;
-					max-width: $logo-width;
-					
-					@media screen and (max-width: 40em) {
-						width:100% !important;
-						height: 3em;
-						background-size: contain;
-					}
-				}
-			}
-
-			.imj_simpleSearch{
-				width: 40%; 
-				margin-left:0;
-				float:left;
-				margin-top: 25px;
-				box-sizing: border-box;
-				font-size: 0.8em;
-
-				@media screen and (max-width: 60em) {
-					margin:0;
-					padding: 0 $page-padding $header-padding $page-padding ;
-					clear: both;
-					width: 100%;
-					background-color: $header-bgcolor;
-				}
-				
-				.imj_searchAdvancedLink {
-					margin-top: 7px;
-					a{
-						margin-left: 5px;
-						@media screen and (max-width: 60em) {
-							margin-left: 0;
-							float: right;
-						}
-					}
-				}
-				
-				#simpleSearchInput{
-					float:left !important;
-					width: calc(100% - 3em - 3em);// width - button width - link width
-					position:relative;
-					
-					input{
-						width: 100%;
-						height: 30px;
-						margin:0;
-						-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-						-moz-box-sizing: border-box;    /* Firefox, other Gecko */
-						box-sizing: border-box;         /* Opera/IE 8+ */
-					}
-					
-					.imj_menuSimpleSearch{
-						width: 100%;
-						display: none;
-						position: absolute;
-						background-color: $overlaymenu-bgcolor;
-						border: 1px solid $color-14;
-						font-size: 1em;
-						-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-						-moz-box-sizing: border-box;    /* Firefox, other Gecko */
-						box-sizing: border-box;         /* Opera/IE 8+ */
-						
-						.imj_menuText {
-							text-align: left;
-							line-height: 175%;
-							padding: 0.5em 1em;
-							display: block;
-						}
-						
-						li {
-							border-top: 1px dashed $color-14;
-							padding: 0.5em 1em;
-							text-transform: uppercase;
-							text-overflow: ellipsis !important;
-							white-space: nowrap !important;
-							overflow: hidden !important;
-							cursor: pointer !important;
-							
-							&:hover {
-								background-color: $color-10;
-							}
-							
-							&:hover > a {
-								color: $color-01;
-							}
-						}
-						
-						.hovered { 
-							background-color: $color-11;
-							&:hover {
-								background-color: $color-11 !important;
-							}
-						}
-							
-					}
-				}
-				
-				#btnSimpleSearch{
-					float:left;
-					width: 35px;
-					height: 30px;
-					padding: 0;
-					margin:0;
-				}
-				
-				.imj_overlayMenu {
-					padding: 0;
-				}
-				
-			}
-			
-			.imj_metaMenuStandardSingleLine {
-				margin: 0;
-				float: right;
-				padding: 10px 0 10px 0;
-				font-size: 1em;
-				width: 40%;
-				box-sizing: border-box;
-				font-size: 0.9em;
-				
-				@media screen and (max-width: 60em) {
-					padding: 0 $page-padding 0 0;
-					width: 60%;
-					height: $header-height;
-					background-color: $header-bgcolor;
-				}
-				
-				@media screen and (max-width: 40em) {
-					width: 70%;
-					background-color: $header-bgcolor;
-					height: 4em;
-					
-					.imj_metaMenuItemsAlign {
-						float: left;
-						margin-top: 0px;
-						font-size: 0.7em;
-					}
-					.imj_metaMenuItem{
-						padding: 0;
-						margin: 0;
-					}
-					.imj_metaMenuItemSelect{
-						padding: 0 0px 5px 10px !important;
-					}
-				}
-				.imj_metaMenuItemsAlign {
-					float: right;
-					margin-top: 17px;
-					vertical-align: text-top;
-					
-					.imj_metaMenuItemSelect{
-						font-size: 1em;
-						color: $color-03;
-						text-transform: uppercase;
-						cursor: pointer;
-						border: none;
-						padding: 5px 0px 5px 10px;
-						-webkit-appearance: none;
-						-moz-appearance: none;	
-						&::-ms-expand {
-							display: none;
-						}
-					}
-					a {
-						@include font-style-links-grey;
-						text-transform: uppercase;
-						position: relative;
-						margin-left: 1em;
-					}
-
-					.imj_metaMenuSeparator {
-						width: 0;
-						margin: 0;
-						padding: 0;
-					}
-				}
-			}
-		}
-	
-		.imj_navigation2 {
-			font-size: 0.8em;
-			float:left; 
-			width: 100%; 
-			padding: $page-padding  $page-padding 0 $page-padding;
-			margin: $margin-bottom-main-elements 0 0 0;
-			background-color: $color-10;
-			box-sizing: border-box;
-			border-bottom: 1px solid $color-03;
-			.imj_mainMenuStandard{
-				padding:0;
-				.imj_mainMenuStandardItem {
-					border-right: 0px solid $color-09;
-					padding: 5px 20px;
-					margin: 0;
-					background-color: transparent;
-					@media screen and (max-width: 40em) {
-						padding: 5px 5px;
-					}
-				}
-				.imj_active {
-					border-top: 1px solid $color-03;
-					border-right: 1px solid $color-03;
-					border-left: 1px solid $color-03;
-					border-bottom: 2px solid $color-10;
-					background-color: $color-10;
-					margin-bottom: -1px;  
-					
-					a {
-						color: $color-01;
-						border-bottom: 0px solid $color-03;
-					}
-				}				
-			}
-			@media screen and (max-width: 40em) {
-				margin-top: 0px;
-				padding: 2px $page-padding 0 $page-padding;
-				font-size: 0.6em;
-			}
-		}
-	
-		.imj_navigation {
-			font-size: 0.8em;
-			float:left; 
-			width: 100%; 
-			height: 3em;
-			padding: 0 $page-padding 10px 20%;
-			background-color: $mainmenu-item-bgcolor;
-			box-sizing: border-box;
-			margin-bottom: $margin-bottom-main-elements;
-			
-			@media screen and (max-width: 40em) {
-				margin-top: 0px;
-				padding: 0 $page-padding;
-				font-size: 0.7em;
-				margin-bottom: 1px;
-			}
-			
-			.imj_mainMenuStandard {
-				padding: 0;
-				width: 100%;
-				.imj_active {
-					a {
-						color: $color-03;
-						border-bottom: 1px solid $color-03;
-					}
-				}
-			 
-				.imj_mainMenuStandardItem{
-					padding: 0;
-					background: none;
-					margin-right: 3em;
-					margin-top: 0;
-					
-					@media screen and (max-width: 40em) {
-						margin-right: 1em;
-					}
-					
-					a {
-						@include font-style-links-grey;
-						font-weight: 600;
-					}
-				}
-			}
-		}
-	
-	.itemsArea{
-		width: 100%;
-		max-width: 100% !important;
-		
-		.imj_openFilter{
-			display: none;
-			clear:both;
-			float:left;
-			width: 2em;
-		}
-		.imj_closeFilter{
-			display: none;
-			position: absolute;
-			top: 0;
-			right: 25px;
-			font-size: 36px;
-			margin-left: 50px;
-		}
-	
-		@media screen and (max-width: 50em){
-			width: 100%;
-			font-size: 0.8em;
-			.imj_openFilter, .imj_closeFilter{
-				display: block;
-			}
-		}
-	
-	
-		.imj_itemsAreaContent{
-			width: 80%;
-			float:right;
-			@media screen and (max-width: 50em){
-				width: 100%;
-			}
-			
-		}
-		
-		.imj_itemsAreaFacets{
-			width: 20%;
-			float:left;
-			padding-right: $page-padding;
-			padding-top: 20px;
-			box-sizing: border-box;
-			
-			@media screen and (max-width: 50em) {
-				height: 100%; 
-				width: 0; 
-				padding:0;
-				position: fixed; 
-				z-index: 1; 
-				top: 0;
-				left: 0;
-				background-color: $color-13;
-				overflow-x: hidden; 
-				padding-top: 1em; 
-				transition: 0.5s;
-				
-				.imj_facet, .imj_menuTitle{
-					margin-left: 5%;
-					font-size: 1.5em;
-				}
-			}
-			
-			.imj_menuTitle{
-				font-size: 1em;
-				margin-bottom: 1em;
-				
-			}
-			
-			.imj_facet{
-				max-width: 90%;
-				width: 90%;
-				float:left;
-				
-				.imj_facetName{
-					font-size: 1em;
-					margin-top: 1em;
-					padding-top: 5px;
-					border-top: 1px solid $color-13;
-				}
-				
-				.imj_facetInputContainer{
-				    float: left;
-					width: 5.2em;
-					.imj_facetInput{
-					    width: 5.6em;
-						font-size: 0.7em;
-						padding-left: 3px;
-						padding-right: 3px;
-						margin-right: 0px;
-						margin-bottom: 0px;
-					}
-					
-					label{
-						width: 5em; 
-						font-size: 0.8em; 
-						clear:both; 
-						float:left
-					}
-				}
-				.imj_facetGoLinkContainer{
-				    float: left;
-					width: initial;
-					padding-top: 1.7em;
-					.imj_facetValue{
-						width: inherit
-					}
-				}
-				.imj_facetValue{
-					font-size: 0.9em;
-					position: relative;
-					box-sizing: border-box;
-					width: 90%;
-					a{
-						white-space: nowrap;
-						text-overflow: ellipsis;
-						overflow: hidden;
-						display:block;
-						@media screen and (max-width: 50em) {
-							width: 80%;
-						}
-						&:after {
-							content: attr(data-count);
-							position: absolute;
-							left: 100%;
-							top: 0;
-							@media screen and (max-width: 50em) {
-								left: 80%;
-							}
-						} 
-					}
-					
-				}
-			}
-		}
-	}
-	
-	.imj_paginator{
-		float:left;
-		.imj_pageNumber, .imj_separator{
-			@media screen and (max-width: 50em) {
-				display: none;
-			
-			}
-		}
-	}
-	
-	.imj_statusHeaderArea{
-		padding :0;
-		margin:0;
-		height:0;
-		position:relative;
-		float:right;
-		.imj_menuBody{
-			white-space: nowrap;
-			right: 0;
-			
-		}
-		.imj_listDottedSeparator{
-			border-top: 1px dashed #292929; 
-			padding: 0.5em 1em
-		}	
-	}
-	
-	
-	
-    .imj_siteContentHeadline {
-		background-color: $color-10;
-		padding: 1% $page-padding  2% $page-padding;
-		margin: 0;
-		min-width: 100%;
-		box-sizing: border-box;
-		h1{
-			font-size: 1.4em;
-			@media screen and (max-width: 40em) {
-				font-size: 1.1em;
-			}
-			span, a{
-				float:left;
-				margin-right: 0.5em;
-			}
-			a{
-				max-width: 30%;
-				white-space: nowrap;
-				text-overflow: ellipsis;
-				overflow: hidden;
-				display: block;
-			}
-		}
-		&:empty{
-			display:none;
-		}
-	  
-		.collectionLogo{
-			width: 20%;
-			float: left;
-			padding: 1em 0 0 $page-padding;
-			box-sizing: border-box;
-			img{
-				max-height: 8em; border-radius: 50%;
-				height: 50%;
-			}
-		}
-		.collectionAbout{
-			width: 80%;
-			font-size: 1em;
-			float: left;
-			
-			.collectionAboutTitle{
-				width: 100%;
-				font-size: 1.5em;
-				font-weight: bold;
-				@media only screen and (max-width: 40em){
-					  font-size: 1em;
-				}
-				
-				letter-spacing: 0.045em;
-				line-height: normal;
-				text-overflow: ellipsis;
-				overflow: hidden;
-				span, a{
-					float:left;
-					margin-right: 0.5em;
-				}
-				a{
-					max-width: 50%;
-					white-space: nowrap;
-					text-overflow: ellipsis;
-					overflow: hidden;
-					display: block;
-				}
-			}
-			.collectionAboutAuthor{
-				text-overflow: ellipsis;
-				max-width: 100%;
-				line-height: 1.4em;
-				font-size: 1em;
-				white-space: nowrap;
-				overflow: hidden;
-			}
-			
-			span{
-				margin-right: 5px;
-			}
-			
-		}
-
-		.collectionAboutHidden{
-			width: 100%;
-			display: none;
-			#description{
-				margin-top: 1em;
-			}
-			.imj_infodataSet{
-				box-sizing: border-box;
-				word-wrap: break-word;
-				pre{
-					white-space: normal;
-					
-				}
-			}
-		}
-    }
-
-    #actionsMenuArea {
-	  float:left;
-	  width:100%;
-      background-color: $color-10;
-      margin-top: 0;
-      padding: 1% $page-padding 0 $page-padding;
-	  box-sizing: border-box;
-      p, a, span {
-        font-size: 1.2em;
-      }
-	  &:empty{
-		  display:none;
-	  }
-	  
-	  @media only screen and (max-width: 40em) {
-		  .imj_menuButton{
-			   padding: 0;
-			   margin-right: 2px;
-			   span{
-				  font-size: 0.9em;
-			   }
-		  }
-		}	
-	
-      .imj_contentMenu {
-        margin: 0;
-
-        .imj_contentMenuItem {
-          font-weight: 600;
-          &:hover {
-            background: transparent;
-          }
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    @mixin font-style-links-grey {
+        font-weight: 400;
+        color: $color-03;
+        &:hover {
+            color: $color-04;
         }
-      }
-
-      .imj_contentSubMenu {
-        width: 96%;
-        padding: 0;
-        height: 15px;
-        border-bottom: 1px solid $color-03	;
-        padding-bottom: 10px;
-        padding-top: 10px;
-        margin-top: 20px;
-      }
     }
-
-    .imj_mainContentWrapper {
-	  height: 100%;
-	  min-height: 100%;
-      width: 100%;
-	  box-sizing: border-box;
-      padding: 0 $page-padding;
-      margin-top: 0;
-      padding-bottom: 2em;
-	  background-color: $color-10;
-	  margin-bottom: 15px;
-	  overflow: inherit;
-	  
-
-      p, a, span, ul, label {
-        //font-size: 1.2em;
-        //line-height: 1.3em;
-      }
-
-      hr {
-        border-style: none;
-        width: 100%;
-        height: 1px !important;
-        background: $color-01;
-        border-width: 1px;
-      }
-
-      h3 {
-        padding-left: 0 !important;
-        font-size: 1.3em;
-        line-height: 1.4em;
-        font-weight: 600;
-      }
-	  
-	  .imj_paginator {
-		background-color: rgba(#fff,0);
-		font-size: 110% !important;
-		width:100%;
-		box-sizing: border-box;
-        padding-left: 0;
-        padding-right: 0;
-        margin-top: 10px;
-        //padding-top: 20px;
-        border-top: 1px solid $color-03;
-		
-		@media only screen and (max-width: 50em) {
-			font-size: 0.8em !important;
-		}
-		
-
-        &:first-of-type {
-          border: none;
-          margin-top: 0;
-          padding-top: 10px;
+    @mixin font-style-links-green {
+        color: $color-03;
+        &:hover {
+            color: $color-04;
         }
-
-        input {
-          padding: 0;
-          height: 15px;
-          width: 30px;
-        }
-        .imj_singlePageBrowser {
-          input {
-            width: inherit;
-            height: inherit;
-            padding: 0 1em;
-          }
-          .imj_currentPageNumber {
+    }
+    @mixin input-style {
+        font-family: 'Titillium Web', Arial, Helvetica, Verdana, sans-serif !important;
+        border: 1px solid $color-03;
+        background: transparent;
+        color: $color-01;
+        border-radius: 2px;
+        padding: 5px 10px 5px 10px;
+        &:hover {
             color: $color-01;
-          }
-          .imj_separator {
-          }
-          .fa {
-            color: $color-03;
-            &.imj_deactivated {
-              color: $color-01;
-              &:hover {
-                color: $color-01;
-              }
-              cursor: default;
-            }
-            &:hover {
-              color: $color-10;
-            }
-            cursor: pointer;
-          }
-          input[type="submit"] {
-            &:hover {
-              background: transparent;
-            }
-          }
         }
-        .imj_rangeSelector {
-          .fa {
-            color: $color-03;
-            &:hover {
-              color: $color-01;
-            }
-            cursor: pointer;
-          }
-		  .disabled{
-			  color: $color-01;
-		  }
-        }
-      }
-
-      /// ADMIN - PAGES
-
-      .imj_adminPanel{
-        .imj_metadataLabel{
-          line-height: 18px;
-        }
-        .imj_admindataLabel{
-          line-height: 18px;
-          span{
-            line-height: 18px;
-          }
-          label{
-            line-height: 18px;
-          }
-        }
-      }
-
-
-      .imj_setupConfig {
-		padding-top: 2%;
-        .imj_config_headline {
-          width: inherit;
-        }
-        .imj_administrationTiledList {
-          width: 100%;
-        }
-
-        .imj_editButton {
-          margin-right: 10px;
-        }
-
-        .imj_adminPanel {
-          width: 100%;
-		  box-sizing: border-box;
-
-
-          .imj_content {
-            .imj_admindataSet {
-              margin-top: 10px;
-            }
-          }
-          .imj_admindataLabel {
-            //font-size: 16px;
-            padding-right: 20px;
-            width: 30%;
-          }
-          .imj_admindataValue {
-            width: 94%;
-            padding-left: 0;
-            margin-left: 0;
-            max-width: 67%;
-
-            table {
-              tr {
-                td {
-                  padding-right: 20px;
-                }
-              }
-            }
-
-          }
-          input[type="text"], input[type="select"], input[type="password"] {
-            @include input-style;
-            height: 35px;
-          }
-          .imj_fileTypeConfig {
-            .imj_submitButton {
-              @include action-button;
-              height: 25px;
-              padding: 12px 20px 4px 20px !important;
-            }
-          }
-          .imj_fileTypeConfigList {
-            input[type="text"] {
-              height: 25px;
-              margin-right: 10px;
-              margin-top: 10px;
-            }
-            tr {
-              td {
-                padding-right: 20px;
-              }
-            }
-          }
-        }
-      }
-
-      .imj_administrationTiledList {
-        width: 100%;
-        padding: 0;
-        .imj_listHeader {
-          width: 100%;
-          display: inline-block;
-        }
-        .imj_headline {
-          font-size: 18px;
-          color: $color-01;
-          h2 {
-            font-size: 18px;
+        &:focus {
             color: $color-01;
-          }
+            border: 1px solid $color-01;
+            outline: none;
         }
-        .imj_submitButton {
-          @include action-button;
+        &::-webkit-input-placeholder {
+            /* Chrome/Opera/Safari */
+            
+            text-transform: uppercase;
+            font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif;
         }
-		 .imj_listBody{
-			  text-align: left;
-		  }
-      }
-
-      .imj_userConfig {
-		width: initial;
-		padding-left: 0 !important;
-		clear: both;
-		
-        .imj_userGlobalInformation {
-          .imj_admindataValueEntry {
-            textarea {
-              margin-bottom: 10px;
-            }
-          }
-          
-		}
-        .imj_organisation {
-          .imj_admindataValue {
-            width: inherit;
-            max-width: 73% !important;
-          }
-          .imj_inlineButtonGroup {
-            .fa {
-              padding: 0;
-              padding-right: 10px;
-              margin: 0;
-              color: $color-10;
-              font-size: 18px;
-              background-color: transparent;
-              &:hover {
-                background-color: transparent;
-              }
-            }
-          }
+        &::-moz-placeholder {
+            /* Firefox 19+ */
+            
+            text-transform: uppercase;
+            font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif;
         }
-        .imj_admindataSetEdit {
-          .imj_headline {
-            margin-bottom: 10px;
-          }
-          .imj_admindataValue {
-            margin-left: 0;
-            min-width: 75%;
-            .imj_admindataValueEntry {
-              width: 60% !important;
-            }
-            .imj_admindataSet {
-              .imj_admindataLabel {
-                .imj_submitPanel {
-                  margin: 0;
-                  padding: 0;
-                  margin-top: 10px;
-                  .imj_cancelButton {
-                    @include action-button-grey;
-                    margin: 0;
-                    float: left;
-                    height: 25px;
-                    padding: 10px 20px 0px 20px;
-                  }
-                  .imj_submitButton {
-                    @include action-button;
-                    height: 25px;
-                    padding: 10px 20px 0px 20px;
-                  }
-                  .imj_editButton {
-                    margin-right: 20px;
-                  }
-                }
-              }
-            }
-          }
-          .imj_submitPanel {
-            margin: 0;
+        &:-ms-input-placeholder {
+            /* IE 10+ */
+            
+            text-transform: uppercase;
+            font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif;
+        }
+        &:-moz-placeholder {
+            /* Firefox 18- */
+            
+            text-transform: uppercase;
+            font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif;
+        }
+    }
+    @mixin action-button {
+        font-family: "Titillium Web", Arial, Helvetica, Verdana, sans-serif;
+        border: none !important;
+        background-color: $color-03;
+        font-size: 13px !important;
+        color: $color-01;
+        height: 35px;
+        padding: 5px 20px 5px 20px;
+        border-radius: 2px;
+        text-transform: uppercase;
+        &:hover {
+            background-color: $button-bgcolor-hover;
+        }
+        &::-moz-focus-inner {
+            border: 0;
             padding: 0;
-            margin-top: 10px;
-            .imj_cancelButton {
-              @include action-button-grey;
-              margin: 0;
-              float: left;
-              height: 25px;
-              padding: 10px 20px 0px 20px;
-            }
-            .imj_submitButton {
-              @include action-button;
-              height: 25px;
-              padding: 10px 20px 0px 20px;
-            }
-            .imj_editButton {
-              margin-right: 20px;
-            }
-          }
         }
-
-
-        .imj_admindataSet {
-          .imj_headline {
-            margin-bottom: 20px;
-          }
+    }
+    @mixin action-button-grey {
+        @include action-button;
+        background-color: $color-13 !important;
+        &:hover {
+            background-color: lighten($color-13, 10);
         }
-        .imj_simpleSearch {
-          padding: 0;
-          .imj_searchInfoText {
-            margin-top: 10px;
-            margin-right: 10px;
-          }
-
-          .imj_simpleSearchButtonSubmit {
-            @include action-button;
-          }
-          .imj_cancelButton {
-            @include action-button-grey;
-            height: 25px;
-            padding: 10px 20px 0 20px;
-            margin-top: -5px;
-          }
+    }
+    input {
+        @include input-style;
+    }
+    textarea {
+        @include input-style;
+        font-size: 1em;
+    }
+    input[type="submit"] {
+        @include action-button;
+    }
+    input[type="file"] {
+        @include action-button;
+    }
+    input[type="radio"],
+    input[type="checkbox"] {
+        height: inherit;
+    }
+    select {
+        @include input-style;
+        background-color: transparent;
+        option {
+            background-color: white;
+            color: black;
         }
-        .imj_cancelButton {
-          display: inline-block;
-          //padding-top: 9px;
-          //padding-bottom: 8px;
+    }
+    .imj_paginator {
+        select {
+            padding: 0 !important;
         }
-        .imj_editButton {
-          @include action-button;
-          padding: 7px 20px 8px 20px;
-        }
-      }
-
-      .imj_adminPanel {
-        display: inline-block;
-        padding-left: 20px;
-        padding-right: 20px;
-        font-size: 14px;
-        line-height: 16px;
-        .imj_headline {
-          font-size: 18px;
-          color: $color-01;
-          h2 {
-            font-size: 18px;
+    }
+    button {
+        @include action-button
+    }
+    .imj_cancelButton,
+    .imj_resetButton,
+    .imj_submitButton,
+    .plupload_button,
+    .imj_disabledButton {
+        @include action-button;
+        margin: 0 1em 0 0;
+        display: inline !important;
+        height: auto !important;
+        color: $color-01;
+        &:hover {
             color: $color-01;
-          }
         }
-        &.imj_userConfig {
-
-          .imj_simpleSearch {
-            input[type="text"] {
-              @include action-button;
-            }
-          }
-
-          .imj_headline {
-            width: 100%;
-            h2 {
-              color: $color-01;
-              font-size: 18px;
-            }
-          }
-          .imj_submitPanel {
-            width: 101%;
-            padding-left: 20px;
-            padding-right: 20px;
-          }
-          .imj_admindataValue {
-            width: inherit;
-            max-width: 74%;
-            .imj_admindataValueEntry {
-              width: inherit;
-              .imj_admindataEdit {
-                width: inherit;
-              }
-            }
-          }
-          .imj_content {
-            padding-bottom: 20px;
-            height: inherit;
-            min-height: inherit;
+    }
+    .imj_cancelButton,
+    .imj_resetButton {
+        background-color: $button-cancel-bgcolor !important;
+        &:hover {
+            background-color: $button-cancel-bgcolor-hover !important;
+        }
+    }
+    .imj_disabledButton {
+        background-color: lighten($color-13, 20) !important;
+        &:hover {
+            background-color: lighten($color-13, 30);
+        }
+    }
+    .imj_submitPanel {
+        display: inline-block !important;
+        .imj_cancelButton, .imj_resetButton, .imj_submitButton, .plupload_button, .imj_disabledButton {
+            margin: 0 1em 0 1em !important;
+        }
+    }
+    .imj_mdInput,
+    .imj_mdInputLabel {
+        float: left;
+        clear: both;
+        width: 100%;
+        font-size: 1em;
+    }
+    textarea.imj_mdInput {
+        height: 2.5em;
+        ;
+        resize: vertical;
+        width: 100%;
+    }
+    .imj_modalDialogBackground {
+        background: rgba($color-10, 0.6);
+    }
+    .imj_allContentWrapper {
+        min-height: 100vh !important;
+        margin-bottom: - ($footer-padding * 2 + $footer-height) !important;
+        &:after {
+            content: "";
             display: block;
-            form {
-              p {
+        }
+    }
+    .imj_siteWrapper {
+        min-height: 100% !important;
+        border: none;
+        margin-bottom: 0;
+        min-width: 10em;
+        @media screen and (max-width: 90em) {
+            max-width: 100% !important;
+        }
+        .imj_topHeader {
+            min-height: $header-height;
+            padding: $header-padding $page-padding;
+            margin-bottom: 0;
+            background-color: $header-bgcolor;
+            @media screen and (max-width: 60em) {
+                background-color: transparent;
+                margin-bottom: 0;
+                padding: 0;
+            }
+            @media screen and (max-width: 40em) {
+                min-height: 4em;
+            }
+            .imj_logoContainer {
+                float: left;
+                height: $header-height;
+                width: 20%;
+                background-size: contain;
+                padding: 0;
+                box-sizing: border-box;
+                font-size: 0.9em;
+                @media screen and (max-width: 60em) {
+                    background-color: $header-bgcolor;
+                    width: 40%;
+                    padding: 0 $page-padding;
+                }
+                @media screen and (max-width: 40em) {
+                    background-color: $header-bgcolor;
+                    height: 4em;
+                    width: 30%;
+                }
+                .imj_logo {
+                    background-position-x: 0;
+                    background-position-y: 0;
+                    margin-top: $logo-position-vertical;
+                    margin-left: $logo-position-horizontal;
+                    width: 100%;
+                    background-size: contain;
+                    max-width: $logo-width;
+                    @media screen and (max-width: 40em) {
+                        width: 100% !important;
+                        height: 3em;
+                        background-size: contain;
+                    }
+                }
+            }
+            .imj_simpleSearch {
+                width: 40%;
+                margin-left: 0;
+                float: left;
+                margin-top: 25px;
+                box-sizing: border-box;
+                font-size: 0.8em;
+                @media screen and (max-width: 60em) {
+                    margin: 0;
+                    padding: 0 $page-padding $header-padding $page-padding;
+                    clear: both;
+                    width: 100%;
+                    background-color: $header-bgcolor;
+                }
+                .imj_searchAdvancedLink {
+                    margin-top: 7px;
+                    a {
+                        margin-left: 5px;
+                        @media screen and (max-width: 60em) {
+                            margin-left: 0;
+                            float: right;
+                        }
+                    }
+                }
+                #simpleSearchInput {
+                    float: left !important;
+                    width: calc(100% - 3em - 3em); // width - button width - link width
+                    position: relative;
+                    input {
+                        width: 100%;
+                        height: 30px;
+                        margin: 0;
+                        -webkit-box-sizing: border-box;
+                        /* Safari/Chrome, other WebKit */
+                        
+                        -moz-box-sizing: border-box;
+                        /* Firefox, other Gecko */
+                        
+                        box-sizing: border-box;
+                        /* Opera/IE 8+ */
+                    }
+                    .imj_menuSimpleSearch {
+                        width: 100%;
+                        display: none;
+                        position: absolute;
+                        background-color: $overlaymenu-bgcolor;
+                        border: 1px solid $color-14;
+                        font-size: 1em;
+                        -webkit-box-sizing: border-box;
+                        /* Safari/Chrome, other WebKit */
+                        
+                        -moz-box-sizing: border-box;
+                        /* Firefox, other Gecko */
+                        
+                        box-sizing: border-box;
+                        /* Opera/IE 8+ */
+                        
+                        .imj_menuText {
+                            text-align: left;
+                            line-height: 175%;
+                            padding: 0.5em 1em;
+                            display: block;
+                        }
+                        li {
+                            border-top: 1px dashed $color-14;
+                            padding: 0.5em 1em;
+                            text-transform: uppercase;
+                            text-overflow: ellipsis !important;
+                            white-space: nowrap !important;
+                            overflow: hidden !important;
+                            cursor: pointer !important;
+                            &:hover {
+                                background-color: $color-10;
+                            }
+                            &:hover > a {
+                                color: $color-01;
+                            }
+                        }
+                        .hovered {
+                            background-color: $color-11;
+                            &:hover {
+                                background-color: $color-11 !important;
+                            }
+                        }
+                    }
+                }
+                #btnSimpleSearch {
+                    float: left;
+                    width: 35px;
+                    height: 30px;
+                    padding: 0;
+                    margin: 0;
+                }
+                .imj_overlayMenu {
+                    padding: 0;
+                }
+            }
+            .imj_metaMenuStandardSingleLine {
+                margin: 0;
+                float: right;
+                padding: 10px 0 10px 0;
+                font-size: 1em;
+                width: 40%;
+                box-sizing: border-box;
+                font-size: 0.9em;
+                @media screen and (max-width: 60em) {
+                    padding: 0 $page-padding 0 0;
+                    width: 60%;
+                    height: $header-height;
+                    background-color: $header-bgcolor;
+                }
+                @media screen and (max-width: 40em) {
+                    width: 70%;
+                    background-color: $header-bgcolor;
+                    height: 4em;
+                    .imj_metaMenuItemsAlign {
+                        float: left;
+                        margin-top: 0px;
+                        font-size: 0.7em;
+                    }
+                    .imj_metaMenuItem {
+                        padding: 0;
+                        margin: 0;
+                    }
+                    .imj_metaMenuItemSelect {
+                        padding: 0 0px 5px 10px !important;
+                    }
+                }
+                .imj_metaMenuItemsAlign {
+                    float: right;
+                    margin-top: 17px;
+                    vertical-align: text-top;
+                    .imj_metaMenuItemSelect {
+                        font-size: 1em;
+                        color: $color-03;
+                        text-transform: uppercase;
+                        cursor: pointer;
+                        border: none;
+                        padding: 5px 0px 5px 10px;
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        &::-ms-expand {
+                            display: none;
+                        }
+                    }
+                    a {
+                        @include font-style-links-grey;
+                        text-transform: uppercase;
+                        position: relative;
+                        margin-left: 1em;
+                    }
+                    .imj_metaMenuSeparator {
+                        width: 0;
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+        .imj_navigation2 {
+            font-size: 0.8em;
+            float: left;
+            width: 100%;
+            padding: $page-padding $page-padding 0 $page-padding;
+            margin: $margin-bottom-main-elements 0 0 0;
+            background-color: $color-10;
+            box-sizing: border-box;
+            border-bottom: 1px solid $color-03;
+            .imj_mainMenuStandard {
+                padding: 0;
+                .imj_mainMenuStandardItem {
+                    border-right: 0px solid $color-09;
+                    padding: 5px 20px;
+                    margin: 0;
+                    background-color: transparent;
+                    @media screen and (max-width: 40em) {
+                        padding: 5px 5px;
+                    }
+                }
+                .imj_active {
+                    border-top: 1px solid $color-03;
+                    border-right: 1px solid $color-03;
+                    border-left: 1px solid $color-03;
+                    border-bottom: 2px solid $color-10;
+                    background-color: $color-10;
+                    margin-bottom: -1px;
+                    a {
+                        color: $color-01;
+                        border-bottom: 0px solid $color-03;
+                    }
+                }
+            }
+            @media screen and (max-width: 40em) {
+                margin-top: 0px;
+                padding: 2px $page-padding 0 $page-padding;
+                font-size: 0.6em;
+            }
+        }
+        .imj_navigation {
+            font-size: 0.8em;
+            float: left;
+            width: 100%;
+            height: 3em;
+            padding: 0 $page-padding 10px 20%;
+            background-color: $mainmenu-item-bgcolor;
+            box-sizing: border-box;
+            margin-bottom: $margin-bottom-main-elements;
+            @media screen and (max-width: 40em) {
+                margin-top: 0px;
+                padding: 0 $page-padding;
+                font-size: 0.7em;
+                margin-bottom: 1px;
+            }
+            .imj_mainMenuStandard {
+                padding: 0;
                 width: 100%;
-                textarea {
-                  width: 40%;
+                .imj_active {
+                    a {
+                        color: $color-03;
+                        border-bottom: 1px solid $color-03;
+                    }
+                }
+                .imj_mainMenuStandardItem {
+                    padding: 0;
+                    background: none;
+                    margin-right: 3em;
+                    margin-top: 0;
+                    @media screen and (max-width: 40em) {
+                        margin-right: 1em;
+                    }
+                    a {
+                        @include font-style-links-grey;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+        .imj_sectionTitle {
+			margin-top: 2%;
+            margin-bottom: -0.2em;
+            margin-left: calc(-#{$page-padding}/2);
+            background: $color-10;
+            float: left;
+            padding: 1em calc(#{$page-padding}/2) 0.1em calc(#{$page-padding}/2);
+            font-size: 1.3em;
+        }
+        .imj_section {
+            border-top: 1px solid $color-14;
+        }
+		
+		.selectedItems{
+			border: 1px solid $color-14 !important;
+			margin: 2px -8px !important;
+			padding: 5px 8px !important;
+		}
+		
+        .itemsArea {
+            width: 100%;
+            max-width: 100% !important;
+            overflow: auto;
+            margin-left: -$page-padding;
+            padding: 0  $page-padding;
+            .imj_openFilter {
+                display: none;
+                clear: both;
+                float: left;
+                width: 2em;
+            }
+            .imj_closeFilter {
+                display: none;
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
+            }
+            @media screen and (max-width: 50em) {
+                width: 100%;
+                font-size: 0.8em;
+                .imj_openFilter, .imj_closeFilter {
+                    display: block;
+                }
+            }
+            .imj_itemsAreaContent {
+                width: 80%;
+                float: right;
+                @media screen and (max-width: 50em) {
+                    width: 100%;
+                }
+            }
+            .imj_itemsAreaFacets {
+                width: 20%;
+                float: left;
+                padding-right: $page-padding;
+                padding-top: 20px;
+                box-sizing: border-box;
+                @media screen and (max-width: 50em) {
+                    height: 100%;
+                    width: 0;
+                    padding: 0;
+                    position: fixed;
+                    z-index: 1;
+                    top: 0;
+                    left: 0;
+                    background-color: $color-13;
+                    overflow-x: hidden;
+                    padding-top: 1em;
+                    transition: 0.5s;
+                    .imj_facet, .imj_menuTitle {
+                        margin-left: 5%;
+                        font-size: 1.5em;
+                    }
+                }
+                .imj_menuTitle {
+                    font-size: 1em;
+                    margin-bottom: 1em;
+                }
+                .imj_facet {
+                    max-width: 90%;
+                    width: 90%;
+                    float: left;
+                    .imj_facetName {
+                        font-size: 1em;
+                        margin-top: 1em;
+                        padding-top: 5px;
+                        border-top: 1px solid $color-13;
+                    }
+                    .imj_facetInputContainer {
+                        float: left;
+                        width: 5.2em;
+                        .imj_facetInput {
+                            width: 5.6em;
+                            font-size: 0.7em;
+                            padding-left: 3px;
+                            padding-right: 3px;
+                            margin-right: 0px;
+                            margin-bottom: 0px;
+                        }
+                        label {
+                            width: 5em;
+                            font-size: 0.8em;
+                            clear: both;
+                            float: left
+                        }
+                    }
+                    .imj_facetGoLinkContainer {
+                        float: left;
+                        width: initial;
+                        padding-top: 1.7em;
+                        .imj_facetValue {
+                            width: inherit
+                        }
+                    }
+                    .imj_facetValue {
+                        font-size: 0.9em;
+                        position: relative;
+                        box-sizing: border-box;
+                        width: 90%;
+                        a {
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            display: block;
+                            @media screen and (max-width: 50em) {
+                                width: 80%;
+                            }
+                            &:after {
+                                content: attr(data-count);
+                                position: absolute;
+                                left: 100%;
+                                top: 0;
+                                @media screen and (max-width: 50em) {
+                                    left: 80%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .imj_paginator {
+            float: left;
+            .imj_pageNumber, .imj_separator {
+                @media screen and (max-width: 50em) {
+                    display: none;
+                }
+            }
+        }
+        .imj_statusHeaderArea {
+            padding: 0;
+            margin: 0;
+            height: 0;
+            position: relative;
+            float: right;
+            .imj_menuBody {
+                white-space: nowrap;
+                right: 0;
+            }
+            .imj_listDottedSeparator {
+                border-top: 1px dashed #292929;
+                padding: 0.5em 1em
+            }
+        }
+        .imj_siteContentHeadline {
+            background-color: $color-10;
+            padding: 1% $page-padding 0 $page-padding;
+            margin: 0;
+            min-width: 100%;
+            box-sizing: border-box;
+            h1 {
+                font-size: 1.4em;
+                @media screen and (max-width: 40em) {
+                    font-size: 1.1em;
+                }
+                span,
+                a {
+                    float: left;
+                    margin-right: 0.5em;
+                }
+                a {
+                    max-width: 30%;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    display: block;
+                }
+            }
+            &:empty {
+                display: none;
+            }
+        }
+        .collectionAbout {
+            padding: 0 $page-padding 0 $page-padding;
+            float: left;
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 1em;
+            float: left;
+            background-color: $color-10;
+            
+			.moreCollection, .lessCollection{
+				font-size: 0.9em;
+			}
+			
+			.collectionAboutContent {
+                width: 100%;
+                height: 5em;
+                overflow: hidden;
+            }
+            .gradientOpacity {
+                position: absolute;
+                max-width: calc(#{$page-width-max} - #{$page-padding});
+                min-width: calc(#{$page-width-min} - #{$page-padding});
+                width: 100%;
+                height: 5em;
+                background:-webkit-linear-gradient(rgba($color-10,0), rgba($color-10, 1)); /* For Safari */
+                background:linear-gradient(rgba($color-10, 0),rgba($color-10,1));
+            }
+            .collectionAboutMore {
+                width: 50%;
+            }
+            .collectionAboutTitle {
+                width: 100%;
+                font-size: 1.5em;
+                font-weight: bold;
+                @media only screen and (max-width: 40em) {
+                    font-size: 1em;
+                }
+                letter-spacing: 0.045em;
+                line-height: normal;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                span,
+                a {
+                    float: left;
+                    margin-right: 0.5em;
+                }
+                a {
+                    max-width: 50%;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    display: block;
+                }
+            }
+            .collectionAboutAuthor {
+                text-overflow: ellipsis;
+                max-width: 100%;
+                line-height: 1.4em;
+                font-size: 1em;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+            span {
+                margin-right: 5px;
+            }
+        }
+        .imj_actionMenuArea {
+            float: left;
+            width: 100%;
+            background-color: $color-10;
+            margin-top: 0;
+            padding: 1px $page-padding 1% $page-padding;
+            box-sizing: border-box;
+            p, a, span {
+                font-size: 1em;
+            }
+            &:empty {
+                display: none;
+            }
+            @media only screen and (max-width: 40em) {
+                .imj_menuButton {
+                    padding: 0;
+                    margin-right: 2px;
+                    span {
+                        font-size: 0.9em;
+                    }
+                }
+            }
+            .imj_contentMenu {
+                margin: 0;
+                .imj_contentMenuItem {
+                    font-weight: 600;
+                    &:hover {
+                        background: transparent;
+                    }
+                }
+            }
+            .imj_contentSubMenu {
+                width: 96%;
+                padding: 0;
+                height: 15px;
+                border-bottom: 1px solid $color-03;
+                padding-bottom: 10px;
+                padding-top: 10px;
+                margin-top: 20px;
+            }
+        }
+        .imj_mainContentWrapper {
+            height: 100%;
+            min-height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0 $page-padding;
+            margin-top: 0;
+            padding-bottom: 2em;
+            background-color: $color-10;
+            margin-bottom: 15px;
+            overflow: inherit;
+            .imj_actionMenuArea {
+                padding: 1px 0 1% 0;
+            }
+            p,
+            a,
+            span,
+            ul,
+            label {
+                //font-size: 1.2em;
+                //line-height: 1.3em;
+            }
+            hr {
+                border-style: none;
+                width: 100%;
+                height: 1px !important;
+                background: $color-01;
+                border-width: 1px;
+            }
+            h3 {
+                padding-left: 0 !important;
+                font-size: 1.3em;
+                line-height: 1.4em;
+                font-weight: 600;
+            }
+            .imj_paginator {
+                background-color: rgba(#fff, 0);
+                font-size: 110% !important;
+                width: 100%;
+                box-sizing: border-box;
+                padding-left: 0;
+                padding-right: 0;
+                margin-top: 10px;
+                //padding-top: 20px;
+                border-top: 1px solid $color-03;
+                @media only screen and (max-width: 50em) {
+                    font-size: 0.8em !important;
+                }
+                &:first-of-type {
+                    border: none;
+                    margin-top: 0;
+                    padding-top: 10px;
+                }
+                input {
+                    padding: 0;
+                    height: 15px;
+                    width: 30px;
+                }
+                .imj_singlePageBrowser {
+                    input {
+                        width: inherit;
+                        height: inherit;
+                        padding: 0 1em;
+                    }
+                    .imj_currentPageNumber {
+                        color: $color-01;
+                    }
+                    .imj_separator {} .fa {
+                        color: $color-03;
+                        &.imj_deactivated {
+                            color: $color-01;
+                            &:hover {
+                                color: $color-01;
+                            }
+                            cursor: default;
+                        }
+                        &:hover {
+                            color: $color-10;
+                        }
+                        cursor: pointer;
+                    }
+                    input[type="submit"] {
+                        &:hover {
+                            background: transparent;
+                        }
+                    }
+                }
+                .imj_rangeSelector {
+                    .fa {
+                        color: $color-03;
+                        &:hover {
+                            color: $color-01;
+                        }
+                        cursor: pointer;
+                    }
+                    .disabled {
+                        color: $color-01;
+                    }
+                }
+            }
+            /// ADMIN - PAGES
+            .imj_adminPanel {
+                .imj_metadataLabel {
+                    line-height: 18px;
+                }
+                .imj_admindataLabel {
+                    line-height: 18px;
+                    span {
+                        line-height: 18px;
+                    }
+                    label {
+                        line-height: 18px;
+                    }
+                }
+            }
+            .imj_setupConfig {
+                padding-top: 2%;
+                .imj_config_headline {
+                    width: inherit;
+                }
+                .imj_administrationTiledList {
+                    width: 100%;
+                }
+                .imj_editButton {
+                    margin-right: 10px;
+                }
+                .imj_adminPanel {
+                    width: 100%;
+                    box-sizing: border-box;
+                    .imj_content {
+                        .imj_admindataSet {
+                            margin-top: 10px;
+                        }
+                    }
+                    .imj_admindataLabel {
+                        //font-size: 16px;
+                        padding-right: 20px;
+                        width: 30%;
+                    }
+                    .imj_admindataValue {
+                        width: 94%;
+                        padding-left: 0;
+                        margin-left: 0;
+                        max-width: 67%;
+                        table {
+                            tr {
+                                td {
+                                    padding-right: 20px;
+                                }
+                            }
+                        }
+                    }
+                    input[type="text"],
+                    input[type="select"],
+                    input[type="password"] {
+                        @include input-style;
+                        height: 35px;
+                    }
+                    .imj_fileTypeConfig {
+                        .imj_submitButton {
+                            @include action-button;
+                            height: 25px;
+                            padding: 12px 20px 4px 20px !important;
+                        }
+                    }
+                    .imj_fileTypeConfigList {
+                        input[type="text"] {
+                            height: 25px;
+                            margin-right: 10px;
+                            margin-top: 10px;
+                        }
+                        tr {
+                            td {
+                                padding-right: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+            .imj_administrationTiledList {
+                width: 100%;
+                padding: 0;
+                .imj_listHeader {
+                    width: 100%;
+                    display: inline-block;
+                }
+                .imj_headline {
+                    font-size: 18px;
+                    color: $color-01;
+                    h2 {
+                        font-size: 18px;
+                        color: $color-01;
+                    }
+                }
+                .imj_submitButton {
+                    @include action-button;
+                }
+                .imj_listBody {
+                    text-align: left;
+                }
+            }
+            .imj_userConfig {
+                width: initial;
+                padding-left: 0 !important;
+                clear: both;
+                .imj_userGlobalInformation {
+                    .imj_admindataValueEntry {
+                        textarea {
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+                .imj_organisation {
+                    .imj_admindataValue {
+                        width: inherit;
+                        max-width: 73% !important;
+                    }
+                    .imj_inlineButtonGroup {
+                        .fa {
+                            padding: 0;
+                            padding-right: 10px;
+                            margin: 0;
+                            color: $color-10;
+                            font-size: 18px;
+                            background-color: transparent;
+                            &:hover {
+                                background-color: transparent;
+                            }
+                        }
+                    }
+                }
+                .imj_admindataSetEdit {
+                    .imj_headline {
+                        margin-bottom: 10px;
+                    }
+                    .imj_admindataValue {
+                        margin-left: 0;
+                        min-width: 75%;
+                        .imj_admindataValueEntry {
+                            width: 60% !important;
+                        }
+                        .imj_admindataSet {
+                            .imj_admindataLabel {
+                                .imj_submitPanel {
+                                    margin: 0;
+                                    padding: 0;
+                                    margin-top: 10px;
+                                    .imj_cancelButton {
+                                        @include action-button-grey;
+                                        margin: 0;
+                                        float: left;
+                                        height: 25px;
+                                        padding: 10px 20px 0px 20px;
+                                    }
+                                    .imj_submitButton {
+                                        @include action-button;
+                                        height: 25px;
+                                        padding: 10px 20px 0px 20px;
+                                    }
+                                    .imj_editButton {
+                                        margin-right: 20px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .imj_submitPanel {
+                        margin: 0;
+                        padding: 0;
+                        margin-top: 10px;
+                        .imj_cancelButton {
+                            @include action-button-grey;
+                            margin: 0;
+                            float: left;
+                            height: 25px;
+                            padding: 10px 20px 0px 20px;
+                        }
+                        .imj_submitButton {
+                            @include action-button;
+                            height: 25px;
+                            padding: 10px 20px 0px 20px;
+                        }
+                        .imj_editButton {
+                            margin-right: 20px;
+                        }
+                    }
+                }
+                .imj_admindataSet {
+                    .imj_headline {
+                        margin-bottom: 20px;
+                    }
+                }
+                .imj_simpleSearch {
+                    padding: 0;
+                    .imj_searchInfoText {
+                        margin-top: 10px;
+                        margin-right: 10px;
+                    }
+                    .imj_simpleSearchButtonSubmit {
+                        @include action-button;
+                    }
+                    .imj_cancelButton {
+                        @include action-button-grey;
+                        height: 25px;
+                        padding: 10px 20px 0 20px;
+                        margin-top: -5px;
+                    }
+                }
+                .imj_cancelButton {
+                    display: inline-block;
+                    //padding-top: 9px;
+                    //padding-bottom: 8px;
+                }
+                .imj_editButton {
+                    @include action-button;
+                    padding: 7px 20px 8px 20px;
+                }
+            }
+            .imj_adminPanel {
+                display: inline-block;
+                padding-left: 20px;
+                padding-right: 20px;
+                font-size: 14px;
+                line-height: 16px;
+                .imj_headline {
+                    font-size: 18px;
+                    color: $color-01;
+                    h2 {
+                        font-size: 18px;
+                        color: $color-01;
+                    }
+                }
+                &.imj_userConfig {
+                    .imj_simpleSearch {
+                        input[type="text"] {
+                            @include action-button;
+                        }
+                    }
+                    .imj_headline {
+                        width: 100%;
+                        h2 {
+                            color: $color-01;
+                            font-size: 18px;
+                        }
+                    }
+                    .imj_submitPanel {
+                        width: 101%;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                    }
+                    .imj_admindataValue {
+                        width: inherit;
+                        max-width: 74%;
+                        .imj_admindataValueEntry {
+                            width: inherit;
+                            .imj_admindataEdit {
+                                width: inherit;
+                            }
+                        }
+                    }
+                    .imj_content {
+                        padding-bottom: 20px;
+                        height: inherit;
+                        min-height: inherit;
+                        display: block;
+                        form {
+                            p {
+                                width: 100%;
+                                textarea {
+                                    width: 40%;
+                                }
+                                select {
+                                    margin-left: 20px;
+                                }
+                            }
+                            a {
+                                @include action-button;
+                                padding: 7px 20px 8px 20px;
+                            }
+                        }
+                        .imj_adminEditPanel {
+                            margin-top: 25px;
+                            .imj_cancelButton {
+                                @include action-button-grey;
+                                height: 100%;
+                                padding: 7px 20px 8px 20px;
+                            }
+                            a.imj_cancelButton {
+                                @include action-button-grey;
+                                height: 25px;
+                                padding: 12px 20px 3px 20px;
+                            }
+                        }
+                    }
+                }
+            }
+            .imj_storageInformation {
+                .imj_admindataLabel {
+                    width: initial;
+                }
+                .imj_headline {
+                    h2 {}
+                }
+            }
+            .imj_maxWidth {
+                padding: 0;
+            }
+            .imj_mainContentWrapper {
+                padding-left: 0;
+                height: 100%;
+                background: transparent; // hack for register site
+                overflow-y: hidden;
+            }
+            #imj_ajaxWrapper {
+                .imj_descriptionArea {
+                    .imj_metadataLabel {
+                        font-size: 1.2em;
+                    }
+                    table {
+                        td {
+                            padding-right: 20px;
+                        }
+                    }
+                }
+                .imj_sectionHeadline {
+                    .imj_inlineButtonGroup {
+                        a {
+                            font-size: 1.1em;
+                        }
+                    }
+                }
+                .imj_authorMetadataSet {
+                    .imj_sectionHeadline {
+                        .imj_inlineButtonGroup {
+                            a {
+                                font-size: 0.9em;
+                            }
+                        }
+                    }
+                    .imj_organisation {
+                        .imj_sectionHeadline {
+                            .imj_inlineButtonGroup {
+                                a {
+                                    font-size: 1.1em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .imj_userConfig {
+                .imj_admindataSet {
+                    .imj_admindataLabel {
+                        font-size: 1.2em;
+                    }
+                    &:first-child {
+                        .imj_admindataLabel {
+                            font-size: 1.07em;
+                        }
+                    }
+                }
+                .imj_adminEditPanel {
+                    margin-top: 20px;
+                }
+            }
+            .imj_descriptionArea {
+                h4 {
+                    padding-left: 0;
+                    font-size: 1.2em;
+                    font-weight: 600;
                 }
                 select {
-                  margin-left: 20px;
+                    @include input-style;
+                    margin-top: 10px;
+                    height: 35px;
                 }
-              }
-              a {
-                @include action-button;
-                padding: 7px 20px 8px 20px;
-              }
+                .imj_collectionNotifications,
+                .imj_collectionLogoUpload {
+                    h4 {
+                        font-size: 1.4em;
+                    }
+                    label {
+                        font-size: 1.2em !important;
+                    }
+                }
+                input[type="text"] {
+                    width: 400px;
+                    height: 25px;
+                    min-width: inherit;
+                    &.imj_metadataValue {
+                        height: 35px;
+                        width: 422px;
+                        min-width: inherit;
+                    }
+                }
+                textarea {
+                    height: 70px;
+                    width: 422px;
+                    min-width: inherit;
+                }
+                .imj_metadataSet {
+                    .imj_metadataLabel {
+                        width: 190px;
+                        min-width: inherit;
+                    }
+                }
+                .imj_admindataSet {
+                    .imj_admindataLabel, .imj_metadataLabel {
+                        width: 200px;
+                    }
+                    .imj_admindataValue {
+                        margin-left: 0;
+                        padding-left: 0;
+                        textarea {
+                            width: 416px;
+                        }
+                    }
+                }
+                .imj_organisation {
+                    padding-left: 0;
+                    .imj_admindataLabel, .imj_inlineButtonGroup {
+                        padding-left: 15px;
+                    }
+                }
+                .imj_sectionHeadline {
+                    margin-top: 5px;
+                }
+                .imj_collectionLogoUpload {
+                    .imj_metadataValue {
+                        margin-left: 0;
+                    }
+                    .imj_fileUploadContainer {
+                        border: none;
+                    }
+                }
             }
-            .imj_adminEditPanel {
-              margin-top: 25px;
-              .imj_cancelButton {
-                @include action-button-grey;
-                height: 100%;
-                padding: 7px 20px 8px 20px;
-              }
-              a.imj_cancelButton {
-                @include action-button-grey;
-                height: 25px;
-                padding: 12px 20px 3px 20px;
-              }
+            .imj_upload {
+                width: 96%;
+                .id_tabs {
+                    li:first-child {
+                        padding-left: 0;
+                    }
+                }
+                .plupload_content {
+                    .plupload_filelist_header, .plupload_filelist_footer {
+                        .plupload_file_name {
+                            padding-left: 0;
+                        }
+                    }
+                    .plupload_filelist {
+                        width: calc(100% - 40px);
+                        border: 1px dashed $color-03;
+                        padding: 15px;
+                        margin-top: 15px;
+                        margin-bottom: 15px;
+                    }
+                }
+                .plupload_filelist_footer {
+                    background: transparent;
+                    .plupload_button {
+                        padding-left: 15px;
+                        padding-right: 15px;
+                    }
+                }
+                .imj_uploadUrlReference {
+                    width: 90%;
+                    height: 100px;
+                }
+                label {
+                    margin-left: 0;
+                }
             }
-          }
-        }
-      }
-      .imj_storageInformation {
-        .imj_admindataLabel {
-          width: initial;
-        }
-        .imj_headline{
-          h2{
-           
-          }
-        }
-      }
-
-      .imj_maxWidth {
-        padding: 0;
-      }
-
-
-     
-      .imj_mainContentWrapper {
-        padding-left: 0;
-        height: 100%;
-        background: transparent; // hack for register site
-        overflow-y: hidden;
-      }
-
-
-      #imj_ajaxWrapper {
-        .imj_descriptionArea {
-          .imj_metadataLabel {
-            font-size: 1.2em;
-          }
-          table {
-            td {
-              padding-right: 20px;
+            .imj_mediaEntryDetailPage {
+                .imj_mediaDisplayContainer {
+                    max-width: 80%;
+                    box-sizing: border-box;
+                    margin: auto;
+                    padding: 0 $page-padding;
+                }
+                .imj_listHeader {
+                    width: initial;
+                    margin: 0 auto;
+                    display: table;
+                }
+                .imj_metadataList {
+                    width: 100%;
+                    margin-left: 0;
+                    .imj_infodataWrapper {
+                        span.imj_infodataSet {
+                            .imj_infodataLabel {
+                                font-size: 1em;
+                            }
+                            .imj_infodataValue {
+                                font-size: 1em;
+                                margin-left: 0;
+                                padding-left: 0;
+                                a {
+                                    font-size: 1em;
+                                }
+                            }
+                        }
+                        div.imj_infodataSet {
+                            .imj_infodataLabel {
+                                font-size: 1.2em;
+                            }
+                            .imj_infodataValue {
+                                margin-left: 0;
+                                padding-left: 0;
+                                .imj_optionList {
+                                    li {
+                                        a {
+                                            font-size: 1em;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .imj_metadataWrapper {
+                    .imj_globalMetadataSet {
+                        font-size: 1.1em;
+                    }
+                    .imj_headline {
+                        font-size: 1.2em;
+                        a {
+                            font-size: 1em;
+                        }
+                    }
+                    .imj_submitPanel {
+                        display: inline-block;
+                        a {
+                            font-size: 1.2em !important;
+                            height: 20px !important;
+                            display: inline;
+                            padding: 5px 20px 5px 20px;
+                        }
+                    }
+                }
             }
-          }
-        }
-        .imj_sectionHeadline {
-          .imj_inlineButtonGroup {
-            a {
-              font-size: 1.1em;
+            .imj_fileUploadContainer {
+                border: 1px dashed $color-03;
             }
-          }
-        }
-        .imj_authorMetadataSet {
-          .imj_sectionHeadline {
-            .imj_inlineButtonGroup {
-              a {
-                font-size: 0.9em;
-              }
-            }
-          }
-          .imj_organisation {
-            .imj_sectionHeadline {
-              .imj_inlineButtonGroup {
+            .imj_administrationTiledList {
                 a {
-                  font-size: 1.1em;
+                    font-size: 0.9em;
                 }
-              }
             }
-          }
-        }
-      }
-
-      .imj_userConfig {
-        .imj_admindataSet {
-          .imj_admindataLabel {
-            font-size: 1.2em;
-          }
-          &:first-child {
-            .imj_admindataLabel {
-              font-size: 1.07em;
+            .imj_bibliographicList {
+                padding: 0;
+                width: 100%;
+                box-sizing: border-box;
+                h3 {
+                    font-size: 95%;
+                }
+                .imj_bibliographicListItem {
+                    width: 100%;
+                    padding: 0;
+                    box-sizing: border-box;
+                    min-height: 8em;
+                    .imj_itemContent {
+                        width: 70% !important;
+                        max-width: calc(95% - 8em);
+                        margin-left: 0;
+                        box-sizing: border-box;
+                    }
+                    .imj_statusArea {
+                        width: 5%;
+                        .imj_statusHeaderArea {
+                            right: 0;
+                        }
+                    }
+                    .imj_previewArea {
+                        width: 20%;
+                        box-sizing: border-box;
+                        min-width: 6em;
+                        .imj_imageStack {
+                            margin: 2em;
+                            width: 8em;
+                            height: 8em;
+                            &::before {
+                                width: 8em;
+                                height: 8em;
+                            }
+                            &::after {
+                                width: 8em;
+                                height: 8em;
+                            }
+                        }
+                        @media screen and (max-width: 60em) {
+                            .imj_imageStack {
+                                margin: 1em;
+                                width: 4em;
+                                height: 4em;
+                                &::before {
+                                    width: 4em;
+                                    height: 4em;
+                                }
+                                &::after {
+                                    width: 4em;
+                                    height: 4em;
+                                }
+                            }
+                        }
+                    }
+                }
             }
-          }
-        }
-        .imj_adminEditPanel{
-          margin-top: 20px;
-        }
-      }
-
-      .imj_descriptionArea {
-
-        h4 {
-          padding-left: 0;
-          font-size: 1.2em;
-          font-weight: 600;
-        }
-
-        select {
-          @include input-style;
-          margin-top: 10px;
-          height: 35px;
-        }
-
-        .imj_collectionNotifications, .imj_collectionLogoUpload {
-          h4 {
-            font-size: 1.4em;
-          }
-          label {
-            font-size: 1.2em !important;
-          }
-        }
-
-        input[type="text"] {
-          width: 400px;
-          height: 25px;
-          min-width: inherit;
-          &.imj_metadataValue {
-            height: 35px;
-            width: 422px;
-            min-width: inherit;
-          }
-        }
-        textarea {
-          height: 70px;
-          width: 422px;
-          min-width: inherit;
-        }
-
-        .imj_metadataSet {
-          .imj_metadataLabel {
-            width: 190px;
-            min-width: inherit;
-          }
-        }
-
-        .imj_admindataSet {
-          .imj_admindataLabel, .imj_metadataLabel {
-            width: 200px;
-          }
-
-          .imj_admindataValue {
-            margin-left: 0;
-            padding-left: 0;
-            textarea {
-              width: 416px;
+            .imj_searchUnit {
+                input, select {
+                    @include input-style;
+                    height: 35px;
+                }
+                input[type="checkbox"],
+                input[type="radio"] {
+                    margin: 5px;
+                    height: inherit;
+                }
+                .imj_searchDetails {
+                    width: 100%;
+                    margin-left: 83px;
+                    table {
+                        margin-top: 10px;
+                    }
+                }
+                .imj_submitPanel {
+                    display: inline-block;
+                    .imj_inlineButtonGroup {
+                        margin-left: 0;
+                    }
+                }
+                .imj_logicalDetailConnector {
+                    margin-left: 83px;
+                    margin-bottom: 10px;
+                }
+                .imj_searchDetails {
+                    .imj_logicalSearchGroup {
+                        width: 9%;
+                        &:first-of-type {
+                            margin-right: 1%;
+                        }
+                        select {
+                            width: 100%;
+                        }
+                    }
+                }
+                .imj_searchInput {
+                    width: 20em;
+                    span, input {
+                        height: 23px;
+                        margin-right: 20px;
+                    }
+                }
+                .imj_searchSelectbox {
+                    width: 20%;
+                    margin-right: 20px;
+                    select {
+                        width: 100%;
+                    }
+                    .imj_searchDetails {
+                        margin-left: 0;
+                    }
+                }
+                .imj_searchStatement {
+                    width: 20%;
+                    margin-right: 20px;
+                    select {
+                        width: 100%;
+                    }
+                }
             }
-          }
-        }
-
-        .imj_organisation {
-          padding-left: 0;
-          .imj_admindataLabel, .imj_inlineButtonGroup {
-            padding-left: 15px;
-          }
-        }
-
-        .imj_sectionHeadline {
-          margin-top: 5px;
-        }
-
-        .imj_collectionLogoUpload {
-          .imj_metadataValue {
-            margin-left: 0;
-          }
-          .imj_fileUploadContainer {
-            border: none;
-          }
-        }
-      }
-
-      .imj_upload {
-		width: 96%; 
-        .id_tabs {
-          li:first-child {
-            padding-left: 0;
-          }
-        }
-        .plupload_content {
-          .plupload_filelist_header, .plupload_filelist_footer {
-            .plupload_file_name {
-              padding-left: 0;
+            #registerArea {
+                width: 100%;
+                input[type="submit"] {
+                    @include action-button;
+                }
+                font-size: 1em;
+                h2 {
+                    width: 100%;
+                }
+                .imj_headline {
+                    display: none;
+                }
+                .imj_registerSteps {
+                    width: 180px;
+                    .imj_active {
+                        color: $color-03;
+                    }
+                }
+                .imj_registerText {
+                    margin: 0 0 2em 0;
+                }
             }
-          }
-          .plupload_filelist {
-            width: calc(100% - 40px);
-            border: 1px dashed $color-03;
-            padding: 15px;
-            margin-top: 15px;
-            margin-bottom: 15px;
-          }
-        }
-        .plupload_filelist_footer {
-          background: transparent;
-          .plupload_button {
-            padding-left: 15px;
-            padding-right: 15px;
-          }
-        }
-        .imj_uploadUrlReference {
-          width: 90%;
-          height: 100px;
-        }
-        label {
-          margin-left: 0;
-        }
-      }
-
-      .imj_mediaEntryDetailPage {
-
-        .imj_mediaDisplayContainer {
-            max-width: 80%;
-			box-sizing: border-box;
-			margin: auto;
-			padding: 0 $page-padding;
+            .imj_mediaEntryDetailPage {
+                .imj_paginator {
+                    border: none;
+                    margin-top: 0;
+                    padding-top: 1%;
+                    @media screen and (max-width: 60em) {
+                        .previousItem a {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .imj_welcomeInfo,
+            .imj_tabContent {
+                min-height: inherit !important;
+                padding: 0;
+                font-size: 110%;
+                li.ui-state-active {
+                    background: transparent;
+                    a {
+                        color: $color-01;
+                    }
+                }
+            }
+            .imj_listBody {
+                //font-size: 100%;
+                padding-bottom: 20px;
+                //border-bottom: 1px solid $color-01;
+                .imj_techdataEntry {
+                    overflow-x: inherit;
+                }
+                .imj_infodataValueEntryEmbed {
+                    width: 100%;
+                }
+                span.imj_optionSet {
+                    //line-height: 1em;
+                    height: 1.35em;
+                    input {
+                        margin-left: 4%;
+                    }
+                    label {
+                        width: 100%;
+                        //font-size: 130%;// 14px;
+                        overflow: hidden;
+                        max-width: 80%;
+                        text-align: left;
+                        padding-left: 0px;
+                    }
+                    .imj_optionLabel {
+                        max-width: 80%;
+                        text-align-last: left;
+                    }
+                }
+                .imj_listItem {
+                    dl {
+                        padding-left: 0;
+                    }
+                }
+                .imj_tileItem {
+                    width: auto;
+                    max-width: 49%;
+                    padding: 0;
+                    margin: 0 0 2% 0;
+                    .imj_tileThumbnailArea {
+                        border-radius: 5px;
+                        background: transparent !important;
+                        border: 2px solid transparent;
+                        margin-top: 0;
+                        &:hover {
+                            background: transparent;
+                            border: 2px solid $color-03;
+                        }
+                        img {
+                            width: calc(100% - 4px);
+                            padding: 2px;
+                            margin: 0;
+                            border: none;
+                        }
+                    }
+                    .imj_tooltip {
+                        box-shadow: none;
+                        background: $color-13;
+                        border-radius: 2px;
+                        border: 1px solid $color-14;
+                        padding: 10px;
+                        text-align: left;
+                        text-align-last: left;
+                        a {
+                            @include font-style-links-green;
+                        }
+                        @media screen and (max-width: 60em) {
+                            display: none;
+                        }
+                    }
+                }
+                .imj_headline {
+                    margin-right: 20px;
+                }
+            }
+            .imj_headline {
+                padding: 0;
+                float: left;
+                text-align: left;
+                background: transparent;
+                h2 {
+                    text-align: left;
+                    padding-left: 0;
+                    color: $color-03;
+                }
+            }
+            .imj_content {
+                padding: 0;
+            }
+            .imj_config_headline {
+                border: none;
+            }
+            .imj_itemActionArea {
+                margin-top: 15px;
+                ul {
+                    li {
+                        padding-left: 0 !important;
+                        padding-right: 20px !important;
+                        a {
+                            @include font-style-links-green;
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+            .imj_metadataSubPanel {
+                padding-left: 0;
+            }
+            .imj_userConfig {
+                .imj_listBody {
+                    border: none;
+                    padding-bottom: 0;
+                }
+                .imj_submitPanel {
+                    width: 100% !important;
+                }
+                select {
+                    @include input-style;
+                    height: 35px;
+                }
+            }
+            .highlight_area:hover {
+                background: $color-13;
+            }
         }
         .imj_listHeader {
-          width: initial;
-          margin: 0 auto;
-          display: table;
-        }
-        .imj_metadataList {
-          width: 100%;
-          margin-left: 0;
-          .imj_infodataWrapper {
-            span.imj_infodataSet {
-              .imj_infodataLabel {
-                font-size: 1em;
-              }
-              .imj_infodataValue {
-                font-size: 1em;
-                margin-left: 0;
-                padding-left: 0;
-                a {
-                  font-size: 1em;
-                }
-              }
+            .imj_active {
+                background: transparent;
+                color: $color-03;
             }
-            div.imj_infodataSet {
-              .imj_infodataLabel {
-                font-size: 1.2em;
-              }
-              .imj_infodataValue {
-                margin-left: 0;
-                padding-left: 0;
-                .imj_optionList {
-                  li {
-                    a {
-                      font-size: 1em;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-
-        .imj_metadataWrapper {
-          .imj_globalMetadataSet {
-            font-size: 1.1em;
-          }
-          .imj_headline {
-            font-size: 1.2em;
             a {
-              font-size: 1em;
+                @include font-style-links-green;
+                &:hover {
+                    background: transparent;
+                }
             }
-          }
-          .imj_submitPanel {
-            display: inline-block;
-            a {
-              font-size: 1.2em !important;
-              height: 20px !important;
-              display: inline;
-              padding: 5px 20px 5px 20px;
-            }
-          }
         }
-      }
-
-      .imj_fileUploadContainer {
-        border: 1px dashed $color-03;
-      }
-
-      .imj_administrationTiledList {
-        a {
-          font-size: 0.9em;
-        }
-      }
-
-
-    .imj_bibliographicList {
-		padding: 0;
-		width: 100%;
-		box-sizing: border-box;
-		
-        h3 {
-          font-size: 95%;
-        }
-		.imj_bibliographicListItem{
-			width: 100%;
-			padding: 0;
-			box-sizing: border-box;
-			min-height: 8em;
-			
-			.imj_itemContent{
-				width: 70% !important;
-				max-width: calc(95% - 8em);
-				margin-left: 0;
-				box-sizing: border-box;
-			}
-			.imj_statusArea{
-				width: 5%;
-				.imj_statusHeaderArea{
-					right: 0;
-				}
-			}
-			.imj_previewArea{
-				width: 20%;
-				box-sizing: border-box;
-				min-width: 6em;
-				.imj_imageStack{
-					margin: 2em;
-					width: 8em;
-					height: 8em;
-					&::before{
-						width: 8em;
-						height: 8em;
-					}
-					&::after{
-						width: 8em;
-						height: 8em;
-					}
-				}
-				@media screen and (max-width: 60em) {
-					.imj_imageStack{
-						margin: 1em;
-						width: 4em;
-						height: 4em;
-						&::before{
-							width: 4em;
-							height: 4em;
-						}
-						&::after{
-							width: 4em;
-							height: 4em;
-						}
-					}
-				}
-			}
-		  }
-      }
-
-      .imj_searchUnit {
-
-        input, select {
-          @include input-style;
-          height: 35px;
-        }
-
-        input[type="checkbox"],input[type="radio"] {
-          margin: 5px;
-          height: inherit;
-        }
-
-        .imj_searchDetails {
-          width: 100%;
-          margin-left: 83px;
-
-          table {
-            margin-top: 10px;
-          }
-
-        }
-
-        .imj_submitPanel {
-          display: inline-block;
-          .imj_inlineButtonGroup {
-            margin-left: 0;
-          }
-        }
-
-        .imj_logicalDetailConnector {
-          margin-left: 83px;
-          margin-bottom: 10px;
-        }
-
-        .imj_searchDetails {
-          .imj_logicalSearchGroup {
-            width: 9%;
-            &:first-of-type {
-              margin-right: 1%;
-            }
-            select {
-              width: 100%;
-            }
-          }
-        }
-
-        .imj_searchInput {
-		  width: 20em;
-          span, input {
-            height: 23px;
-            margin-right: 20px;
-			
-          }
-        }
-
-        .imj_searchSelectbox {
-          width: 20%;
-          margin-right: 20px;
-          select {
+        .imj_pageMessageArea {
+            background-color: $header-bgcolor;
+            padding: 0 $page-padding;
             width: 100%;
-          }
-          .imj_searchDetails {
-            margin-left: 0;
-          }
+            box-sizing: border-box;
+            float: left;
+            margin: 0 0 -1px 0;
+            .imj_message {
+                padding: 5px 20px 5px 20px;
+                margin-bottom: 3px;
+                //background-color: #6CAE2F; /* Red */
+                background-color: $color-13;
+                border: 1px solid $color-08;
+                border-radius: 2px;
+                color: $color-08;
+                opacity: 1;
+                transition: opacity 0.6s;
+            }
+            .imj_messageError {
+                //background-color: #D80000; /* Red */
+                border: 1px solid $color-07;
+                color: $color-07;
+            }
+            .imj_messageAreaCloseBtn {
+                margin-left: 15px;
+                font-weight: bold;
+                float: right;
+                font-size: 1em;
+                line-height: 20px;
+                cursor: pointer;
+                transition: 0.3s;
+            }
         }
-
-        .imj_searchStatement {
-          width: 20%;
-          margin-right: 20px;
-          select {
+        .imj_searchQueryDisplay {
+            margin: 0;
+            padding: 1em 0 0 20%;
+            @media screen and (max-width: 50em) {
+                padding: 0.5em 0 0 0;
+                font-size: 0.8em;
+            }
+            float: left;
             width: 100%;
-          }
+            box-sizing: border-box;
+            .imj_submitButton {
+                display: inline;
+            }
+            .imj_searchQueryText {
+                color: $color-03;
+                border: 1px solid $color-03;
+                border-radius: 2px;
+                //background-color: $color-13;
+                padding: 3px 10px;
+                margin: 5px 0.5em 0px 0;
+                float: left;
+            }
         }
-
-      }
-
-      #registerArea {
-		width: 100%;
-        input[type="submit"] {
-          @include action-button;
-        }
-        font-size: 1em;
-        h2 {
-          width: 100%;
-        }
-
-        .imj_headline {
-          display: none;
-        }
-
-        .imj_registerSteps {
-          width: 180px;
-          .imj_active {
-            color: $color-03;
-          }
-        }
-		
-		.imj_registerText {
-          margin: 0 0 2em 0;
-        }
-      }
-
-	  .itemsArea{
-	 	max-width : 96%;
-	  }
-	 
-	 
-	  
-      .imj_mediaEntryDetailPage {
-        .imj_paginator {
-          border: none;
-          margin-top: 0;
-          padding-top: 1%;
-		  @media screen and (max-width: 60em) {
-			.previousItem a{
-				display:none;
-			}
-		  }
-		  
-        }
-      }
-
-      .imj_welcomeInfo, .imj_tabContent {
-        min-height: inherit !important;
-		padding:0;
-		font-size: 110%;
-        li.ui-state-active {
-          background: transparent;
-          a {
-            color: $color-01;
-          }
-        }
-      }
-		
-		
-      .imj_listBody {  
-		//font-size: 100%;
-        padding-bottom: 20px;
-        //border-bottom: 1px solid $color-01;
-
-        .imj_techdataEntry {
-          overflow-x: inherit;
-        }
-
-        .imj_infodataValueEntryEmbed {
-          width: 100%;
-        }
-
-        span.imj_optionSet {
-          //line-height: 1em;
-		  height: 1.35em;
-          input {
-            margin-left: 4%;
-          }
-          label {
-            width: 100%;
-            //font-size: 130%;// 14px;
-            overflow: hidden;
-            max-width: 80%;
-            text-align: left;
-            padding-left: 0px;
-          }
-
-          .imj_optionLabel {
-            max-width: 80%;
-			text-align-last: left;
-          }
-        }
-
-        .imj_listItem {
-          dl {
-            padding-left: 0;
-          }
-        }
-
-        .imj_tileItem {
-			width: auto;
-			max-width: 49%;
-			padding: 0;
-			margin: 0 0 2% 0;
-
-		   .imj_tileThumbnailArea{
-				border-radius: 5px;
-				background: transparent !important;
-				border: 2px solid transparent;
-				margin-top: 0;
-
-				&:hover {
-					background: transparent;
-					border: 2px solid $color-03;
-				}
-			   
-				img{
-					width: calc(100% - 4px);
-					padding: 2px;
-					margin: 0;
-					border:none;
-				}
-		   }
-          .imj_tooltip {
-            box-shadow: none;
-            background: $color-13;
-            border-radius: 2px;
+        .imj_menuBody {
             border: 1px solid $color-14;
-            padding: 10px;
-			text-align: left;
-			text-align-last: left;
-		
-            a {
-              @include font-style-links-green;
+            background-color: $color-13;
+            li {
+                &:hover {
+                    background-color: $color-13;
+                }
             }
-			@media screen and (max-width: 60em) {
-				display: none;
-			}
-          }
-        }
-
-        .imj_headline {
-          margin-right: 20px;
-        }
-
-      }
-
-      .imj_headline {
-        padding: 0;
-        float: left;
-        text-align: left;
-        background: transparent;
-        h2 {
-          text-align: left;
-          padding-left: 0;
-          color: $color-03;
-        }
-      }
-
-      .imj_content {
-        padding: 0;
-      }
-
-      .imj_config_headline {
-        border: none;
-      }
-
-      .imj_itemActionArea {
-        margin-top: 15px;
-        ul {
-          li {
-            padding-left: 0 !important;
-            padding-right: 20px !important;
-            a {
-              @include font-style-links-green;
-              text-align: left;
+            span {
+                margin: 0.7em 0 !important;
+                font-size: 0.9em !important;
             }
-          }
         }
-      }
-
-      .imj_metadataSubPanel {
-        padding-left: 0;
-      }
-
-
-      .imj_userConfig {
-        .imj_listBody {
-          border: none;
-          padding-bottom: 0;
+        .imj_tiledMediaList {
+            //margin-left: -$page-padding;
+            padding-top: 16px;
         }
-		.imj_submitPanel{
-			width: 100% !important;
-		}
-        select {
-          @include input-style;
-          height: 35px;
+        .imj_tiledMediaList > .imj_listBody {
+            margin-bottom: 1px;
         }
-      }
-
-      .highlight_area:hover {
-        background: $color-13;
-      }
-    }
-	
-    .imj_listHeader {
-      .imj_active {
-        background: transparent;
-        color: $color-03;
-      }
-      a {
-        @include font-style-links-green;
-        &:hover {
-          background: transparent;
+        .imj_invisible {
+            display: none;
         }
-      }
-    }
-	
-	.imj_pageMessageArea{
-		background-color: $header-bgcolor;
-		padding: 0 $page-padding;
-		width: 100%;
-		box-sizing: border-box;
-		float: left;
-		margin: 0 0 -1px 0;
-		.imj_message{
-			padding: 5px 20px 5px 20px;
-			margin-bottom: 3px;
-			//background-color: #6CAE2F; /* Red */
-			background-color: $color-13;
-			border: 1px solid $color-08;
-			border-radius: 2px;
-			color:  $color-08;
-			opacity: 1;
-			transition: opacity 0.6s;
-		}
-	
-		.imj_messageError{
-			//background-color: #D80000; /* Red */
-			border: 1px solid $color-07;
-			color:  $color-07;
-		}
-	
-		.imj_messageAreaCloseBtn {	
-			margin-left: 15px;
-			font-weight: bold;
-			float: right;
-			font-size: 1em;
-			line-height: 20px;
-			cursor: pointer;
-			transition: 0.3s;
-		}
-	}
-    
-
-    .imj_searchQueryDisplay {
-		margin: 0;
-		padding: 1em 0 0 20%;
-		@media screen and (max-width: 50em){
-			padding: 0.5em 0 0 0;
-			font-size: 0.8em;
-		}
-		float: left;
-		width: 100%;
-		box-sizing: border-box;
-		.imj_submitButton {
-			display: inline;
-		}
-		.imj_searchQueryText{
-			color: $color-03;
-			border: 1px solid $color-03;
-			border-radius: 2px;
-			//background-color: $color-13;
-			padding: 3px 10px;
-			margin: 5px 0.5em 0px 0;
-			float: left;
-		}
-    }
-
-    .imj_menuBody {
-      border: 1px solid $color-14;
-	  background-color: $color-13;
-	 
-      li {
-        &:hover {
-          background-color: $color-13;
+        .imj_siteFooter {
+            width: initial;
+            padding: $footer-padding !important;
+            left: 0;
+            bottom: 0;
+            height: $footer-height;
+            background-color: $color-10;
+            .imj_poweredby_institution {
+                margin-top: 0;
+            }
         }
-      }
-      span {
-        margin: 0.7em 0 !important;
-		font-size: 0.9em !important;
-      }
     }
-	.imj_tiledMediaList{
-		//margin-left: -$page-padding;
-		padding-top: 16px;
-	}
-	.imj_tiledMediaList > .imj_listBody{
-		margin-bottom: 1px;
-	}
-
-    .imj_invisible {
-      display: none;
-    }
-
-    .imj_siteFooter {
-      width: initial;
-      padding:  $footer-padding !important;
-      left: 0;
-      bottom: 0;
-      height: $footer-height;
-      background-color: $color-10;
-	  .imj_poweredby_institution {
-		margin-top: 0;
-	  }
-    }
-  }
 }
-
-.imj_previewContainer{
-	max-height: 60%;
-	max-width: 90%;
-	box-sizing: content-box;
-	border: 1px solid $color-14;
-	padding: 0.5em;
-	display: block;
+.imj_previewContainer {
+    max-height: 60%;
+    max-width: 90%;
+    box-sizing: content-box;
+    border: 1px solid $color-14;
+    padding: 0.5em;
+    display: block;
     margin: auto;
-	@media screen and (max-width: 60em){
-			background-color: $color-13;
-	}
-
-	
+    @media screen and (max-width: 60em) {
+        background-color: $color-13;
+    }
 }
-
-.fullpage{
-	max-height: 100% !important;
-	max-width: 100% !important;
+.fullpage {
+    max-height: 100% !important;
+    max-width: 100% !important;
 }
-
-#seadragon-viewer-full{
-
+#seadragon-viewer-full {} #seaDragonsButtons {
+    a {
+        padding: 0 0.5em;
+    }
 }
-#seaDragonsButtons{
-	a{
-		padding: 0 0.5em;
-	}
+.imj_statusArea {
+    margin: 0 !important;
+    padding: 0 !important;
 }
-
-.imj_statusArea{
-	margin: 0 !important;
-	padding: 0 !important;
+.imj_metadataSet {
+    .imj_metadataValue {
+        margin-left: 0;
+    }
 }
-
-.imj_metadataSet{
-	.imj_metadataValue{
-		margin-left: 0;
-	}
-} 
-
-.imj_shareForm{
-	padding:0;
+.imj_shareForm {
+    padding: 0;
 }
-
-.imj_rightsTable{
-	max-width: 80em;
+.imj_rightsTable {
+    max-width: 80em;
 }
-
-.imj_moveItemsDialogBox{
-	position: fixed;
-	top: 5em;
-	font-size: 1em;
-	width: 40em;
+.imj_moveItemsDialogBox {
+    position: fixed;
+    top: 5em;
+    font-size: 1em;
+    width: 40em;
 }
-.imj_shareDialogBox{
-	position: fixed;
-	font-size: 1em;
-	max-width: 60%;
-	min-width: 60%;
+.imj_shareDialogBox {
+    position: fixed;
+    font-size: 1em;
+    max-width: 60%;
+    min-width: 60%;
 }
-
-.uploadDialog{
-	overflow: hidden !important;
-	.imj_metadataSet{
-		font-size: 1em !important;
-	}
+.uploadDialog {
+    overflow: hidden !important;
+    .imj_metadataSet {
+        font-size: 1em !important;
+    }
 }
-.uploadDialogHeadArea{
-	height: 8%;
-	margin-bottom: 1em;
-	position: initial !important;
+.uploadDialogHeadArea {
+    height: 8%;
+    margin-bottom: 1em;
+    position: initial !important;
 }
-.uploadDialogDropArea{
-	cursor: pointer;
+.uploadDialogDropArea {
+    cursor: pointer;
 }
-.uploadFileListEntry{
-	line-height:normal;
-	font-size: small;
+.uploadFileListEntry {
+    line-height: normal;
+    font-size: small;
 }
-.imj_dragOver{
-	border: 2px dashed $color-03;
+.imj_dragOver {
+    border: 2px dashed $color-03;
 }
-
-.imj_selectionInfoPanel{
-	margin: 0;
-	padding-top: 4%;
-	width: 100%;
-	float:left;
-	.itemsCount{
-		float:left; 
-		width: 20%; 
-	}
+.imj_selectionInfoPanel {
+    margin: 0;
+    padding-top: 1%;
+    width: 100%;
+    float: left;
+    .itemsCount {
+        float: left;
+        width: 20%;
+    }
 }
-
-.imj_menuButton{
-	font-size: 14px !important;
-	margin: 0 20px 0 -5px;
-	cursor: pointer;
-	padding: 5px 5px 5px 5px !important;
-	color: $overlaymenu-header-color;
-	&:hover {
-		color: $overlaymenu-header-color-hover;
-		background-color: $color-03;
-		border: none;
-	}
+.imj_menuButton {
+    font-size: 14px !important;
+    margin: 0 20px 0 -5px;
+    cursor: pointer;
+    padding: 5px 5px 5px 5px !important;
+    color: $overlaymenu-header-color;
+    &:hover {
+        color: $overlaymenu-header-color-hover;
+        background-color: $color-03;
+        border: none;
+    }
 }
-
 // Select metadata/statement
-.metadataSelector{
-	text-align: left;
+.metadataSelector {
+    text-align: left;
 }
 .selectMd {
-	position: relative;
-	display: inline-block;
-	input{
-		box-sizing: border-box;
-		margin:  6px 8px !important;
-		width: 90% !important;
-	}
-	button{
-		margin: 0;
-		width:100%;
-	}
+    position: relative;
+    display: inline-block;
+    input {
+        box-sizing: border-box;
+        margin: 6px 8px !important;
+        width: 90% !important;
+    }
+    button {
+        margin: 0;
+        width: 100%;
+    }
 }
-
-
 // Overlay
 .imj_overlayMenu {
-	display: inline-block;
-	padding: 0.125em 0.25em;
-
-	.imj_menuHeader {
-		text-align: left;
-		color: $overlaymenu-header-color;
-		cursor: pointer;
-		
-		.selectAll:before{
-			font-family: FontAwesome;
-			content: "\f00c";
-			padding-right: 0.1em;
-		}
-		
-		.selectNone:before{
-			font-family: FontAwesome;
-			content: "\f00d ";
-			padding-right: 0.1em;
-		}
-		
-	}
-	
-	.imj_menuText {
-		text-align: left;
-		line-height: 175%;
-		padding: 0.5em 1em;
-		display: block;
-	}
-
-	
-
-	.imj_menuBody{
-		display: none;
-		position: absolute;
-		background-color: $overlaymenu-bgcolor;
-		border: 1px solid $color-14;
-   
-	}
-	
-	&:hover {
-		.imj_menuHeader {
-			color: $overlaymenu-header-color-hover;
-		}
-		> .imj_menuBody {
-			display: block;
-			z-index: 100;
-		}
-	}
-	
-	.imj_criticalItem {
-		&:hover {
-			background-color: $overlaymenu-bgcolor-critical;
-		}
-	}
-
-	.imj_listItemSeparator {
-		padding-top: 0.181818em;
-		border-top: $overlaymenu-border-horizontal-separator;
-	}
-
-	li {
-		line-height: 175%;
-		padding: 0.272727em 1em;	
-	}   
-
+    display: inline-block;
+    padding: 0.125em 0.25em;
+    .imj_menuHeader {
+        text-align: left;
+        color: $overlaymenu-header-color;
+        cursor: pointer;
+        .selectAll:before {
+            font-family: FontAwesome;
+            content: "\f00c";
+            padding-right: 0.1em;
+        }
+        .selectNone:before {
+            font-family: FontAwesome;
+            content: "\f00d ";
+            padding-right: 0.1em;
+        }
+    }
+    .imj_menuText {
+        text-align: left;
+        line-height: 175%;
+        padding: 0.5em 1em;
+        display: block;
+    }
+    .imj_menuBody {
+        display: none;
+        position: absolute;
+        background-color: $overlaymenu-bgcolor;
+        border: 1px solid $color-14;
+    }
+    &:hover {
+        .imj_menuHeader {
+            color: $overlaymenu-header-color-hover;
+        }
+        > .imj_menuBody {
+            display: block;
+            z-index: 100;
+        }
+    }
+    .imj_criticalItem {
+        &:hover {
+            background-color: $overlaymenu-bgcolor-critical;
+        }
+    }
+    .imj_listItemSeparator {
+        padding-top: 0.181818em;
+        border-top: $overlaymenu-border-horizontal-separator;
+    }
+    li {
+        line-height: 175%;
+        padding: 0.272727em 1em;
+    }
 }
-
-
- .imj_headline_text {
-	h1, h2{
-		font-size: 110% !important;
-	}
-   }
-
+.imj_headline_text {
+    h1, h2 {
+        font-size: 110% !important;
+    }
+}
 .imj_modalDialogBox {
     .imj_confirmationText, a {
-      font-size: 1em !important;
+        font-size: 1em !important;
     }
-	.imj_dialogReasonText {
-		max-width: 90%;
-	}
-	background-color: color-13;
-	font-size: 1em;
-	border: 1px solid $color-14;
-	-webkit-box-shadow: none !important;
-	-moz-box-shadow: none !important;
-	box-shadow: none !important;
-	top: 25%;
-	width: 70em;
-	max-width: 90%;
-	max-height: 50%;
-	overflow-y: auto;
-	overflow-x: hidden;
-	
-	
+    .imj_dialogReasonText {
+        max-width: 90%;
+    }
+    background-color: color-13;
+    font-size: 1em;
+    border: 1px solid $color-14;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+    top: 25%;
+    width: 70em;
+    max-width: 90%;
+    max-height: 50%;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
-  
-.show{
-	display: block;
+.show {
+    display: block;
 }
-
-.loginArea{
-	width: 100%;
+.loginArea {
+    width: 100%;
 }
-
 small {
-	font-size: smaller;
+    font-size: smaller;
 }
-
 .imj_mediaWithdrawn {
-	text-align: left;
+    text-align: left;
 }
-
 // Upload modal
-.uploadPanel{
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	font-size: 2em;
-	z-index: 1001;
-	display: none;
-	width: 30em;
-	height: 5em;
-	margin-top: -9em;
-	margin-left: -15em;
-	background-color: $color-13;
-	text-align: center;
-	vertical-align: middle;
-	padding-top: 3em;
+.uploadPanel {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    font-size: 2em;
+    z-index: 1001;
+    display: none;
+    width: 30em;
+    height: 5em;
+    margin-top: -9em;
+    margin-left: -15em;
+    background-color: $color-13;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 3em;
 }
-
-.uploadDragAndDropTitle{
-	width:100%;
-	text-align: center;
-	padding: 2em;
-	box-sizing: border-box;
+.uploadDragAndDropTitle {
+    width: 100%;
+    text-align: center;
+    padding: 2em;
+    box-sizing: border-box;
 }
-  
 // Edit selected
-.edit_selected_table_wrapper{
-	width: 100%;
-	overflow-x: auto;
-	overflow-y: hidden;
-	max-height: calc(100% - 2.5em);
-}
-.edit_selected_table{
-	border-collapse: collapse;
-	border: 5px solid $color-11;
-	table-layout: fixed; 
+.edit_selected_table_wrapper {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    max-height: calc(100% - 2.5em);
 }
 .edit_selected_table {
-	border-collapse: collapse;
-	border: 0px solid $color-11;
-	table-layout: fixed;
-	
-	tbody{
-		overflow-y: auto;
-		overflow-x: hidden;
-		height: calc(100vh - 8em);
-		width: 100%;
-		th{
-		}
-	}
+    border-collapse: collapse;
+    border: 5px solid $color-11;
+    table-layout: fixed;
 }
-.edit_selected_table textarea, .edit_selected_table input[type]:not(.combobox) {
-	borders: 1px;
-	margin-bottom: 0.5em;
-	max-width: 70% !important;
+.edit_selected_table {
+    border-collapse: collapse;
+    border: 0px solid $color-11;
+    table-layout: fixed;
+    tbody {
+        overflow-y: auto;
+        overflow-x: hidden;
+        height: calc(100vh - 8em);
+        width: 100%;
+        th {}
+    }
 }
-
-.tableBtn{
-	width: 100%;
-	text-align: center;
-	float: left;
+.edit_selected_table textarea,
+.edit_selected_table input[type]:not(.combobox) {
+    borders: 1px;
+    margin-bottom: 0.5em;
+    max-width: 70% !important;
 }
-.tableBtn label{
-	text-align: left;
+.tableBtn {
+    width: 100%;
+    text-align: center;
+    float: left;
 }
-.edit_selected_table{ 
-	th, td{
-		vertical-align: middle;
-		margin:0;
-		text-align: center;
-		max-width: 15.6em;
-		min-width: 15.6em;
-		padding:0 1em;
-		border: 1px solid $color-11; 
-		overflow-wrap: break-word;
-		height: 4em;
-	}
+.tableBtn label {
+    text-align: left;
 }
-.edit_selected_table th, {
-	background-color: $color-13;
+.edit_selected_table {
+    th, td {
+        vertical-align: middle;
+        margin: 0;
+        text-align: center;
+        max-width: 15.6em;
+        min-width: 15.6em;
+        padding: 0 1em;
+        border: 1px solid $color-11;
+        overflow-wrap: break-word;
+        height: 4em;
+    }
 }
-
-.edit_selected_table_icon{
-	margin-left: 0.5em;
-	margin-right: 0.5em;
+.edit_selected_table th,
+{
+    background-color: $color-13;
 }
-
+.edit_selected_table_icon {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
 .editSelectedWrapper {
-	position: fixed;
-	width: 100%;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	background-color: $color-10;
-	z-index: 100;
-	padding-top: 1em;
-	overflow-x: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: $color-10;
+    z-index: 100;
+    padding-top: 1em;
+    overflow-x: hidden;
 }
-.editSelectedHeader{
-	height: 2.5em;
+.editSelectedHeader {
+    height: 2.5em;
 }
-.columnHidden{
-	max-width: 20px !important;
-	min-width: 20px !important;
-	padding: 0 !important;
+.columnHidden {
+    max-width: 20px !important;
+    min-width: 20px !important;
+    padding: 0 !important;
 }
-	
 // Loader
-.loaderWrapper{
-	position: fixed;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	width: 100%;
-	background: $color-09;
-	z-index: 1000;
-	height: 100%;
-	width: 100%;
-	position: fixed;
-	overflow: hidden;
-	opacity: 0.5;
-	display: none;  
+.loaderWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background: $color-09;
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    opacity: 0.5;
+    display: none;
 }
-
 .loader {
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	z-index: 10001;
-	width: 100px;
-	height: 100px;
-	margin: -50px 0 0 -50px;
-	border: 16px solid $color-11;
-	border-radius: 50%;
-	border-top: 16px solid $color-03;
-	-webkit-animation: spin 2s linear infinite;
-	animation: spin 2s linear infinite;
-	display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 10001;
+    width: 100px;
+    height: 100px;
+    margin: -50px 0 0 -50px;
+    border: 16px solid $color-11;
+    border-radius: 50%;
+    border-top: 16px solid $color-03;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    display: none;
 }
-
 @keyframes spin {
-	0% { transform: rotate(0deg); }
-	100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
-
 // AUTOCOMPLETE
-.ui-menu-item{
-	background-color: $color-13 !important;
-	cursor: pointer;
+.ui-menu-item {
+    background-color: $color-13 !important;
+    cursor: pointer;
 }
-
-.ui-autocomplete{
-	border: 1px solid $color-14 !important;
-	background-color: $color-13 !important;
+.ui-autocomplete {
+    border: 1px solid $color-14 !important;
+    background-color: $color-13 !important;
 }
-
 // DATEPICKER
-.ui-datepicker{
-	border: 1px solid $color-14 !important;
-	background-color: $color-13 !important;
+.ui-datepicker {
+    border: 1px solid $color-14 !important;
+    background-color: $color-13 !important;
 }
-
-.ui-datepicker-calendar{
-	background-color: $color-13 !important;
+.ui-datepicker-calendar {
+    background-color: $color-13 !important;
 }
-
-#ui-datepicker-div{
-	display:none;
+#ui-datepicker-div {
+    display: none;
 }
-
 // ICONS
 .fa-chevron-right:before {
-  content: "\f105" !important;
+    content: "\f105" !important;
 }
-
 .fa-chevron-left:before {
-  content: "\f104" !important;
+    content: "\f104" !important;
 }
-
 .fa-step-forward:before {
-  content: "\f101" !important;
+    content: "\f101" !important;
 }
-
 .fa-step-backward:before {
-  content: "\f100" !important;
+    content: "\f100" !important;
 }
-
 .fa-list-alt:before {
-  content: "\f00b" !important;
+    content: "\f00b" !important;
 }
