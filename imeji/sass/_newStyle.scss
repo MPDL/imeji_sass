@@ -466,22 +466,33 @@ html body {
             }
         }
         .imj_sectionTitle {
-			margin-top: 2%;
+			margin-top: 0.5em;
             margin-bottom: -0.2em;
             margin-left: calc(-#{$page-padding}/2);
             background: $color-10;
             float: left;
-            padding: 1em calc(#{$page-padding}/2) 0.1em calc(#{$page-padding}/2);
-            font-size: 1.3em;
+            padding: 0.1em calc(#{$page-padding}/2) 0.1em calc(#{$page-padding}/2);
+            font-size: 1.1em;
+			span{
+				margin-right: 5px;
+			}
         }
         .imj_section {
             border-top: 1px solid $color-14;
+			overflow: auto;
+			width: 100%;
+			margin-left: -$page-padding;
+			padding: 0 $page-padding;
         }
 		
 		.selectedItems{
 			border: 1px solid $color-14 !important;
 			margin: 2px -8px !important;
 			padding: 5px 8px !important;
+			.title{
+				text-transform: capitalize;
+				font-size: 1em;
+			}
 		}
 		
         .itemsArea {
@@ -522,7 +533,7 @@ html body {
                 width: 20%;
                 float: left;
                 padding-right: $page-padding;
-                padding-top: 20px;
+                padding-top: 4px;
                 box-sizing: border-box;
                 @media screen and (max-width: 50em) {
                     height: 100%;
@@ -633,7 +644,7 @@ html body {
         }
         .imj_siteContentHeadline {
             background-color: $color-10;
-            padding: 1% $page-padding 0 $page-padding;
+            padding: 1% $page-padding 1% $page-padding;
             margin: 0;
             min-width: 100%;
             box-sizing: border-box;
@@ -660,69 +671,16 @@ html body {
             }
         }
         .collectionAbout {
-            padding: 0 $page-padding 0 $page-padding;
-            float: left;
+            padding: 5px $page-padding 0 $page-padding;
+			margin-left: -2%;
             width: 100%;
-            box-sizing: border-box;
-            font-size: 1em;
-            float: left;
             background-color: $color-10;
-            
-			.moreCollection, .lessCollection{
-				font-size: 0.9em;
-			}
-			
+			overflow: auto;
+
 			.collectionAboutContent {
                 width: 100%;
-                height: 5em;
                 overflow: hidden;
-            }
-            .gradientOpacity {
-                position: absolute;
-                max-width: calc(#{$page-width-max} - #{$page-padding});
-                min-width: calc(#{$page-width-min} - #{$page-padding});
-                width: 100%;
-                height: 5em;
-                background:-webkit-linear-gradient(rgba($color-10,0), rgba($color-10, 1)); /* For Safari */
-                background:linear-gradient(rgba($color-10, 0),rgba($color-10,1));
-            }
-            .collectionAboutMore {
-                width: 50%;
-            }
-            .collectionAboutTitle {
-                width: 100%;
-                font-size: 1.5em;
-                font-weight: bold;
-                @media only screen and (max-width: 40em) {
-                    font-size: 1em;
-                }
-                letter-spacing: 0.045em;
-                line-height: normal;
-                text-overflow: ellipsis;
-                overflow: hidden;
-                span,
-                a {
-                    float: left;
-                    margin-right: 0.5em;
-                }
-                a {
-                    max-width: 50%;
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
-                    overflow: hidden;
-                    display: block;
-                }
-            }
-            .collectionAboutAuthor {
-                text-overflow: ellipsis;
-                max-width: 100%;
-                line-height: 1.4em;
-                font-size: 1em;
-                white-space: nowrap;
-                overflow: hidden;
-            }
-            span {
-                margin-right: 5px;
+				display: none;
             }
         }
         .imj_actionMenuArea {
@@ -730,10 +688,12 @@ html body {
             width: 100%;
             background-color: $color-10;
             margin-top: 0;
-            padding: 1px $page-padding 1% $page-padding;
+            padding: 5px $page-padding 0 $page-padding;
             box-sizing: border-box;
+			text-transform: uppercase;
             p, a, span {
                 font-size: 1em;
+				letter-spacing: 0.05em;
             }
             &:empty {
                 display: none;
@@ -743,7 +703,7 @@ html body {
                     padding: 0;
                     margin-right: 2px;
                     span {
-                        font-size: 0.9em;
+                        font-size: 0.8em;
                     }
                 }
             }
@@ -1790,7 +1750,7 @@ html body {
         }
         .imj_tiledMediaList {
             //margin-left: -$page-padding;
-            padding-top: 16px;
+           // padding-top: 16px;
         }
         .imj_tiledMediaList > .imj_listBody {
             margin-bottom: 1px;
@@ -1826,8 +1786,15 @@ html body {
 .fullpage {
     max-height: 100% !important;
     max-width: 100% !important;
+	
 }
-#seadragon-viewer-full {} #seaDragonsButtons {
+#seadragon-viewer-full {
+} 
+#seaDragonsButtons {
+	display: none;
+	.fullscreen{
+		display: block;
+	}
     a {
         padding: 0 0.5em;
     }
@@ -1891,10 +1858,9 @@ html body {
     }
 }
 .imj_menuButton {
-    font-size: 14px !important;
     margin: 0 20px 0 -5px;
     cursor: pointer;
-    padding: 5px 5px 5px 5px !important;
+    padding: 0.125em 0.5em !important;
     color: $overlaymenu-header-color;
     &:hover {
         color: $overlaymenu-header-color-hover;
