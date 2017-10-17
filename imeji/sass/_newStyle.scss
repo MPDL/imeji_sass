@@ -411,9 +411,9 @@ html body {
                     border-top: 1px solid $color-03;
                     border-right: 1px solid $color-03;
                     border-left: 1px solid $color-03;
-                    border-bottom: 2px solid $color-10;
-                    background-color: $color-10;
+                    border-bottom: 2px solid $color-12;
                     margin-bottom: -1px;
+					background-color: $color-12;
                     a {
                         color: $color-01;
                         border-bottom: 0px solid $color-03;
@@ -445,6 +445,7 @@ html body {
                 padding: 0;
                 width: 100%;
                 .imj_active {
+					background-color: $color-12 !important;
                     a {
                         color: $color-03;
                         border-bottom: 1px solid $color-03;
@@ -484,6 +485,8 @@ html body {
 			margin-left: -$page-padding;
 			padding: 0 $page-padding;
         }
+		
+			
 		
 		.selectedItems{
 			border: 1px solid $color-14 !important;
@@ -633,6 +636,9 @@ html body {
             height: 0;
             position: relative;
             float: right;
+			.imj_overlayMenu{
+				padding:0;
+			}
             .imj_menuBody {
                 white-space: nowrap;
                 right: 0;
@@ -644,12 +650,13 @@ html body {
         }
         .imj_siteContentHeadline {
             background-color: $color-10;
-            padding: 1% $page-padding 1% $page-padding;
+            padding: 2% $page-padding 2% $page-padding;
             margin: 0;
             min-width: 100%;
             box-sizing: border-box;
             h1 {
-                font-size: 1.4em;
+                font-size: 1.6em;
+				font-weight: normal;
                 @media screen and (max-width: 40em) {
                     font-size: 1.1em;
                 }
@@ -669,31 +676,32 @@ html body {
             &:empty {
                 display: none;
             }
+			.subHeadline{
+				font-size: 0.8em;
+				text-transform: lowercase;
+				span{
+					margin-right: 1em;
+				}
+			}
         }
         .collectionAbout {
             padding: 5px $page-padding 0 $page-padding;
 			margin-left: -2%;
             width: 100%;
             background-color: $color-10;
-			overflow: auto;
-
-			.collectionAboutContent {
-                width: 100%;
-                overflow: hidden;
-				display: none;
-            }
+			overflow: hidden;
+			display: none;
         }
         .imj_actionMenuArea {
             float: left;
             width: 100%;
-            background-color: $color-10;
+            background-color: $color-12;
             margin-top: 0;
-            padding: 5px $page-padding 0 $page-padding;
+            padding: 10px $page-padding 10px $page-padding;
             box-sizing: border-box;
-			text-transform: uppercase;
+			height: 3em;
             p, a, span {
                 font-size: 1em;
-				letter-spacing: 0.05em;
             }
             &:empty {
                 display: none;
@@ -1581,6 +1589,7 @@ html body {
                     max-width: 49%;
                     padding: 0;
                     margin: 0 0 2% 0;
+
                     .imj_tileThumbnailArea {
                         border-radius: 5px;
                         background: transparent !important;
@@ -1783,18 +1792,26 @@ html body {
         background-color: $color-13;
     }
 }
+
+
+
 .fullpage {
     max-height: 100% !important;
     max-width: 100% !important;
-	
-}
-#seadragon-viewer-full {
-} 
-#seaDragonsButtons {
-	display: none;
-	.fullscreen{
-		display: block;
+	font-size: 130%;
+	.hideFullScreen{
+		display: none !important;
 	}
+	.showFullScreen{
+		display: initial !important;
+	}
+}
+
+.showFullScreen{
+	display: none !important;
+}
+
+#seaDragonsButtons {
     a {
         padding: 0 0.5em;
     }
