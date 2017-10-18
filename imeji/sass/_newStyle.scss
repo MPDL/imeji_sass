@@ -677,10 +677,11 @@ html body {
                 display: none;
             }
 			.subHeadline{
-				font-size: 0.8em;
+				font-size: 0.9em;
 				text-transform: lowercase;
+				color: darken($color-01, 10%);
 				span{
-					margin-right: 1em;
+					margin-right: 0.5em;
 				}
 			}
         }
@@ -692,28 +693,61 @@ html body {
 			overflow: hidden;
 			display: none;
         }
+		.responsiveMenuBtn{
+			cursor: pointer;
+			display:none;
+			@media only screen and (max-width: 50em){
+				display:block;
+			}
+		}
         .imj_actionMenuArea {
             float: left;
-            width: 100%;
+            min-width: 100%;
+			height: 3em;
+			max-height: 3em;
+			overflow: hidden;
             background-color: $color-12;
             margin-top: 0;
             padding: 10px $page-padding 10px $page-padding;
             box-sizing: border-box;
-			height: 3em;
+			
             p, a, span {
                 font-size: 1em;
             }
             &:empty {
                 display: none;
             }
-            @media only screen and (max-width: 40em) {
-                .imj_menuButton {
-                    padding: 0;
-                    margin-right: 2px;
-                    span {
-                        font-size: 0.8em;
-                    }
-                }
+            @media only screen and (max-width: 50em) {
+				+ .imj_section{
+					display: none;
+				}
+				
+				padding: 0 2%;
+				height: initial;
+				display: none;
+				
+				.imj_menuButton {
+					display: none;
+				}
+				
+				position: fixed;
+				z-index: 100;
+				width: 100%;
+				bottom: 0;
+				max-height: initial;
+				height: initial;
+				padding: 1em !important;
+				.imj_menuButton {
+					width: 100%;
+					padding: 1em !important;
+					margin-right: 2px;
+					display: block;
+					span {
+						font-size: 1.2em;
+						//font-size: 0.8em;
+					}
+				}
+				
             }
             .imj_contentMenu {
                 margin: 0;
@@ -1872,6 +1906,9 @@ html body {
     .itemsCount {
         float: left;
         width: 20%;
+		@media screen and (max-width: 50em){
+			display:none;
+		}
     }
 }
 .imj_menuButton {
