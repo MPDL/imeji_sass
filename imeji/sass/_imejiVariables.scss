@@ -1,12 +1,13 @@
-// Additonal Colors /* Marius/Design-Hoch-10 29.07.2016 */
+// RESPONSIVENESS
+	$mobile-view: 50em;
 
+// FONT
 	$font-size-label-px: 20%;
 	$font-size-italic-px: 17.3px;
 	//$font-size-label-radio-px: $font-size-label-px;
 	//$font-size-input-text-px: 50px;
 
-// GLOBALS
-// used colors for imeji default theme
+// COLORS
 	//FONT
 	$color-01: #F0F0F0;	// dirty white
 
@@ -80,6 +81,7 @@ $border-style-dashed: $border-width-default dashed $color-03;
 $border-style-default-double: 0 solid $color-03;
 $border-style-dotted-disabled: $border-width-default dotted $color-01;
 $border-style-solid-disabled: $border-width-default solid $color-01;
+
 
 
 
