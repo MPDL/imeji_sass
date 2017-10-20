@@ -439,6 +439,7 @@ p.imj_metadataValue {
 }
 .imj_metadataValueEntry {
 	display: inline-block;
+	max-width: 100%;
 
 	p:first-child {
 		margin-top: 0;

@@ -8,6 +8,7 @@
 // used colors for imeji default theme
 	//FONT
 	$color-01: #000000;	// dirty white
+	$color-01-weak: lighten($color-01,30%);
 
 	//HIGHLIGHT & LINKS & SUBMIT BUTTONS
 	$color-03: #990000;	// green

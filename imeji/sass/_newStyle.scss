@@ -26,6 +26,7 @@ html body {
         color: $color-01;
         border-radius: 2px;
         padding: 5px 10px 5px 10px;
+		max-width: calc(100% - 20px) !important;
         &:hover {
             color: $color-01;
         }
@@ -86,12 +87,16 @@ html body {
     }
     input {
         @include input-style;
-		font-size: 16px !important;
+		 @media screen and (max-width: $mobile-view) {
+			font-size: 16px !important;
+        }
     }
     textarea {
         @include input-style;
         font-size: 1em;
-		font-size: 16px !important;
+		@media screen and (max-width: $mobile-view) {
+			font-size: 16px !important;
+        }
     }
     input[type="submit"] {
         @include action-button;
@@ -217,8 +222,9 @@ html body {
                     max-width: $logo-width;
                     @media screen and (max-width: $mobile-view) {
                         width: 100% !important;
-                        height: 3em;
+                        height: 2em;
                         background-size: contain;
+						 margin-top: 0;
                     }
                 }
             }
@@ -236,9 +242,9 @@ html body {
 					height: 100%;
 					top: 0;
 					z-index: 1000;
-					padding: 10%;
-					 margin: 0;
-					 background-color: $header-bgcolor;
+					padding: $page-padding 10%;
+					margin: 0px  (-$page-padding);
+					background-color: $header-bgcolor;
 				}
                 .imj_searchAdvancedLink {
                     margin-top: 7px;
@@ -256,6 +262,7 @@ html body {
                     position: relative;
                     input {
                         width: 100%;
+						max-width: 100% !important;
                         height: 30px;
                         margin: 0;
                         -webkit-box-sizing: border-box;
@@ -331,26 +338,28 @@ html body {
                 width: 40%;
                 box-sizing: border-box;
                 font-size: 0.9em;
-				@media screen and (max-width: 60em) {
-                    padding: 0 $page-padding 0 0;
-                    height: $header-height;
+				white-space: nowrap !important;
+				@media screen and (max-width: 70em) {
                     background-color: $header-bgcolor;
+					font-size: 0.8em;
                 }
                 @media screen and (max-width:  $mobile-view) {
                     width: 70%;
+					padding: 0;
                     background-color: $header-bgcolor;
                     height: 4em;
                     .imj_metaMenuItemsAlign {
                         float: left;
-                        margin-top: 0px;
+                        margin-top: 0px !important;
                         font-size: 0.7em;
+						white-space: nowrap
                     }
                     .imj_metaMenuItem {
                         padding: 0;
                         margin: 0;
                     }
                     .imj_metaMenuItemSelect {
-                        padding: 0 0px 5px 10px !important;
+                        padding: 0 0px 5px 0px !important;
                     }
                 }
                 .imj_metaMenuItemsAlign {
@@ -534,12 +543,12 @@ html body {
                     }
                     .imj_facetInputContainer {
                         float: left;
-                        width: 5.2em;
+                        width: 5em;
                         .imj_facetInput {
-                            width: 5.6em;
-                            font-size: 0.7em;
-                            padding-left: 3px;
-                            padding-right: 3px;
+                            width: 4.7em;
+                            font-size: 1em !important;
+							letter-spacing: -1px;
+                            padding: 0;
                             margin-right: 0px;
                             margin-bottom: 0px;
                         }
@@ -549,6 +558,13 @@ html body {
                             clear: both;
                             float: left
                         }
+						@media screen and (max-width: $mobile-view) {
+						    width: 6em;
+							.imj_facetInput {
+								width: 5em;
+								font-size: 16px !important;
+							}
+						}
                     }
                     .imj_facetGoLinkContainer {
                         float: left;
@@ -569,7 +585,7 @@ html body {
                             overflow: hidden;
                             display: block;
                             @media screen and (max-width: $mobile-view) {
-                                width: 80%;
+                                width: 100%;
                             }
                             &:after {
                                 content: attr(data-count);
@@ -577,7 +593,7 @@ html body {
                                 left: 100%;
                                 top: 0;
                                 @media screen and (max-width: $mobile-view) {
-                                    left: 80%;
+                                    left: 100%;
                                 }
                             }
                         }
@@ -642,9 +658,17 @@ html body {
 			.subHeadline{
 				font-size: 0.9em;
 				text-transform: lowercase;
-				color: darken($color-01, 10%);
+				color: $color-01-weak !important;
+				.imj_sep{
+					font-size: 0.7em;
+					vertical-align: bottom;
+				}
+				a{
+					color: $color-01-weak !important;
+				}
 				span{
 					margin-right: 0.5em;
+					height: 1em;
 				}
 			}
         }
@@ -656,11 +680,23 @@ html body {
 			overflow: hidden;
 			display: none;
         }
+		
 		.responsiveMenuBtn{
 			cursor: pointer;
 			display:none !important;
 			@media only screen and (max-width: $mobile-view){
-				display:block !important;
+				display:initial !important;
+			}
+		}
+		.responsiveMenuCloseBtn{
+			font-size: 2em;
+			float: right;
+			margin-bottom: 2em;
+		}
+		
+		@media only screen and (max-width: $mobile-view){
+			.responsiveMenu{
+				display:none !important;
 			}
 		}
 		.show{
@@ -676,45 +712,44 @@ html body {
             margin-top: 0;
             padding: 10px $page-padding 10px $page-padding;
             box-sizing: border-box;
-			
+			box-shadow: 0 2px 2px -2px white;
+			white-space: nowrap;
             p, a, span {
                 font-size: 1em;
             }
             &:empty {
                 display: none;
             }
-            @media only screen and (max-width: 	$mobile-view) {
-				+ .imj_section{
-					display: none;
-				}
-				
-				padding: 0 2%;
-				height: initial;
-				display: none;
-				
-				.imj_menuButton {
-					display: none;
-				}
-				
-				position: fixed;
-				z-index: 100;
-				width: 100%;
-				bottom: 0;
-				max-height: initial;
-				height: initial;
-				padding: 1em !important;
-				.imj_menuButton {
-					width: 100%;
+			#actionsReponsive{
+				@media only screen and (max-width: 	$mobile-view) {
+					margin: -$page-padding;
 					padding: 1em !important;
-					margin-right: 2px;
-					display: block;
-					span {
-						font-size: 1.2em;
-						//font-size: 0.8em;
+					height: initial;
+					display: none;
+					background-color: $color-12;
+					.imj_menuButton {
+						display: none;
 					}
+					
+					position: fixed;
+					z-index: 100;
+					width: 100%;
+					bottom: 0;
+					max-height: initial;
+					height: initial;
+					.imj_menuButton {
+						width: 100%;
+						padding: 1em !important;
+						margin-right: 2px;
+						display: block;
+						span {
+							font-size: 1.2em;
+							//font-size: 0.8em;
+						}
+					}
+					
 				}
-				
-            }
+			}
             .imj_contentMenu {
                 margin: 0;
                 .imj_contentMenuItem {
@@ -748,11 +783,7 @@ html body {
             .imj_actionMenuArea {
                 padding: 1px 0 1% 0;
             }
-            p,
-            a,
-            span,
-            ul,
-            label {
+            p,a, span,ul, label {
                 //font-size: 1.2em;
                 //line-height: 1.3em;
             }
@@ -1594,12 +1625,9 @@ html body {
                 span.imj_optionSet {
                     height: 1.35em;
 					@media screen and (max-width: $mobile-view) {
-						position: absolute;
-						margin-top: -2em;
-						margin-left: 0.5em;
-						input{
-							margin: 0;
-						}
+						margin-top: -3em;
+						display: block;
+						margin-bottom: 2em;
 					}
                     input {
                         margin-left: 4%;
@@ -1627,15 +1655,11 @@ html body {
                     }
                 }
                 .imj_tileItem {
-					max-width: calc(16.6% - 4px);
-					min-width: calc(16.6% - 4px);
+					max-width: calc(16.6% - 2px);
+					min-width: calc(16.6% - 2px);
                     padding: 0;
                     margin: 0 0 2% 0;
-					@media screen and (max-width: $mobile-view) {
-						margin: 0;
-						max-width: calc(25% - 4px);
-						min-width: calc(25% - 4px);
-					}
+					
 
                     .imj_tileThumbnailArea {
                         border-radius: 5px;
@@ -1653,6 +1677,20 @@ html body {
                             border: none;
                         }
                     }
+					@media screen and (max-width: $mobile-view) {
+						margin: 0;
+						max-width: calc(25% - 2px);
+						min-width: calc(25% - 2px);
+					    .imj_tileThumbnailArea {
+							img {
+								width: 100%;
+							}
+							border: none;
+							&:hover {
+								border: none;
+							}
+						}
+					}
                     .imj_tooltip {
                         box-shadow: none;
                         background: $color-13;
@@ -1927,7 +1965,7 @@ html body {
 .imj_menuButton {
     margin: 0 20px 0 -5px;
     cursor: pointer;
-    padding: 0.125em 0.5em !important;
+    padding: 0.125em 0.125em !important;
     color: $overlaymenu-header-color;
     &:hover {
         color: $overlaymenu-header-color-hover;

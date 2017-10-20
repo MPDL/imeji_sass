@@ -153,7 +153,7 @@ textarea.imj_metadataValue, input.imj_metadataValue { width: 72.85%; }
 
 p.imj_metadataValue { margin: 0 0 0 1em; }
 
-.imj_metadataValueEntry { display: inline-block; }
+.imj_metadataValueEntry { display: inline-block; max-width: 100%; }
 .imj_metadataValueEntry p:first-child { margin-top: 0; }
 
 .imj_metadataValueEntryViewMap { display: block; }
