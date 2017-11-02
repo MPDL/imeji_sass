@@ -35,7 +35,7 @@
 	$color-11: lighten(#444444, 10%);	// grey
 	
 	// ACTION MENU
-	$color-12: lighten($color-10, 1);
+	$color-12: $color-10;
 	
 	//POP-UP MENUS & ACTION MENU
 	$color-13: #444444; //lightgrey
