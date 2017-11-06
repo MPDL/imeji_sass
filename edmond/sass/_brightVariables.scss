@@ -1,5 +1,6 @@
 // RESPONSIVENESS
 	$mobile-view: 50em;
+	$full-width-view: 90em;
 
 // GLOBALS
 // used colors for imeji default theme
@@ -27,13 +28,13 @@
 	$color-10: 	rgba(#fff,1);// grey
 	
 	//HIGHLIGHTED CONTENT
-	$color-11: darken(#ffffff, 30%);	// grey
+	$color-11: darken($color-10, 5%);	// grey
 	
 	// ACTION MENU
 	$color-12: darken($color-10, 1);
 	
 	//POP-UP MENUS & ACTION MENU
-	$color-13: #ffffff; //lightgrey
+	$color-13: darken($color-10, 2%); //lightgrey
 	$color-14: #C8C8C9; //border
 
 // IMPORTS: e.g. font families or other foreign css defintions
