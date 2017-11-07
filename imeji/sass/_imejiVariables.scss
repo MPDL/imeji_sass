@@ -1,6 +1,6 @@
 // RESPONSIVENESS
-	$mobile-view: 50em;
-	$full-width-view: 90em;
+	$mobile-view: 70em;
+	$full-width-view: 100em;
 
 // FONT
 	$font-size-label-px: 20%;
@@ -72,7 +72,7 @@ $header-padding: 1em;
 // multiple fonts must be declared in ()
 $font-family-default: ('Titillium Web', Arial, Helvetica, Verdana, sans-serif);
 $font-color-default: $color-01;
-$font-size-default: 85%;
+$font-size-default: 90%;
 $font-color-critical: $color-07;
 $line-height-default: 145%;
 $box-shadow-default: 0.545454em 0.545454em 0.545454em $color-13;

@@ -749,14 +749,14 @@ html body {
 		}
         .imj_actionMenuArea {
             float: left;
-			height: 2.5em;
+			height: 2.8em;
             min-width: 100%;
 			overflow: hidden;
             background-color: $color-10;
             margin-top: 0;
-            padding: 0.5em $page-padding 0 $page-padding;
+            padding: 0.8em $page-padding 0 $page-padding;
             box-sizing: border-box;
-			font-size: 1.05em;
+			font-size: 1.2em;
 			.fa{
 				font-size: 0.95em;
 			}
@@ -765,9 +765,22 @@ html body {
             }
 			.imj_menuButton {
 				margin-right: 1.5%;
-				padding: 0.25em 0.4em !important;
+				padding: 0.2em 0.4em !important;
 				margin-left: -0.5em;
-				border-radius: 2px;
+				border-radius: 4px;	
+			}
+			
+			.selectedItemsTitle{
+				font-weight: 500;
+				font-size: 1.1em;
+				.fa{
+					font-size: 1.2em;
+				}
+			}
+			.ghostButton{
+				border: 1px solid $color-03; 
+				margin-left: 0em;
+				padding: 0.2em 0.6em !important;
 			}
 
 			#actionsReponsive{
