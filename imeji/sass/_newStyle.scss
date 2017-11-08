@@ -789,6 +789,7 @@ html body {
 				height: 4em;
 				padding: 5px $page-padding;
 				width: 100%;
+			    border-top: 1px solid $color-14;
 				.imj_menuButton {
 					font-size: 1.8em;
 					padding: 0.5em !important;
@@ -802,6 +803,7 @@ html body {
 				}
 				
 			}
+		
 
 			#actionsReponsive{
 				@media only screen and (max-width: 	$mobile-view) {
@@ -1432,7 +1434,7 @@ html body {
                 .imj_mediaDisplayContainer {
                     max-width: 80%;
                     box-sizing: border-box;
-                    margin: auto;
+					margin: auto;
                     padding: 0 $page-padding;
                 }
                 .imj_listHeader {
@@ -1658,7 +1660,7 @@ html body {
                 .imj_paginator {
                     border: none;
                     margin-top: 0;
-                    padding-top: 1%;
+                    padding-top: 0;
                     @media screen and (max-width: 60em) {
                         .previousItem a {
                             display: none;
@@ -1874,11 +1876,8 @@ html body {
         }
         .imj_searchQueryDisplay {
             margin: 0;
-           /* padding: 1em 0 0 20%;
-            @media screen and (max-width: 50em) {
-                padding: 0.5em 0 0 0;
-                font-size: 0.8em;
-            }*/
+			padding-bottom: 2%;
+			margin-top: -1%;
             float: left;
             width: 100%;
             box-sizing: border-box;
@@ -1963,6 +1962,7 @@ html body {
 }
 
 #seaDragonsButtons {
+	position: initial !important;
     a {
         padding: 0 0.5em;
     }
@@ -1984,9 +1984,10 @@ html body {
 }
 .imj_moveItemsDialogBox {
     position: fixed;
-    top: 5em;
+    top: 5px !important;
     font-size: 1em;
-    width: 40em;
+	max-width: 100% !important;
+	max-height: calc(100vh - 5px) !important;
 }
 .imj_shareDialogBox {
     position: fixed;
