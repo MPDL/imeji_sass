@@ -782,6 +782,26 @@ html body {
 				margin-left: 0em;
 				padding: 0.2em 0.6em !important;
 			}
+			
+			@media only screen and (max-width: 	$mobile-view){
+				position: fixed;
+				bottom: 0;
+				height: 4em;
+				padding: 5px $page-padding;
+				width: 100%;
+				.imj_menuButton {
+					font-size: 1.8em;
+					padding: 0.5em !important;
+					margin-right: 0.2em !important;
+					span{
+						display: none;
+					}
+					.fa{
+						display: inline;
+					}
+				}
+				
+			}
 
 			#actionsReponsive{
 				@media only screen and (max-width: 	$mobile-view) {
@@ -798,6 +818,7 @@ html body {
 					z-index: 100;
 					width: 100%;
 					bottom: 0;
+					text-align: left;
 					.imj_menuButton {
 						width: 100%;
 						padding: 1em !important;
@@ -805,6 +826,7 @@ html body {
 						display: inline-block;
 						span {
 							font-size: 1.2em;
+							display: inline;
 						}
 					}
 				}
