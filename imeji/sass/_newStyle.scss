@@ -749,7 +749,7 @@ html body {
 		}
         .imj_actionMenuArea {
             float: left;
-			height: 2.8em;
+			min-height: 2.8em;
             min-width: 100%;
 			overflow: hidden;
             background-color: $color-10;
@@ -785,6 +785,7 @@ html body {
 			
 			@media only screen and (max-width: 	$mobile-view){
 				position: fixed;
+				white-space: initial;
 				bottom: 0;
 				height: 4em;
 				padding: 5px $page-padding;
@@ -2234,7 +2235,8 @@ small {
         overflow-x: hidden;
         height: calc(100vh - 8em);
         width: 100%;
-        th {}
+        th {
+		}
     }
 }
 .edit_selected_table textarea,
@@ -2248,26 +2250,72 @@ small {
     text-align: center;
     float: left;
 }
+#editSelectedInfos{
+	margin-left: 11em;
+	@media screen and (max-width: $mobile-view) {
+		margin-left: 1px;
+	}
+	
+}
 .tableBtn label {
     text-align: left;
+}
+.tableIn{
+	width: 100%;
+	float: left;
 }
 .edit_selected_table {
     th, td {
         vertical-align: middle;
         margin: 0;
         text-align: center;
-        max-width: 15.6em;
-        min-width: 15.6em;
-        padding: 0 1em;
-        border: 1px solid $color-11;
+        max-width: 12.6em;
+		min-width: 12.6em;
+        padding: 0.1em 0.2em;
+        border-right: 1px solid transparentize($color-01, 0.7);
+		border-top: 1px solid transparentize($color-01, 0.7);
         overflow-wrap: break-word;
-        height: 4em;
+        height: 3em;
+		.fa{
+			visibility: hidden;
+		}
+		&:hover{
+			.fa{
+				visibility: initial;
+			}
+		}
     }
+	td{
+		cursor: pointer;
+		&.edit{
+			cursor: auto;
+			max-height: initial;
+		}
+		a{
+			pointer-events: none;
+		}
+		a.fa{
+			pointer-events: initial;
+		}
+	}
 }
-.edit_selected_table th,
-{
+.edit_selected_table th{
     background-color: $color-13;
 }
+
+.edit_selected_table td div.tableBtn{
+	text-align: left;
+	margin-left: 10px;
+	width: calc(100% - 10px);
+	&:before{
+		content: "- ";
+		margin-left: -8px;
+	}
+	&:hover{
+		background-color: $color-13;
+	}
+}
+
 .edit_selected_table_icon {
     margin-left: 0.5em;
     margin-right: 0.5em;
