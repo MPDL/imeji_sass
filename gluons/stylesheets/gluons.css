@@ -1,24 +1,28 @@
 /*
 Error: Undefined variable: "$mobile-view".
-        on line 90 of C:/Users/saquet/Documents/GitHub/imeji_sass/imeji/sass/_newStyle.scss
-        from line 5 of C:/Users/saquet/Documents/GitHub/imeji_sass/imeji/sass/_combinedNewStyle.scss
+        on line 28 of C:/Users/saquet/Documents/GitHub/imeji_sass/default/sass/_menus.scss
+        from line 1251 of C:/Users/saquet/Documents/GitHub/imeji_sass/default/sass/_defs.scss
+        from line 10 of C:/Users/saquet/Documents/GitHub/imeji_sass/default/sass/_combinedStyles.scss
+        from line 4 of C:/Users/saquet/Documents/GitHub/imeji_sass/imeji/sass/_combinedNewStyle.scss
         from line 5 of C:/Users/saquet/Documents/GitHub/imeji_sass/gluons/sass/gluons.scss
 
-85: 	
-86: 	.imj_siteFooter{
-87: 		background-image: url('../backgrounds/rect_blue_footer.png');
-88: 		background-size: cover;
-89: 		background-position: right top;
-90: 		color: #fff;
-91: 		margin-top: -30px;
-92: 		.imj_poweredby_software{
-93: 			float:right;
-94: 		}
-95: 		.imj_poweredby_institution {	
+23: 			color: $color-19 !important;
+24: 		}
+25: 		
+26: 		input{
+27: 			color: #fff !important;
+28: 		}
+29: 		
+30: 		.imj_menuSimpleSearch{
+31: 			a{
+32: 				 color: $color-19 !important;
+33: 			}
 
 Backtrace:
-C:/Users/saquet/Documents/GitHub/imeji_sass/imeji/sass/_newStyle.scss:90
-C:/Users/saquet/Documents/GitHub/imeji_sass/imeji/sass/_combinedNewStyle.scss:5
+C:/Users/saquet/Documents/GitHub/imeji_sass/default/sass/_menus.scss:28
+C:/Users/saquet/Documents/GitHub/imeji_sass/default/sass/_defs.scss:1251
+C:/Users/saquet/Documents/GitHub/imeji_sass/default/sass/_combinedStyles.scss:10
+C:/Users/saquet/Documents/GitHub/imeji_sass/imeji/sass/_combinedNewStyle.scss:4
 C:/Users/saquet/Documents/GitHub/imeji_sass/gluons/sass/gluons.scss:5
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
@@ -49,6 +53,43 @@ C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/pe
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:328:in `block (2 levels) in visit_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:328:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:328:in `block in visit_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:88:in `block in with_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:88:in `with_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:328:in `block (2 levels) in visit_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:328:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:328:in `block in visit_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:88:in `block in with_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:88:in `with_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
@@ -114,4 +155,4 @@ C:/Program Files (x86)/Koala/bin/compass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$mobile-view\".\A         on line 90 of C:/Users/saquet/Documents/GitHub/imeji_sass/imeji/sass/_newStyle.scss\A         from line 5 of C:/Users/saquet/Documents/GitHub/imeji_sass/imeji/sass/_combinedNewStyle.scss\A         from line 5 of C:/Users/saquet/Documents/GitHub/imeji_sass/gluons/sass/gluons.scss\A \A 85: 	\A 86: 	.imj_siteFooter{\A 87: 		background-image: url('../backgrounds/rect_blue_footer.png');\A 88: 		background-size: cover;\A 89: 		background-position: right top;\A 90: 		color: #fff;\A 91: 		margin-top: -30px;\A 92: 		.imj_poweredby_software{\A 93: 			float:right;\A 94: 		}\A 95: 		.imj_poweredby_institution {	"; }
+  content: "Error: Undefined variable: \"$mobile-view\".\A         on line 28 of C:/Users/saquet/Documents/GitHub/imeji_sass/default/sass/_menus.scss\A         from line 1251 of C:/Users/saquet/Documents/GitHub/imeji_sass/default/sass/_defs.scss\A         from line 10 of C:/Users/saquet/Documents/GitHub/imeji_sass/default/sass/_combinedStyles.scss\A         from line 4 of C:/Users/saquet/Documents/GitHub/imeji_sass/imeji/sass/_combinedNewStyle.scss\A         from line 5 of C:/Users/saquet/Documents/GitHub/imeji_sass/gluons/sass/gluons.scss\A \A 23: 			color: $color-19 !important;\A 24: 		}\A 25: 		\A 26: 		input{\A 27: 			color: #fff !important;\A 28: 		}\A 29: 		\A 30: 		.imj_menuSimpleSearch{\A 31: 			a{\A 32: 				 color: $color-19 !important;\A 33: 			}"; }

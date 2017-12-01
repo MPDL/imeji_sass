@@ -1,22 +1,56 @@
 // /* ===[ Main Menu Standard ]===
 // ================================================== */
-.imj_mainMenuStandard {
-	display: inline-block;
-	padding: 0 3% 1em 3%;
-	// margin-bottom: 0.454545em;
-	font-size: 135%;
-	letter-spacing: 0.090909em;
-	text-align: left;
-	text-transform: uppercase;
 
-	.imj_mainMenuStandardItem {
+.imj_navigation {
+	float: left;
+	width: 100%;
+	padding: $page-padding $page-padding 0 $page-padding;
+	margin: $margin-bottom-main-elements 0 0 0;
+	background-color: $header-bgcolor;
+	box-sizing: border-box;
+	border-bottom: 1px solid $color-03;
+		
+	ul {
 		display: inline-block;
-		padding: 0.272727em 0.181818em 0.272727em 0.272727em;
-		margin-right: 0.454545em;
-		text-decoration: none;
-		background-color: $mainmenu-item-bgcolor;
-
-		@include border-radius($border-radius-default);
+		padding: 0;
+		width: 100%;
+		font-size: 1.1em;
+		letter-spacing: 0.090909em;
+		text-align: left;
+		text-transform: uppercase;
+		li {
+			display: inline-block;
+			border-right: 0px solid $color-09;
+			padding: 5px 35px;
+			margin: 0;
+			background-color: transparent;
+			text-decoration: none;
+			@media screen and (max-width: $mobile-view) {
+				padding: 0.5em 3.5%;
+				margin-left: -$page-padding;
+			}
+		}
+		.imj_active {
+			border-top: 1px solid $color-03;
+			border-right: 1px solid $color-03;
+			border-left: 1px solid $color-03;
+			border-bottom: 2px solid $color-10;
+			margin-bottom: -4px;
+			background-color: $color-10;
+			a {
+				color: $color-01;
+				border-bottom: 0px solid $color-03;
+			}
+			@media screen and (max-width: $mobile-view) {
+				border: 0;
+				//margin-bottom: 0;
+				background-color: transparent;
+			}
+		}
+	}
+	@media screen and (max-width: $mobile-view) {
+		margin-top: 0px;
+		padding: 2px $page-padding 0 $page-padding;
 	}
 }
 

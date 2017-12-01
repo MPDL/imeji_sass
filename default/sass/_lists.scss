@@ -273,16 +273,64 @@
 
     > .imj_listBody {
         margin: 1em 0 0 0;
-
-        .imj_tileItem {
-            display: inline-block;
-            width: 15.75%;
-            max-width: 11.545454em;
-            padding-bottom: 2em;
-            margin: 0 1.775% 0 0;
-            vertical-align: top;
-
-            label {
+		
+		.folderIcon{
+			width: 96%;
+		}
+		.folderIcon:before{
+			content: "";
+			display: block;
+			padding-top: 100%;
+		}
+		
+		li{
+			&:hover {
+                .thumb {
+                    background-color: $tiledlist-item-bgcolor-hover;
+                }
+                .imj_tooltip {
+                    display: block;
+                }
+            }
+		
+			max-width: calc(16.6% - 3px);
+			min-width: calc(16.6% - 3px);
+			padding: 0;
+			margin: 0 0 2% 0;
+			display: inline-block;
+			vertical-align: top;
+			
+			.thumb {
+				border-radius: 5px;
+				background: transparent !important;
+				border: 2px solid transparent;
+				margin-top: 0;
+				&:hover {
+					background: transparent;
+					border: 2px solid $color-03;
+				}
+				img {
+					width: calc(100% - 4px);
+					padding: 2px;
+					margin: 0;
+					border: none;
+				}
+			}
+			@media screen and (max-width: $mobile-view) {
+				margin: 0;
+				max-width: calc(25% - 3px);
+				min-width: calc(25% - 3px);
+				.thumb {
+					img {
+						width: 100%;
+					}
+					border: none;
+					&:hover {
+						border: none;
+					}
+				}
+			}
+			label {
                 max-width: 100%;
                 overflow-x: hidden;
                 text-overflow: ellipsis;
@@ -302,53 +350,32 @@
                 }
             }
             .imj_tooltip {
-                display: none;
+				display: none;
                 position: absolute;
                 z-index: 10;
-                width: 30em;
-                background-color: $tiledlist-tooltip-bgcolor;
-                @include box-shadow($tiledlist-tooltip-shadow);
-
-                .imj_metadataPublicationArea {
-                    .imj_citation {
-                        p:first-child {
-                            margin-top: 0;
-                            padding-top: 0;
-                        }
-                    }
-                }
+				width: 30em;
+				box-shadow: none;
+				background: $color-13;
+				border-radius: 2px;
+				border: 1px solid $color-14;
+				padding: 10px;
+				text-align: left;
+				text-align-last: left;
+				@media screen and (max-width: $mobile-view) {
+					display: none;
+				}
+				.label{
+					width: 32%;
+					float: left;
+					padding: 5px 0;
+				}
+				.value{
+					width: 65%;
+					float: left;
+					padding: 5px 0;
+				}
             }
-            .imj_tileThumbnailArea {
-                background-color: $tiledlist-item-bgcolor;
-
-                &.imj_selected {
-                    background-color: $tiledlist-item-bgcolor-selected;
-                }
-                img {
-                    width: 84%;
-                    height: 85%;
-                    padding: 8%;
-                    margin-top: 3%;
-                }
-            }
-
-            &:hover {
-                .imj_tileThumbnailArea {
-                    background-color: $tiledlist-item-bgcolor-hover;
-                }
-                .imj_tooltip {
-                    display: block;
-                }
-            }
-
-            /* general bug fix for webkit browser, because of wrong interpretation in responsive image scaling */
-            @media screen and (-webkit-min-device-pixel-ratio:0) {
-                .imj_tileThumbnailArea img {
-                    height: auto;
-                }
-            }
-        } // end of imj_tileItem
-
+		}
     } // end of imj_listBody
 }
 // ================================================== */
@@ -366,14 +393,14 @@
     thead {
 
         th {
-            border-bottom: solid 1px #CCCCCC;
+            border-bottom: solid 1px $color-01-weak;
         }
     }
 
     tfoot {
 
         td {
-            border-top: solid 1px #CCCCCC;
+            border-top: solid 1px $color-01-weak;
         }
     }
 
@@ -406,6 +433,10 @@
     
     .imj_colFilename{
         width: 55%;
+		.path{
+			color: $color-01-weak;
+			font-size: 0.9em;
+		}
     }
     
     .imj_colFilesize{

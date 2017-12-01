@@ -922,7 +922,10 @@ select.imj_metadataEditText {
 
 #imj_welcomeInfoWrapper {
 	display: inline-block;
-	width: 48%;
+	width: 100%;
+	.imj_siteContentHeadline{
+		padding-left: 0;
+	}
 }
 .imj_welcomeInfo {
 	min-height: 34.8333333em;
@@ -1061,14 +1064,22 @@ iframe#twitter-widget-0 div.root div.stream {
 // *  Share.xhtml
 // * ============================================ */
 .imj_shareForm {
-	width: 91.25%;
-	padding: 1% 4%;
-	margin-top: 20px;
+	width: 100%;
+	max-width: 80em;
+	padding: 0;
 	
 	.imj_shareRightsOverview {
-		margin-top: 2em;
-		padding-top: 1em;
+		margin-top: 4em;
 		border-top: $share-separator-border-style;
+	}
+	.share_input{
+		padding-bottom: 1em;
+		.imj_mdInput{
+			margin: 1em 0;
+		}
+	}
+	#shareBtn{
+		margin-top: 1.5em;
 	}
 	
 	.imj_rightsTable {
