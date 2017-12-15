@@ -982,58 +982,6 @@ select.imj_metadataEditText {
 	}
 }
 
-// OVERRIDES
-iframe#twitter-widget-0 {
-	width: 99.5%;
-	height: 43em;
-}
-
-iframe#twitter-widget-0 div.root div.stream {
-	height: 20em !important;
-}
-
-
-// ================================================== */
-// ================================================== */
-// ================================================== */
-
-// DETAIL PAGE OF MEDIA ENTRIES
-
-// /* * imj_mediaEntryDetailPage (sub_template/template_image.xhtml)
-// ================================================== */
-.imj_mediaEntryDetailPage {
-
-	> .imj_metadataList,
-	> .imj_mediaDisplayContainer {
-		width: 91.25%;
-		margin: 1% 4%;
-	}
-	.highlight_area.imj_highlightDependencies {
-		background-color: $highlightarea-bgcolor-hover;
-	}
-
-	// /* * mediaDisplayContainer + mediaEditPanel , MetaDataList + Submit Panel + Buttons (image_details.xhtml)
-	// ================================================== */
-	.imj_mediaDisplayContainer {
-		text-align: center;
-
-		.imj_optionSet {
-
-			.imj_optionCheckbox {
-				vertical-align: bottom;
-			}
-		}
-	}
-}
-
-
-
-// ================================================== */
-// ================================================== */
-// ================================================== */
-
-
-
 // /* * create new or edit container, e.g. album or collection
 // component (createNewContainer.xhtml)
 // ================================================== */

@@ -1315,12 +1315,17 @@ html body {
                 }
             }
 			#seadragon-viewer-full{
-				@media screen and (max-width: 70em) {
-					max-height: 30em;
-				 }
-				 @media screen and (max-width: $mobile-view) {
-					max-height: 15em;
-				 }	
+				height: auto;
+				width: 100%;
+				img{
+					max-width: inherit;
+				}
+				@media screen and (max-width: $mobile-view) {
+					height: auto !important;
+					img{
+						width: inherit;
+					}
+				}
 			}
 			
 			.showSectionUtility, .showSectionInfos{
@@ -1338,11 +1343,21 @@ html body {
 			
             .imj_mediaEntryDetailPage {
                 .imj_mediaDisplayContainer {
-                    max-width: 80%;
+                    width: 100%;
                     box-sizing: border-box;
 					margin: auto;
-                    padding: 0 $page-padding;
                 }
+                .imj_paginator {
+                    border: none;
+                    margin-top: 0;
+                    padding-top: 0;
+                    @media screen and (max-width: $mobile-view) {
+                        .previousItem a {
+                            display: none;
+                        }
+                    }
+                }
+				
                 .imj_listHeader {
                     width: initial;
                     margin: 0 auto;
@@ -1590,18 +1605,6 @@ html body {
 					 }
 				}
             }
-            .imj_mediaEntryDetailPage {
-                .imj_paginator {
-                    border: none;
-                    margin-top: 0;
-                    padding-top: 0;
-                    @media screen and (max-width: $mobile-view) {
-                        .previousItem a {
-                            display: none;
-                        }
-                    }
-                }
-            }
             .imj_welcomeInfo,
             .imj_tabContent {
                 min-height: inherit !important;
@@ -1615,46 +1618,12 @@ html body {
                 }
             }
             .imj_listBody {
-                //font-size: 100%;
                 padding-bottom: 20px;
-                //border-bottom: 1px solid $color-01;
                 .imj_techdataEntry {
                     overflow-x: inherit;
                 }
                 .imj_infodataValueEntryEmbed {
                     width: 100%;
-                }
-                span.imj_optionSet {
-                    height: 1.35em;
-					@media screen and (max-width: $mobile-view) {
-						margin-top: -3em;
-						display: block;
-						margin-bottom: 2em;
-					}
-                    input {
-                        margin-left: 4%;
-                    }
-                    label {
-                        width: 100%;
-                        //font-size: 130%;// 14px;
-                        overflow: hidden;
-                        max-width: 80%;
-                        text-align: left;
-                        padding-left: 0px;
-						
-                    }
-                    .imj_optionLabel {
-                        max-width: 80%;
-                        text-align-last: left;
-						@media screen and (max-width: $mobile-view) {
-                            display: none;
-                        }
-                    }
-                }
-                .imj_listItem {
-                    dl {
-                        padding-left: 0;
-                    }
                 }
                 .imj_headline {
                     margin-right: 20px;
@@ -1757,21 +1726,15 @@ html body {
         }
         .imj_searchQueryDisplay {
             margin: 0;
-			padding-bottom: 2%;
-			margin-top: -1%;
             float: left;
             width: 100%;
             box-sizing: border-box;
-            .imj_submitButton {
-                display: inline;
-            }
             .imj_searchQueryText {
                 color: $color-03;
                 border: 1px solid $color-03;
                 border-radius: 2px;
-                //background-color: $color-13;
-                padding: 3px 10px;
-                margin: 5px 0.5em 0px 0;
+                padding: 1px 7px;
+                margin: 0 0.5em 2% 0;
                 float: left;
             }
         }
@@ -1787,10 +1750,6 @@ html body {
                 margin: 0.7em 0 !important;
                 font-size: 0.9em !important;
             }
-        }
-        .imj_tiledMediaList {
-            //margin-left: -$page-padding;
-           // padding-top: 16px;
         }
         .imj_tiledMediaList > .imj_listBody {
             margin-bottom: 1px;

@@ -1,7 +1,7 @@
 /*
 Error: Undefined variable: "$mobile-view".
         on line 28 of C:/Users/saquet/Documents/GitHub/imeji_sass/default/sass/_menus.scss
-        from line 1251 of C:/Users/saquet/Documents/GitHub/imeji_sass/default/sass/_defs.scss
+        from line 1199 of C:/Users/saquet/Documents/GitHub/imeji_sass/default/sass/_defs.scss
         from line 10 of C:/Users/saquet/Documents/GitHub/imeji_sass/default/sass/_combinedStyles.scss
         from line 4 of C:/Users/saquet/Documents/GitHub/imeji_sass/imeji/sass/_combinedNewStyle.scss
         from line 5 of C:/Users/saquet/Documents/GitHub/imeji_sass/gluons/sass/gluons.scss
@@ -20,7 +20,7 @@ Error: Undefined variable: "$mobile-view".
 
 Backtrace:
 C:/Users/saquet/Documents/GitHub/imeji_sass/default/sass/_menus.scss:28
-C:/Users/saquet/Documents/GitHub/imeji_sass/default/sass/_defs.scss:1251
+C:/Users/saquet/Documents/GitHub/imeji_sass/default/sass/_defs.scss:1199
 C:/Users/saquet/Documents/GitHub/imeji_sass/default/sass/_combinedStyles.scss:10
 C:/Users/saquet/Documents/GitHub/imeji_sass/imeji/sass/_combinedNewStyle.scss:4
 C:/Users/saquet/Documents/GitHub/imeji_sass/gluons/sass/gluons.scss:5
@@ -155,4 +155,4 @@ C:/Program Files (x86)/Koala/bin/compass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$mobile-view\".\A         on line 28 of C:/Users/saquet/Documents/GitHub/imeji_sass/default/sass/_menus.scss\A         from line 1251 of C:/Users/saquet/Documents/GitHub/imeji_sass/default/sass/_defs.scss\A         from line 10 of C:/Users/saquet/Documents/GitHub/imeji_sass/default/sass/_combinedStyles.scss\A         from line 4 of C:/Users/saquet/Documents/GitHub/imeji_sass/imeji/sass/_combinedNewStyle.scss\A         from line 5 of C:/Users/saquet/Documents/GitHub/imeji_sass/gluons/sass/gluons.scss\A \A 23: 			color: $color-19 !important;\A 24: 		}\A 25: 		\A 26: 		input{\A 27: 			color: #fff !important;\A 28: 		}\A 29: 		\A 30: 		.imj_menuSimpleSearch{\A 31: 			a{\A 32: 				 color: $color-19 !important;\A 33: 			}"; }
+  content: "Error: Undefined variable: \"$mobile-view\".\A         on line 28 of C:/Users/saquet/Documents/GitHub/imeji_sass/default/sass/_menus.scss\A         from line 1199 of C:/Users/saquet/Documents/GitHub/imeji_sass/default/sass/_defs.scss\A         from line 10 of C:/Users/saquet/Documents/GitHub/imeji_sass/default/sass/_combinedStyles.scss\A         from line 4 of C:/Users/saquet/Documents/GitHub/imeji_sass/imeji/sass/_combinedNewStyle.scss\A         from line 5 of C:/Users/saquet/Documents/GitHub/imeji_sass/gluons/sass/gluons.scss\A \A 23: 			color: $color-19 !important;\A 24: 		}\A 25: 		\A 26: 		input{\A 27: 			color: #fff !important;\A 28: 		}\A 29: 		\A 30: 		.imj_menuSimpleSearch{\A 31: 			a{\A 32: 				 color: $color-19 !important;\A 33: 			}"; }

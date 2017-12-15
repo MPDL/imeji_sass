@@ -288,15 +288,6 @@ select.imj_metadataEditText { min-height: 0; }
 .imj_welcomeInfo .id_tabs .imj_tabContent .imj_headline, .imj_welcomeInfo .id_tabs .imj_tabContent .imj_administrationTiledList .imj_adminPanel .imj_config_headline, .imj_administrationTiledList .imj_adminPanel .imj_welcomeInfo .id_tabs .imj_tabContent .imj_config_headline, .imj_welcomeInfo .id_tabs .imj_tabContent .imj_sectionHeadline { margin-top: 1em; }
 .imj_welcomeInfo .id_tabs div.ui-tabs-hide { display: none; }
 
-iframe#twitter-widget-0 { width: 99.5%; height: 43em; }
-
-iframe#twitter-widget-0 div.root div.stream { height: 20em !important; }
-
-.imj_mediaEntryDetailPage > .imj_metadataList, .imj_mediaEntryDetailPage > .imj_mediaDisplayContainer { width: 91.25%; margin: 1% 4%; }
-.imj_mediaEntryDetailPage .highlight_area.imj_highlightDependencies { background-color: #D9D9D9; }
-.imj_mediaEntryDetailPage .imj_mediaDisplayContainer { text-align: center; }
-.imj_mediaEntryDetailPage .imj_mediaDisplayContainer .imj_optionSet .imj_optionCheckbox { vertical-align: bottom; }
-
 .imj_mediaContainerEditMD { margin-bottom: 0.5em; padding: 0; width: 100%; border-top: 0 solid #990000; }
 .imj_mediaContainerEditMD .imj_headline, .imj_mediaContainerEditMD .imj_administrationTiledList .imj_adminPanel .imj_config_headline, .imj_administrationTiledList .imj_adminPanel .imj_mediaContainerEditMD .imj_config_headline { width: 100%; }
 .imj_mediaContainerEditMD .imj_headline .imj_headline h3, .imj_mediaContainerEditMD .imj_administrationTiledList .imj_adminPanel .imj_config_headline .imj_headline h3, .imj_administrationTiledList .imj_adminPanel .imj_mediaContainerEditMD .imj_config_headline .imj_headline h3, .imj_mediaContainerEditMD .imj_headline .imj_administrationTiledList .imj_adminPanel .imj_config_headline h3, .imj_administrationTiledList .imj_adminPanel .imj_mediaContainerEditMD .imj_headline .imj_config_headline h3, .imj_mediaContainerEditMD .imj_administrationTiledList .imj_adminPanel .imj_config_headline .imj_config_headline h3, .imj_administrationTiledList .imj_adminPanel .imj_mediaContainerEditMD .imj_config_headline .imj_config_headline h3 { margin: 1% 0; }
@@ -458,11 +449,14 @@ iframe#twitter-widget-0 div.root div.stream { height: 20em !important; }
   .imj_tiledMediaList > .imj_listBody li .thumb { border: none; }
   .imj_tiledMediaList > .imj_listBody li .thumb img { width: 100%; }
   .imj_tiledMediaList > .imj_listBody li .thumb:hover { border: none; } }
-.imj_tiledMediaList > .imj_listBody li label { max-width: 100%; overflow-x: hidden; text-overflow: ellipsis; display: inline-block; }
-.imj_tiledMediaList > .imj_listBody li label.imj_optionLabel { white-space: nowrap; }
-.imj_tiledMediaList > .imj_listBody li .imj_optionCheckbox + label.imj_optionLabel { max-width: 88%; display: inline-block; text-overflow: ellipsis; white-space: nowrap; }
+.imj_tiledMediaList > .imj_listBody li span { height: 1.35em; }
+@media screen and (max-width: 50em) { .imj_tiledMediaList > .imj_listBody li span { margin-top: -3em; display: block; margin-bottom: 2em; } }
+.imj_tiledMediaList > .imj_listBody li span input { margin-left: 4%; }
+.imj_tiledMediaList > .imj_listBody li span label { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; max-width: 75%; padding-left: 0px; text-align: left; text-align-last: left; display: inline-block; }
+@media screen and (max-width: 50em) { .imj_tiledMediaList > .imj_listBody li span label { display: none; } }
+@media screen and (max-width: 50em) { .imj_tiledMediaList > .imj_listBody li span .folder { margin-top: -2em; display: block; margin-left: 5px; color: #313131; } }
 .imj_tiledMediaList > .imj_listBody li .imj_tooltip { display: none; position: absolute; z-index: 10; width: 30em; box-shadow: none; background: #D9D9D9; border-radius: 2px; border: 1px solid #990000; padding: 10px; text-align: left; text-align-last: left; }
-@media screen and (max-width: 50em) { .imj_tiledMediaList > .imj_listBody li .imj_tooltip { display: none; } }
+@media screen and (max-width: 50em) { .imj_tiledMediaList > .imj_listBody li .imj_tooltip { display: none !important; } }
 .imj_tiledMediaList > .imj_listBody li .imj_tooltip .label { width: 32%; float: left; padding: 5px 0; }
 .imj_tiledMediaList > .imj_listBody li .imj_tooltip .value { width: 65%; float: left; padding: 5px 0; }
 

@@ -273,7 +273,6 @@
 
     > .imj_listBody {
         margin: 1em 0 0 0;
-		
 		.folderIcon{
 			width: 96%;
 		}
@@ -330,25 +329,40 @@
 					}
 				}
 			}
-			label {
-                max-width: 100%;
-                overflow-x: hidden;
-                text-overflow: ellipsis;
-                display:inline-block;
-
-                &.imj_optionLabel {
-                    white-space: nowrap;
-                }
-            }
-
-            .imj_optionCheckbox {
-                + label.imj_optionLabel {
-                    max-width: 88%;
-                    display: inline-block;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
-                }
-            }
+			span{
+				height: 1.35em;
+				@media screen and (max-width: $mobile-view) {
+					margin-top: -3em;
+					display: block;
+					margin-bottom: 2em;
+				}
+				input {
+					margin-left: 4%;
+				}
+				label {
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					overflow: hidden;
+					max-width: 75%;
+					padding-left: 0px;
+					text-align: left;
+					text-align-last: left;
+					display: inline-block;
+					
+					
+					@media screen and (max-width: $mobile-view) {
+					   display: none;
+					}
+				}
+				.folder{
+					@media screen and (max-width: $mobile-view) {
+						margin-top: -2em;
+						display: block;
+						margin-left: 5px;
+						color: #313131;
+					}
+				}
+			}
             .imj_tooltip {
 				display: none;
                 position: absolute;
@@ -362,7 +376,7 @@
 				text-align: left;
 				text-align-last: left;
 				@media screen and (max-width: $mobile-view) {
-					display: none;
+					display: none !important;
 				}
 				.label{
 					width: 32%;
