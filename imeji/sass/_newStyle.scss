@@ -1346,6 +1346,10 @@ html body {
                     width: 100%;
                     box-sizing: border-box;
 					margin: auto;
+					img{
+						display: block;
+						margin: auto;
+					}
                 }
                 .imj_paginator {
                     border: none;
