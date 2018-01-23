@@ -1,4 +1,3 @@
-@import url("http://fonts.googleapis.com/css?family=Open+Sans");
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
 
 html { line-height: 1; }
@@ -56,11 +55,6 @@ label { min-width: 24%; }
 p { display: block; margin: 1em 0; }
 
 .imj_siteWrapper { overflow: hidden; width: 100%; max-width: 80%; min-width: 82.0909em; height: auto !important; min-height: 100%; margin: 0 auto; margin-bottom: -2.001em; border-left: 0 dotted #990000; border-right: 0 dotted #990000; }
-.imj_siteWrapper .imj_siteHeader { padding: 0 3% 0 0; }
-.imj_siteWrapper .imj_siteHeader:after { clear: both; content: ""; content: 0 none; }
-.imj_siteWrapper .imj_siteHeader .imj_simpleSearchButtonSubmit { color: white; background-color: #990000; border: solid #990000 0; cursor: pointer; float: right; }
-.imj_siteWrapper .imj_siteHeader .imj_simpleSearchButtonSubmit:hover { color: white; background-color: #cc0000; border: solid #cc0000 0; }
-.imj_siteWrapper .imj_siteHeader .imj_simpleSearchButtonSubmit:focus { color: white; background-color: #cc0000; border: solid #cc0000 0; }
 .imj_siteWrapper .imj_logo { width: 15em; height: 6em; padding: 0; display: inline-block; background: transparent url("../logo/outbox-logo.png") 0em 1.4em no-repeat; }
 .imj_siteWrapper .imj_logo_alt { max-height: 154px; margin-top: -25px; margin-bottom: -25px; }
 .imj_siteWrapper .imj_spaceLogo { max-height: 6em; margin-left: 3%; }

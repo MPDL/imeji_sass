@@ -1,6 +1,5 @@
 // VARIOUS VARIABLES, which not match with other components
 // IMPORTS, don't change the order of imports, because they are depends another
-@import url("http://fonts.googleapis.com/css?family=Titillium+Web:300italic,400,200,200italic,300,600,400italic,600italic,700italic,700,900");
 @import "../../default/sass/_combinedStyles.scss";
 html body {
     background-size: cover;
@@ -801,7 +800,7 @@ html body {
                 }
                 input {
                     padding: 0;
-                    height: 15px;
+                    min-height: 15px;
                     width: 30px;
                 }
                 .imj_singlePageBrowser {
@@ -1321,7 +1320,7 @@ html body {
 					max-width: inherit;
 				}
 				@media screen and (max-width: $mobile-view) {
-					height: auto !important;
+					max-height: 250px;
 					img{
 						width: inherit;
 					}
@@ -1346,9 +1345,16 @@ html body {
                     width: 100%;
                     box-sizing: border-box;
 					margin: auto;
-					img{
+					float: left;
+					img, audio, video{
 						display: block;
 						margin: auto;
+						height: auto;
+						max-width: 90%;
+						max-height: 400px;
+						@media screen and (max-width: $mobile-view) {
+							max-height: 200px;
+						}
 					}
                 }
                 .imj_paginator {

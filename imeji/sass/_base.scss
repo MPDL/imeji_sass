@@ -1,0 +1,17 @@
+// VARIOUS VARIABLES, which not match with other components
+// IMPORTS, don't change the order of imports, because they are depends another
+
+html body {
+	background-color: $color-09;
+}
+
+.imj_siteWrapper{
+	min-height: 100% !important;
+	background-color: $color-10;
+	margin: 0 auto;
+	width: $page-width;
+	max-width: $page-width-max;
+	@media screen and (max-width: $full-width-view) {
+		max-width: 100% !important;
+	}
+}

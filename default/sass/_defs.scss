@@ -15,30 +15,7 @@
 	
 	// /* ===[ SiteHeader ]===
 	// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-	.imj_siteHeader {
-		padding: 0 3% 0 0;
-		
-		&:after {
-			clear: both;
-			content: "";
-			content: 0 none;
-		}
-		.imj_simpleSearchButtonSubmit {
-			color: $pageheader-button-submit-color;
-			background-color: $pageheader-button-submit-bgcolor;
-			border: $pageheader-button-submit-border;
-            cursor: pointer;
-			float:right;
-
-			&:hover {
-				@include hover(submitButtonHeader);
-			}
-			&:focus {
-				@include hover(submitButtonHeader);
-			}
-		}
-	}
-    
+	
     .imj_logo {
 		width: $logo-width;
 		height: $logo-height;

@@ -1,0 +1,37 @@
+// VARIOUS VARIABLES, which not match with other components
+// IMPORTS, don't change the order of imports, because they are depends another
+@import "_facesVariables";
+@import "../../imeji/sass/_combinedNewStyle.scss";
+
+html body {
+	textarea, input[type]:not([type=submit]):not([type=button]), select {
+		background: #fff !important;
+	}
+	
+	 .imj_loginFormDisplay input[type=submit], button, .imj_submitButton, .imj_menuButton:hover, .imj_menuHeader:hover, .imj_cancelButton, .imj_resetButton{
+		color: #fff !important;
+	}
+	
+	.imj_metaMenuItemSelect{
+		background-color:  $color-09 !important;
+	}
+	
+	.imj_metaMenuStandardSingleLine, .imj_simpleSearch{
+		width : 35% !important;
+	}
+	.imj_logoContainer{
+		width : 30% !important;
+	}
+	
+	.imj_poweredby_software_image {
+		background: url("../logo/imeji_logo_black.png");
+		background-size: contain;
+		background-repeat: no-repeat;
+		img{
+			visibility:hidden
+		}
+	}
+	
+}
+
+ 

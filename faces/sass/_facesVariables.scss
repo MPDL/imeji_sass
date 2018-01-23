@@ -1,0 +1,471 @@
+// RESPONSIVENESS
+	$mobile-view: 50em;
+	$full-width-view: 90em;
+
+// GLOBALS
+// used colors for imeji default theme
+	//FONT
+	$color-01: #0F313E;	// dirty white
+	$color-01-weak: lighten($color-01,25%);
+
+	//HIGHLIGHT & LINKS & SUBMIT BUTTONS
+	$color-03: #147DA2;	// green
+	$color-04: lighten($color-03,10);	// lighten green
+	
+	//RESET/CANCEL BUTTONS
+	$color-05: #525252;	// orange
+
+	//ERROR MESSAGES
+	$color-07: #D80000;// lighten red
+	
+	// SUCCESS MESSAGES
+	$color-08: #222222;
+	
+	//BACKGROUND
+	$color-09: #E0EDF1;
+	
+	//BACKGROUND MAIN CONTENT
+	$color-10: #FFFFFF;// grey
+	
+	//HIGHLIGHTED CONTENT
+	$color-11: darken($color-10, 5%);	// grey
+	
+	// ACTION MENU
+	$color-12: darken($color-10, 1);
+	
+	//POP-UP MENUS & ACTION MENU
+	$color-13: darken($color-10, 2%); //lightgrey
+	$color-14: #C8C8C9; //border
+
+
+
+// LOGO
+$logo-path: "../logo/";
+$logo-file: "header_language_transparent.gif";
+$logo-position-horizontal: -20px;
+$logo-position-vertical: 20px;
+$logo-width: 30em;
+$logo-height: 3em;
+$header-height: 90px;
+$header-bgcolor: $color-09;
+$header-padding: 1em;
+
+// DEFAULTS
+// multiple fonts must be declared in ()
+$font-family-default: ('Titillium Web', Arial, Helvetica, Verdana, sans-serif);
+$font-color-default: $color-01;
+$font-size-default: 80%;
+$font-color-critical: $color-07;
+$line-height-default: 145%;
+$box-shadow-default: 0.545454em 0.545454em 0.545454em $color-13;
+$border-radius-default: 2px;
+$border-width-default: 0;
+$border-style-default: $border-width-default solid $color-03;
+$border-style-dashed: $border-width-default dashed $color-03;
+$border-style-default-double: 0 solid $color-03;
+$border-style-dotted-disabled: $border-width-default dotted $color-01;
+$border-style-solid-disabled: $border-width-default solid $color-01;
+
+
+// PAGE WRAPPER
+$page-border: ($border-width-default dotted $color-03);
+$page-width: 100%;
+//$page-width-max: 84.0909em;
+$page-width-max: 80%;
+$page-width-min: 82.0909em;
+$page-padding: 2%;
+
+// PAGE ELEMENTS
+$page-login-form-border-style: $border-style-default;
+$margin-bottom-main-elements: 1em;
+	
+
+// body
+$body-bgcolor: $color-09;
+
+// FOOTER
+$footer-height: 3em;
+$footer-padding: 1em;
+
+// navigation, links, ...
+$link-color: $color-03;
+$link-color-hover: $color-04;
+$link-color-active: $color-03;
+$link-color-disabled: $color-01;
+
+
+
+// buttons
+$button-border-width: $border-width-default;
+$button-border-style: solid;
+
+$button-color: white;
+$button-bgcolor: $color-03;
+$button-border: $button-border-style transparent $button-border-width;
+
+$button-color-hover: $button-color;
+$button-bgcolor-hover: lighten($color-03,10);
+$button-border-hover: $button-border-style $button-bgcolor-hover $button-border-width;
+
+$button-color-disabled: $color-05;
+$button-bgcolor-disabled: $link-color-disabled;
+$button-border-disabled: $button-border;
+
+$button-cancel-color: $button-color;
+$button-cancel-bgcolor: $color-05;
+$button-cancel-border: $button-border-style $button-cancel-bgcolor $button-border-width;
+
+$button-cancel-color-hover: $button-color;
+$button-cancel-bgcolor-hover: lighten($button-cancel-bgcolor,10);
+$button-cancel-border-hover: $button-border-style $button-cancel-bgcolor-hover $button-border-width;
+
+$button-submit-color: $button-color;
+$button-submit-bgcolor: $button-bgcolor;
+$button-submit-border: $button-border;
+
+$button-submit-color-hover: $button-color-hover;
+$button-submit-bgcolor-hover: $button-bgcolor-hover;
+$button-submit-border-hover: $button-border-hover;
+
+$button-reset-color: $button-cancel-color;
+$button-reset-bgcolor:$button-cancel-bgcolor;
+$button-reset-border: $button-cancel-border;
+
+$button-reset-color-hover: $button-cancel-color-hover;
+$button-reset-bgcolor-hover: $button-cancel-bgcolor-hover;
+$button-reset-border-hover: $button-cancel-border-hover;
+
+$button-back-color: $button-color;
+$button-back-bgcolor: inherit;
+$button-back-border: $button-border-style $button-bgcolor $button-border-width;
+
+$button-back-color-hover: $button-color-hover;
+$button-back-bgcolor-hover: $button-bgcolor-hover;
+$button-back-border-hover: $button-border-style $button-back-bgcolor-hover $button-border-width;
+
+$button-edit-color: $button-color;
+$button-edit-bgcolor: $button-bgcolor;
+$button-edit-border: $button-border;
+
+$button-edit-color-hover: $button-color-hover;
+$button-edit-bgcolor-hover: $button-bgcolor-hover;
+$button-edit-border-hover: $button-border-hover;
+
+$button-remove-color-hover: $color-01;
+$button-remove-bgcolor-hover: $color-08;
+
+// PAGE HEADER BUTTONS
+$pageheader-button-submit-color: $button-submit-color;
+$pageheader-button-submit-bgcolor: $button-submit-bgcolor;
+$pageheader-button-submit-border: $button-border-style $pageheader-button-submit-bgcolor $button-border-width;
+
+$pageheader-button-submit-color-hover: $button-submit-color-hover;
+$pageheader-button-submit-bgcolor-hover: $button-submit-bgcolor-hover;
+$pageheader-button-submit-border-hover: $button-border-style $pageheader-button-submit-bgcolor-hover $button-border-width;
+
+
+
+// input
+$input-border-width: 1px;
+$input-border-style: solid;
+
+$input-color: #000000;
+$input-bgcolor: transparent;
+$input-border: $input-border-style $color-10 $input-border-width;
+
+$input-color-hover: $input-color;
+$input-bgcolor-hover: $input-bgcolor;
+$input-border-hover: $input-border-style $link-color $input-border-width;
+
+$input-color-disabled: $color-13;
+$input-bgcolor-disabled: inherit;
+$input-border-disabled: $input-border;
+
+
+
+// PAGE HEADER INPUT FIELDS
+$pageheader-search-input-border: $input-border-style $input-bgcolor $input-border-width;
+
+$pageheader-search-input-border-hover: $input-border-style $link-color $input-border-width;
+
+
+
+// select
+$select-border-width: 1px;
+$select-border-style: solid;
+$select-bgcolor: #F0F0F0;
+
+$select-border: $select-border-style $color-10 $select-border-width;
+$select-border-hover: $select-border-style $link-color $select-border-width;
+$select-border-disabled: $select-border;
+
+
+
+// MAIN MENU
+$mainmenu-item-bgcolor: $color-10;
+
+
+// META MENU
+$meta-input-color: $color-01;
+$meta-button-color: $link-color;
+$meta-input-bgcolor: $color-13;
+$meta-separator-border-style: $border-style-default;
+
+
+
+// PAGE TITLE
+$pagetitle-color: $font-color-default;
+$pagetitle-bgcolor: $color-10;
+
+
+
+// OVERLAY MENU
+$overlaymenu-header-color: $color-03;
+$overlaymenu-bgcolor: $color-13;
+$overlaymenu-bgcolor-critical: $font-color-critical;
+$overlaymenu-header-color-hover: $color-04;
+$overlaymenu-border-horizontal-separator: $border-style-default;
+
+
+
+// MAIN CONTENT
+$maincontent-bgcolor: $color-10;
+
+
+
+// BREADCRUMP
+$breadcrump-overlay-bgcolor: $color-13;
+
+
+
+// PAGINATOR
+$paginator-color: $color-10;
+$paginator-color-hover: $link-color-hover;
+$paginator-color-disabled: $link-color-disabled;
+$paginator-bordertop-style: $border-style-default;
+
+
+
+// FACETS
+$facet-separator-color: $font-color-default;
+$facet-bgcolor-hover: $color-13;	
+
+
+
+// HIGHLIGHT AREAs
+$highlightarea-border-style: 0 dashed $color-13;
+$highlightarea-bgcolor: transparent;
+$highlightarea-bgcolor-hover: $color-13;
+
+// /* highlights for metadata profile editing
+$highlightarea-border-style-mdprofile: 2px dashed $color-14;
+$highlightarea-bgcolor-mdprofile: $color-13;
+$highlightarea-bgcolor-hover-mdprofile: $color-11;
+
+$highlightarea-tooltip-bgcolor-hover: $color-11;
+
+
+
+// AUTOCOMPLETE
+$autocomplete-container-width: 300px;
+$autocomplete-bgcolor: $color-01;
+$autocomplete-bgcolor-loading: $link-color;
+
+
+// SIMPLE LIST WITH TAB-MENU
+$tablist-menu-bgcolor: $color-13;
+$tablist-menuentry-bgcolor-active: $color-13;
+$tablist-content-bgcolor: transparent;
+
+
+
+// METADATA LISTs -- e.g. on details page
+$mdlist-header-separator-border-color: $link-color;
+$mdlist-header-color-hover: $link-color-hover;
+$mdlist-header-bgcolor-hover: $link-color;
+$mdlist-header-bgcolor-active: $link-color;
+$mdlist-body-border-top-style: $border-style-solid-disabled;
+
+$techmdlist-bgcolor: transparent;
+
+
+
+// BIBLIOGRAPHIC LIST -- e.g. for collections and album overview
+$biblist-item-bgcolor-hover: $color-13;
+$biblist-item-bgcolor-active: $color-13;
+$biblist-item-bgcolor-active-hover: lighten($color-13, 14%);	// equals 4D4D4D
+$biblist-item-data-bgcolor-hover: $color-13;	// equals 444444
+$biblist-separator-horizontal: 0.10em solid $color-09;
+
+
+
+// TILED MEDIA LIST
+$tiledlist-overlay-border-style: 0.181818em outset $color-01;
+$tiledlist-tooltip-bgcolor: $color-13;
+$tiledlist-tooltip-shadow: 0 0 1em $color-01;
+$tiledlist-item-bgcolor: $color-13;
+$tiledlist-item-bgcolor-selected: $link-color;
+$tiledlist-item-bgcolor-hover: $link-color;
+
+
+
+// TILED ADMIN LIST
+$tiledlistadmin-itemheader-bgcolor: $color-03;
+$tiledlistadmin-itemheader-border-style: $border-width-default solid $color-13;
+$tiledlistadmin-itemcontent-border-style: $border-width-default solid $color-13;
+
+
+
+// METADATA PROFILE PAGE
+$mdprofilepage-separatortop-border-style: $border-style-default;
+
+
+
+// USER CONFIG
+$user-globalinfo-border-style: 0 none;
+$user-separatorbottom-border-style: $border-style-dashed;	// used on user page, under password input fields
+
+
+// METADATA SUB-PANEL (should part of METADATA LISTs)
+$mdsubpanel-item-bgcolor-hover: $link-color;
+$mdsubpanel-border-bottom-style: $mdlist-body-border-top-style;
+
+// METADATA PROFILE LIST
+$mdprofilelist-headline-gradient-color-1: $color-13;
+$mdprofilelist-headline-gradient-color-2: $color-10;
+$mdprofilelist-separatortop-border-style: $border-style-default;
+$mdprofilelist-separatortop-border-style-inplace: $border-style-dashed;
+// METADATA EDITING
+$mdprofilelist-dropmd-border-color-active: $link-color !important;
+$mdprofilelist-drop-bgcolor-hover: $color-11!important;
+
+
+
+// METADATA PROFILE PREVIEW LIST
+$mdprofilepreview-item-border-style: $border-width-default dashed rgba(0, 0, 0, 0.15);
+
+
+
+// CREATE OR EDIT A COLLECTION / ALBUM
+$mediacontainer-separatortop-border-style: $border-style-default;
+$mediacontainer-author-bgcolor: $color-13;
+
+
+
+// BATCH EDIT
+$batchedit-globalAssignment-separatortop-border-style: $border-style-default;
+$batchedit-itemlist-separatortop-border-style: $border-style-dashed;
+
+
+
+// MESSAGES
+$messagearea-color: $color-01;
+$message-info-color: $color-08;
+$message-info-bgcolor: $color-13;
+$message-warn-color: $color-07;
+$message-warn-bgcolor: $color-13;
+
+
+// DIALOGS
+$modaldialog-bgcolor: $color-13;
+$modaldialog-shadow: $box-shadow-default;
+
+
+
+// CUSTOM DROPDOWN / SELECTBOX
+$selectbox-border-style: $border-style-default;
+$selectbox-text-color: $link-color;
+
+
+// IMAGE STACK
+$imgstack-border-style: 2px solid #8D8D8D;
+$imgstack-background-style-before: none repeat scroll 0 0 $color-13;
+$imgstack-background-style-after: none repeat scroll 0 0 $color-13;
+$imgstack-background-style: none repeat scroll 0 0 $color-13;
+$imgstack-shadow: none;
+
+
+
+// SHARE FORM
+$share-separator-border-style: $border-style-dashed;
+$share-rightstable-body-bgcolor: $color-10;	// equals 313131
+
+
+
+// PAGINATOR
+$paginator-pagenumber-color: $link-color;
+$paginator-pagenumber-color-hover: $link-color-hover;
+$paginator-pagenumber-color-active: $link-color-hover;
+
+
+
+// UPLOAD
+$upload-separation-border-style: none;
+$upload-optionarea-bgcolor: inherit;
+$upload-messagearea-bgcolor-error: transparent;
+$upload-messagearea-bgcolor-success: transparent;
+
+// UPLOAD STYLE FOR PLUPLOAD
+$plupload-header-bgcolor: $color-13;
+$plupload-content-bgcolor: $color-13;
+$plupload-footer-bgcolor: $color-13;
+
+
+
+// WELCOME / START PAGE
+$welcome-info-bgcolor: transparent;
+$welcome-info-tabs-bgcolor: transparent;
+$welcome-info-listentry-bgcolor: $welcome-info-tabs-bgcolor;
+$welcome-info-tabs-bgcolor-active: transparent;
+
+$welcome-carousel-bgcolor: transparent;
+$welcome-carousel-infolayer-bgcolor: $color-13;
+
+
+
+// DETAILPAGE
+$detailpage-displaycontainer-borderbottom-style: $border-style-default;
+
+
+// SIMPLE SEARCH
+$simplesearch-width: 20em;
+
+// ADVANCED SEARCH
+$advsearch-separatortop-border-style: $border-style-default;
+
+
+
+// ENTRY PAGE OF COLLECTION AND ALBUM
+$entrypage-separatortop-border-style: $border-style-default;
+
+
+
+// INGEST PAGE
+$ingestpage-separatortop-border-style: $border-style-default;
+$ingestpage-messagearea-border-style: $border-style-default;
+
+
+
+// UPLOAD PAGE
+$uploadpage-separatortop-border-style: $border-style-default;
+
+
+
+// SHARE PAGE
+$sharepage-separatortop-border-style: $border-style-default;
+
+
+
+// ADMIN PAGE
+$adminpage-separatortop-border-style: $border-style-default;
+
+
+
+// REGISTER PAGE
+$register-step-active-font-size: (145%);
+$register-step-submitted-bg-color: $link-color;
+
+// following are vars to discuss or rework
+// media in image_details.xhtml
+$media-active-add-bgcolor-hover: $color-13;
+$media-widthdrawn-color: $color-07;
