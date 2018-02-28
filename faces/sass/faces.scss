@@ -8,7 +8,7 @@ html body {
 		background: #fff !important;
 	}
 	
-	 .imj_loginFormDisplay input[type=submit], button, .imj_submitButton, .imj_menuButton:hover, .imj_menuHeader:hover, .imj_cancelButton, .imj_resetButton{
+	 .imj_loginFormDisplay input[type=submit], button, .imj_submitButton, .imj_menuButton:hover, .imj_cancelButton, .imj_resetButton{
 		color: #fff !important;
 	}
 	
@@ -30,6 +30,30 @@ html body {
 		img{
 			visibility:hidden
 		}
+	}
+	
+	#simpleSearchWrapper{
+		visibility: hidden;
+	}
+	
+	#lnkItems{
+		display: none;
+	}
+	.imj_active{
+		#lnkItems{
+			display: block;
+		}
+	}
+	
+	
+	.listActionMenuContent{
+		#sel\:sort{
+			display: none;
+		}
+	}
+	
+	#lnkUpload, .fa.fa-search.responsiveMenuBtn{
+		display:none !important;
 	}
 	
 }

@@ -276,6 +276,7 @@ html body {
                     }
                     .imj_menuSimpleSearch {
                         width: 100%;
+						z-index: 1000;
                         display: none;
                         position: absolute;
 						top: 30px;
@@ -538,7 +539,7 @@ html body {
                         font-size: 0.9em;
                         position: relative;
                         box-sizing: border-box;
-                        width: 100%;
+                        width: calc(100% - 3em);
                         a {
                             white-space: nowrap;
                             text-overflow: ellipsis;
@@ -547,7 +548,7 @@ html body {
                             &:after {
                                 content: attr(data-count);
                                 position: absolute;
-                                right: 0;
+                                right: -3em;
                                 top: 0;
                             }
                         }
