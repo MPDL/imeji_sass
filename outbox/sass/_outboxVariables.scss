@@ -9,7 +9,7 @@
 // used colors for imeji default theme
 	//FONT
 	$color-01: #000000;	// dirty white
-	$color-01-weak: lighten($color-01,30%);
+	$color-01-weak: lighten($color-01,40%);
 
 	//HIGHLIGHT & LINKS & SUBMIT BUTTONS
 	$color-03: #990000;	// green
@@ -55,9 +55,9 @@ $icon-colorfolder-error: "D80000/";
 $logo-path: "../logo/";
 $logo-file: "outbox-logo.png";
 $logo-position-horizontal: 0em;
-$logo-position-vertical: 1.4em;
-$logo-width: 15em;
-$logo-height: 6em;
+$logo-position-vertical: 1.2em;
+$logo-width: 14em;
+$logo-height: 5em;
 $header-height: 100px;
 $header-bgcolor: $color-09;
 $header-padding: 1em;

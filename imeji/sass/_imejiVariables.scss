@@ -103,9 +103,9 @@ $margin-bottom-main-elements: 0em;
 $body-bgcolor: $color-09;
 
 
-// FOOTER
-$footer-height: 3em;
-$footer-padding: 1em;
+// FOOTER (use px)
+$footer-height: 40px;
+$footer-padding: 10px;
 
 // navigation, links, ...
 $link-color: $color-03;
