@@ -1,10 +1,12 @@
-	$font-size-label-px: 20%;
-	$font-size-italic-px: 17.3px;
-
+// RESPONSIVENESS
+$mobile-view: 50em;
+$full-width-view: 90em;
+	
 // GLOBALS
 // used colors for imeji default theme
 	//FONT
 	$color-01: #000000;	// dirty white
+	$color-01-weak: lighten($color-01,25%);
 
 	//HIGHLIGHT & LINKS & SUBMIT BUTTONS
 	$color-03: #3299BB;	// ice blue
@@ -14,10 +16,10 @@
 	$color-05: #FF7700;	// orange
 
 	//ERROR MESSAGES
-	$color-07: #D80000;// lighten red
+	$color-07: #FF7700;// lighten red
 	
 	// SUCCESS MESSAGES
-	$color-08: #990000;
+	$color-08: #3299BB;;
 	
 	//BACKGROUND
 	$color-09: #424242;	// darkgrey
@@ -32,9 +34,12 @@
 	$color-13: #FFFFFF; //lightgrey
 	$color-14: #424242; //border
 	
-	// Gluons navigation
-	$color-19: #FF9900	;	// selected menu background
-
+	// ACTION MENU
+	$color-12: darken($color-10, 1);
+	
+	// Gluons special
+	$color-19: #FF9900;
+	$color-20: #072E3A;
 
 // ICONS
 //$icon-path: "../icons/";	// relative path to css source
@@ -54,7 +59,7 @@ $logo-position-vertical: -1em;
 $logo-width: 30em;
 $logo-height: 6em;
 $header-height: 100px;
-$header-bgcolor: $color-09;
+$header-bgcolor: $color-20;
 $header-padding: 1em;
 
 // DEFAULTS

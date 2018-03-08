@@ -8,7 +8,7 @@ html body {
 		background-color: $color-10;
 	}
 	
-	.imj_siteHeader{
+	.imj_topHeader{
 		background-image: url('../backgrounds/rect_blue_long.png');
 		background-size: cover;
 		
@@ -37,7 +37,6 @@ html body {
 		}
 		
 		.imj_metaMenuStandardSingleLine{
-			background-color: transparent !important;
 			input{
 				color: #fff !important;
 				&:focus{
@@ -55,6 +54,28 @@ html body {
 				}
 			}
 		}
+	}
+	
+	.imj_logoContainer{
+		background-color: transparent !important;
+	}
+	.imj_navigation{
+		margin-top: 0;
+		padding-top :0;
+		padding-left: 0;
+		border: none;
+		a{
+			color: $color-19;
+		}
+		.imj_active{
+			background-color:$color-19 !important;
+			border: none;
+			a{
+				color: $color-20;
+			}
+		}
+		
+		
 	}
 	
 	.imj_welcomeInfo{

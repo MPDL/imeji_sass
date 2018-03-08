@@ -1704,22 +1704,30 @@ html body {
             }
         }
         #imj_pageMessageArea {
-            background-color: $header-bgcolor;
-            padding: 0 $page-padding;
-            width: 100%;
+            background-color: transparent;
+            padding: 1%;
+			margin: 0;
+            width: $page-width;
+			max-width: $page-width-max;
+			@media screen and (max-width: $full-width-view) {
+				max-width: 100% !important;
+				min-width: auto;
+			}
+			min-width: $page-width-min;
             box-sizing: border-box;
-            float: left;
-            margin: 0 0 -1px 0;
+			position: absolute;
+			top: 0;
             .imj_message {
-                padding: 5px 20px 5px 20px;
+                padding: 1em 3em;
                 margin-bottom: 3px;
-                //background-color: #6CAE2F; /* Red */
                 background-color: $color-13;
+				color: $color-08;
                 border: 1px solid $color-08;
                 border-radius: 2px;
-                color: $color-08;
                 opacity: 1;
                 transition: opacity 0.6s;
+				max-height: 5em;
+				overflow: auto;
             }
             .imj_messageError {
                 //background-color: #D80000; /* Red */
@@ -2078,7 +2086,7 @@ small {
 }
 // Upload modal
 .uploadPanel {
-    position: absolute;
+    position: fixed;
     top: 0;
 	bottom: 0;
 	right: 0;
