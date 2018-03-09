@@ -1715,8 +1715,9 @@ html body {
 			}
 			min-width: $page-width-min;
             box-sizing: border-box;
-			position: absolute;
+			position: fixed;
 			top: 0;
+			z-index: 10000;
             .imj_message {
                 padding: 1em 3em;
                 margin-bottom: 3px;
