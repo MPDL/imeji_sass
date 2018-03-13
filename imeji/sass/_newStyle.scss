@@ -620,7 +620,7 @@ html body {
 				}
             }
             .imj_listDottedSeparator {
-                border-top: 1px dashed #292929;
+                border-top: 1px dashed $color-01;
                 padding: 0.5em 1em
             }
         }
@@ -1705,7 +1705,7 @@ html body {
         }
         #imj_pageMessageArea {
             background-color: transparent;
-            padding: 1%;
+            padding: 0.5% 2%;
 			margin: 0;
             width: $page-width;
 			max-width: $page-width-max;
@@ -1719,7 +1719,7 @@ html body {
 			top: 0;
 			z-index: 10000;
             .imj_message {
-                padding: 1em 3em;
+                padding: 0.5em 2em;
                 margin-bottom: 3px;
                 background-color: $color-13;
 				color: $color-08;
@@ -2257,13 +2257,13 @@ small {
 .editSelectedHeader {
 	padding: 1em;
 	height: 1em;
-	border-bottom: 1px solid #6CAE2F;
+	border-bottom: 1px solid $color-03;
 }
 
 .editSelectedFooter {
 	padding: 1em;
 	height: 1em;
-	border-top: 1px solid #6CAE2F;
+	border-top: 1px solid $color-03;
 	text-align: right;
 }
 .columnHidden {

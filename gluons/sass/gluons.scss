@@ -73,20 +73,26 @@ html body {
 			a{
 				color: $color-20;
 			}
-		}
-		
-		
+		}	
 	}
 	
-	.imj_welcomeInfo{
+	#imj_welcomeInfoWrapper{
+	    margin-top: $page-padding;
 		background-image: url('../backgrounds/start_background3.jpg');
 		background-size: cover;
+		box-sizing: border-box;
 		.gluons_startpage_div{
 			background-color: rgba(#fff, 0.7);
 			width: 40%;
 			padding: 0.3em 1em 0.3em 1em;
 			margin: 0.3em;
-			
+			box-sizing: border-box;
+			@media screen and (max-width: $full-width-view ) {
+				width: 60%;
+			}
+			@media screen and (max-width: $mobile-view) {
+				width: 95%;
+			}	
 		}
 		.gluons_startpageHeadline{
 			font-size: 1.5em;
@@ -98,8 +104,12 @@ html body {
 	.imj_active {
 		background-color: $color-03 !important;
 		a {
-		color: $color-10;
+			color: $color-10;
 		}
+	}
+	
+	#registerArea .imj_registerSteps .imj_active {
+		background-color: $color-10 !important;
 	}
 	
 	
