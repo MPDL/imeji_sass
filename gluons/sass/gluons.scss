@@ -76,16 +76,21 @@ html body {
 		}	
 	}
 	
+	.imj_mainContentWrapper, #imj_welcomeInfoWrapper{
+		min-height: calc(80vh - #{$header-height} - #{$footer-height});
+	}
+	
 	#imj_welcomeInfoWrapper{
 	    margin-top: $page-padding;
 		background-image: url('../backgrounds/start_background3.jpg');
 		background-size: cover;
 		box-sizing: border-box;
+		
 		.gluons_startpage_div{
 			background-color: rgba(#fff, 0.7);
 			width: 40%;
 			padding: 0.3em 1em 0.3em 1em;
-			margin: 0.3em;
+			margin: 1%;
 			box-sizing: border-box;
 			@media screen and (max-width: $full-width-view ) {
 				width: 60%;
