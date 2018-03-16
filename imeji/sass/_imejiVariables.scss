@@ -40,7 +40,7 @@
 	
 	//POP-UP MENUS & ACTION MENU
 	$color-13: #444444; //lightgrey
-	$color-14: darken(#444444, 5%); //border
+	$color-14: lighten(#444444, 5%); //border
 	
 // IMPORTS: e.g. font families or other foreign css defintions
 // ATTENTION css resets and a lot of other things are given bei compass, take notice of _combinedStyles.scss

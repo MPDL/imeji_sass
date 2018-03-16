@@ -5,8 +5,8 @@
 // GLOBALS
 // used colors for imeji default theme
 	//FONT
-	$color-01: #0F313E;	// dirty white
-	$color-01-weak: lighten($color-01,25%);
+	$color-01: #222222;	// dirty white
+	$color-01-weak: lighten($color-01,20%);
 
 	//HIGHLIGHT & LINKS & SUBMIT BUTTONS
 	$color-03: #147DA2;	// green
@@ -35,8 +35,7 @@
 	
 	//POP-UP MENUS & ACTION MENU
 	$color-13: darken($color-10, 2%); //lightgrey
-	$color-14: #C8C8C9; //border
-
+	$color-14: lighten($color-01,50%);
 
 
 // LOGO

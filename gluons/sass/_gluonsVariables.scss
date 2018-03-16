@@ -6,7 +6,7 @@ $full-width-view: 90em;
 // used colors for imeji default theme
 	//FONT
 	$color-01: #000000;	// dirty white
-	$color-01-weak: lighten($color-01,25%);
+	$color-01-weak: lighten($color-01,40%);
 
 	//HIGHLIGHT & LINKS & SUBMIT BUTTONS
 	$color-03: #3299BB;	// ice blue
@@ -32,7 +32,7 @@ $full-width-view: 90em;
 	
 	//POP-UP MENUS & ACTION MENU
 	$color-13: #FFFFFF; //lightgrey
-	$color-14: #424242; //border
+	$color-14: lighten($color-01,70%); //border
 	
 	// ACTION MENU
 	$color-12: darken($color-10, 1);

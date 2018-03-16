@@ -364,8 +364,8 @@ select.imj_metadataEditText { min-height: 0; }
 .imj_overlayMenu .imj_menuHeader .selectNone:before { font-family: FontAwesome; content: "\f00d "; padding-right: 0.1em; }
 .imj_overlayMenu .imj_menuText { text-align: left; line-height: 175%; padding: 0.5em 1em; display: block; }
 .imj_overlayMenu .imj_menuSimpleSearch { width: 24em; font-size: 1.2em; }
-.imj_overlayMenu .imj_menuSimpleSearch li { border-top: 1px dashed #990000; padding: 0.5em 1em; }
-.imj_overlayMenu .imj_menuBody, .imj_overlayMenu .imj_menuSimpleSearch { display: none; position: absolute; background-color: #D9D9D9; border: 1px solid #990000; }
+.imj_overlayMenu .imj_menuSimpleSearch li { border-top: 1px dashed #999999; padding: 0.5em 1em; }
+.imj_overlayMenu .imj_menuBody, .imj_overlayMenu .imj_menuSimpleSearch { display: none; position: absolute; background-color: #D9D9D9; border: 1px solid #999999; }
 .imj_overlayMenu:hover .imj_menuHeader { color: #D45A00; }
 .imj_overlayMenu:hover > .imj_menuBody { display: block; z-index: 100; }
 .imj_overlayMenu .imj_criticalItem:hover { background-color: #D80000; }
@@ -395,7 +395,7 @@ select.imj_metadataEditText { min-height: 0; }
 .imj_bibliographicList .imj_statusArea:after { clear: both; content: ""; }
 .imj_bibliographicList .imj_listFooter { border-top: 0.1em solid #F2F2F2; }
 .imj_bibliographicList .imj_listBody { width: 96%; }
-.imj_bibliographicList .imj_listBody .imj_bibliographicListItem { width: 91.95%; padding: 0 4% 1em 4%; display: inline-block; border-top: 0.1em solid #F2F2F2; }
+.imj_bibliographicList .imj_listBody .imj_bibliographicListItem { width: 91.95%; padding: 0 4% 1em 4%; display: inline-block; border-top: 1px solid #999999; }
 .imj_bibliographicList .imj_listBody .imj_bibliographicListItem:hover { background-color: #D9D9D9; }
 .imj_bibliographicList .imj_listBody .imj_bibliographicListItem.imj_active { background-color: #D9D9D9; }
 .imj_bibliographicList .imj_listBody .imj_bibliographicListItem.imj_active:hover { background-color: #fdfdfd; }
@@ -449,13 +449,13 @@ select.imj_metadataEditText { min-height: 0; }
 .imj_tiledMediaList > .imj_listBody li span label { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; max-width: 75%; padding-left: 0px; text-align: left; text-align-last: left; display: inline-block; }
 @media screen and (max-width: 50em) { .imj_tiledMediaList > .imj_listBody li span label { display: none; } }
 @media screen and (max-width: 50em) { .imj_tiledMediaList > .imj_listBody li span .folder { margin-top: -2em; display: block; margin-left: 5px; color: #313131; } }
-.imj_tiledMediaList > .imj_listBody li .imj_tooltip { display: none; position: absolute; z-index: 10; width: 30em; box-shadow: none; background: #D9D9D9; border-radius: 2px; border: 1px solid #990000; padding: 10px; text-align: left; text-align-last: left; }
+.imj_tiledMediaList > .imj_listBody li .imj_tooltip { display: none; position: absolute; z-index: 10; width: 30em; box-shadow: none; background: #D9D9D9; border-radius: 2px; border: 1px solid #999999; padding: 10px; text-align: left; text-align-last: left; }
 @media screen and (max-width: 50em) { .imj_tiledMediaList > .imj_listBody li .imj_tooltip { display: none !important; } }
-.imj_tiledMediaList > .imj_listBody li .imj_tooltip .label { width: 32%; float: left; padding: 5px 0; }
-.imj_tiledMediaList > .imj_listBody li .imj_tooltip .value { width: 65%; float: left; padding: 5px 0; }
+.imj_tiledMediaList > .imj_listBody li .imj_tooltip .label { width: 32%; float: left; padding: 5px 0; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
+.imj_tiledMediaList > .imj_listBody li .imj_tooltip .value { width: 65%; float: left; padding: 5px 0; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
 
 .imj_detailList { width: 100%; border-collapse: separate; border-spacing: 0; }
-.imj_detailList thead th { border-bottom: solid 1px #666666; }
+.imj_detailList thead th { border-bottom: solid 1px #999999; }
 .imj_detailList tfoot td { border-top: solid 1px #666666; }
 .imj_detailList thead .imj_colFiletype, .imj_detailList thead .imj_colFilesize, .imj_detailList tfoot .imj_colFiletype, .imj_detailList tfoot .imj_colFilesize { text-align: center; }
 .imj_detailList th, .imj_detailList td { padding: 0.5em; text-overflow: ellipsis; overflow: hidden; }

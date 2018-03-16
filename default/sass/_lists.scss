@@ -102,7 +102,7 @@
             width: 91.95%;
             padding: 0 4% 1em 4%;
             display: inline-block;
-            border-top: $biblist-separator-horizontal;
+            border-top: 1px solid $color-14;
 
             &:hover {
                 background-color: $biblist-item-bgcolor-hover;
@@ -375,6 +375,7 @@
 				padding: 10px;
 				text-align: left;
 				text-align-last: left;
+				
 				@media screen and (max-width: $mobile-view) {
 					display: none !important;
 				}
@@ -382,11 +383,17 @@
 					width: 32%;
 					float: left;
 					padding: 5px 0;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					overflow: hidden;
 				}
 				.value{
 					width: 65%;
 					float: left;
 					padding: 5px 0;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					overflow: hidden;
 				}
             }
 		}
@@ -407,7 +414,7 @@
     thead {
 
         th {
-            border-bottom: solid 1px $color-01-weak;
+            border-bottom: solid 1px $color-14;
         }
     }
 

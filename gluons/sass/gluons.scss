@@ -168,7 +168,7 @@ html body {
 		background-color:  rgba(#fff,0)!important;
 		color: $color-19 !important;
 	}
-	.imj_selectionInfoPanel .imj_menuHeader, .imj_statusHeaderArea .fa{
+	.imj_selectionInfoPanel .imj_menuHeader,.listActionMenuContentSection .imj_menuHeader, .imj_statusHeaderArea .fa{
 		&:hover{
 			color: $color-04 !important;
 		}
