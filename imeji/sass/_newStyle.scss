@@ -1790,6 +1790,127 @@ html body {
             }
         }
     }
+
+    //TAGGLE - Input area for texts, using taggle.js 
+    .imj_taggle {
+        @include input-style;
+        margin-left: 0;
+        height: auto;
+        width: 402px;
+        display: inline-block;
+        position: relative;
+        cursor: text;
+        //min-width: inherit;
+
+        .taggle_list {
+            float: left;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+        }
+        
+        .taggle_input {
+            border: none;
+            outline: none;
+            font-size: 16px;
+            font-weight: 300;
+        }
+        
+        .taggle_list li {
+            float: left;
+            display: inline-block;
+            white-space: nowrap;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+        
+        .taggle_list .taggle {
+            margin-right: 8px;
+            background: $color-03;
+            padding: 5px 20px 5px 10px;
+            border-radius: 3px;
+            position: relative;
+            cursor: pointer;
+            transition: all .3s;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+        
+        .taggle_list .taggle_hot {
+            background: $color-04;
+        }
+        
+        .taggle_list .taggle .close {
+            font-size: 1.2rem ! important;
+            position: absolute;
+            top: 9px;
+            width: 0.7rem;
+            height: 0.7rem;
+            right: 3px;
+            //left:5px;
+            text-decoration: none;
+            padding: 0;
+            line-height: 0.5;
+            color: #ccc;
+            color: rgba(0, 0, 0, 0.2);
+            padding-bottom: 4px;
+            //display: none;
+            border: 0;
+            background: none;
+            cursor: pointer;
+        }
+        
+        .taggle_list .taggle:hover {
+            //padding: 5px;
+            //padding-right: 15px;
+            background: $color-04;
+            transition: all .3s;
+        }
+        
+        .taggle_list .taggle:hover > .close {
+            display: block;
+        }
+        
+        
+        .taggle_list .taggle .close:hover {
+            color: $color-05;
+        }
+        
+        
+        .taggle_placeholder {
+            position: absolute;
+            color: $color-01-weak;
+            top: 12px;
+            left: 8px;
+            transition: opacity, .25s;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        .taggle_input {
+            padding: 8px;
+            padding-left: 0;
+            float: left;
+            margin-top: -5px;
+            background: none;
+            width: 100%;
+            max-width: 100%;
+        }
+        
+        .taggle_sizer {
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            top: -500px;
+            z-index: -1;
+            visibility: hidden;
+        }
+}
+    
 }
 .imj_previewContainer {
     max-height: 60%;
@@ -1841,6 +1962,7 @@ html body {
 			}
 		}
     }
+
 }
 
 .imj_rightsTable {
@@ -2359,3 +2481,5 @@ small {
 .fa-list-alt:before {
     content: "\f00b" !important;
 }
+
+
