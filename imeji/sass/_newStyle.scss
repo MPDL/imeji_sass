@@ -1239,6 +1239,9 @@ html body {
                         width: 422px;
                         min-width: inherit;
                     }
+                    &.imj_comboBox {
+                        width: 350px;
+                    }
                 }
                 textarea {
                     height: 70px;
@@ -1249,6 +1252,9 @@ html body {
                     .imj_metadataLabel {
                         width: 190px;
                         min-width: inherit;
+                        .imj_comboBox{
+                            width: 60%;
+                        }
                     }
                 }
                 .imj_admindataSet {
@@ -2458,6 +2464,13 @@ small {
 .ui-autocomplete {
     border: 1px solid $color-14 !important;
     background-color: $color-13 !important;
+    max-height: 200px;
+    /* add scrollbar if heigt > max-height */
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+    /* add padding to account for vertical scrollbar */
+    padding-right: 20px;
 }
 // DATEPICKER
 .ui-datepicker {
