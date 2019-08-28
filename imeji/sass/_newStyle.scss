@@ -1843,7 +1843,8 @@ html body {
         
         .taggle_list .taggle {
             margin-right: 8px;
-            background: $color-03;
+            background: #696969;
+            color: white !important;
             padding: 5px 20px 5px 10px;
             border-radius: 3px;
             position: relative;
@@ -1871,7 +1872,7 @@ html body {
             padding: 0;
             line-height: 0.5;
             color: #ccc;
-            color: rgba(0, 0, 0, 0.2);
+            color: rgba(0, 0, 0, 0.3) !important;
             padding-bottom: 4px;
             //display: none;
             border: 0;
@@ -1882,7 +1883,7 @@ html body {
         .taggle_list .taggle:hover {
             //padding: 5px;
             //padding-right: 15px;
-            background: $color-04;
+            background: #919191;
             transition: all .3s;
         }
         
@@ -1892,7 +1893,7 @@ html body {
         
         
         .taggle_list .taggle .close:hover {
-            color: $color-05;
+            color: red !important;
         }
         
         
