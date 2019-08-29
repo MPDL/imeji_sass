@@ -1211,8 +1211,14 @@ html body {
                 }
                 .imj_metadataSet {
                     .imj_metadataValue {
-                        .imj_comboBox {
-                            width: 285px;
+                        .imj_metadataValueEntry {
+                            width: 356px;
+                            .imj_comboBox {
+                                width: 281px;
+                            }
+                            .imj_submitButton {
+                                margin: unset;
+                            }
                         }
                     }
                 }
@@ -1247,7 +1253,7 @@ html body {
                         min-width: inherit;
                     }
                     &.imj_comboBox {
-                        width: 350px;
+                        width: 347px;
                     }
                 }
                 textarea {
@@ -1257,10 +1263,18 @@ html body {
                 }
                 .imj_metadataSet {
                     .imj_metadataLabel {
-                        width: 190px;
+                        width: 212px;
                         min-width: inherit;
                         .imj_comboBox{
                             width: 60%;
+                        }
+                    }
+                    .imj_metadataValue {
+                        .imj_metadataValueEntry {
+                            width: 422px;
+                            .imj_submitButton {
+                                margin: unset;
+                            }
                         }
                     }
                 }
