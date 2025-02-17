@@ -869,32 +869,15 @@ select.imj_metadataEditText {
 // ================================================== */
 
 // STARTPAGE
-.imj_startpageFooter {
-	clear: both;
-	width: 100%;
-	padding: 1em 0;
-	img {
-		margin: 0 1%;
-	}
-	.imj_startpageFooterLogos {
-		width: 100%;
-		padding: 1em 1.25em 1.25em 1em;
-		text-align: center;
-		
-	}
-	.imj_community_logo {
-		padding: 1%;
-		margin-right: 5%;
-		@include border-radius($border-radius-default);
-	}	
-	
-}
+
+
 
 .imj_startpageFooterLogos{
 	.imj_poweredby_imprint { 
         width: 50%; 
         margin: 0 auto;
     }
+
 }
 
 #imj_welcomeInfoWrapper {

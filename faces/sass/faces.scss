@@ -31,6 +31,13 @@ html body {
 			visibility:hidden
 		}
 	}
+
+	.imj_poweredby_institution {
+		img {
+			content:url("../logo/logo-mpdl-singlecolor-black_small.png");
+			max-height: 70px !important;
+		}
+	}
 	
 	#simpleSearchWrapper{
 		visibility: hidden;
