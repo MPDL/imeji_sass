@@ -48,9 +48,20 @@ html body {
 		background-position: right top;
 		//color: #fff;
 		margin-top: -30px;
+		.imj_poweredby_institution {
+			float:left;
+			img {
+				content:url("../logo/logo-mpdl-singlecolor-black_small.png");
+				max-height: 70px !important;
+				margin: -20px;
+			}
+		}
+
+
 		.imj_poweredby_software{
 			float:right;
 		}
+		/*
 		.imj_poweredby_institution {	
 			float:left;
 			margin-top: ($footer-padding + $footer-height) - 85px !important;
@@ -74,7 +85,11 @@ html body {
 				width: 175px;
 			}
 		}
+
+		 */
 	}
+
+
 	textarea, input[type]:not([type=submit]):not([type=button]), select {
 		background: white !important;
 	}
