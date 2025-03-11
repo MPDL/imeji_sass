@@ -10,6 +10,18 @@ The _combinedStyles.scss includes all separated scss-files without the _vars.scs
 
 
 ## REQUIREMENTS
+* Sass
+`npm install -g sass`
+
+## COMPILE
+* e.g for the main imeji.css
+  * `sass imeji/sass/imeji.scss imeji/stylesheets/imeji.css`
+* e.g for faces
+  * `sass faces/sass/faces.scss faces/stylesheets/faces.css`
+* e.g for outbox
+  * `sass outbox/sass/outbox.scss outbox/stylesheets/outbox.css`
+
+## REQUIREMENTS
 ```
 $ sass -v
 Sass 3.3.8 (Maptastic Maple)
