@@ -21,6 +21,12 @@ The _combinedStyles.scss includes all separated scss-files without the _vars.scs
 * e.g for outbox
   * `sass outbox/sass/outbox.scss outbox/stylesheets/outbox.css`
 
+
+
+
+
+
+# OLD DOCUMENTATION
 ## REQUIREMENTS
 ```
 $ sass -v
